@@ -33,7 +33,7 @@ const FirstSection = () => {
         // Adjust the marginTop for mobile devices
         buttonStyle.marginTop = '480px';
         buttonStyle.marginRight= '200px';
-        buttonStyle.marginLeft='10px';
+        buttonStyle.marginLeft='21px';
         buttonStyle.width= '45px';
         buttonStyle.height= '45px';
         buttonStyle.borderStyle= 'dotted';
@@ -96,8 +96,8 @@ const FirstSection = () => {
                             className='text-white tracking-widest font-serif font-bold'>Featured Project</motion.p>
                             <p className=' text-white my-6 md:text-5xl text-3xl font-bold'>Queen Alima <br />By AfricanGroup</p>
                        
-                            <div className='text-white w-96 flex flex-wrap text-small font-serif'>
-                                <p>
+                            <div className='text-white flex flex-wrap text-small font-serif'>
+                                <p className="max-w-full">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi soluta iusto porro beatae rem in veritatis asperiores obcaecati, incidunt quae distinctio sapiente sint sequi saepe odio, quo quam quidem lfuga?
                             </p>
                     
