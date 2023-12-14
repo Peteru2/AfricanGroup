@@ -1,0 +1,15 @@
+.nextButtonStyle{
+    width: 35px;
+    height: 35px; 
+    background: transparent;
+    border-width: 3px;
+    border-Color: #FD972D;
+    display: flex;
+    align-items:center;
+    /* // borderStyle: 'dotted'; */
+    padding: 10px; 
+    border-radius: 1%;
+     border-color: white; 
+    cursor: pointer;
+    margin-top: 300px
+}
