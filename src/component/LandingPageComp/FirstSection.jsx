@@ -17,11 +17,12 @@ const FirstSection = () => {
         borderColor: '#FD972D',
         display: 'flex',
         alignItems:"center",
+        justifyContent:'center',
         // borderStyle: 'dotted',
-        padding: '10px', 
+        // padding: '10px', 
         borderRadius: '1%',
-        marginRight: '-0px',
-        marginLeft: '-0px',// Using 'none' for no border
+        marginRight: '0px',
+        marginLeft: '0px',// Using 'none' for no border
         color: 'white', 
         cursor: 'pointer',
         marginTop:'300px',
@@ -31,14 +32,15 @@ const FirstSection = () => {
     if (window.innerWidth <= 767) {
         // Adjust the marginTop for mobile devices
         buttonStyle.marginTop = '480px';
-        buttonStyle.marginRight= '300px';
-        buttonStyle.marginLeft='50px';
+        buttonStyle.marginRight= '200px';
+        buttonStyle.marginLeft='10px';
         buttonStyle.width= '45px';
         buttonStyle.height= '45px';
         buttonStyle.borderStyle= 'dotted';
         buttonStyle.borderColor= '#FD972D';
         
       }
+      
     const imageSlides = [
         {
             img: [
@@ -53,9 +55,15 @@ const FirstSection = () => {
     ]
     
     const properties = {
-        prevArrow:
-         <button style={{ ...buttonStyle }}><i className='fa fa-arrow-left'></i></button>,
-        nextArrow: <button  className ="hidden"style={{ ...buttonStyle }}><i className='fa fa-arrow-right'></i></button>
+        prevArrow:(
+           
+         <button style={{ ...buttonStyle }}><i className='fa fa-arrow-left'></i></button>
+        
+         ),
+        nextArrow: (
+       
+            <button  className ="hidden"style={{ ...buttonStyle }}><i className='fa fa-arrow-right'></i></button>
+        )
     }
     
     return (
@@ -86,9 +94,9 @@ const FirstSection = () => {
                             
 
                             className='text-white tracking-widest font-serif font-bold'>Featured Project</motion.p>
-                            <p className='text- text-white my-6 text-5xl font-bold'>Queen Alima <br />By AfricanGroup</p>
+                            <p className=' text-white my-6 md:text-5xl text-3xl font-bold'>Queen Alima <br />By AfricanGroup</p>
                        
-                            <div className='text-white w-96 text-small font-serif'>
+                            <div className='text-white w-96 flex flex-wrap text-small font-serif'>
                                 <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi soluta iusto porro beatae rem in veritatis asperiores obcaecati, incidunt quae distinctio sapiente sint sequi saepe odio, quo quam quidem lfuga?
                             </p>
