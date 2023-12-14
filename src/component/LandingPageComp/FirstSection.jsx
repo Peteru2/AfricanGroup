@@ -94,7 +94,7 @@ const FirstSection = () => {
                             
 
                             className='text-white tracking-widest font-serif font-bold'>Featured Project</motion.p>
-                            <p className=' text-white my-6 md:text-5xl text-3xl font-bold'>Queen Alima <br />By AfricanGroup</p>
+                            <p className=' text-white my-6 md:text-5xl text-4xl font-bold'>Queen Alima <br />By AfricanGroup</p>
                        
                             <div className='text-white flex flex-wrap text-small font-serif'>
                                 <p className="max-w-full">
