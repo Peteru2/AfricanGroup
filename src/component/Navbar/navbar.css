@@ -18,8 +18,8 @@
 
 }
 .nav-active { 
-    background: #09162A;  
-    color :Ivory;
+    background: white;  
+    color : #8AB863;
 }
 .bg{
     background-color: rgb(13, 13, 51);
@@ -29,11 +29,10 @@
 }
 
 .nav-logo{
-    color: rgba(253, 151, 45);
-    padding: 24px 0px;
-    font-size: 32px;
+    color: #8AB863;
     z-index:999;
-    font-weight: bolder;
+    
+   
     /* position: relative; */
 }
 
@@ -49,8 +48,8 @@
 
 }
 .navImg{
-    width: 30px;
-    margin: 13px 0px;
+    width: 50%;
+    margin: 0px 0px;
     /* height: 10px; */
 }
 .nav-list{
@@ -58,7 +57,7 @@
     margin: 0px;
     padding: 40px 0px;
     cursor: pointer;
-    color:  ivory
+    color:  #8AB863
 }
 .nav-list:hover{
     /* border-bottom: 1px solid #FD972D; */

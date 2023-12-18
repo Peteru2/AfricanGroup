@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import NavMenu from "./NavItem";
 import "./navbar.css";
+import AFLOG from "../../assets/images/AFLOG2.png"
 
 // import clickPng from "../clickIcon.png";
 
@@ -68,10 +69,10 @@ const location = useLocation()
   return (
     <nav className="nav" ref={navbarRef}>
       <Link to={"/"}>
-        <h2 className="nav-logo flex outline-none">
-          {/* <img src={clickPng} className="navImg" alt="NavImg" /> */}
-           <b>AfricanGroup</b>
-        </h2>
+        <div className="nav-logo flex outline-none">
+          <img src={AFLOG} className="navImg" alt="NavImg" />
+           
+        </div>
       </Link>
 
       <div className={name ? "nav-menu shadow-lg  active" : "nav-menu "}>
@@ -83,7 +84,7 @@ const location = useLocation()
                 className={`flex w-full ${item.cName} `}
                 to={item.url}
               >
-                <span className={`${isActive? 'text-private2 font-bold':""}`}>{item.title}</span>
+                <span className={`${isActive? 'text-private font-bold':""}`}>{item.title}</span>
               </Link>
             </li>
           );

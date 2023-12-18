@@ -14,7 +14,7 @@ const FirstSection = () => {
         height: '35px', // Added height for better circular appearance
         background: 'transparent',
         borderWidth: '3px',
-        borderColor: '#FD972D',
+        borderColor: '#8AB863',
         display: 'flex',
         alignItems:"center",
         justifyContent:'center',
