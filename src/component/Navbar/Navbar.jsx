@@ -89,8 +89,8 @@ const location = useLocation()
             </li>
           );
         })}
-<div className="ml-auto flex items-center">
-        <button className="bg-private p-2 ml-4 text-xs rounded-lg">REQUEST A QUOTE</button>
+<div className="ml-auto flex items-center rounded-lg">
+        <button className="bg-red-400  ml-4 text-xs rounded-lg"><span className="p-2">REQUEST A QUOTE</span><i className="bg-public bg-opacity-50 ml-2 p-2 fa fa-chevron-right"></i></button>
      </div>
       </div>
      

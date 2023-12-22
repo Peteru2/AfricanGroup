@@ -2,7 +2,7 @@
 .nav{
     background-color: transparent;
     margin: 0px;
-    padding: 0px 100px;
+    padding: 0px 90px;
     /* margin-bottom: 200px; */
     /* height: 56px; */
     z-index: 9999;
@@ -36,14 +36,16 @@
 .navLogoUp{
     background: white;
     margin: 10px 0px;
+    border: 2px solid #8AB863;
     border-radius: 10px;
+
 }
 .nav-menu{
     display :grid;
     grid-template-columns: repeat(7, auto);
-    grid-gap: 50px;
+    grid-gap: 40px;
     color: ivory;
-    margin-left: 140px;
+    margin-left: auto;
     align-items: center;
     
 
@@ -63,7 +65,7 @@
 }
 .nav-list:hover{
     /* border-bottom: 1px solid #FD972D; */
-    color: #FD972D;
+    color: rgb(138, 184, 99);
 }
 
 
@@ -74,14 +76,15 @@
     list-style-type: none;
 }
   .nav-links{
-    color:ivory;
+    color:black;
     font-weight: bold;
     text-decoration: none;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     transition: 0.2s ease-in-out;
 }
 .nav-links:hover{
-    color: #FD972D;
+    color: #8AB863;
+    border-bottom: 1px solid #8AB863;
 }
 
 .nav-side{
