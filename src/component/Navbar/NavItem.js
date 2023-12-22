@@ -8,7 +8,7 @@ const NavMenu =
             },
             {
                 title : "ABOUT",
-                url: "k",
+                url: "About",
                 cName : "nav-links",
                 icon: "fa fa-chevron-down",
             },
