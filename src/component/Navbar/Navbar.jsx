@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import NavMenu from "./NavItem";
 import "./navbar.css";
-import AFLOG from "../../assets/images/AFLOG2.png"
+import AFLOG from "../../assets/images/AFLOG21.png"
 
 // import clickPng from "../clickIcon.png";
 
@@ -67,11 +67,11 @@ const location = useLocation()
   }, []);
 
   return (
-    <nav className="nav" ref={navbarRef}>
-      <Link to={"/"}>
-        <div className="nav-logo flex outline-none">
-          <img src={AFLOG} className="navImg" alt="NavImg" />
-           
+    <nav className="nav flex" ref={navbarRef}>
+      <Link to={"/"} className="w-44">
+        <div className="nav-logo  navLogoUp flex  outline-none">
+          <img src={AFLOG} className="navImg outline-none" alt="NavImg" />
+        
         </div>
       </Link>
 
@@ -84,18 +84,18 @@ const location = useLocation()
                 className={`flex w-full ${item.cName} `}
                 to={item.url}
               >
-                <span className={`${isActive? 'text-private font-bold':""}`}>{item.title}</span>
+                <span className={`${isActive? 'text-private text-small font-bold':""}`}>{item.title}</span>
               </Link>
             </li>
           );
         })}
 <div className="ml-auto flex items-center">
-        <button className="bg-public p-2 rounded-lg">REQUEST A QUOTE</button>
+        <button className="bg-private p-2 ml-4 text-xs rounded-lg">REQUEST A QUOTE</button>
      </div>
       </div>
      
-      <div className="menu-icon ml-auto" onClick={handleClick}>
-        <i className={name ? "fa fa-times " : "fa fa-bars-staggered text-white"}></i>
+      <div className="menu-icon ml-auto items-center" onClick={handleClick}>
+        <i className={name ? "fa fa-times items-center" : "fa fa-bars-staggered items-center"}></i>
       </div>
     </nav>
   );

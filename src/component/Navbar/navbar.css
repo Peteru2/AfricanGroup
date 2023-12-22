@@ -32,25 +32,27 @@
     color: #8AB863;
     z-index:999;
     
-   
-    /* position: relative; */
 }
-
+.navLogoUp{
+    background: white;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
 .nav-menu{
     display :grid;
     grid-template-columns: repeat(7, auto);
-    grid-gap: 55px;
-    /* padding: 14px 0px; */
-    margin-left:25px;
+    grid-gap: 50px;
     color: ivory;
-    margin-left: 50px;
+    margin-left: 140px;
+    align-items: center;
     
 
 }
 .navImg{
-    width: 50%;
+    width: 1200px;
     margin: 0px 0px;
-    /* height: 10px; */
+    height: 90%;
+    padding: 0px 0px;
 }
 .nav-list{
     /* padding: 15px 1%; */
@@ -147,7 +149,7 @@
         z-index: 99;
         margin: 0;
         padding: 0px 20px;
-        
+        /* height: 100px; */
     }
     /* .Pricing{
         padding: 0!important;
@@ -211,11 +213,7 @@
     .sideContent .contact{
             display: none;
     }
-    .navImg{
-        width: 30px;
-        margin: 5px 0px;
-        /* height: 10px; */
-    }
+   
     .nav-links {
         color: black;
         /* display: block; */
@@ -248,19 +246,22 @@
        
     }
     .menu-icon{
-        padding-top: 38px;
+        /* padding-top: 38px; */
         font-size: 23px;
         display: block;
         cursor: pointer;
         color: black;
         cursor: pointer;
+        align-items: center;
+        text-align: center;
+        display: flex;
         z-index: 9999;
         -webkit-tap-highlight-color: transparent !important;
         outline: none !important;
     }
     
     .nav-logo{
-            padding-top: 32px;
+            /* padding-top: 32px; */
     
     }
   
@@ -284,11 +285,9 @@
     margin-left: 0px;
     width: 100%
 }
-.nav-logo{
-    padding:16px 0px
-}
+
 .menu-icon {
-    padding-top: 24px;
+    /* padding-top: 24px; */
 }
 .signUpTop{
     display: block;

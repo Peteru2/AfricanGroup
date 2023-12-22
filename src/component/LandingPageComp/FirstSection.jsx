@@ -10,7 +10,7 @@ const FirstSection = () => {
     
     );
     const buttonStyle = {
-        width: '35px',
+        width: '15px',
         height: '35px', // Added height for better circular appearance
         background: 'transparent',
         borderWidth: '3px',
@@ -19,7 +19,7 @@ const FirstSection = () => {
         alignItems:"center",
         justifyContent:'center',
         // borderStyle: 'dotted',
-        // padding: '10px', 
+        padding: '12px', 
         borderRadius: '1%',
         marginRight: '0px',
         marginLeft: '0px',// Using 'none' for no border
@@ -32,12 +32,12 @@ const FirstSection = () => {
     if (window.innerWidth <= 767) {
         // Adjust the marginTop for mobile devices
         buttonStyle.marginTop = '480px';
-        buttonStyle.marginRight= '200px';
-        buttonStyle.marginLeft='21px';
+        buttonStyle.marginRight= '0px';
+        buttonStyle.marginLeft='0px';
         buttonStyle.width= '45px';
         buttonStyle.height= '45px';
-        buttonStyle.borderStyle= 'dotted';
-        buttonStyle.borderColor= '#FD972D';
+        // buttonStyle.borderStyle= 'dotted';
+        // buttonStyle.borderColor= '#FD972D';
         
       }
       
