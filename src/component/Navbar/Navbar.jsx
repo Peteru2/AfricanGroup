@@ -16,45 +16,22 @@ const location = useLocation()
   };
 
   const navbarRef = useRef(null);
-  const navSignRef = useRef(null);
-  const navLoginRef = useRef(null);
-  const  navContactRef = useRef(null)
-
+  
 
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 200) {
         navbarRef.current.classList.add("nav-active");
-        navbarRef.current.classList.add("shadow-xl");
-        navSignRef.current.classList.add("signUpDown");
-        navSignRef.current.classList.remove("signUpTop");
-        navLoginRef.current.classList.add("loginDown");
-        navLoginRef.current.classList.remove("loginTop");
-        navContactRef.current.classList.add("text-black");
-        navContactRef.current.classList.remove("text-white");
-
+        navbarRef.current.classList.add("shadow-xl")
         
 
-
-        // navSignRef.current.classList.add("text-white");
-        // navSignRef.current.classList.remove("text-blue-500");
       } else {
         navbarRef.current.classList.remove("nav-active");
         navbarRef.current.classList.remove("shadow-xl");
-        navSignRef.current.classList.add("signUpTop");
-        navSignRef.current.classList.remove("signUpDown");
-        navLoginRef.current.classList.add("loginTop");
-        navLoginRef.current.classList.remove("loginDown");
-        navContactRef.current.classList.add("text-white");
-         navContactRef.current.classList.remove("text-black");
-       
+      
+        
 
-
-
-
-        // navSignRef.current.classList.remove("bg-blue-500");
-        // navSignRef.current.classList.add("text-blue-500");
-        // navSignRef.current.classList.remove("text-white");
+      
 
       }
     };
@@ -68,7 +45,7 @@ const location = useLocation()
 
   return (
     <nav className="nav flex" ref={navbarRef}>
-      <Link to={"/"} className="w-44">
+      <Link to={"/"} className="w-44 outline-none">
         <div className="nav-logo  navLogoUp flex  outline-none">
           <img src={AFLOG} className="navImg outline-none" alt="NavImg" />
         
@@ -81,16 +58,18 @@ const location = useLocation()
           return (
             <li className="nav-list" key={index}>
               <Link
-                className={`flex w-full ${item.cName} `}
+                className={`flex w-full  `}
                 to={item.url}
+                
+                
               >
-                <span className={`${isActive? 'text-private text-small font-bold':""}`}>{item.title}</span>
+                <span  className={`${isActive? 'text-private text-small font-bold':""}`}>{item.title}</span>
               </Link>
             </li>
           );
         })}
-<div className="ml-auto flex items-center rounded-lg">
-        <button className="bg-red-400  ml-4 text-xs rounded-lg"><span className="p-2">REQUEST A QUOTE</span><i className="bg-public bg-opacity-50 ml-2 p-2 fa fa-chevron-right"></i></button>
+<div className="ml-auto flex text-white  items-center bg-private hover:bg-private   transition ease-in-out delay-150 hover:bg-opacity-60 duration-900 rounded-lg">
+        <button className="  ml-4 text-xs rounded-lg "><span className="p-2">REQUEST A QUOTE</span><i className="bg-public bg-opacity-50 ml-2 p-3  rounded-tr-lg rounded-br-lg fa fa-chevron-right"></i></button>
      </div>
       </div>
      

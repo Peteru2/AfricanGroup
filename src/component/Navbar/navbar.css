@@ -14,12 +14,12 @@
     animation: scale-down;
     /* animation-timeline: scroll;
     a */
-    border-bottom: 1px solid rgba(255, 255, 255,.5)
-
+    border-bottom: 1px solid rgba(255, 255, 255,.5);
+    color: white
 }
 .nav-active { 
     background: white;  
-    color : #8AB863;
+    color : black
 }
 .bg{
     background-color: rgb(13, 13, 51);
@@ -31,24 +31,19 @@
 .nav-logo{
     color: #8AB863;
     z-index:999;
-    
-}
-.navLogoUp{
-    background: white;
     margin: 10px 0px;
     border: 2px solid #8AB863;
     border-radius: 10px;
-
+    background: white;
+    
 }
+
 .nav-menu{
     display :grid;
     grid-template-columns: repeat(7, auto);
     grid-gap: 40px;
-    color: ivory;
     margin-left: auto;
     align-items: center;
-    
-
 }
 .navImg{
     width: 1200px;
@@ -61,7 +56,7 @@
     margin: 0px;
     padding: 40px 0px;
     cursor: pointer;
-    color:  #8AB863
+   
 }
 .nav-list:hover{
     /* border-bottom: 1px solid #FD972D; */
@@ -76,12 +71,12 @@
     list-style-type: none;
 }
   .nav-links{
-    color:black;
     font-weight: bold;
     text-decoration: none;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     transition: 0.2s ease-in-out;
 }
+
 .nav-links:hover{
     color: #8AB863;
     border-bottom: 1px solid #8AB863;
@@ -119,34 +114,7 @@
      margin-bottom: 20px
 }
 
-.signUpDown{
-    color: white;
-    background-color: #7B68EE;
-    font-weight:bold;
-  box-shadow: 0rem 0r   em 1rem #7B68EE;
 
-}
-.signUpTop{
-    display: block;
-    background-color: white;
-    color: purple;
-    font-weight: bold;
-}
-.loginTop{
-        background-color: rgba(225,225,225,.1);
-        font-weight: bold;
-        color:white
-
-}
-.loginDown{
-    font-weight: bold;
-    background-color: white;
-    color:black
-}
-.loginDown:hover{
-    color:purple;
-    background: transparent;
-}
 @media only screen  and (max-width: 1200px){
     .nav{
         z-index: 99;
