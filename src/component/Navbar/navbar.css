@@ -29,28 +29,32 @@
 }
 
 .nav-logo{
-    color: #8AB863;
-    z-index:999;
+    
     margin: 10px 0px;
     border: 2px solid #8AB863;
     border-radius: 10px;
     background: white;
-    
+    display:block;
+    z-index:9999;
 }
-
+.navImg{
+    width: 1000px;
+    margin: 0px 0px;
+    height: 90%;
+    padding: 0px 0px;
+    visibility: visible;
+    display: flex;
+}
 .nav-menu{
     display :grid;
     grid-template-columns: repeat(7, auto);
     grid-gap: 40px;
     margin-left: auto;
     align-items: center;
+    z-index:9999;
+
 }
-.navImg{
-    width: 1200px;
-    margin: 0px 0px;
-    height: 90%;
-    padding: 0px 0px;
-}
+
 .nav-list{
     /* padding: 15px 1%; */
     margin: 0px;
@@ -120,19 +124,8 @@
         z-index: 99;
         margin: 0;
         padding: 0px 20px;
-        /* height: 100px; */
     }
-    /* .Pricing{
-        padding: 0!important;
-        border-radius: 0px;
-} */
-        .terms{
-            margin-left: 0px;
-            width: 135%
-        }
-    .termsList{
-        display: none;
-    }
+        
     .nav-menu {
         background-color: white;
         color: black;
@@ -150,7 +143,7 @@
         justify-content: flex-start;
         padding: 80px 0 30px 0;
         margin: 0;
-        z-index: -999;
+        z-index: -1;
         transition: 0.3s ease-in-out;
         margin-left: 0px;
         -webkit-tap-highlight-color: transparent !important;
@@ -162,16 +155,6 @@
             display: block
     }
     
-    .SignUp{
-    display: block;
-    text-align: center;
-    background-color: blue;
-    margin: 0px 30px!important;
-    color: white !important;
-    font-size: 18px!important;
-    border-radius:10px;
-    width:350px!important;
-    }
     .nav-menu.active{
         width: 100%;
         height: 850px;
@@ -179,11 +162,12 @@
         opacity: 1;
         z-index: 1;
         visibility: visible;
+        padding: 20px;
+        padding-top: 110px
+        
 
     }
-    .sideContent .contact{
-            display: none;
-    }
+    
    
     .nav-links {
         color: black;
@@ -193,6 +177,7 @@
         align-items: left;
         font-size: 20px;
         margin: 0px;
+        
     }
     .nav-links:hover{
                 color:rgba(0, 0, 255,.5);
@@ -203,7 +188,7 @@
     }
 
     .nav-list{
-        padding: 0px;
+        padding: 10px;
     }
     .nav-menu{
     grid-gap: 00px;
@@ -218,10 +203,8 @@
     }
     .menu-icon{
         /* padding-top: 38px; */
-        font-size: 23px;
+        font-size: 25px;
         display: block;
-        cursor: pointer;
-        color: black;
         cursor: pointer;
         align-items: center;
         text-align: center;
@@ -232,7 +215,7 @@
     }
     
     .nav-logo{
-            /* padding-top: 32px; */
+           z-index: 999999999999!important;
     
     }
   
@@ -240,15 +223,15 @@
 }
 @media only screen  and (max-width: 700px){
     .nav-logo{
-        font-size: 25px
+        font-size: 25px;
+        
     
     }
     .sideContent .log{
             display: none;
     }
     .menu-icon{
-        /* padding-top: 10px; */
-        font-size: large;
+       
         margin-left: 1%;
     }
 
@@ -257,9 +240,6 @@
     width: 100%
 }
 
-.menu-icon {
-    /* padding-top: 24px; */
-}
 .signUpTop{
     display: block;
     background: transparent;

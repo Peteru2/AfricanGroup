@@ -79,7 +79,7 @@ const FirstSection = () => {
              <div   className="each-slide-effect" key={index}>
                 <div style={{ 'backgroundImage': `url(${image.img}) `,  "backgroundSize":"cover", "width":"100%" }}>
                     {/* <span>{`Slide ${index + 1}`}</span> */}
-                    <div className='md:pt-32 pt-20   pb-72 md:px-14 px-6  bg-public bg-opacity-50'>
+                    <div className='md:pt-32 pt-32   pb-72 md:px-14 px-6  bg-public bg-opacity-50'>
                     <p style ={{fontFamily:"'SangBleuSans', sans-serif"}}className="text-white text-2xl">CREDIT RATING <span className='text-private'>BBB</span></p>
         
                         <motion.div 

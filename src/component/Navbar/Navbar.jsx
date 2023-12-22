@@ -46,13 +46,13 @@ const location = useLocation()
   return (
     <nav className="nav flex" ref={navbarRef}>
       <Link to={"/"} className="w-44 outline-none">
-        <div className="nav-logo  navLogoUp flex  outline-none">
+        <div className="nav-logo   outline-none">
           <img src={AFLOG} className="navImg outline-none" alt="NavImg" />
         
         </div>
       </Link>
 
-      <div className={name ? "nav-menu shadow-lg  active" : "nav-menu "}>
+      <div className={name ? "nav-menu   active" : "nav-menu "}>
         {NavMenu.map((item, index) => {
         const isActive = location.pathname === item.url;
           return (
@@ -68,13 +68,13 @@ const location = useLocation()
             </li>
           );
         })}
-<div className="ml-auto flex text-white  items-center bg-private hover:bg-private   transition ease-in-out delay-150 hover:bg-opacity-60 duration-900 rounded-lg">
-        <button className="  ml-4 text-xs rounded-lg "><span className="p-2">REQUEST A QUOTE</span><i className="bg-public bg-opacity-50 ml-2 p-3  rounded-tr-lg rounded-br-lg fa fa-chevron-right"></i></button>
+<div className="xl:ml-auto flex text-white w-44  items-center bg-private hover:bg-private   transition ease-in-out delay-150 hover:bg-opacity-60 duration-900 rounded-lg">
+        <button className=" text-xs flex items-center justify-center rounded-lg w-full"><span className="p-2 w-full flex justify-center">REQUEST A QUOTE</span><i className="bg-public bg-opacity-50 ml-auto p-3  rounded-tr-lg rounded-br-lg fa fa-chevron-right"></i></button>
      </div>
       </div>
      
       <div className="menu-icon ml-auto items-center" onClick={handleClick}>
-        <i className={name ? "fa fa-times items-center" : "fa fa-bars-staggered items-center"}></i>
+        <i className={name ? "fa fa-times items-center text-private" : "fa fa-bars-staggered items-center"}></i>
       </div>
     </nav>
   );
