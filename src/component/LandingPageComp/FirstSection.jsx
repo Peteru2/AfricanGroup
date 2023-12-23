@@ -10,17 +10,17 @@ const FirstSection = () => {
     
     );
     const buttonStyle = {
-        width: '15px',
-        height: '35px', // Added height for better circular appearance
+        width: '50px',
+        height: '50px', // Added height for better circular appearance
         background: 'transparent',
         borderWidth: '3px',
         borderColor: '#8AB863',
+        borderRadius:'50%',
         display: 'flex',
         alignItems:"center",
         justifyContent:'center',
         // borderStyle: 'dotted',
-        padding: '12px', 
-        borderRadius: '1%',
+        padding: '20px', 
         marginRight: '0px',
         marginLeft: '0px',// Using 'none' for no border
         color: 'white', 
@@ -79,8 +79,8 @@ const FirstSection = () => {
              <div   className="each-slide-effect" key={index}>
                 <div style={{ 'backgroundImage': `url(${image.img}) `,  "backgroundSize":"cover", "width":"100%" }}>
                     {/* <span>{`Slide ${index + 1}`}</span> */}
-                    <div className='md:pt-32 pt-32   pb-72 md:px-14 px-6  bg-public bg-opacity-50'>
-                    <p style ={{fontFamily:"'SangBleuSans', sans-serif"}}className="text-white text-2xl">CREDIT RATING <span className='text-private'>BBB</span></p>
+                    <div className='md:pt-32 pt-32   pb-72 md:px-14 px-6  bg-public bg-opacity-60'>
+                    <p style ={{fontFamily:"'SangBleuSans', sans-serif"}}className="text-white text-2xl ml-6 font-roboto">CREDIT RATING <span className='text-private'>BBB</span></p>
         
                         <motion.div 
                         initial={{ opacity: 0 }}
@@ -93,8 +93,8 @@ const FirstSection = () => {
                         transition={{ delay: 2 }}
                             
 
-                            className='text-white tracking-widest font-serif font-bold'>Featured Project</motion.p>
-                            <p className=' text-white my-6 md:text-5xl text-4xl font-bold'>Queen Alima <br />By AfricanGroup</p>
+                            className='text-white tracking-widest font-serif font-bold font-lora'>Featured Project</motion.p>
+                            <p className=' text-white my-6 md:text-5xl text-4xl font-bold font-roboto'>Queen Alima <br />By AfricanGroup</p>
                        
                             <div className='text-white flex flex-wrap text-small font-serif'>
                                 <p className="max-w-full">

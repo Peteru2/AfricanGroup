@@ -11,6 +11,10 @@ export default {
       'private2':'rgba(253, 151, 45, .8)',
       'white': '#ffffff',
     },
+    fontFamily:{
+      roboto:["Roboto", "sans-serif"],
+      lora:["Lora", "serif"]
+    },
     extend: {
       
     },
