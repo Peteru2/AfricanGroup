@@ -10,22 +10,22 @@ const FirstSection = () => {
     
     );
     const buttonStyle = {
-        width: '50px',
-        height: '50px', // Added height for better circular appearance
-        background: 'transparent',
-        borderWidth: '3px',
-        borderColor: '#8AB863',
+        width: '60px',
+        height: '60px', // Added height for better circular appearance
+        background: 'rgba(225,225,225,.4)',
+        // borderWidth: '3px',
+        // borderColor: '#8AB863',
         borderRadius:'50%',
         display: 'flex',
         alignItems:"center",
         justifyContent:'center',
         // borderStyle: 'dotted',
         padding: '20px', 
-        marginRight: '0px',
-        marginLeft: '0px',// Using 'none' for no border
+        marginRight: '10px',
+        marginLeft: '10px',// Using 'none' for no border
         color: 'white', 
         cursor: 'pointer',
-        marginTop:'300px',
+        marginTop:'400px',
         webkitTapHighlightColor: 'transparent' ,
         outline: 'none' 
     };
@@ -68,9 +68,11 @@ const FirstSection = () => {
     
     return (
         <> 
+        <section>
+            
         <Slide
         transitionDuration={500}
-        indicators={indicators} scale={1.4}
+        scale={1.4}
         {...properties}
     >
         {imageSlides.map((image, index) => (
@@ -93,7 +95,7 @@ const FirstSection = () => {
                         transition={{ delay: 2 }}
                             
 
-                            className='text-white tracking-widest font-serif font-bold font-lora'>Featured Project</motion.p>
+                            className='text-white tracking-widest font-serif font-bold font-lora mt-28'>Featured Project</motion.p>
                             <p className=' text-white my-6 md:text-5xl text-4xl font-bold font-roboto'>Queen Alima <br />By AfricanGroup</p>
                        
                             <div className='text-white flex flex-wrap text-small font-serif'>
@@ -110,6 +112,12 @@ const FirstSection = () => {
             </div>
         ))}
     </Slide>
+    </section>
+    <section className="mx-6">
+            <div className="mt-24 mb-4">
+                <h2 className="text-private  tracking-widest pb-4 border-b-[1px] border-black w-full">OUR STORY</h2>
+            </div>
+    </section>
     </>
     );
 };
