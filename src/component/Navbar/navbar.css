@@ -58,12 +58,14 @@
 .nav-list{
     /* padding: 15px 1%; */
     margin: 0px;
-    padding: 40px 0px;
+    /* padding: 40px 0px; */
     cursor: pointer;
+    transition: 0.3s ease-in-out;
+
    
 }
 .nav-list:hover{
-    /* border-bottom: 1px solid #FD972D; */
+    border-bottom: 1px solid rgb(138, 184, 99);
     color: rgb(138, 184, 99);
 }
 
