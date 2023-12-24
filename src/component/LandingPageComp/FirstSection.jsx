@@ -119,6 +119,26 @@ const FirstSection = () => {
 
                 <h4 className="font-roboto text-[18px] mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga assumenda dolore soluta labore nobis, voluptate illum, non reprehenderit necessitatibus, eaque aspernatur itaque officiis? Non dolorum eos ex exercitationem distinctio. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum saepe quam voluptates, excepturi nihil commodi quisquam, totam molestias dolore deleniti consequatur. Fugiat esse dolorem quibusdam illo ea. Iusto praesentium vitae cupiditate. Esse quaerat a, perspiciatis, sapiente non ullam qui praesentium sint beatae, magni eveniet illum! Quos eaque sit harum enim esse. Vel amet harum illo a delectus maxime soluta rem repudiandae necessitatibus ducimus quod labore reprehenderit facere qui nostrum animi vitae, praesentium optio molestiae ipsam in dolorem doloremque! Itaque, quibusdam!</h4>
             </div>
+            <div className="flex w-full flex-wrap">
+                {/* <div className="flex flex-wrap"> */}
+                    <div className="w-44 mr-14">
+                        <h2>35</h2>
+                        <h4>COMPLETED PROJECTS ACROSS THE WORLD</h4>
+                    </div>
+                    <div className="w-32 mr-8">
+                        <h2>35</h2>
+                        <h4>COMPLETED PROJECT ACROSS THE WORLD</h4>
+                    </div>
+
+                    <div className="w-32 mr-44">
+                        <h2>35</h2>
+                        <h4>COMPLETED PROJECT ACROSS THE WORLD</h4>
+                    </div>
+                    {/* </div> */}
+                    <div className="w-[600px] " >
+                        <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio amet, culpa in ab consectetur itaque sed, perspiciatis inventore id expedita distinctio et aperiam. Ea, expedita asperiores iure, velit blanditiis pariatur facilis quisquam iste repellendus dolorem id! Voluptatum ab consequatur velit, asperiores molestiae laudantium perferendis ratione? Nemo, numquam quis non odit accusantium eligendi et excepturi explicabo reprehenderit officia obcaecati fuga delectus molestias aliquid vel dolor iure neque quidem ex inventore impedit repudiandae similique, nostrum eveniet. Architecto cumque fugiat nisi voluptatum!</h4>
+                    </div>
+            </div>
     </section>
     </>
     );
