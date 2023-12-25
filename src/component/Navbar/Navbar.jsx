@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import NavMenu from "./NavItem";
 import "./navbar.css";
-import AFLOG from "../../assets/images/AFLOG21.png"
+import AFLOG from "../../assets/images/AFLOG.jpg"
 
 // import clickPng from "../clickIcon.png";
 

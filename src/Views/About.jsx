@@ -20,7 +20,7 @@ const About = () => {
 
                     <div className="flex flex-wrap justify-center mx-6 mt-8">
                         <div className="bg-white w-[550px] md:mx-6 my-4 p-10">
-                            <div className="flex w-full mb-7 text-6xl font-bold">
+                            <div className="flex w-full mb-7 md:text-6xl  text-4xl font-bold">
                                 <h2><i className="fa fa-black-tie text-private"></i></h2>
                                 <h2 className="ml-auto text-gray text-opacity-30 font-roboto">01</h2>
                             </div>
@@ -29,7 +29,7 @@ const About = () => {
                         </div>
 
                         <div className="bg-white w-[550px] md:mx-6 my-4 p-10">
-                        <div className="flex w-full mb-7 text-6xl font-bold">
+                        <div className="flex w-full mb-7 md:text-6xl  text-4xl font-bold">
                                 <h2><i className="fa fa-check-circle text-private"></i></h2>
                                 <h2 className="ml-auto text-gray text-opacity-30 font-roboto">02</h2>
                             </div>
@@ -38,7 +38,7 @@ const About = () => {
                         </div>
 
                         <div className="bg-white w-[550px] md:mx-6 my-4 p-10">
-                        <div className="flex w-full mb-7 text-6xl font-bold">
+                        <div className="flex w-full mb-7 md:text-6xl l text-4xl font-bold">
                                 <h2><i className="fa fa-comments text-private"></i></h2>
                                 <h2 className="ml-auto text-gray text-opacity-30 font-roboto">03</h2>
                             </div>
@@ -46,7 +46,7 @@ const About = () => {
                                 <h4 className="text-[17px] font-roboto md:text-justify">Professionalism is the cornerstone of our operations at NY Land Surveyor. We maintain the highest level of professional conduct in all aspects of our work, upholding ethical standards and adhering to industry best practices. Our team is composed of licensed professionals who possess the expertise and knowledge required to handle complex surveying projects with utmost professionalism. We are committed to staying up-to-date with the latest advancements in our field, continuously honing our skills to provide our clients with exceptional service. With NYLS, you can expect a professional approach that instills confidence and ensures a seamless surveying experience.</h4>
                         </div>
                         <div className="bg-white w-[550px] md:mx-6 my-4 p-10">
-                        <div className="flex w-full mb-7 text-6xl font-bold">
+                        <div className="flex w-full mb-7 md:text-6xl  text-4xl  font-bold">
                         <h2><i className="fa fa-handshake-o text-private"></i></h2>
                                 <h2 className="ml-auto text-gray text-opacity-30 font-roboto">04</h2>
                             </div>

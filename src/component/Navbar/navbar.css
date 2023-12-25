@@ -41,7 +41,7 @@
     width: 1000px;
     margin: 0px 0px;
     height: 90%;
-    padding: 0px 0px;
+    padding: 20px 5px;
     visibility: visible;
     display: flex;
 }
@@ -235,6 +235,14 @@
     .menu-icon{
        
         margin-left: 1%;
+    }
+    .navImg{
+        width: 1000px;
+        margin: 0px 0px;
+        height: 90%;
+        padding: 3px 1.5px;
+        visibility: visible;
+        display: flex;
     }
 
 .terms{

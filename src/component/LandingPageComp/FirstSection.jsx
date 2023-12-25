@@ -3,6 +3,7 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import Image1 from "../../assets/images/FirstSectionImage1.jpg"
 import { motion } from "framer-motion"
+import { Link } from 'react-router-dom';
 
 const FirstSection = () => {
     const indicators = (index) => (
@@ -82,7 +83,7 @@ const FirstSection = () => {
                 <div style={{ 'backgroundImage': `url(${image.img}) `,  "backgroundSize":"cover", "width":"100%" }}>
                     {/* <span>{`Slide ${index + 1}`}</span> */}
                     <div className='md:pt-32 pt-32   pb-72 md:px-14 px-6  bg-public bg-opacity-60'>
-                    <p style ={{fontFamily:"'SangBleuSans', sans-serif"}}className="text-white text-2xl ml-6 font-roboto">CREDIT RATING <span className='text-private'>BBB</span></p>
+                    <p style ={{fontFamily:"'SangBleuSans', sans-serif"}}className="text-white text-2xl md:ml-6 font-roboto">CREDIT RATING <span className='text-private'>BBB</span></p>
         
                         <motion.div 
                         initial={{ opacity: 0 }}
@@ -119,26 +120,33 @@ const FirstSection = () => {
 
                 <h4 className="font-roboto text-[18px] mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga assumenda dolore soluta labore nobis, voluptate illum, non reprehenderit necessitatibus, eaque aspernatur itaque officiis? Non dolorum eos ex exercitationem distinctio. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum saepe quam voluptates, excepturi nihil commodi quisquam, totam molestias dolore deleniti consequatur. Fugiat esse dolorem quibusdam illo ea. Iusto praesentium vitae cupiditate. Esse quaerat a, perspiciatis, sapiente non ullam qui praesentium sint beatae, magni eveniet illum! Quos eaque sit harum enim esse. Vel amet harum illo a delectus maxime soluta rem repudiandae necessitatibus ducimus quod labore reprehenderit facere qui nostrum animi vitae, praesentium optio molestiae ipsam in dolorem doloremque! Itaque, quibusdam!</h4>
             </div>
-            <div className="grid md:grid-cols-2 grid-cols-1 gap-6 mt-20 w-full flex-wrap">
-                <div className="grid md:grid-cols-3 grid-cols-1 gap-4 ">
-                    <div className="my-3">
+            <div className="grid md:grid-cols-2 font-serif grid-cols-1 gap-6 mt-20 w-full flex-wrap">
+                <div className="grid md:grid-cols-3 grid-cols-1 md:mt-6 mt-0 gap-4 ">
+                    <div className="">
                         <h2 className='text-private text-3xl font-lora my-2'>35</h2>
                         <h4>COMPLETED PROJECTS ACROSS THE WORLD</h4>
                     </div>
-                    <div className=" ">
-                        <h2>35</h2>
-                        <h4>COMPLETED PROJECT ACROSS THE WORLD</h4>
+                    <div className="">
+                    <h2 className='text-private text-3xl font-lora my-2'>800k +</h2>
+                        <h4>LAND SURVEY ACROSS THE WORLD</h4>
                     </div>
 
-                    <div className=" ">
-                        <h2>35</h2>
-                        <h4>COMPLETED PROJECT ACROSS THE WORLD</h4>
+                    <div className="">
+                    <h2 className='text-private text-3xl font-lora my-2'>5</h2>
+                        <h4>GLOBAL AWARDS </h4>
                     </div>
                     </div>
-                    <div className="  " >
-                        <h4>
+                    <div className="">
+                        <h4 className="font-lora">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio amet, culpa in ab consectetur itaque sed, perspiciatis inventore id expedita distinctio et aperiam. Ea, expedita asperiores iure, velit blanditiis pariatur facilis quisquam iste repellendus dolorem id! Voluptatum ab consequatur velit, asperiores molestiae laudantium perferendis ratione? Nemo, numquam quis non odit accusantium eligendi et excepturi explicabo reprehenderit officia obcaecati fuga delectus molestias aliquid vel dolor iure neque quidem ex inventore impedit repudiandae similique, nostrum eveniet. Architecto cumque fugiat nisi voluptatum!
                         </h4>
+                        <div className="mt-8">
+                            <button className="p-2 rounded-[30px] border-private hover:bg-private hover:text-white text-center transition ease-in-out delay-150 duration-900 hover:border-white border-[2px] w-36">
+                                <Link
+                                to={"/About"}
+                                >About us</Link>
+                            </button>
+                        </div>
                     </div>
             </div>
     </section>

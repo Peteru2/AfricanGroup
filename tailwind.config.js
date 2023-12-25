@@ -11,7 +11,9 @@ export default {
       'private2':'rgba(253, 151, 45, .8)',
       'white': '#ffffff',
       'black':'#000000',
-      'gray':'#c7c6c1'
+      'gray':'#c7c6c1',
+      'red':'#FF0000'
+      
     },
     fontFamily:{
       roboto:["Roboto", "sans-serif"],
