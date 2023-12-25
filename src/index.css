@@ -7,6 +7,6 @@
 @tailwind utilities;
 
 body{
-    background: rgba(225,225,225,.1); 
+    background: rgba(225,225,225,.3); 
     /* overflow-x: hidden */
 }
