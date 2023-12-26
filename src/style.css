@@ -18,3 +18,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+a, LINK {
+    -webkit-tap-highlight-color: transparent !important;
+    outline: none !important;
+}
