@@ -22,3 +22,12 @@ a, LINK {
     -webkit-tap-highlight-color: transparent !important;
     outline: none !important;
 }
+.sideChat{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+button{
+    -webkit-tap-highlight-color: transparent !important;
+    outline: none !important;
+}
