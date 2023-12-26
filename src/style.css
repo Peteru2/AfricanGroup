@@ -24,8 +24,8 @@ a, LINK {
 }
 .sideChat{
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 16px;
+    right: 30px;
 }
 button{
     -webkit-tap-highlight-color: transparent !important;

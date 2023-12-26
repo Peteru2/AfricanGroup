@@ -1,10 +1,12 @@
+import Logo from "../assets/images/AFLOG.jpg"
 const Footer = () => {
     return ( 
         <>
             <section className="bg-private px-6 py-9  w-full font-roboto text-white text-[15px] font-bold">
                 <div className="grid md:grid-cols-9 py-10 grid-cols-1 gap-4 border-b-[1px] border-white ">
-                    <div className="col-span-2 w-full border-b-[1px] border-white md:border-0">
-                        <h2 className="font-lora text-[150%] font-bold text-black "><i>AFRICANGROUP</i></h2>
+                    <div className="col-span-2 w-full border-b-[1px]  md:py-0 py-4 border-white md:border-0">
+                       
+                        <img src={Logo} alt="logo"  className="mb-6 rounded-[10px]"/>
                         <h4>African Group  is a fully licensed land surveying company serving the greater Oyo City</h4>
 
                     </div>
