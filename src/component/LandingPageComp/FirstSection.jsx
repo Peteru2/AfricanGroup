@@ -114,7 +114,7 @@ const FirstSection = () => {
         ))}
     </Slide>
     </section>
-    <section className="xl:mx-6 md:mx-0 mx-6">
+    <section className="xl:mx-6 md:mx-0 mx-6 my-10">
             <div className="mt-24 mb-4">
                 <h2 className="text-private  tracking-widest pb-4 border-b-[1px] border-black w-full">OUR STORY</h2>
 
@@ -141,7 +141,7 @@ const FirstSection = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio amet, culpa in ab consectetur itaque sed, perspiciatis inventore id expedita distinctio et aperiam. Ea, expedita asperiores iure, velit blanditiis pariatur facilis quisquam iste repellendus dolorem id! Voluptatum ab consequatur velit, asperiores molestiae laudantium perferendis ratione? Nemo, numquam quis non odit accusantium eligendi et excepturi explicabo reprehenderit officia obcaecati fuga delectus molestias aliquid vel dolor iure neque quidem ex inventore impedit repudiandae similique, nostrum eveniet. Architecto cumque fugiat nisi voluptatum!
                         </h4>
                         <div className="mt-8">
-                            <button className="p-2 rounded-[30px] border-private hover:bg-private hover:text-vintage text-center transition ease-in-out delay-150 duration-900 hover:border-white border-[2px] w-36">
+                            <button className="p-2 rounded-[30px] border-private hover:bg-private text-white text-center transition ease-in-out delay-150 duration-900 font-bold hover:border-white border-[2px] w-36 bg-gradient-to-r from-private to-vintage " >
                                 <Link
                                 to={"/About"}
                                 >About us</Link>

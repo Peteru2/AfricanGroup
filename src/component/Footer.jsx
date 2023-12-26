@@ -15,7 +15,7 @@ const Footer = () => {
 
                         <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out delay-150 duration-900">Blog </button></h4>
                         <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out delay-150 duration-900">Contact</button></h4>
-                        <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out delay-150 duration-900">Privacy Policy</button></h4>
+                        <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out delay-150 duration-900 text-left">Privacy Policy</button></h4>
 
                     </div>
                     <div className="col-span-2">
