@@ -237,9 +237,10 @@ a, LINK {
         width: 1000px;
         margin: 0px 0px;
         height: 90%;
-        padding: 3px 1.5px;
+        padding: 0px 1.5px;
         visibility: visible;
         display: flex;
+        border-radius: 10px
     }
 
 .terms{
