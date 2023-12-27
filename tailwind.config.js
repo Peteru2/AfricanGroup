@@ -6,7 +6,7 @@ export default {
   ],
   theme: {
     colors:{
-      'public':'#09162A',
+      'public':'#2d4000',
       'private':'#8AB863',
       'private2':'rgba(253, 151, 45, .8)',
       'white': '#ffffff',

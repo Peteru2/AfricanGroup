@@ -82,7 +82,7 @@ const FirstSection = () => {
              <div   className="each-slide-effect" key={index}>
                 <div style={{ 'backgroundImage': `url(${image.img}) `,  "backgroundSize":"cover", "width":"100%" }}>
                     {/* <span>{`Slide ${index + 1}`}</span> */}
-                    <div className='md:pt-32 pt-32   pb-72 md:px-14 px-6  bg-public bg-opacity-60'>
+                    <div className='md:pt-32 pt-32   pb-72 md:px-14 px-6  bg-public bg-opacity-40'>
                     <p style ={{fontFamily:"'SangBleuSans', sans-serif"}}className="text-white text-2xl md:ml-6 font-roboto">CREDIT RATING <span className='text-private'>BBB</span></p>
         
                         <motion.div 
@@ -141,11 +141,13 @@ const FirstSection = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio amet, culpa in ab consectetur itaque sed, perspiciatis inventore id expedita distinctio et aperiam. Ea, expedita asperiores iure, velit blanditiis pariatur facilis quisquam iste repellendus dolorem id! Voluptatum ab consequatur velit, asperiores molestiae laudantium perferendis ratione? Nemo, numquam quis non odit accusantium eligendi et excepturi explicabo reprehenderit officia obcaecati fuga delectus molestias aliquid vel dolor iure neque quidem ex inventore impedit repudiandae similique, nostrum eveniet. Architecto cumque fugiat nisi voluptatum!
                         </h4>
                         <div className="mt-8">
-                            <button className="p-2 rounded-[30px] border-private hover:bg-private text-white text-center transition ease-in-out delay-150 duration-900 font-bold hover:border-white border-[2px] w-36 bg-gradient-to-r from-private to-vintage " >
+                            {/* <button className="p-2 rounded-[30px] border-private hover:bg-private text-white text-center transition ease-in-out delay-150 duration-900 font-bold hover:border-white border-[2px] w-36 bg-gradient-to-r from-private to-vintage " >
                                 <Link
                                 to={"/About"}
                                 >About us</Link>
-                            </button>
+                            </button> */}
+
+                            
                         </div>
                     </div>
             </div>

@@ -31,3 +31,9 @@ button{
     -webkit-tap-highlight-color: transparent !important;
     outline: none !important;
 }
+.values{
+    background-image: url(../src/assets/images/about.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
