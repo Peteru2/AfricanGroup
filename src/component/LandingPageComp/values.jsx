@@ -11,42 +11,61 @@ const Values = () => {
                                     <h2 className="text-white text-4xl text-center my-6 mb-10 font-roboto">P R C Q</h2>
                         <div className="grid md:grid-cols-4 grid-cols-1 gap-4">
 
-                        <div className="">
+                        <motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        transition={{ delay: 0.4, 
+                        staggerChildren: 2}}
+                         className="">
                             <div className="flex w-full  text-5xl justify-center text-center font-bold">
                                 <h2><i className="fa fa-check-circle text-white border-2 rounded-full border-white text-center "></i></h2>
                                 
                                 </div>
                                     <h2 className="font-lora font-bold text-2xl my-4 text-white text-center">Quality</h2>
                                     <h4 className="text-[17px] font-roboto text-white text-center">Professionalism is the cornerstone of our operations at NY Land Surveyor. We maintain the highest level of professional conduct in all aspects of our work, upholding ethical standards and adhering to industry best practices. Our team is composed of licensed professionals who possess the expertise and knowledge required to handle complex surveying projects with utmost professionalism. </h4>
-                                </div>
+                                </motion.div>
                            
 
-                            <div className="  ">
+                            <motion.div className="  "
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            transition={{ delay: 0.5, 
+                            staggerChildren: 2}}
+                            >
                             <div className="flex w-full  text-5xl justify-center text-center font-bold">
                                 <h2><i className="fa fa-check-circle text-white border-2 rounded-full border-white text-center "></i></h2>
                                 
                                 </div>
                                     <h2 className="font-lora font-bold text-2xl my-4 text-white text-center">Quality</h2>
                                     <h4 className="text-[17px] font-roboto text-white text-center">Professionalism is the cornerstone of our operations at NY Land Surveyor. We maintain the highest level of professional conduct in all aspects of our work, upholding ethical standards and adhering to industry best practices. Our team is composed of licensed professionals who possess the expertise and knowledge required to handle complex surveying projects with utmost professionalism. </h4>
-                                </div>
+                                </motion.div>
                         
-                                <div className="  ">
+                                <motion.div className="  "
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                transition={{ delay: 0.6, 
+                                staggerChildren: 2}}
+                                >
                             <div className="flex w-full  text-5xl justify-center text-center font-bold">
                                 <h2><i className="fa fa-check-circle text-white border-2 rounded-full border-white text-center "></i></h2>
                                 
                                 </div>
                                     <h2 className="font-lora font-bold text-2xl my-4 text-white text-center">Quality</h2>
                                     <h4 className="text-[17px] font-roboto text-white text-center">Professionalism is the cornerstone of our operations at NY Land Surveyor. We maintain the highest level of professional conduct in all aspects of our work, upholding ethical standards and adhering to industry best practices. Our team is composed of licensed professionals who possess the expertise and knowledge required to handle complex surveying projects with utmost professionalism. </h4>
-                                </div>
+                                </motion.div>
 
-                                <div className="  ">
+                                <motion.div className="  "
+                                initial={{ opacity: 0 }}
+                                whileInView={{ opacity: 1 }}
+                                transition={{ delay: 0.7, 
+                                staggerChildren: 2}}>
                             <div className="flex w-full  text-5xl justify-center text-center font-bold">
                                 <h2><i className="fa fa-check-circle text-white border-2 rounded-full border-white text-center "></i></h2>
                                 
                                 </div>
                                     <h2 className="font-lora font-bold text-2xl my-4 text-white text-center">Quality</h2>
                                     <h4 className="text-[17px] font-roboto text-white text-center">Professionalism is the cornerstone of our operations at NY Land Surveyor. We maintain the highest level of professional conduct in all aspects of our work, upholding ethical standards and adhering to industry best practices. Our team is composed of licensed professionals who possess the expertise and knowledge required to handle complex surveying projects with utmost professionalism. </h4>
-                                </div>
+                                </motion.div>
 
                                 </div>
                                 <div className="flex justify-center mt-16">

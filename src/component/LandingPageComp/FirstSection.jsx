@@ -83,16 +83,17 @@ const FirstSection = () => {
                 <div style={{ 'backgroundImage': `url(${image.img}) `,  "backgroundSize":"cover", "width":"100%" }}>
                     {/* <span>{`Slide ${index + 1}`}</span> */}
                     <div className='md:pt-32 pt-32   pb-72 md:px-14 px-6  bg-public bg-opacity-40'>
-                    <motion.p 
-                    initial ={{x: "-100vw"}}
+                    <motion.h2 
+                    initial ={{x: "100vw"}}
                     animate ={{x: 0}}
-                    transition={{ delay: 0.5, stiffness: 300, type: "spring" }}
-                    style ={{fontFamily:"'SangBleuSans', sans-serif"}}className="text-white text-2xl md:ml-6 font-roboto">CREDIT RATING <span className='text-private'>BBB</span></motion.p>
+                    transition={{ delay: 0.5, stiffness: 200, type: "spring" }}
+                    style ={{fontFamily:"'SangBleuSans', sans-serif"}}className="text-white text-2xl md:ml-6 font-roboto">CREDIT RATING <span className='text-private'>BBB</span></motion.h2>
         
                         <motion.div 
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ delay: 1 }}
+                        transition={{ delay: 1, 
+                        staggerChildren: 2 }}
                         className='md:mx-24 mx-0 my-10'>
                             <motion.p 
                             initial ={{y: -250}}
@@ -120,29 +121,44 @@ const FirstSection = () => {
         ))}
     </Slide>
     </section>
-    <section className="xl:mx-6 md:mx-0 mx-6 my-10">
+    <motion.section 
+    initial={{ opacity: 0 }}
+    whileInView={{ opacity: 1 }}
+    transition={{ delay: 0.5, 
+    staggerChildren: 2}}
+    className="xl:mx-6 md:mx-0 mx-6 my-10">
             <div className="mt-24 mb-4">
                 <h2 className="text-private  tracking-widest pb-4 border-b-[1px] border-black w-full">OUR STORY</h2>
 
                 <h4 className="font-roboto text-[18px] mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga assumenda dolore soluta labore nobis, voluptate illum, non reprehenderit necessitatibus, eaque aspernatur itaque officiis? Non dolorum eos ex exercitationem distinctio. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum saepe quam voluptates, excepturi nihil commodi quisquam, totam molestias dolore deleniti consequatur. Fugiat esse dolorem quibusdam illo ea. Iusto praesentium vitae cupiditate. Esse quaerat a, perspiciatis, sapiente non ullam qui praesentium sint beatae, magni eveniet illum! Quos eaque sit harum enim esse. Vel amet harum illo a delectus maxime soluta rem repudiandae necessitatibus ducimus quod labore reprehenderit facere qui nostrum animi vitae, praesentium optio molestiae ipsam in dolorem doloremque! Itaque, quibusdam!</h4>
             </div>
             <div className="grid md:grid-cols-2 font-serif grid-cols-1 gap-6 mt-20 w-full flex-wrap">
-                <div className="grid md:grid-cols-3 grid-cols-1 md:mt-6 mt-0 gap-4 ">
-                    <div className="">
-                        <h2 className='text-private text-3xl font-lora my-2'>35</h2>
-                        <h4>COMPLETED PROJECTS ACROSS THE WORLD</h4>
-                    </div>
-                    <div className="">
-                    <h2 className='text-private text-3xl font-lora my-2'>800k +</h2>
-                        <h4>LAND SURVEY ACROSS THE WORLD</h4>
-                    </div>
+                <motion.div 
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ delay: 0.5, 
+                    staggerChildren: 2}}
+                className="grid md:grid-cols-3 grid-cols-1 md:mt-6 mt-0 gap-4 ">
+                            <div className="">
+                                <h2 className='text-private text-3xl font-lora my-2'>35</h2>
+                                <h4>COMPLETED PROJECTS ACROSS THE WORLD</h4>
+                            </div>
+                            <div className="">
+                            <h2 className='text-private text-3xl font-lora my-2'>800k +</h2>
+                                <h4>LAND SURVEY ACROSS THE WORLD</h4>
+                            </div>
 
-                    <div className="">
-                    <h2 className='text-private text-3xl font-lora my-2'>5</h2>
-                        <h4>GLOBAL AWARDS </h4>
-                    </div>
-                    </div>
-                    <div className="">
+                            <div className="">
+                            <h2 className='text-private text-3xl font-lora my-2'>5</h2>
+                                <h4>GLOBAL AWARDS </h4>
+                            </div>
+                    </motion.div>
+                    <motion.div
+                    initial={{ opacity: 0 }}
+                    whileInView={{ opacity: 1 }}
+                    transition={{ delay: 0.5, 
+                    staggerChildren: 2}}
+                    className="">
                         <h4 className="font-lora">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio amet, culpa in ab consectetur itaque sed, perspiciatis inventore id expedita distinctio et aperiam. Ea, expedita asperiores iure, velit blanditiis pariatur facilis quisquam iste repellendus dolorem id! Voluptatum ab consequatur velit, asperiores molestiae laudantium perferendis ratione? Nemo, numquam quis non odit accusantium eligendi et excepturi explicabo reprehenderit officia obcaecati fuga delectus molestias aliquid vel dolor iure neque quidem ex inventore impedit repudiandae similique, nostrum eveniet. Architecto cumque fugiat nisi voluptatum!
                         </h4>
@@ -157,9 +173,9 @@ const FirstSection = () => {
 
                             
                         </div>
-                    </div>
+                    </motion.div>
             </div>
-    </section>
+    </motion.section>
     </>
     );
 };
