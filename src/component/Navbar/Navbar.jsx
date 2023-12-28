@@ -58,12 +58,12 @@ const location = useLocation()
           return (
             <li className="nav-list" key={index}>
               <Link
-                className={`flex w-full  `}
+                className={`flex w-full`}
                 to={item.url}
                 
                 
               >
-                <span  className={`${isActive? 'text-private text-small font-bold':""}`}>{item.title}</span>
+                <span  className={` ${isActive? 'text-private font-bold':""}`}>{item.title}</span>
               </Link>
             </li>
           );

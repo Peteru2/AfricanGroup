@@ -83,7 +83,11 @@ const FirstSection = () => {
                 <div style={{ 'backgroundImage': `url(${image.img}) `,  "backgroundSize":"cover", "width":"100%" }}>
                     {/* <span>{`Slide ${index + 1}`}</span> */}
                     <div className='md:pt-32 pt-32   pb-72 md:px-14 px-6  bg-public bg-opacity-40'>
-                    <p style ={{fontFamily:"'SangBleuSans', sans-serif"}}className="text-white text-2xl md:ml-6 font-roboto">CREDIT RATING <span className='text-private'>BBB</span></p>
+                    <motion.p 
+                    initial ={{x: "-100vw"}}
+                    animate ={{x: 0}}
+                    transition={{ delay: 0.5, stiffness: 300, type: "spring" }}
+                    style ={{fontFamily:"'SangBleuSans', sans-serif"}}className="text-white text-2xl md:ml-6 font-roboto">CREDIT RATING <span className='text-private'>BBB</span></motion.p>
         
                         <motion.div 
                         initial={{ opacity: 0 }}
@@ -91,12 +95,14 @@ const FirstSection = () => {
                         transition={{ delay: 1 }}
                         className='md:mx-24 mx-0 my-10'>
                             <motion.p 
-                            initial ={{y: 250}}
+                            initial ={{y: -250}}
                             animate ={{y: -10}}
-                        transition={{ delay: 2 }}
+                            transition={{ delay: 1.5, stiffness: 300, type: "spring" }
+                           
+                    }
                             
 
-                            className='text-white tracking-widest font-serif font-bold font-lora mt-28'>Featured Project</motion.p>
+                            className='text-white tracking-[10px] font-serif font-bold font-lora mt-28'>Featured Project</motion.p>
                             <p className=' text-white my-6 md:text-5xl text-4xl font-bold font-roboto'>Queen Alima <br />By AfricanGroup</p>
                        
                             <div className='text-white flex flex-wrap text-small font-serif'>
@@ -141,11 +147,13 @@ const FirstSection = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio amet, culpa in ab consectetur itaque sed, perspiciatis inventore id expedita distinctio et aperiam. Ea, expedita asperiores iure, velit blanditiis pariatur facilis quisquam iste repellendus dolorem id! Voluptatum ab consequatur velit, asperiores molestiae laudantium perferendis ratione? Nemo, numquam quis non odit accusantium eligendi et excepturi explicabo reprehenderit officia obcaecati fuga delectus molestias aliquid vel dolor iure neque quidem ex inventore impedit repudiandae similique, nostrum eveniet. Architecto cumque fugiat nisi voluptatum!
                         </h4>
                         <div className="mt-8">
-                            {/* <button className="p-2 rounded-[30px] border-private hover:bg-private text-white text-center transition ease-in-out delay-150 duration-900 font-bold hover:border-white border-[2px] w-36 bg-gradient-to-r from-private to-vintage " >
+                             <motion.button 
+                             
+                             className="btnValueCore" >
                                 <Link
                                 to={"/About"}
-                                >About us</Link>
-                            </button> */}
+                                >About us</Link> 
+                            </motion.button> 
 
                             
                         </div>

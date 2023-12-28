@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Values = () => {
     return ( 
@@ -48,8 +49,11 @@ const Values = () => {
                                 </div>
 
                                 </div>
-                                <div className="flex justify-center mt-10">
-                                    <button className="w-28 py-2 text-white border-white rounded-full  border-[1px]"> <Link to={'/About'}>About Us </Link> </button>
+                                <div className="flex justify-center mt-16">
+                                    <motion.button
+                                    whileHover={{scale: 1.3}}
+                                     transition={{type:"spring", stiffness:200}}
+                                 className="w-28 py-2 text-white border-white rounded-full  border-[1px]"> <Link to={'/About'}>About Us </Link> </motion.button>
                                 </div>
                                 <div className="w-full flex justify-center mt-16">
                                 <div className="w-[.5px] h-28 bg-gray  ">

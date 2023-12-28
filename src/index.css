@@ -6,7 +6,17 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body{
-    background: rgba(241, 239, 239, 0.6); 
-    /* overflow-x: hidden */
+  background: rgba(241, 239, 239, 0.6); 
+  /* overflow-x: hidden */
 }
+
+
+  .btnValueCore {
+      @apply p-2 rounded-[30px] border-private hover:bg-private text-white text-center transition ease-in-out delay-150  font-bold hover:border-white border-[2px] w-36 bg-gradient-to-r from-private to-vintage
+  }
+  .navMenu::after{
+        @apply content-[''] bg-white h-[3px] w-[100%] left-0 -bottom-[5px] rounded-xl absolute
+  }
+
