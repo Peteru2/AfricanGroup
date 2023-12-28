@@ -1,5 +1,6 @@
 import Footer from "../component/Footer";
 import FirstSection from "../component/LandingPageComp/FirstSection";
+import Services from "../component/LandingPageComp/Services";
 import Testimonials from "../component/LandingPageComp/Testimonials";
 import Values from "../component/LandingPageComp/values";
 import Navbar from "../component/Navbar/Navbar";
@@ -12,6 +13,7 @@ const Landing = () => {
             <section>
                 <Navbar />
                 <FirstSection />
+                <Services />
                 <Testimonials />
                 <Values />
                 <div className="text-3xl  mt-20">

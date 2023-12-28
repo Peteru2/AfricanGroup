@@ -1,5 +1,7 @@
 import "../style.css"
 import Navbar from "../component/Navbar/Navbar";
+import Chat from "../component/SideChat";
+import Footer from "../component/Footer";
 import { motion } from "framer-motion";
 const About = () => {
     return ( 
@@ -77,6 +79,8 @@ const About = () => {
                     </div>
                 </div>
         </section>
+        <Chat />
+            <Footer />
         </>
      );
 }
