@@ -74,22 +74,14 @@ mark{
     font-weight:800;
     text-transform: capitalize;
     color: black
+}  
+.text-container{
+    max-width: 100%;
+    margin: 0px 10px
 }
-
-.loading-container {
-    position: relative;
-    width: 150px;
-    height: 150px;
-    display: inline-block;
-    display: flex;
-  }
-  
-  
-  
-  
   .animated-text {
-    display: inline-block;
-    overflow: hidden;
+    /* display: inline-block; */
+   
     white-space: nowrap;
     margin: 0;
     letter-spacing: 0.15em; /* Adjust the letter spacing */
@@ -110,9 +102,11 @@ mark{
   }
   .blink-text{
     /* display: inline-block; */
+
     overflow: hidden;
-    white-space: nowrap;
+  white-space: nowrap;
     margin: 0;
+    max-width: 100%;
     letter-spacing: 0.15em; /* Adjust the letter spacing */
     animation:
       typing 3s steps(25, end)

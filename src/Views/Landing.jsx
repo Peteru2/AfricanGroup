@@ -6,12 +6,25 @@ import Testimonials from "../component/LandingPageComp/Testimonials";
 import Values from "../component/LandingPageComp/values";
 import Navbar from "../component/Navbar/Navbar";
 import Chat from "../component/SideChat";
+import { useEffect,useState } from "react";
 // import "../style.css"
 
 const Landing = () => {
+    const [loading, setLoading] = useState(true);
+  
+    useEffect(() => {
+      // Simulate loading delay for 2 seconds
+      setTimeout(() => {
+        setLoading(false);
+      }, 3000);
+    }, []);
+
     return ( 
-        <>
-            {/* <section>
+       <>
+
+{loading ? <LoadingComponent /> : (
+    <>
+             <section>
                 <Navbar />
                 <FirstSection />
                 <Services />
@@ -24,9 +37,10 @@ const Landing = () => {
                 </div>
             </section>
             <Chat />
-            <Footer /> */}
-            <LoadingComponent />
-        </>
+            <Footer />
+            </> 
+            )}
+       </>
      );
 }
  
