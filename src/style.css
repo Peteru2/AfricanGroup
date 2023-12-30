@@ -82,7 +82,6 @@ mark{
   .animated-text {
     /* display: inline-block; */
     overflow: hidden;
-   
     white-space: nowrap;
     margin: 0;
     letter-spacing: 0.15em; /* Adjust the letter spacing */
@@ -98,18 +97,20 @@ mark{
     100% { color: #008000; }
   }
   .blink-text{
-    /* display: inline-block; */
+    
     overflow: hidden;
     white-space: nowrap;
-    visibility: hidden;
+    /* visibility: hidden; */
     margin: 0;
+    width: 0;
     max-width: 100%;
     letter-spacing: 0.15em; 
     animation:
-      typing 3s steps(25, end) 5s
+      typing 3s steps(25, end) 5s forwards
   }
   @keyframes typing {
-    from { width: 0; visibility: visible; }
-    to { width: 100%; visibility: visible; }
+    from { width: 0; 
+        visibility: visible; }
+    to { width: 100%; }
   }
   
