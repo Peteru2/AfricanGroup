@@ -1,5 +1,6 @@
 import Footer from "../component/Footer";
 import FirstSection from "../component/LandingPageComp/FirstSection";
+import LoadingComponent from "../component/LandingPageComp/Load";
 import Services from "../component/LandingPageComp/Services";
 import Testimonials from "../component/LandingPageComp/Testimonials";
 import Values from "../component/LandingPageComp/values";
@@ -10,7 +11,7 @@ import Chat from "../component/SideChat";
 const Landing = () => {
     return ( 
         <>
-            <section>
+            {/* <section>
                 <Navbar />
                 <FirstSection />
                 <Services />
@@ -23,7 +24,8 @@ const Landing = () => {
                 </div>
             </section>
             <Chat />
-            <Footer />
+            <Footer /> */}
+            <LoadingComponent />
         </>
      );
 }
