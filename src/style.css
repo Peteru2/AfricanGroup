@@ -81,19 +81,16 @@ mark{
 }
   .animated-text {
     /* display: inline-block; */
+    overflow: hidden;
    
     white-space: nowrap;
     margin: 0;
     letter-spacing: 0.15em; /* Adjust the letter spacing */
     animation:
-      
-       change-color 4s infinite; /* Start blinking after 3 seconds */
+    typing 6s steps(25, end),
+    change-color 4s infinite; /* Start blinking after 3 seconds */
   }
   
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
   
   @keyframes change-color {
     0%, 25% { color: white; }
@@ -102,17 +99,17 @@ mark{
   }
   .blink-text{
     /* display: inline-block; */
-
     overflow: hidden;
-  white-space: nowrap;
+    white-space: nowrap;
+    visibility: hidden;
     margin: 0;
     max-width: 100%;
     letter-spacing: 0.15em; /* Adjust the letter spacing */
     animation:
-      typing 3s steps(25, end)
+      typing 3s steps(25, end) 5s
   }
   @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
+    from { width: 0; visibility: visible; }
+    to { width: 100%; visibility: visible; }
   }
   

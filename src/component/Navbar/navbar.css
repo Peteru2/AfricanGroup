@@ -133,26 +133,24 @@ a, LINK {
         width: 0px;
         height: auto;
         position: absolute;
-        top: 0;
+        top: 0px;
         /* left:100px; */
         display: flex;
         opacity: 0;
         align-items: stretch;
         flex-direction: column;
         justify-content: flex-start;
-        padding: 80px 0 30px 0;
+        padding: 40px 0 30px 0;
         margin: 0;
         z-index: -1;
-        transition: 0.3s ease-in-out;
+        transition:0.3s ease-in-out;
         margin-left: 0px;
         -webkit-tap-highlight-color: transparent !important;
         outline: none !important;
         visibility: hidden;
     }
 
-    .Contact{
-            display: block
-    }
+   
     
     .nav-menu.active{
         width: 100%;
@@ -162,7 +160,7 @@ a, LINK {
         z-index: 1;
         visibility: visible;
         padding: 20px;
-        padding-top: 110px
+        padding-top: 100px
         
 
     }
@@ -174,14 +172,19 @@ a, LINK {
         width: 100%;
         padding:  20px;
         align-items: left;
-        font-size: 20px;
+        font-size: 30px;
         margin: 0px;
-        
+        transition: opacity 0.3s ease-in-out 2s;
     }
-    .nav-links:hover{
-                color:rgba(0, 0, 255,.5);
-                border: none
-    }
+    
+    .nav-menu.active .nav-links {
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out; /* Add transition property for opacity */
+      }
+
+      .Contact{
+        display: block
+}
     .nav-list:hover{
         border:none
     }
@@ -192,13 +195,6 @@ a, LINK {
     .nav-menu{
     grid-gap: 00px;
 
-    }
-    .nav-side{
-        margin-left: 1%;
-        padding: 8px 0px;
-        color:rgb(57, 87, 219);
-        justify-content: center;
-       
     }
     .menu-icon{
         /* padding-top: 38px; */

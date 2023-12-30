@@ -63,7 +63,7 @@ const location = useLocation()
                 
                 
               >
-                <span  className={` ${isActive? 'text-private font-bold':""}`}>{item.title}</span>
+                <span  className={`text-[19px] md:text-[17px] ${isActive? 'text-private font-bold':""}`}>{item.title}</span>
               </Link>
             </li>
           );
