@@ -60,6 +60,7 @@ const location = useLocation()
               <Link
                 className={`flex w-full`}
                 to={item.url}
+                className="navLinks"
                 
                 
               >

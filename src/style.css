@@ -104,7 +104,7 @@ mark{
     visibility: hidden;
     margin: 0;
     max-width: 100%;
-    letter-spacing: 0.15em; /* Adjust the letter spacing */
+    letter-spacing: 0.15em; 
     animation:
       typing 3s steps(25, end) 5s
   }
