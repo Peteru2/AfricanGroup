@@ -11,7 +11,7 @@ const Footer = () => {
 
                     </div>
                     <div className="col-span-4 md:col-span-1">
-                        <h2 className="mb-6 text-2xl">USEFUL LINKS</h2>
+                        <h2 className="mb-6 md:text-[22px] text-[18px]">USEFUL LINKS</h2>
 
                         <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out delay-150 duration-900">Blog </button></h4>
                         <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out delay-150 duration-900">Contact</button></h4>
@@ -19,7 +19,7 @@ const Footer = () => {
 
                     </div>
                     <div className="col-span-2">
-                        <h2 className="mb-6 text-2xl">CONTACT INFO</h2>
+                        <h2 className="mb-6 md:text-[22px] text-[18px]">CONTACT INFO</h2>
                         <h4 className="my-2"><i className="fa fa-building mr-2"></i> Union Bank Road, Owode, Oyo, Nigeria</h4>
                         <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out delay-150 duration-900"><i className="fa fa-phone mr-2"></i>+234 076 4255 373 </button></h4>
                         <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out delay-150 duration-900"><i className="fa fa-envelope mr-2"></i>africangroup@gmail.com</button></h4>
@@ -28,7 +28,7 @@ const Footer = () => {
                     </div>
 
                     <div className="col-span-4">
-                        <h2 className="mb-6 font-serif text-2xl">CAREERS</h2>
+                        <h2 className="mb-6 font-serif md:text-[22px] text-[18px]">CAREERS</h2>
                         <h4>We are constantly in quest of talented, passion-driven folks with a tenacity for excellence.</h4>
                     </div>                
                     </div>

@@ -14,7 +14,7 @@ const NavMenu =
             },
             {
                 title : "BLOG",
-                url: "k",
+                url: "/Blog",
                 cName : "nav-links",
                 icon: "fa fa-chevron-down",
             },
