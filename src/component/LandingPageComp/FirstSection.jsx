@@ -32,7 +32,7 @@ const FirstSection = () => {
     };
     if (window.innerWidth <= 767) {
         // Adjust the marginTop for mobile devices
-        buttonStyle.marginTop = '480px';
+        buttonStyle.marginTop = '320px';
         buttonStyle.marginRight= '0px';
         buttonStyle.marginLeft='0px';
         buttonStyle.width= '45px';
@@ -46,12 +46,16 @@ const FirstSection = () => {
         {
             img: [
                 Image1,
-            ]
+                
+            ],
+            title:"Featured Project"
         },
         {
             img: [
                 Image1,
-            ]
+            ],
+            title:"About",
+            link: "/About"
         },
     ]
     
@@ -82,19 +86,19 @@ const FirstSection = () => {
              <div   className="each-slide-effect" key={index}>
                 <div style={{ 'backgroundImage': `url(${image.img}) `,  "backgroundSize":"cover", "width":"100%" }}>
                     {/* <span>{`Slide ${index + 1}`}</span> */}
-                    <div className='md:pt-32 pt-32   pb-72 md:px-14 px-6  bg-public bg-opacity-40'>
+                    <div className='md:pt-32 pt-[90px]   md:pb-72 pb-[70px] md:px-14 px-6  bg-public bg-opacity-40'>
                     <motion.h2 
                     initial ={{x: "100vw"}}
                     animate ={{x: 0}}
                     transition={{ delay: 0.5, stiffness: 200, type: "spring" }}
-                    style ={{fontFamily:"'SangBleuSans', sans-serif"}}className="text-white text-2xl md:ml-6 font-roboto">CREDIT RATING <span className='text-private'>BBB</span></motion.h2>
+                    style ={{fontFamily:"'SangBleuSans', sans-serif"}}className="text-white text-[17px] md:text-2xl md:ml-6 font-roboto">CREDIT RATING <span className='text-private font-bold'>BBB</span></motion.h2>
         
                         <motion.div 
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 1, 
                         staggerChildren: 2 }}
-                        className='md:mx-24 mx-0 my-10'>
+                        className='md:mx-24 mx-0 mt-[60px]'>
                             <motion.p 
                             initial ={{y: -250}}
                             animate ={{y: -10}}
@@ -103,8 +107,10 @@ const FirstSection = () => {
                     }
                             
 
-                            className='text-white tracking-[10px] font-serif font-bold font-lora mt-28'>Featured Project</motion.p>
-                            <p className=' text-white my-6 md:text-5xl text-4xl font-bold font-roboto'>Queen Alima <br />By AfricanGroup</p>
+                            className='text-white tracking-[4px] font-serif font-bold font-lora mt-[0px]'>{image.title}</motion.p>
+                           <p className='text-white my-4 md:text-5xl text-2xl font-bold break-words md:w-[350px] font-roboto'>
+  Queen Alima By AfricanGroup
+</p>
                        
                             <div className='text-white flex flex-wrap text-small font-serif'>
                                 <p className="max-w-full">
@@ -112,9 +118,15 @@ const FirstSection = () => {
                             </p>
                     
                             </div>
-                        </motion.div>
-                  
+                            <Link to={image.link}>
+                        <div className='bg-private rounded-full md:mt-8 mt-6 flex justify-center items-center text-white w-12 h-12'>
+                            <i className='fa fa-arrow-right'></i>
                     </div>
+                    </Link>
+                        </motion.div>
+                        
+                    </div>
+                    
                 </div>
                 </div>
             </div>
