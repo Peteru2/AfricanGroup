@@ -35,7 +35,7 @@ const Services = () => {
                 </div>
                 <div className="flex justify-center">
                         <div className="grid md:grid-cols-3 mt-4 md:mt-0 w-[1100px] gap-6 my-4  mx-6 md:mx-0">
-                        <Bounce cascade direction=""> 
+                        <Bounce cascade triggerOnce direction=""> 
                                 <motion.div 
                                   whileHover={{scale: 0.9}}
                                   transition={{type:"spring", stiffness:200}}
