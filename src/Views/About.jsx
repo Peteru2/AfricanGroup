@@ -3,6 +3,7 @@ import Navbar from "../component/Navbar/Navbar";
 import Chat from "../component/SideChat";
 import Footer from "../component/Footer";
 import { motion } from "framer-motion";
+import NewsLetter from "../component/NewsLetter";
 const About = () => {
     return ( 
         <>
@@ -39,7 +40,7 @@ const About = () => {
                     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.5 }}
      // Animation settings
                                 
                          className="bg-white w-[550px] md:mx-6  my-4 md:p-10 p-5">
@@ -54,7 +55,7 @@ const About = () => {
                         <motion.div 
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}
-                        transition={{ delay: 0.8, 
+                        transition={{ delay: 0.6, 
                          }}
                         className="bg-white w-[550px] md:mx-6 my-4 md:p-10 p-5">
                         <div className="flex w-full mb-7 md:text-6xl  text-4xl font-bold">
@@ -68,7 +69,7 @@ const About = () => {
                         <motion.div 
                          initial={{ opacity: 0 }}
                          whileInView={{ opacity: 1 }}
-                         transition={{ delay: 0.8, }}
+                         transition={{ delay: 0.7, }}
                         className="bg-white w-[550px] md:mx-6 my-4 md:p-10 p-5">
                         <div className="flex w-full mb-7 md:text-6xl l text-4xl font-bold">
                                 <h2><i className="fa fa-comments text-private"></i></h2>
@@ -92,6 +93,7 @@ const About = () => {
                     </div>
                 </div>
         </section>
+        <NewsLetter />
         <Chat />
             <Footer />
         </>
