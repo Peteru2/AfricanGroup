@@ -93,8 +93,8 @@ const About = () => {
                     </div>
                 </div>
         </section>
-        <NewsLetter />
         <Chat />
+        <NewsLetter />
             <Footer />
         </>
      );
