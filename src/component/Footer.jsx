@@ -3,7 +3,7 @@ import Logo from "../assets/images/AFLOG.jpg"
 const Footer = () => {
     return ( 
         <>
-            <section className="  bg-public bg-opacity-90 px-6 md:py-9 py-2 mt-0 w-full font-roboto text-white text-[15px] font-bold">
+            <section className="  bg-public bg-opacity-90 px-6 md:py-9   pb-12 mt-0 w-full font-roboto text-white text-[15px] font-bold">
                 <div className="grid md:grid-cols-9 md:py-10 py-2 grid-cols-1 gap-4 border-b-[1px] border-white ">
                     <div className="col-span-2 w-full border-b-[1px]  md:py-0 py-4 border-white md:border-0">
                        
