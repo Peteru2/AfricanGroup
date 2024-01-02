@@ -171,8 +171,10 @@ const FirstSection = () => {
                     transition={{ delay: 0.5, 
                     staggerChildren: 2}}
                     className="">
-                        <h4 className="font-lora">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio amet, culpa in ab consectetur itaque sed, perspiciatis inventore id expedita distinctio et aperiam. Ea, expedita asperiores iure, velit blanditiis pariatur facilis quisquam iste repellendus dolorem id! Voluptatum ab consequatur velit, asperiores molestiae laudantium perferendis ratione? Nemo, numquam quis non odit accusantium eligendi et excepturi explicabo reprehenderit officia obcaecati fuga delectus molestias aliquid vel dolor iure neque quidem ex inventore impedit repudiandae similique, nostrum eveniet. Architecto cumque fugiat nisi voluptatum!
+                        <h4 className="font-lora text-[15px]">
+                        AFRICAN GROUP Nigeria, is a sole Nigerian Group ofCompanies existing over eight years, which was incorporatedin 2020; for the purpose of providing first class services in theareas of: Surveying & Mapping, Real Estate, Construction & Agricultural services.
+                        <br />
+                        The company is driven by a group of highly trained,experienced, self-motivated, and very dynamic Professionalsequipped to handle various categories of projects; LAND & ENGINEERING SURVEYING, MAPPING & GEO-DATA, ARCHITECTURAL DESIGNS, REAL ESTATE, CIVILCONSTRUCTION, AGRO, SITE CLEARING & GROUND LEVELLING, DRILLING, ELECTRICALENGINEERING, INTERIOR & EXTERIOR FINISHING,and PROJECT MANAGEMENT.
                         </h4>
                         <div className="mt-8">
                              <motion.button 

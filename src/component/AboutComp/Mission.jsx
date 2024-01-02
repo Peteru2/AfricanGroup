@@ -21,14 +21,20 @@ const Mission = () => {
                                         <h2 className="h-2 w-2 rounded-full bg-private mr-4"></h2>
                                         <h2 className="my-3 tracking-[3px]">OUR MISSION</h2>
                                     </div>
-                                    <h4 className="text-[15px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem assumenda, nobis expedita voluptatem consequatur ducimus laborum amet, aliquam architecto vero tenetur et, sint natus sequi? Laudantium earum vitae beatae qui. Dolorum natus labore dolorem, voluptate molestias laborum, blanditiis eligendi quam deserunt optio harum in error, unde alias sunt dolor x1</h4>
+                                    <h4 className="text-[15px] mb-6">
+                        
+                         </h4>
+                       
                                 </div>
                             </div>
 
                             
                         </div>
                         <div className="text-[15px]">
-                            <h4>Sujimoto is Nigeria’s foremost luxury real estate and construction company that is dedicated to redefining the luxury real estate industry with transformative experiences through intricately designed architecture.</h4>
+                            <h4>AFRICAN GROUP Nigeria, is a sole Nigerian Group ofCompanies existing over eight years, which was incorporatedin 2020; for the purpose of providing first class services in theareas of: Surveying & Mapping, Real Estate, Construction & Agricultural services.</h4>
+                            <h4 className="text-[15px] my-6">
+                        The company is driven by a group of highly trained,experienced, self-motivated, and very dynamic Professionalsequipped to handle various categories of projects; LAND & ENGINEERING SURVEYING, MAPPING & GEO-DATA, ARCHITECTURAL DESIGNS, REAL ESTATE, CIVILCONSTRUCTION, AGRO, SITE CLEARING & GROUND LEVELLING, DRILLING, ELECTRICALENGINEERING, INTERIOR & EXTERIOR FINISHING,and PROJECT MANAGEMENT.
+                        </h4>
                         </div>
                         <div>
 

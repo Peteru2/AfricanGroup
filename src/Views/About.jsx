@@ -7,6 +7,7 @@ import NewsLetter from "../component/NewsLetter";
 import CompanyValues from "../component/AboutComp/CompanyValues";
 import BackgroundImgWord from "../component/AboutComp/BackgroundImgAndWord";
 import Mission from "../component/AboutComp/Mission";
+import Team from "../component/AboutComp/Team";
 const About = () => {
     return ( 
         <>
@@ -15,11 +16,13 @@ const About = () => {
             <BackgroundImgWord />
             <Mission />
             <CompanyValues />
+            <Team />
 
         </section>
-        <Chat />
-        <NewsLetter />
+        {/* <NewsLetter /> */}
             <Footer />
+        <Chat />
+
         </>
      );
 }

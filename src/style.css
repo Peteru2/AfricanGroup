@@ -26,6 +26,7 @@ a, LINK {
     position: fixed;
     bottom: 16px;
     right: 15px;
+    z-index: 9999;
 }
 button{
     -webkit-tap-highlight-color: transparent !important;
@@ -113,4 +114,14 @@ mark{
         visibility: visible; }
     to { width: 100%; }
   }
-  
+  .footer{
+    position: relative
+  }
+  .footer-child{
+    position: absolute;
+    top: -125px;
+    /* left: 0px; */
+    margin:20px 0px
+   
+    
+}

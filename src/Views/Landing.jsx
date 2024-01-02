@@ -33,7 +33,7 @@ const Landing = () => {
                 <Values />
             </section>
             <Chat />
-            <NewsLetter />
+            {/* <NewsLetter /> */}
 
             <Footer />
             </> 
