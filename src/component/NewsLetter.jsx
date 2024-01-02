@@ -10,7 +10,7 @@ const NewsLetter = () => {
                 <div className="md:ml-auto  flex items-center"> 
                 <div className="md:ml-auto md:w-auto w-full grid md:grid-cols-2 grid-cols-1 gap-2 ">
                     <input type="email" className="px-2 py-4 text-black outline-none" placeholder="Email"/>
-                    <button className=" font-roboto  bg-public border-white py-2  text-center  hover:text-public hover:bg-white  transition ease-in-out  duration-300">Subscribe</button>
+                    <button className=" font-roboto  bg-public border-white border-2 py-4  text-center  hover:text-public hover:bg-white hover:border-public  transition ease-in-out  duration-300">Subscribe</button>
                     </div>
                 </div>
                

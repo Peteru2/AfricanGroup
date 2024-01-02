@@ -6,6 +6,7 @@ import Landing from './Views/Landing'
 import About from './Views/About'
 import BlogList from './component/BlogComp/BlogLists';
 import BlogPost from './component/BlogComp/BlogPost';
+import Team from './component/Team/Team';
 
 
 function App() {
@@ -19,6 +20,8 @@ function App() {
           <Route path={'/'} element={<Landing />} />
           <Route path={'/About'} element={<About />} />
           <Route path={'/Blog'} element={<BlogList />} />
+          <Route path={'/About/Team'} element={<Team />} />
+
           <Route path="/blog/:id" element={<BlogPost />} />
         </Routes>
         </Router>

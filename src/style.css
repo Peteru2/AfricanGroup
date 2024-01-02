@@ -125,3 +125,8 @@ mark{
    
     
 }
+.TeamBackGroundImg{
+    background-image: url(../src/assets/images/TeamImg.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

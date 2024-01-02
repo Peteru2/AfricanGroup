@@ -20,8 +20,8 @@ const About = () => {
 
         </section>
         {/* <NewsLetter /> */}
-            <Footer />
         <Chat />
+            <Footer />
 
         </>
      );
