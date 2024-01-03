@@ -8,7 +8,19 @@ const Team = () => {
             office: "Founder & CEO",
             description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nostrum ipsum unde dolores, quaerat fugiat vel ducimus ullam modi doloremque quae aut labore rerum commodi illo deserunt, voluptates sequi cumque.",
             img: TeamImg 
-        }
+        },
+        {
+            name:"Olatunji Peter",
+            office: "Founder & CEO",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nostrum ipsum unde dolores, quaerat fugiat vel ducimus ullam modi doloremque quae aut labore rerum commodi illo deserunt, voluptates sequi cumque.",
+            img: TeamImg 
+        },
+        {
+            name:"Olatunji Peter",
+            office: "Founder & CEO",
+            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nostrum ipsum unde dolores, quaerat fugiat vel ducimus ullam modi doloremque quae aut labore rerum commodi illo deserunt, voluptates sequi cumque.",
+            img: TeamImg 
+        },
 ]
     return ( 
         <>
@@ -39,77 +51,35 @@ const Team = () => {
                     {TeamFirstData.map((data, index)=>{
                             return(
                                 <>
-                <div className="grid md:grid-cols-2 grid-cols-1 ">
+               <div className="grid md:grid-cols-1 xl:grid-cols-2 grid-cols-1">
+  <div className="relative" style={{ 'maxWidth': '100%', 'height': 'auto' }}>
+    <img
+      className="w-full h-full object-cover"
+      src={data.img}
+      alt={data.name}
+    />
+    <div className="absolute inset-0 px-10 flex pt-[250px]">
+      <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
+        <i className="fa fa-facebook"></i>
+      </div>
+      <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
+        <i className="fa fa-facebook"></i>
+      </div>
+      <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
+        <i className="fa fa-facebook"></i>
+      </div>
+    </div>
+  </div>
+  <div className="bg-white p-6">
+    <h2 className="font-bold text-[25px] mb-1">{data.name}</h2>
+    <h4 className="text-gray">{data.office}</h4>
+    <h4 className="my-6">{data.description}</h4>
+  </div>
+</div>
 
-                                <div className="" style={{ 'backgroundImage': `url(${data.img}) `,  "backgroundSize":"cover", "width":"100%" }}>
-                                <div className="  px-10 flex pt-[250px]">
-                                    <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
-                                        <i className="fa fa-facebook"></i>
-                                    </div>
-                                    <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
-                                        <i className="fa fa-facebook"></i>
-                                    </div>
-                                    <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
-                                        <i className="fa fa-facebook"></i>
-                                    </div>
-                                </div>
-                    </div>
-                    <div className="bg-white p-6">
-                            <h2 className="font-bold text-[25px] mb-1">{data.name}</h2>
-                            <h4 className="text-gray">{data.office}</h4>
-                            <h4 className="my-6">
-                                {data.description}
-                            </h4>
-                    </div>
-            </div>
                        </>     )
                     })}
-                <div className="grid md:grid-cols-2 grid-cols-1 ">
-
-                        <div className="" style={{ 'backgroundImage': `url(${TeamImg}) `,  "backgroundSize":"cover", "width":"100%" }}>
-                                    <div className="  px-10 flex pt-[250px]">
-                                        <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
-                                            <i className="fa fa-facebook"></i>
-                                        </div>
-                                        <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
-                                            <i className="fa fa-facebook"></i>
-                                        </div>
-                                        <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
-                                            <i className="fa fa-facebook"></i>
-                                        </div>
-                                    </div>
-                        </div>
-                        <div className="bg-white p-6">
-                                <h2 className="font-bold text-[25px] mb-1">Lawrence More</h2>
-                                <h4 className="text-gray">Founder & CEO</h4>
-                                <h4 className="my-6">
-                                    
-                                </h4>
-                        </div>
-                </div>
-
-                <div className="grid grid-cols-2 ">
-                        <div className="" style={{ 'backgroundImage': `url(${TeamImg}) `,  "backgroundSize":"cover", "width":"100%" }}>
-                                    <div className="px-10 flex mt-[250px]">
-                                        <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
-                                            <i className="fa fa-facebook"></i>
-                                        </div>
-                                        <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
-                                            <i className="fa fa-facebook"></i>
-                                        </div>
-                                        <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
-                                            <i className="fa fa-facebook"></i>
-                                        </div>
-                                    </div>
-                        </div>
-                        <div className="bg-white p-6">
-                                <h2 className="font-bold text-[25px] mb-1">Lawrence More</h2>
-                                <h4 className="text-gray">Founder & CEO</h4>
-                                <h4 className="my-6">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nostrum ipsum unde dolores, quaerat fugiat vel ducimus ullam modi doloremque quae aut labore rerum commodi illo deserunt, voluptates sequi cumque.
-                                </h4>
-                        </div>
-                </div>
+                
                 </div>                
             </section>
             
