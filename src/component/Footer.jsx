@@ -6,7 +6,7 @@ const Footer = () => {
         <>
             <section className="footer  bg-public bg-opacity-90 px-6 md:py-9  pb-12 mt-0 w-full font-roboto text-white text-[15px] font-bold">
                 <NewsLetter />
-                <div className="grid md:grid-cols-9  md:pt-[140px] pt-[240px] pb-10 grid-cols-1 gap-4 border-b-[1px] border-white ">
+                <div className="grid md:grid-cols-9  md:pt-[100px] pt-[290px] pb-10 grid-cols-1 gap-4 border-b-[1px] border-white ">
                     <div className="col-span-2 w-full border-b-[1px]  md:py-0 py-4 pb-6 border-white md:border-0">
                        
                         <img src={Logo} alt="logo"  className="mb-4 rounded-[10px]"/>
