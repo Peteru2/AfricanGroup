@@ -27,7 +27,7 @@ const NavMenu =
             
             {
                 title : "PROJECT",
-                url: "l",
+                url: "/Project",
                 cName : "nav-links",
                 icon: "",
             },

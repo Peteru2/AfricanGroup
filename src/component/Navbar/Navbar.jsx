@@ -60,9 +60,8 @@ const location = useLocation()
               <Link
                 className={`flex w-full`}
                 to={item.url}
-                className="navLinks"
                 
-                
+              
               >
                 <span  className={`text-[19px] md:text-[17px] ${isActive? 'text-private font-bold':""}`}>{item.title}</span>
               </Link>

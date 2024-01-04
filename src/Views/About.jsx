@@ -19,7 +19,7 @@ const About = () => {
             <Team />
 
         </section>
-        {/* <NewsLetter /> */}
+       
         <Chat />
             <Footer />
 

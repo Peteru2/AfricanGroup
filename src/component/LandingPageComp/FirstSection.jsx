@@ -172,9 +172,9 @@ const FirstSection = () => {
                     staggerChildren: 2}}
                     className="">
                         <h4 className="font-lora text-[15px]">
-                        AFRICAN GROUP Nigeria, is a sole Nigerian Group ofCompanies existing over eight years, which was incorporatedin 2020; for the purpose of providing first class services in theareas of: Surveying & Mapping, Real Estate, Construction & Agricultural services.
+                        AFRICAN GROUP Nigeria, is a sole Nigerian Group of Companies existing over eight years, which was incorporated in 2020; for the purpose of providing first class services in theareas of: Surveying & Mapping, Real Estate, Construction & Agricultural services.
                         <br />
-                        The company is driven by a group of highly trained,experienced, self-motivated, and very dynamic Professionalsequipped to handle various categories of projects; LAND & ENGINEERING SURVEYING, MAPPING & GEO-DATA, ARCHITECTURAL DESIGNS, REAL ESTATE, CIVILCONSTRUCTION, AGRO, SITE CLEARING & GROUND LEVELLING, DRILLING, ELECTRICALENGINEERING, INTERIOR & EXTERIOR FINISHING,and PROJECT MANAGEMENT.
+                        The company is driven by a group of highly trained,experienced, self-motivated, and very dynamic Professionals equipped to handle various categories of projects; LAND & ENGINEERING SURVEYING, MAPPING & GEO-DATA, ARCHITECTURAL DESIGNS, REAL ESTATE, CIVILCONSTRUCTION, AGRO, SITE CLEARING & GROUND LEVELLING, DRILLING, ELECTRICALENGINEERING, INTERIOR & EXTERIOR FINISHING,and PROJECT MANAGEMENT.
                         </h4>
                         <div className="mt-8">
                              <motion.button 
