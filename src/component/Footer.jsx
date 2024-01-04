@@ -40,8 +40,10 @@ const Footer = () => {
                     </div>
 
                     <div className="col-span-4">
+                        
                         <h2 className="mb-6 font-serif md:text-[22px] text-[18px]">CAREERS</h2>
                         <h4>We are constantly in quest of talented, passion-driven folks with a tenacity for excellence.</h4>
+                        <Link to={"/FAQs"}><h2 className="md:text-[22px] text-[18px] mt-4 hover:text-vintage  transition ease-in-out  duration-300">FAQs</h2></Link>
                     </div>                
                     </div>
                     <h2 className="my-4">©2023 All Rights Reserved</h2>
