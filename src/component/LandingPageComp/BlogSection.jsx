@@ -11,16 +11,21 @@ const truncateText = (text, maxLength) => {
   }
   return text;
 };
+const lastThreeFaqItems = blogData.slice(-3);
     return ( 
         <>
-            <section className='xl:mx-6 md:m-0 mx-6 '>
+            <section className='xl:mx-6 md:m-0 mx-6 font-roboto'>
+                <div className="mt-16 text-center">
+            <h2 className="tracker-[2px] text-vintage">OUR BLOG</h2>
+            <h1 className="text-[30px] my-1">Latest Blog & Articles</h1>
+            </div>
             <motion.div 
          initial={{ opacity: 0 }}
          whileInView={{ opacity: 1 }}
          transition={{ delay: 0.5 }}
 
         className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-8 mb-[150px] mt-[50px]   font-roboto">
-        {blogData.map((post) => (
+        {lastThreeFaqItems.map((post) => (
           
           <div
           
