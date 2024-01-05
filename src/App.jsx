@@ -8,7 +8,8 @@ import Project from './Views/Project';
 import BlogList from './component/BlogComp/BlogLists';
 import BlogPost from './component/BlogComp/BlogPost';
 import Team from './component/Team/Team';
-import FAQSection from './component/FAQS/Faqs';
+
+import FaqsMain from './component/FAQS/Faqs';
 
 
 function App() {
@@ -26,7 +27,7 @@ function App() {
           <Route path={'/About/Team'} element={<Team />} />
 
           <Route path="/blog/:id" element={<BlogPost />} />
-          <Route path={'/FAQs'} element={<FAQSection />} />
+          <Route path={'/FAQs'} element={<FaqsMain />} />
 
         </Routes>
         </Router>

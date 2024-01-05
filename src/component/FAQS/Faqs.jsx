@@ -1,46 +1,92 @@
-import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import Navbar from '../../component/Navbar/Navbar';
+import FAQSection from './FaqsSection';
 
-const FAQItem = ({ question, answer }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleAnswer = () => {
-    setIsOpen(!isOpen);
-  };
+const FaqsMain = () => {
+  
+    const faqData = [
+        // First Section
+        [
+          {
+            question: "What is the purpose of this website?",
+            answer: "The purpose of this website is...",
+          },
+          {
+            question: "How can I contact customer support?",
+            answer: "You can contact our customer support team by...",
+          },
+          {
+            question: "What is the purpose of this website?",
+            answer: "The purpose of this website is...",
+          },
+          {
+            question: "How can I contact customer support?",
+            answer: "You can contact our customer support team by...",
+          },
+        ],
+      
+        // Second Section
+        [
+          {
+            question: "What is the purpose of this website?",
+            answer: "The purpose of this website is...",
+          },
+          {
+            question: "How can I contact customer support?",
+            answer: "You can contact our customer support team by...",
+          },
+          {
+            question: "What is the purpose of this website?",
+            answer: "The purpose of this website is...",
+          },
+          {
+            question: "How can I contact customer support?",
+            answer: "You can contact our customer support team by...",
+          },
+        ],
+      ];
+      
+    // dd more FAQ items as needed
+  
 
   return (
-    <div className=" border-2">
-      <button
-        className="w-full text-left bg-white hover:bg-gray-100 px-4 py-2 shadow-md rounded-md focus:outline-none transition duration-700"
-        onClick={toggleAnswer}
-      >
-        <span className="text-gray-800 font-semibold">{question}</span>
-      </button>
-      <div
-        className={`mt-2 overflow-hidden transition-all duration-700 ${
-          isOpen ? 'max-h-96' : 'max-h-0'
-        }`}
-      >
-        <p className="text-gray-600">{answer}</p>
-      </div>
+    <div>
+
+     <Navbar />
+    
+    <motion.div
+      initial={{ x: '100vw' }}
+      animate={{ x: 0 }}
+      transition={{ delay: 0.5, type: 'spring' }}
+    >
+
+      <div className="TeamBackGroundImg">
+        <motion.div
+          initial={{ x: '-100vw' }}
+          animate={{ x: 0 }}
+          transition={{ delay: 0.5, type: 'spring' }}
+          className="h-[500px] md:pt-52 pt-32 pb-72 text-white bg-public bg-opacity-70"
+        >
+          <h2 className="items-center font-bold flex justify-center text-[16px]">
+            AfricanGroup{' '}
+            <span className="h-2 w-2 mx-4 bg-white bg-opacity-60 rounded-full"></span> FAQs
+          </h2>
+          <div className="mt-16 ">
+            <h4 className="text-white text-2xl font-lora flex justify-center "> FAQs</h4>
+            <h1 className="text-white md:text-6xl text-3xl flex justify-center font-roboto">
+              Frequently Asked Questions
+            </h1>
+          </div>
+          
+        </motion.div>
+        </div>  
+        </motion.div>
+
+      <FAQSection title="About Survey" description="This is about it"faqItems={faqData[0]} />
+      <FAQSection title="My Survey" faqItems={faqData[1]} />
+
     </div>
   );
 };
 
-const FAQSection = () => {
-  return (
-    <div className="max-w-md mx-auto p-8 bg-gray-100">
-      {/* Example FAQ Items */}
-      <FAQItem
-        question="What is the purpose of this website?"
-        answer="The purpose of this website is..."
-      />
-      <FAQItem
-        question="How can I contact customer support?"
-        answer="You can contact our customer support team by..."
-      />
-      {/* Add more FAQ items as needed */}
-    </div>
-  );
-};
-
-export default FAQSection;
+export default FaqsMain;
