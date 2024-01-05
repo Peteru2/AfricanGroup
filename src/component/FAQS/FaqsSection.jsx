@@ -16,7 +16,7 @@ const FAQSection = ({ title, faqItems, description }) => {
             <div className='text-[18px] text-private font-bold  font-lora'>{description}</div>
         </div>
            
-            <div className='grid grid-cols-2 gap-x-6 font-roboto'>
+            <div className='grid md:grid-cols-2 grid-cols-1 gap-x-6 font-roboto'>
             {faqItems.map((faq, index) => (
                 <div className='grid grid-col-2'>
                 <div key={index} className="">
