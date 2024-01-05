@@ -5,7 +5,7 @@ import Services from "../component/LandingPageComp/Services";
 import Testimonials from "../component/LandingPageComp/Testimonials";
 import Values from "../component/LandingPageComp/values";
 import Navbar from "../component/Navbar/Navbar";
-import NewsLetter from "../component/NewsLetter";
+import BlogSection from "../component/LandingPageComp/BlogSection";
 import Chat from "../component/SideChat";
 import { useEffect,useState } from "react";
 // import "../style.css"
@@ -31,6 +31,7 @@ const Landing = () => {
                 <Services />
                 <Testimonials />
                 <Values />
+                <BlogSection />
             </section>
             <Chat />
             {/* <NewsLetter /> */}

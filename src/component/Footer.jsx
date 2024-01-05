@@ -10,7 +10,7 @@ const Footer = () => {
                     <div className="col-span-2 w-full border-b-[1px]  md:py-0 py-4 pb-6 border-white md:border-0">
                        
                         <img src={Logo} alt="logo"  className="mb-4 rounded-[10px]"/>
-                        <h4>African Group  is a fully licensed land surveying company serving the greater Oyo City</h4>
+                        <h4>African Group  is a fully licensed land surveying company serving the greater Nigeria and Africa as a whole</h4>
                         <div className="flex mt-2 text-[20px]">
                            <Link className="hover:text-vintage  transition ease-in-out  duration-300"> <i className="fa fa-facebook mr-2"></i></Link>
                            <Link className="hover:text-vintage  transition ease-in-out  duration-300">  <i className="fa fa-twitter mx-2"></i></Link>

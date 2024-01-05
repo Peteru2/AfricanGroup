@@ -12,8 +12,8 @@ const FAQSection = ({ title, faqItems, description }) => {
     
       <section className='xl:mx-6 md:mx-0 mx-6 my-10 font-roboto'>
         <div className='mb-14'>
-            <div className='text-[39px] font-bold my-1 text-opacity-10'>{title}</div>
-            <div className='text-[18px] text-private font-bold  font-lora'>{description}</div>
+            <div className='text-[39px]  my-1 text-opacity-90'>{title}</div>
+            <div className='text-[18px] text-public text-opacity-70 font-bold  font-lora'>{description}</div>
         </div>
            
             <div className='grid md:grid-cols-2 grid-cols-1 gap-x-6 font-roboto'>

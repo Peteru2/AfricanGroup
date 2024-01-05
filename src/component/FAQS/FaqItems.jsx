@@ -14,7 +14,7 @@ const FAQItem = ({ question, answer }) => {
         onClick={toggleAnswer}
       >
         <div className="w-full flex items-center">
-        <span className="text-gray-800 font-semibold text-private">{question}</span><i className={`fa fa-play ml-auto text-gray text-[10px] transition-all duration-[1000ms] ${isOpen ? 'rotate-90':''}`}></i>
+        <span className=" font-semibold text-public text-opacity-70">{question}</span><i className={`fa fa-play ml-auto text-gray text-[10px] transition-all duration-[1000ms] ${isOpen ? 'rotate-90':''}`}></i>
         </div>
       </button>
       <div
