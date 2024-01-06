@@ -20,7 +20,7 @@ const NavMenu =
             },
             {
                 title : "SERVICES",
-                url: "k",
+                url: "/Services",
                 cName : "nav-links",
                 icon: "",
             },

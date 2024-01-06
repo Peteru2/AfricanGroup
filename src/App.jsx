@@ -8,7 +8,7 @@ import Project from './Views/Project';
 import BlogList from './component/BlogComp/BlogLists';
 import BlogPost from './component/BlogComp/BlogPost';
 import Team from './component/Team/Team';
-
+import Services from './Views/Service';
 import FaqsMain from './component/FAQS/Faqs';
 
 
@@ -23,6 +23,8 @@ function App() {
           <Route path={'/'} element={<Landing />} />
           <Route path={'/About'} element={<About />} />
           <Route path={'/Project'} element={<Project />} />
+          <Route path={'/Services'} element={<Services />} />
+
           <Route path={'/Blog'} element={<BlogList />} />
           <Route path={'/About/Team'} element={<Team />} />
 
