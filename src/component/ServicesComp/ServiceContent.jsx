@@ -19,11 +19,11 @@ const ServiceContent = () => {
                             </div>
 
                     </div>
-                    <div className=" grid  xl:grid-cols-3 md:grid-cols-2 mb-[90px] grid-cols-1 gap-9">
+                    <div className=" grid  xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-9">
                        
  
 
-                        <div className="relative">                          
+                        <div className="relative  md:mb-0 mb-[150px]">                          
                             <img src={img} alt="img"  /> 
                             <div className="absolute bg-public p-5 text-white mx-7 group   transition ease-in-out  duration-300 hover:bg-vintage bottom-[-150px]">
                                 <div className="relative ">
