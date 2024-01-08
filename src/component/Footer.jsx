@@ -33,7 +33,7 @@ const Footer = () => {
                     <div className="col-span-2">
                         <h2 className="mb-6 md:text-[22px] text-[18px]">CONTACT INFO</h2>
                         <h4 className="my-2"><i className="fa fa-building mr-2"></i> Union Bank Road, Owode, Oyo, Nigeria</h4>
-                        <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300"><i className="fa fa-phone mr-2"></i>+234 076 4255 373 </button></h4>
+                        <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300"><i className="fa fa-phone mr-2"></i>+234 706 4255 373 </button></h4>
                         <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300"><i className="fa fa-envelope mr-2"></i>africangroup@gmail.com</button></h4>
 
 
