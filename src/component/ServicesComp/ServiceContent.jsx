@@ -2,6 +2,15 @@ import BackgroundImgWord from "./BackgroundImgAndWord";
 import img from "../../assets/images/FirstSectionImage1.jpg"
 import ServiceData from "./ServiceData";
 const ServiceContent = () => {
+    const MAX_CONTENT_LENGTH = 100; // You can set your desired maximum length
+
+    // Function to truncate text and add "..."
+    const truncateText = (text, maxLength) => {
+      if (text.length > maxLength) {
+        return text.substring(0, maxLength) + '...';
+      }
+      return text;
+    };
     return ( 
         <>
         <section>
@@ -25,7 +34,7 @@ const ServiceContent = () => {
                             ServiceData.map((service, index)=>{
                                 return(
                                     <div>
-                                        <div className="relative  md:mb-[] mb-[180px]">                          
+                                        <div className="relative  md:mb-[] mb-[200px]">                          
                             <img src={img} alt="img"  /> 
                             <div className={service.class1}>
                                 <div className="relative ">
@@ -33,9 +42,9 @@ const ServiceContent = () => {
                                         <h3>J</h3>
                                     </div>
                                 </div>
-                                <h2 className="my-3 mt-6 text-[19px] text-vintage group-hover:text-white">{service.title}</h2>
-                                    <h3 className={ ${service.classContent}}>{service.content}</h3>
-                                    <h4 className="my-4 text-vintage group-hover:text-white">Read More</h4>
+                                <h2 className={`my-3 mt-6 text-[19px] ${service.classTitle} `}>{service.title}</h2>
+                                    <h3 className={`${service.classContent}`}>{truncateText(service.content, MAX_CONTENT_LENGTH)}</h3>
+                                    <h4 className={`my-4 ${service.classRead}`}>Read More</h4>
                             </div>
                         </div>
                                     </div>
@@ -47,7 +56,7 @@ const ServiceContent = () => {
                         <div>
                         <div className="relative mb-[150px] ">                          
                             <img src={img} alt="img"  /> 
-                            <div className="absolute bg-vintage p-5 text-white mx-7 group   transition ease-in-out  duration-300 hover:bg-private bottom-[-150px]">
+                            <div className="absolute bg-vintage p-5 text-white mx-7 group  transition ease-in-out  duration-300 hover:bg-private bottom-[-150px]">
                                 <div className="relative">
                                     <div className="bg-private p-4 group-hover:bg-vintage absolute top-[-44px]">
                                         <h3>dasdfas</h3>
@@ -71,7 +80,9 @@ const ServiceContent = () => {
                             </div>
                         </div>
  
-                    </div>
+
+ </div>
+                    
             </div>
         </section>
         </>
