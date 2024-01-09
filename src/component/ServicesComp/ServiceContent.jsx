@@ -1,4 +1,3 @@
-import BackgroundImgWord from "./BackgroundImgAndWord";
 import img from "../../assets/images/FirstSectionImage1.jpg"
 import ServiceData from "./ServiceData";
 import image from "../../assets/images/about.jpg"
