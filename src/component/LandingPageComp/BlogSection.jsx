@@ -19,19 +19,19 @@ const lastThreeFaqItems = blogData.slice(-3);
             <h2 className="tracker-[2px] text-vintage">OUR BLOG</h2>
             <h1 className="text-[30px] my-1">Latest Blog & Articles</h1>
             </div>
-            <motion.div 
-         initial={{ opacity: 0 }}
-         whileInView={{ opacity: 1 }}
-         transition={{ delay: 0.5 }}
+            <div 
+         
 
         className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-8 mb-[150px] mt-[50px]   font-roboto">
-        {lastThreeFaqItems.map((post) => (
+        {lastThreeFaqItems.map((post, index) => (
           
-          <div
-          
+          <motion.div
+          initial={{ opacity: 0 }}
+         whileInView={{ opacity: 1 }}
+         transition={{ delay: index * 0.5 }}
            key={post.id} className='`'>
- 
-            
+
+
               <div className=''>
                 <img src={post.img} alt={post.name} className='m-0'/>
               </div>
@@ -44,19 +44,20 @@ const lastThreeFaqItems = blogData.slice(-3);
               <Link to={`/blog/${post.id}`} className=''>
               <motion.button 
               whileHover={{scale: 1.0}}
-              transition={{type:"spring", stiffness:200}}
+              transition={{type:"spring", stiffness:200, }}
               className='bg-vintage text-white p-3 hover:bg-opacity-70'>
                     Read More <i className="fa fa-long-arrow-right text-[11px]"></i>
               </motion.button>
               </Link>
+
               </div>
             
        
 
-          </div>
+          </motion.div>
 
         ))}
-        </motion.div>
+        </div>
 
             </section>
         </>

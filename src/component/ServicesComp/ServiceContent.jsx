@@ -1,6 +1,8 @@
 import BackgroundImgWord from "./BackgroundImgAndWord";
 import img from "../../assets/images/FirstSectionImage1.jpg"
 import ServiceData from "./ServiceData";
+import image from "../../assets/images/about.jpg"
+import ImageWithOverlay from '../ImageWithOverlay';
 const ServiceContent = () => {
     const MAX_CONTENT_LENGTH = 100; // You can set your desired maximum length
 
@@ -14,7 +16,14 @@ const ServiceContent = () => {
     return ( 
         <>
         <section>
-            <BackgroundImgWord />
+            <ImageWithOverlay
+                imageUrl={image}
+                title1="AfricanGroup"
+                span1="Service"
+                span2=""
+                title2=""
+                decrip="Our Services"
+      />
             <div className="xl:mx-6 md:mx-0  mx-6 md:mt-[140px] mt-[30px]  font-roboto">
                     <div className="flex justify-center">
                         <div>

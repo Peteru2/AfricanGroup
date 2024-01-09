@@ -6,6 +6,7 @@ import Landing from './Views/Landing'
 import About from './Views/About'
 import Project from './Views/Project';
 import Contact from './Views/Contact';
+import ScrollToTop from './component/ScrollTop';
 import BlogList from './component/BlogComp/BlogLists';
 import BlogPost from './component/BlogComp/BlogPost';
 import Team from './component/Team/Team';
@@ -20,6 +21,7 @@ function App() {
     <>
       <section >
         <Router>
+        <ScrollToTop />
         <Routes>
           <Route path={'/'} element={<Landing />} />
           <Route path={'/About'} element={<About />} />

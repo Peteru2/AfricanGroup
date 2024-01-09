@@ -3,7 +3,7 @@
     height: 35px; 
     background: transparent;
     border-width: 3px;
-    border-Color: #FD972D;
+   
     display: flex;
     align-items:center;
     /* // borderStyle: 'dotted'; */
@@ -96,6 +96,7 @@ mark{
     0%, 25% { color: white; }
     50%, 75% { color: rgba(0, 128, 0, .6); }
     100% { color: #008000; }
+   
   }
   .blink-text{
     
@@ -115,6 +116,7 @@ mark{
     to { width: 100%; }
   }
   .footer{
+    
     position: relative
   }
   .footer-child{

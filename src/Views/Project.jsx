@@ -1,12 +1,19 @@
 import Navbar from "../component/Navbar/Navbar";
-import BackgroundImgWord from "../component/ProjectComp/BackgroundImgAndWord";
-
+import image from "../assets/images/about.jpg"
+import ImageWithOverlay from "../component/ImageWithOverlay";
 const Project = () => {
     return ( 
         <>
             <section>
                     <Navbar />
-                    <BackgroundImgWord />
+                    <ImageWithOverlay
+                imageUrl={image}
+                title1="AfricanGroup"
+                span1="Project"
+                span2=""
+                title2="This is AfricanGroup"
+                decrip="Our Projects"
+      />
             </section>
         </>
      );

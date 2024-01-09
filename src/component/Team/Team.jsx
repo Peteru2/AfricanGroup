@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import Navbar from "../Navbar/Navbar";
 import TeamImg from "../../assets/images/Team1.jpg"
+import image from "../../assets/images/about.jpg"
+import ImageWithOverlay from '../ImageWithOverlay';
 const Team = () => {
     const TeamFirstData = [
         {
@@ -25,27 +27,15 @@ const Team = () => {
     return ( 
         <>
         <Navbar />
-            <div className="TeamBackGroundImg">
             
-                <div className="h-[500px] md:pt-52 pt-32   pb-72 text-white  bg-public bg-opacity-70 ">
-                    <motion.h2
-                    initial={{x:'100vw'}}
-                    animate={{x:0}}
-                    transition={{delay: 0.5, type: "spring"}}
-                    className="items-center font-bold flex justify-center text-[16px]">AfricanGroup <span className="h-2 w-2 mx-4 bg-white bg-opacity-60 rounded-full"></span> About Us <span className="h-2 w-2 mx-4 bg-white bg-opacity-60 rounded-full"></span> Team
-                    </motion.h2>
-
-                    <motion.div 
-                    initial={{x:'-100vw'}}
-                    animate={{x:0}}
-                    transition={{delay: 0.5, type: "spring"}}
-                    className="mt-20 ">
-                        <h4 className="text-white text-2xl font-lora flex justify-center "> Our Team</h4>
-                    <h1 className="text-white md:text-6xl text-3xl   flex justify-center  font-roboto">Meet With Expert Team</h1>
-                    </motion.div>
-                </div>
-                
-            </div>
+            <ImageWithOverlay
+                imageUrl={image}
+                title1="AfricanGroup"
+                span1="About Us"
+                span2="Team"
+                title2="Our Team"
+                decrip="Meet With The Expert Team"
+      />
             <section className="font-roboto mt-8 xl:mx-6 md:mx-0 mx-6 my-10">
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
                     {TeamFirstData.map((data, index)=>{
