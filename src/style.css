@@ -132,3 +132,38 @@ mark{
     background-size: cover;
     background-repeat: no-repeat;
 }
+.modal{
+    position: fixed!important;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    transform: translate(-50%,-50%) scale(0)  ;
+    transition: 200ms ease-in-out;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 10px 5px 40px 14px rgba(38.81, 136.75, 227.16, 0.13);
+    z-index: 99999 !important;
+    border-radius: 15px;
+  }
+  .modal-show {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  .overlay {
+    display: block;
+    position: fixed!important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 1
+    /* backdrop-filter: blur(2px); */
+    /* transition: transform 0.3s ease, opacity 0.3s ease; */
+  }
+
+  @media only screen  and (max-width: 700px){
+  .modal{
+    width: 300px;
+    padding: 15px;
+  }
+  }

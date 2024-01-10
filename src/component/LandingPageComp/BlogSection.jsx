@@ -22,7 +22,7 @@ const lastThreeFaqItems = blogData.slice(-3);
             <div 
          
 
-        className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-8 mb-[150px] mt-[50px]   font-roboto">
+        className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-8 mb-[0px] mt-[50px]   font-roboto">
         {lastThreeFaqItems.map((post, index) => (
           
           <motion.div

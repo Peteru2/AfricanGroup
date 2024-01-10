@@ -82,6 +82,39 @@ const Values = () => {
                     </div>
                                        
                     </div>  
+                    <div 
+        
+        className="about ">
+            <motion.section
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1 }}
+            className="bg-private mb-[0px] grid  items-center md:grid-cols-2 grid-cols-1 px-8 bg-opacity-70 font-roboto py-[80px]">
+                <div className="">
+                   
+                    <motion.h2 
+                      initial={{scale:0.8}}
+                      transition={{duration:1}}
+                      whileInView={{ scale: 1.0 }}
+                   
+                    className="text-white text-[40px] font-playfair font-bold  md:w-[500px] ">Professional Land Surveying And Mapping</motion.h2>
+                </div>
+                <div>
+                
+     
+                    <motion.h4
+                    initial={{scale:0.8}}
+                    transition={{duration:1}}
+                    whileInView={{ scale: 1.0 }}
+                     className="text-[20px] text-white">African Group routinely provides surveying solutions for business, real estate, land development and civil engineering in Boise area.</motion.h4>
+                    <div className="mt-2 flex">
+                        <h3 className="w-20 h-2 bg-vintage"></h3>
+                        <h3 className="w-2 h-2 bg-public ml-2"></h3>
+
+                    </div>
+                </div>
+            </motion.section>
+            </div>
             </section>
         </>
      );
