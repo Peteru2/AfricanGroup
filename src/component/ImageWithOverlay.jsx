@@ -28,16 +28,20 @@ const ImageWithOverlay = ({ imageUrl, title1, span1, span2, title2, decrip}) => 
         <div style={overlayStyle}>
             <div className="my-[120px]">
             <div >
-        <h2
-                    
+        <motion.h2
+                    initial={{y:'100vw'}}
+                    animate={{y:0}}
+                    transition={{delay: 0.5, type: "spring"}}
                     className="items-center font-bold flex justify-center text-[16px]">{title1} <span className="h-2 w-2 mx-4 bg-white bg-opacity-60 rounded-full"></span> {span1}  {span2 != ""? ( <><span className="h-2 w-2 mx-4 bg-white bg-opacity-60 rounded-full"></span> {span2}</>):""}
-                    </h2>
-                    <div 
-                    
+                    </motion.h2>
+                    <motion.div 
+                    initial={{y:'-100vw'}}
+                    animate={{y:0}}
+                    transition={{delay: 0.5, type: "spring"}}
                     className="mt-20 ">
                         <h4 className="text-white text-2xl font-lora flex justify-center ">{title2}</h4>
                     <h1 className="text-white md:text-6xl text-3xl   flex justify-center  font-roboto">{decrip}</h1>
-                    </div>
+                    </motion.div>
                 </div>
                 </div>
         </div>
