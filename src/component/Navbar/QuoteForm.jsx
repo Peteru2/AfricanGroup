@@ -10,7 +10,7 @@ const QuoteForm = ({close}) => {
                         <div className="mb-6">  
                             <label className="my-5 label text">Name</label>
                                 <div className="flex items-center border border-gray rounded-[5px] mt-1 px-3  py-2">
-                                <i className="fa fa-envelope text-gray w-5 h-5  mr-2 mt-1"></i>
+                                <i className="fa fa-user text-gray w-5 h-5  mr-2 mt-1"></i>
                                 <input type="text" className="w-full outline-none text-black" placeholder="Name" />
                                 </div>
                             </div>
@@ -26,7 +26,7 @@ const QuoteForm = ({close}) => {
                             <div className="mb-6">  
                             <label className="my-5 label">Phone Number</label>
                                 <div className="flex items-center border border-gray rounded-[5px] px-3 mt-1  py-2">
-                                <i className="fa fa-envelope text-gray w-5 h-5  mr-2 mt-1"></i>
+                                <i className="fa fa-phone text-gray w-5 h-5  mr-2 mt-1"></i>
                                 <input type="text" className="w-full outline-none text-black" placeholder="Phone Number" />
                                 </div>
                             </div>
