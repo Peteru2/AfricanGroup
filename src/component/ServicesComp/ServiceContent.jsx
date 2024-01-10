@@ -29,7 +29,7 @@ const ServiceContent = () => {
                         <h4 className="text-private text-center">OUR SERVICES </h4>
                         <h4 className="text-3xl text-center font-bold my-3">What Service We Provide</h4>
                         
-                            <h5 className="md:w-[600px] text-center flex justify-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro sit, architecto dolores quam sequi hic quidem ut. Dolores, quasi rerum! Quae aperiam quia maxime et doloremque distinctio. Dolorum, doloremque. Molestias.
+                            <h5 className="md:w-[600px] text-center flex justify-center">Lorem ipsum dolor sit amet, consectetur adipisicing zelit. Porro sit, architecto dolores quam sequi hic quidem ut. Dolores, quasi rerum! Quae aperiam quia maxime et doloremque distinctio. Dolorum, doloremque. Molestias.
 
                             </h5>
                            

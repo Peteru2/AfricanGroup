@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import blogData from '../BlogComp/data';
 import { motion } from 'framer-motion';
 const  BlogSection= () => {
-    const MAX_CONTENT_LENGTH = 20; // You can set your desired maximum length
+    const MAX_CONTENT_LENGTH = 100; // You can set your desired maximum length
 
 // Function to truncate text and add "..."
 const truncateText = (text, maxLength) => {
