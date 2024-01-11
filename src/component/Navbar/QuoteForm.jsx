@@ -14,7 +14,7 @@ const QuoteForm = ({close}) => {
       });
     
       const handleInputChange = (e) => {
-        e.preventDefault();       
+        // e.preventDefault();       
         
        const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
@@ -27,14 +27,14 @@ const QuoteForm = ({close}) => {
             if (formData.name.trim() === '') {
 
             newErrors.name = 'Name is required';
-            console.log(errors.name)
+           
             
         }
 
             const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
                 if (!formData.email.trim()) {
                     newErrors.email = 'Email is required';
-                    console.log(errors.email)
+                   
 
                 } else if (!emailRegex.test(formData.email)) {
                     newErrors.email = 'Invalid email format';
@@ -48,7 +48,7 @@ const QuoteForm = ({close}) => {
                     newErrors.phoneNumber = 'Invalid phone number format';
                 }
 
-
+                setErrors(newErrors);
             if (Object.keys(newErrors).length === 0) {
                 setErrors({});
             }
@@ -57,14 +57,16 @@ const QuoteForm = ({close}) => {
     return ( 
                 <>
                     <section>
-                        <form className="font-roboto text-black" onSubmit={handleSubmit}>
+                        <form className="font-roboto text-black">
                             <div className="flex items-center ">
                             <h2 className="my-2 text-black font-playfair font-bold text-[20px]">Request for Quote</h2>
                             <button className="ml-auto cursor-pointer" onClick={(e) => { e.preventDefault(); close(); }}><i className="fa fa-times"></i></button>
                             </div>
                         <div className="mb-6">  
                         
-                        <label className="my-5 label flex"><span>Name</span> <span className="ml-auto"> {errors.name}</span></label> 
+                        <label className="my-2 mt-4 label flex">
+                            <span>Name</span> <span className={`ml-auto text-red text-[14px] ${errors.name? "blink-error":""}`}> {errors.name}</span>
+                        </label> 
                       
                                 <div className="flex items-center border border-gray rounded-[5px] mt-1 px-3  py-2">
                                 <i className="fa fa-user text-gray w-5 h-5  mr-2 mt-1"></i>
@@ -78,7 +80,9 @@ const QuoteForm = ({close}) => {
                             </div>
 
                             <div className="mb-6">  
-                            <label className="my-5 label">Email</label>
+                            <label className="my-2  label flex">
+                            <span>Email</span> <span className={`ml-auto text-red text-[14px] ${errors.email? "blink-error":""}`}> {errors.email}</span>
+                        </label> 
                                 <div className="flex items-center border border-gray rounded-[5px] px-3  mt-1 py-2">
                                 <i className="fa fa-envelope  w-5 h-5 text-gray  mr-2 mt-1"></i>
                                 <input type="Email" 
@@ -90,7 +94,9 @@ const QuoteForm = ({close}) => {
                             </div>
 
                             <div className="mb-6">  
-                            <label className="my-5 label">Phone Number</label>
+                            <label className="my-2 label flex">
+                            <span>Phone Number</span> <span className={`ml-auto text-red text-[14px] ${errors.phoneNumber? "blink-error":""}`}> {errors.phoneNumber}</span>
+                        </label> 
                                 <div className="flex items-center border border-gray rounded-[5px] px-3 mt-1  py-2">
                                 <i className="fa fa-phone text-gray w-5 h-5  mr-2 mt-1"></i>
                                 <input type="text" 
@@ -109,7 +115,7 @@ const QuoteForm = ({close}) => {
                                 </div>
                             </div>
 
-                            <button  type="submit" className="bg-private hover:bg-private hover:bg-opacity-90  text-white font-semibold py-4 px-4 rounded w-full">Submit</button>
+                            <button  onClick={handleSubmit}  className="bg-private hover:bg-private hover:bg-opacity-90  text-white font-semibold py-4 px-4 rounded w-full">Submit</button>
                                 
                         </form>
                     </section>
