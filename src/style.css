@@ -134,10 +134,10 @@ mark{
 }
 .modal{
     position: fixed!important;
-    top: 50%;
+    top: 0%;
     left: 50%;
     width: 500px;
-    transform: translate(-50%,-50%) scale(0)  ;
+    transform:  scale(0)  ;
     transition: 200ms ease-in-out;
     background-color: #fff;
     padding: 20px;
@@ -146,6 +146,7 @@ mark{
     border-radius: 15px;
   }
   .modal-show {
+    top:50%;
     transform: translate(-50%, -50%) scale(1);
   }
   .overlay {
@@ -175,7 +176,7 @@ mark{
 
   @media only screen  and (max-width: 700px){
   .modal{
-    width: 400px;
+    width: 350px;
     
   }
   }
