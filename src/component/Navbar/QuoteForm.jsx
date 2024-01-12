@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios"
 const QuoteForm = ({close}) => {
 
     const [formData, setFormData] = useState({
@@ -49,6 +50,7 @@ const QuoteForm = ({close}) => {
                 }
 
                 setErrors(newErrors);
+                axios.post('http://127.0.0.1/Api/quoteInfo/submit', formData)
             if (Object.keys(newErrors).length === 0) {
                 setErrors({});
             }
