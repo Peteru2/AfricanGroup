@@ -50,7 +50,8 @@ const QuoteForm = ({close}) => {
                 }
 
                 setErrors(newErrors);
-                axios.post('http://127.0.0.1/Api/quoteInfo/submit', formData)
+                console.log(formData)
+                axios.post('http://127.0.0.1/api/quoteform/submit', formData)
             if (Object.keys(newErrors).length === 0) {
                 setErrors({});
             }
