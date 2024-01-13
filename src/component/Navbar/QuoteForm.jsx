@@ -6,12 +6,15 @@ const QuoteForm = ({close}) => {
         name: '',
         email: '',
         phoneNumber: '',
+        message:'',
+
       });
     
       const [errors, setErrors] = useState({
         name: '', 
         email: '',
         phoneNumber: '',
+        message:'',
       });
     
       const handleInputChange = (e) => {
@@ -48,6 +51,9 @@ const QuoteForm = ({close}) => {
                 } else if (!phoneRegex.test(formData.phoneNumber)) {
                     newErrors.phoneNumber = 'Invalid phone number format';
                 }
+                if(!formData.message.trim()){
+                    newErrors.message = 'Message is required';
+                }
 
                 setErrors(newErrors);
                 console.log(formData)
@@ -60,7 +66,7 @@ const QuoteForm = ({close}) => {
     return ( 
                 <>
                     <section>
-                        <form className="font-roboto text-black">
+                        <form onSubmit={handleSubmit} className="font-roboto text-black">
                             <div className="flex items-center ">
                             <h2 className="my-2 text-black font-playfair font-bold text-[20px]">Request for Quote</h2>
                             <button className="ml-auto cursor-pointer" onClick={(e) => { e.preventDefault(); close(); }}><i className="fa fa-times"></i></button>
@@ -111,14 +117,19 @@ const QuoteForm = ({close}) => {
                             </div>
 
                             <div className="mb-6">  
-                            <label className="my-5 label">Message to land Surveying</label>
+                            <label className="my-2 label flex">
+                            <span>Your Message</span> <span className={`ml-auto text-red text-[14px] ${errors.message? "blink-error":""}`}> {errors.message}</span>
+                        </label> 
                                 <div className="flex items-center border border-gray rounded-[5px]  px-3 mt-1  py-2">
                                
-                                <textarea type="text" className="w-full outline-none text-black" placeholder="Your Message" />
+                                <textarea type="text" name="message" className="w-full outline-none text-black" 
+                                value={formData.Message}
+                                onChange={handleInputChange}
+                                placeholder="Your Message" />
                                 </div>
                             </div>
 
-                            <button  onClick={handleSubmit}  className="bg-private hover:bg-private hover:bg-opacity-90  text-white font-semibold py-4 px-4 rounded w-full">Submit</button>
+                            <button  type="submit"  className="bg-private hover:bg-private hover:bg-opacity-90  text-white font-semibold py-4 px-4 rounded w-full">Submit</button>
                                 
                         </form>
                     </section>
