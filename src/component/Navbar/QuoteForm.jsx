@@ -27,6 +27,9 @@ const QuoteForm = ({close}) => {
             e.preventDefault();
 
       const newErrors = {};
+      const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
+      const phoneRegex = /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}\)?[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
+
    
             if (formData.name.trim() === '') {
 
@@ -35,8 +38,9 @@ const QuoteForm = ({close}) => {
             
         }
 
-            const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
-                if (!formData.email.trim()) {
+           
+
+                else if (!formData.email.trim()) {
                     newErrors.email = 'Email is required';
                    
 
@@ -45,19 +49,21 @@ const QuoteForm = ({close}) => {
                 }
 
             
-                const phoneRegex = /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}\)?[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
-                if (!formData.phoneNumber.trim()) {
+                else if (!formData.phoneNumber.trim()) {
                     newErrors.phoneNumber = 'Phone Number is required';
                 } else if (!phoneRegex.test(formData.phoneNumber)) {
                     newErrors.phoneNumber = 'Invalid phone number format';
                 }
-                if(!formData.message.trim()){
+                else if(!formData.message.trim()){
                     newErrors.message = 'Message is required';
+                }
+                else {
+                    axios.post('http://127.0.0.1/api/quoteform/submit', formData)
                 }
 
                 setErrors(newErrors);
                 console.log(formData)
-                axios.post('http://127.0.0.1/api/quoteform/submit', formData)
+                
             if (Object.keys(newErrors).length === 0) {
                 setErrors({});
             }

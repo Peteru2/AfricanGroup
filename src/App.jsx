@@ -6,6 +6,7 @@ import Landing from './Views/Landing'
 import About from './Views/About'
 import Project from './Views/Project';
 import Contact from './Views/Contact';
+import QuoteData from './component/QuoteData';
 import ScrollToTop from './component/ScrollTop';
 import BlogList from './component/BlogComp/BlogLists';
 import BlogPost from './component/BlogComp/BlogPost';
@@ -28,6 +29,7 @@ function App() {
           <Route path={'/Project'} element={<Project />} />
           <Route path={'/Services'} element={<Services />} />
           <Route path={'/Contact-us'} element={<Contact />} />
+          <Route path={'/Quote_data'} element={<QuoteData />} />
 
 
           <Route path={'/Blog'} element={<BlogList />} />
