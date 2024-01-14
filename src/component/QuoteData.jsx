@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 const QuoteData = () => {
-const [quotes, setQuotes] = useState({})
+const [quotes, setQuotes] = useState(null)
     useEffect(() =>{
         getQuotes();
     },[])
@@ -10,24 +10,25 @@ const [quotes, setQuotes] = useState({})
     function getQuotes() {
         axios.get("http://127.0.0.1/api/quoteform/").then((response) => {
                 setQuotes(response.data)
-
-                console.log(response.data)
         })
     }
     console.log(quotes)
       return ( 
             <>
                 <section>
-                   {/* {
-                    quotes.map((data, index) =>{
+                   {
+                   quotes&& quotes.map((quote, index) =>{
                         return(
-                            <div>
-                                <h2>{}</h2>
+                            <div key={index}>
+                                <h2>{quote.name}</h2>
+                                
+                                <h2>{quote.email}</h2>
+
                             </div>
                         )
                     }
                     )
-                   } */}
+                   }
                 </section>
             </>
      );
