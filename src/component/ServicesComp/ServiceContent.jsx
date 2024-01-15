@@ -2,6 +2,7 @@ import img from "../../assets/images/FirstSectionImage1.jpg"
 import ServiceData from "./ServiceData";
 import image from "../../assets/images/about.jpg"
 import ImageWithOverlay from '../ImageWithOverlay';
+import { Link } from "react-router-dom";
 const ServiceContent = () => {
     const MAX_CONTENT_LENGTH = 100; // You can set your desired maximum length
 
@@ -38,9 +39,11 @@ const ServiceContent = () => {
                     <div className=" grid  xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-9">
                        
                         {
-                            ServiceData.map((service, index)=>{
+                            ServiceData.map((service)=>{
                                 return(
-                                    <div>
+                                    <div key={service.id}>
+                                    <Link to={`/service/${service.titleParam}`}>
+
                                         <div className="relative  md:mb-[] mb-[200px]">                          
                             <img src={img} alt="img"  /> 
                             <div className={service.class1}>
@@ -51,9 +54,11 @@ const ServiceContent = () => {
                                 </div>
                                 <h2 className={`my-3 mt-6 text-[19px] ${service.classTitle} `}>{service.title}</h2>
                                     <h3 className={`${service.classContent}`}>{truncateText(service.content, MAX_CONTENT_LENGTH)}</h3>
-                                    <h4 className={`my-4 ${service.classRead}`}>Read More</h4>
+                                    <Link> <h4 className={`my-4 ${service.classRead}`}>Read More</h4></Link>
                             </div>
                         </div>
+                        </Link>
+
                                     </div>
                                 )
                             })

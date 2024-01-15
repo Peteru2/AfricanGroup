@@ -35,7 +35,7 @@ const BlogList = () => {
            transition={{type:"spring", stiffness:200}}
            key={post.id} className='rounded-xl shadow-xl hover:shadow-2xl'>
  
-            <Link to={`/blog/${post.id}`} className=''>
+            <Link to={`/blog/${post.titleParam}`} className=''>
               <div className='rounded-lg'>
                 <img src={post.img} alt={post.name} className='rounded-tr-[15px] rounded-tl-[15px]'/>
               </div>

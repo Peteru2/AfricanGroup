@@ -2,6 +2,7 @@ import firstImg from "../../assets/images/FirstSectionImage1.jpg"
 const blogData = [
     {
       id: 1,
+      titleParam:"Blog_Post_1",
       title: "Blog Post 1",
       date: "January 1, 2023",
       content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...",

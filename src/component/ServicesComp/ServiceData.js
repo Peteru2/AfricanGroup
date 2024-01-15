@@ -2,6 +2,7 @@ import firstImg from "../../assets/images/FirstSectionImage1.jpg"
 const ServiceData = [
     {
       id: 1,
+      titleParam:"land_surveying_and_engineering",
       title: " Land Surveying And Engineering",
       content: "Cadastral Surveying, Land/Property Registration as a legal instrument, Property Detailing, Road/Route Survey, Topographical Survey (Determination of Spot levels/Height, Contours, 3D Wireframe, Direction of water flow), Hydrographical Survey and Instrument Trainers.",
       img: firstImg,

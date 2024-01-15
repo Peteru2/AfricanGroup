@@ -1,11 +1,11 @@
 // BlogPost.js
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import blogData from './data';
+import ServiceData from './ServiceData';
 
-const BlogPost = () => {
+const ServicePost = () => {
   const { titleParam } = useParams();
-  const post = blogData.find((post) => post.titleParam === titleParam);
+  const post = ServiceData.find((post) => post.titleParam === titleParam);
 
   if (!post) {
     return <div>Post not found</div>;
@@ -14,10 +14,9 @@ const BlogPost = () => {
   return (
     <div>
       <h2>{post.title}</h2>
-      <p>{post.date}</p>
       <p>{post.content}</p>
     </div>
   );
 };
 
-export default BlogPost;
+export default ServicePost;

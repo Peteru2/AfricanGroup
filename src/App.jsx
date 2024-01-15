@@ -12,6 +12,7 @@ import BlogList from './component/BlogComp/BlogLists';
 import BlogPost from './component/BlogComp/BlogPost';
 import Team from './component/Team/Team';
 import Services from './Views/Service';
+import ServicePost from './component/ServicesComp/ServicePost';
 import FaqsMain from './component/FAQS/Faqs';
 
 
@@ -35,7 +36,9 @@ function App() {
           <Route path={'/Blog'} element={<BlogList />} />
           <Route path={'/About/Team'} element={<Team />} />
 
-          <Route path="/blog/:id" element={<BlogPost />} />
+          <Route path="/blog/" element={<BlogPost />} />
+          <Route path="/service/:titleParam" element={<ServicePost />} />
+
           <Route path={'/FAQs'} element={<FaqsMain />} />
 
         </Routes>
