@@ -30,7 +30,6 @@ const Team = () => {
             
             <ImageWithOverlay
                 imageUrl={image}
-                title1="AfricanGroup"
                 span1="About Us"
                 span2="Team"
                 title2="Our Team"

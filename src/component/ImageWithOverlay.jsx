@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-const ImageWithOverlay = ({ imageUrl, title1, span1, span2, title2, decrip}) => {
+const ImageWithOverlay = ({ imageUrl, span1, span2, title2, decrip}) => {
     const overlayStyle = {
       background: 'rgba(45, 64, 0, .8)', 
       position: 'absolute',
@@ -32,7 +32,7 @@ const ImageWithOverlay = ({ imageUrl, title1, span1, span2, title2, decrip}) => 
                     initial={{y:'100vw'}}
                     animate={{y:0}}
                     transition={{delay: 0.5, type: "spring"}}
-                    className="items-center font-bold flex justify-center text-[16px]">{title1} <span className="h-2 w-2 mx-4 bg-white bg-opacity-60 rounded-full"></span> {span1}  {span2 != ""? ( <><span className="h-2 w-2 mx-4 bg-white bg-opacity-60 rounded-full"></span> {span2}</>):""}
+                    className="items-center font-bold flex justify-center text-[16px]">Africa Group <span className="h-2 w-2 mx-4 bg-white bg-opacity-60 rounded-full"></span> {span1}  {span2 != ""? ( <><span className="h-2 w-2 mx-4 bg-white bg-opacity-60 rounded-full"></span> {span2}</>):""}
                     </motion.h2>
                     <motion.div 
                     initial={{y:'-100vw'}}

@@ -17,7 +17,7 @@ const Landing = () => {
       // Simulate loading delay for 2 seconds
       setTimeout(() => {
         setLoading(false);
-      }, 10000);
+      }, 6000);
     }, []);
 
     return ( 

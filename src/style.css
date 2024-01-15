@@ -88,7 +88,7 @@ mark{
     letter-spacing: 0.15em; /* Adjust the letter spacing */
     animation:
     typing 6s steps(25, end),
-    change-color 4s infinite; /* Start blinking after 3 seconds */
+    change-color 3s infinite; /* Start blinking after 3 seconds */
   }
   
   
@@ -108,7 +108,7 @@ mark{
     max-width: 100%;
     letter-spacing: 0.15em; 
     animation:
-      typing 3s steps(25, end) 5s forwards
+      typing 3s steps(25, end) 3s forwards
   }
   @keyframes typing {
     from { width: 0; 

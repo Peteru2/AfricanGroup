@@ -11,7 +11,6 @@ const Contact = () => {
                 
                 <ImageWithOverlay
                 imageUrl={image}
-                title1="AfricanGroup"
                 span1="Contact Us"
                 span2=""
                 title2=""

@@ -17,7 +17,6 @@ const ServiceContent = () => {
         <section>
             <ImageWithOverlay
                 imageUrl={image}
-                title1="AfricanGroup"
                 span1="Service"
                 span2=""
                 title2=""

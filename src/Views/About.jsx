@@ -14,7 +14,6 @@ const About = () => {
             <Navbar />
             <ImageWithOverlay
                 imageUrl={image}
-                title1="AfricanGroup"
                 span1="About Us"
                 span2=""
                 title2="Who are we?"
