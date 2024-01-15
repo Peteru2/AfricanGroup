@@ -4,6 +4,7 @@ import FAQSection from './FaqsSection';
 import faqData from './faqData';
 import ImageWithOverlay from '../ImageWithOverlay'
 import image from "../../assets/images/FirstSectionImage1.jpg"
+import Footer from '../Footer';
 
 
 const FaqsMain = () => {
@@ -29,7 +30,7 @@ const FaqsMain = () => {
 
       <FAQSection title="About Survey" description="This is about it"faqItems={faqData[0]} />
       <FAQSection title="My Survey" faqItems={faqData[1]} />
-
+      <Footer />
     </div>
   );
 };

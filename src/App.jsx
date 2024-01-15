@@ -36,7 +36,7 @@ function App() {
           <Route path={'/Blog'} element={<BlogList />} />
           <Route path={'/About/Team'} element={<Team />} />
 
-          <Route path="/blog/" element={<BlogPost />} />
+          <Route path="/blog/titleParam" element={<BlogPost />} />
           <Route path="/service/:titleParam" element={<ServicePost />} />
 
           <Route path={'/FAQs'} element={<FaqsMain />} />

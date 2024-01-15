@@ -6,6 +6,7 @@ import Navbar from '../Navbar/Navbar';
 import { motion } from 'framer-motion';
 import image from "../../assets/images/about.jpg"
 import ImageWithOverlay from '../ImageWithOverlay';
+import Footer from '../Footer';
 
 const BlogList = () => {
   return (
@@ -53,6 +54,7 @@ const BlogList = () => {
         </motion.div>
       </ul>
       </section>
+      <Footer />
     </div>
   );
 };

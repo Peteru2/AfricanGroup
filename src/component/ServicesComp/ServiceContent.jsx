@@ -64,33 +64,6 @@ const ServiceContent = () => {
                             })
                         }
 
-                        
-                        <div>
-                        <div className="relative mb-[150px] ">                          
-                            <img src={img} alt="img"  /> 
-                            <div className="absolute bg-vintage p-5 text-white mx-7 group  transition ease-in-out  duration-300 hover:bg-private bottom-[-150px]">
-                                <div className="relative">
-                                    <div className="bg-private p-4 group-hover:bg-vintage absolute top-[-44px]">
-                                        <h3>dasdfas</h3>
-                                    </div>
-                                </div>
-                                <h2 className="my-3 mt-6">Land Survey</h2>
-                                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam placeat, quae minima error debitis esse velit odit ratione exercitationem hic! Laborum id ipsa provident suscipit optio et placeat reprehenderit numquam.</h3>
-                            </div>
-                        </div>
-                        </div>
-                        <div className="relative mb-[150px]">                          
-                            <img src={img} alt="img"  /> 
-                            <div className="absolute bg-private p-5 text-white mx-7 group   transition ease-in-out  duration-300 hover:bg-vintage bottom-[-150px]">
-                                <div className="relative">
-                                    <div className="bg-vintage p-4 group-hover:bg-private absolute top-[-44px]">
-                                        <h3>dasdfas</h3>
-                                    </div>
-                                </div>
-                                <h2 className="my-3 mt-6">Land Survey</h2>
-                                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam placeat, quae minima error debitis esse velit odit ratione exercitationem hic! Laborum id ipsa provident suscipit optio et placeat reprehenderit numquam.</h3>
-                            </div>
-                        </div>
  
 
  </div>
