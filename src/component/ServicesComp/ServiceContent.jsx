@@ -1,5 +1,6 @@
 import img from "../../assets/images/FirstSectionImage1.jpg"
 import ServiceData from "./ServiceData";
+import Helmett from "../Helmet";
 import image from "../../assets/images/about.jpg"
 import ImageWithOverlay from '../ImageWithOverlay';
 import { Link } from "react-router-dom";
@@ -16,18 +17,23 @@ const ServiceContent = () => {
     return ( 
         <>
         <section>
+        <Helmett 
+                title="Our Service-Land surveying, Real Estate..."
+                content = ""
+                />
             <ImageWithOverlay
                 imageUrl={image}
                 span1="Service"
                 span2=""
                 title2=""
                 decrip="Our Services"
+                height="400px"
+
       />
-            <div className="xl:mx-6 md:mx-0  mx-6 md:mt-[140px] mt-[30px]  font-roboto">
+            <div className="xl:mx-6 md:mx-0  mx-6 border-t-[1px] pt-6 md:mt-[80px]  mt-[30px]  font-roboto">
                     <div className="flex justify-center">
-                        <div>
-                        <h4 className="text-private text-center">OUR SERVICES </h4>
-                        <h4 className="text-3xl text-center font-bold my-3">What Service We Provide</h4>
+                        <div className="mb-6">
+                        <h4 className="text-3xl text-center font-bold my-3 text-private">What Service We Provide</h4>
                         
                             <h5 className="md:w-[600px] text-center flex justify-center">Lorem ipsum dolor sit amet, consectetur adipisicing zelit. Porro sit, architecto dolores quam sequi hic quidem ut. Dolores, quasi rerum! Quae aperiam quia maxime et doloremque distinctio. Dolorum, doloremque. Molestias.
 

@@ -5,6 +5,7 @@ import faqData from './faqData';
 import ImageWithOverlay from '../ImageWithOverlay'
 import image from "../../assets/images/FirstSectionImage1.jpg"
 import Footer from '../Footer';
+import Helmett from '../Helmet';
 
 
 const FaqsMain = () => {
@@ -16,7 +17,10 @@ const FaqsMain = () => {
     
   return (
     <div>
-
+        <Helmett 
+                title="Faqs"
+                content = ""
+                />
      <Navbar />
       <ImageWithOverlay
         imageUrl={image}
@@ -25,6 +29,7 @@ const FaqsMain = () => {
         span2=""
         title2="Your Faqs"
         decrip="Frequently Asked Questions"
+        height="400px"
       />
     
 

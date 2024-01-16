@@ -34,6 +34,8 @@ const Team = () => {
                 span2="Team"
                 title2="Our Team"
                 decrip="Meet With The Expert Team"
+                height="400px"
+
       />
             <section className="font-roboto mt-8 xl:mx-6 md:mx-0 mx-6 my-10">
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-10">

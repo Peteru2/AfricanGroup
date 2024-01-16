@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-const ImageWithOverlay = ({ imageUrl, span1, span2, title2, decrip}) => {
+const ImageWithOverlay = ({ imageUrl, span1, span2, title2, decrip,height}) => {
     const overlayStyle = {
       background: 'rgba(45, 64, 0, .8)', 
       position: 'absolute',
@@ -14,7 +14,7 @@ const ImageWithOverlay = ({ imageUrl, span1, span2, title2, decrip}) => {
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       position: 'relative',
-      height: '450px', // Adjust the height as needed
+      height: `${height}`, // Adjust the height as needed
       color: 'white', // Text color
       textAlign: 'center',
       display: 'flex',

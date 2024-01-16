@@ -13,6 +13,8 @@ const Project = () => {
                 span2=""
                 title2="This is AfricanGroup"
                 decrip="Our Projects"
+                height="400px"
+
       />
             </section>
         </>

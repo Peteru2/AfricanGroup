@@ -4,6 +4,7 @@ import 'react-slideshow-image/dist/styles.css';
 import Image1 from "../../assets/images/FirstSectionImage1.jpg"
 import { motion } from "framer-motion"
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 const FirstSection = () => {
     const indicators = (index) => (
@@ -73,6 +74,12 @@ const FirstSection = () => {
     
     return (
         <> 
+        <Helmet>
+                <meta charSet="utf-8" />
+                <title >Home - Land Surveying in Oyo Nigeria</title>
+                <meta name="description" content="Your meta description goes here." />
+                {/* Other meta tags go here */}
+            </Helmet>
         <section>
             
         <Slide

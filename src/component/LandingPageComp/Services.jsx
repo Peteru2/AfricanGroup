@@ -60,7 +60,7 @@ const firstThreeServiceItems = ServiceData.slice(0,3);
                                           <img src={service.img} alt="image1" className='px-6 md:px-0 rounded-md'/>
                                           <div className=" bg-white shadow-2xl rounded-md">
                                             <h2 className="px-4 font-bold text-[18px] my-3">{service.title}</h2>
-                                            <h2 className="px-4 py-4 "><Link> {truncateText(service.content, MAX_CONTENT_LENGTH)}</Link></h2>
+                                            <h2 className="px-4 py-4 "><Link to={`/service/${service.titleParam}`}> {truncateText(service.content, MAX_CONTENT_LENGTH)}</Link></h2>
                                           </div>
                                       </motion.div>
                                       )

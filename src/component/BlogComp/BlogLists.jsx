@@ -7,10 +7,14 @@ import { motion } from 'framer-motion';
 import image from "../../assets/images/about.jpg"
 import ImageWithOverlay from '../ImageWithOverlay';
 import Footer from '../Footer';
-
+import Helmett from '../Helmet';
 const BlogList = () => {
   return (
     <div> 
+       <Helmett 
+                title="The Best Surveying Company"
+                content = ""
+                />
       <Navbar />
             <ImageWithOverlay
                 imageUrl={image}
@@ -19,16 +23,28 @@ const BlogList = () => {
                 span2=""
                 title2="This is AfricanGroup"
                 decrip="Our Blog"
+                height="400px"
       />
             
-     <section className="font-roboto mt-32 xl:mx-6 md:mx-0 mx-6 my-10">
+     <section className="font-roboto border-t-[1px] pt-6 mt-20 xl:mx-6 md:mx-0 mx-6 my-6">
+     <div className="flex justify-center">
+                        <div className="mb-6">
+                        <h4 className="text-3xl text-private text-center font-bold my-2">News and happenings</h4>
+                        
+                            <h5 className="md:w-[600px] text-center flex justify-center">Lorem ipsum dolor sit amet, consectetur adipisicing zelit. Porro sit, architecto dolores quam sequi hic quidem ut. Dolores, quasi rerum! Quae aperiam quia maxime et doloremque distinctio. Dolorum, doloremque. Molestias.
+
+                            </h5>
+                           
+                            </div>
+
+                    </div>
       <ul>
         <motion.div 
          initial={{ opacity: 0 }}
          whileInView={{ opacity: 1 }}
          transition={{ delay: 0.5 }}
 
-        className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-8   mb-4 font-roboto">
+        className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1   gap-8   mb-4 font-roboto">
         {blogData.map((post) => (
           
           <motion.li
