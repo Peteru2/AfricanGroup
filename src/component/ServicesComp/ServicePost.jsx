@@ -27,11 +27,11 @@ const ServicePost = () => {
                 height="300px"
       />
       <section className='xl:mx-6 md:mx-0 mx-6 mt-10 font-roboto'>
-      <div className='grid md:grid-cols-2 grid-cols-1 gap-[60px] mx-20'>
+      <div className='grid md:grid-cols-2 grid-cols-1 gap-[60px] md:mx-20'>
         <div>
             <img src={post.img} alt={post.title} />
         </div>
-        <div className='my-3'>
+        <div className='my-3 mx-6'>
                 <ol className='list'>
               {sentences.map((sentence, index) => (
                 <li className='my-2' key={index}>{sentence}</li>

@@ -27,7 +27,7 @@ const Team = () => {
             </div>
             <Link to={'/About/Team'}>
             <div className="flex justify-center text-vintage font-roboto" >
-                            <div className="mb-[120px] h-20 shadow-xl flex justify-center w-[200px] bg-white">
+                            <div className="mb-[10px] h-20 shadow-xl flex justify-center w-[200px] bg-white">
                 <button className="text-center ">Meet Our Team</button>
             </div>
             </div>

@@ -4,6 +4,8 @@ import Helmett from "../Helmet";
 import image from "../../assets/images/about.jpg"
 import ImageWithOverlay from '../ImageWithOverlay';
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
 const ServiceContent = () => {
     const MAX_CONTENT_LENGTH = 100; // You can set your desired maximum length
 
@@ -45,9 +47,13 @@ const ServiceContent = () => {
                     <div className=" grid  xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-9">
                        
                         {
-                            ServiceData.map((service)=>{
+                            ServiceData.map((service, index)=>{
                                 return(
-                                    <div key={service.id}>
+                                    <motion.div
+                                    initial={{ opacity: 0 }}
+                                   whileInView={{ opacity: 1 }}
+                                   transition={{ delay: index * 0.1 }}
+                                    key={service.id}>
                                     <Link to={`/service/${service.titleParam}`}>
 
                                         <div className="relative  md:mb-[] mb-[200px]">                          
@@ -65,7 +71,7 @@ const ServiceContent = () => {
                         </div>
                         </Link>
 
-                                    </div>
+                                    </motion.div>
                                 )
                             })
                         }

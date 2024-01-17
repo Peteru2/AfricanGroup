@@ -25,8 +25,8 @@ const Footer = () => {
                     <div className="col-span-4 md:col-span-1">
                         <h2 className="mb-6 md:text-[22px] text-[18px]">USEFUL LINKS</h2>
 
-                        <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300">Blog </button></h4>
-                        <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300"><Link to={"/Contact-us"}> Contact</Link></button></h4>
+                        <Link to={"/Blog"}><h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300">Blog </button></h4></Link>
+                        <Link to={"/Contact-us"}> <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300">Contact</button></h4></Link>
                        <Link to ={"/About"}> <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300 text-left">About Us</button></h4></Link>
 
                     </div>
