@@ -83,7 +83,10 @@ const handleQuote = () => {
       </div>
 
     <div className={`modal ${quote?"modal-show":""}`}>
-      <QuoteForm close={handleQuote} />
+      <QuoteForm close={handleQuote}/>
+      </div>
+      <div>
+
       </div>
       <div className={quote?"overlay":""}></div>
     </nav>

@@ -1,7 +1,25 @@
 import { useState } from "react";
 import axios from "axios"
 const QuoteForm = ({close}) => {
+const [success, setSuccess] = useState()
+const [formMessage, setFormMessage] =useState("chess")
+const [isSelectionValid, setIsSelectionValid] = useState(false);
 
+    
+
+    
+    // const handleButtonClick = (index) => {
+    //     setSelectedDivIndex(index); 
+        
+    //     }
+const handleSuccess = () =>{
+        setSuccess(false);
+        close()
+}
+const handleRetry = () => {
+    setSuccess(false);
+    // setFormMessage("");
+  };
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -25,7 +43,6 @@ const QuoteForm = ({close}) => {
       };
       const handleSubmit = (e) =>{
             e.preventDefault();
-
       const newErrors = {};
       const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
       const phoneRegex = /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}\)?[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
@@ -34,21 +51,12 @@ const QuoteForm = ({close}) => {
             if (formData.name.trim() === '') {
 
             newErrors.name = 'Name is required';
-           
-            
-        }
-
-           
-
+            }
                 else if (!formData.email.trim()) {
                     newErrors.email = 'Email is required';
-                   
-
                 } else if (!emailRegex.test(formData.email)) {
                     newErrors.email = 'Invalid email format';
                 }
-
-            
                 else if (!formData.phoneNumber.trim()) {
                     newErrors.phoneNumber = 'Phone Number is required';
                 } else if (!phoneRegex.test(formData.phoneNumber)) {
@@ -59,20 +67,42 @@ const QuoteForm = ({close}) => {
                 }
                 else {
                     axios.post('http://127.0.0.1/api/quoteform/submit', formData)
-                }
+                    .then(response => {
+                        // Handle success
+                        console.log('Success:', response.data);
+                        setFormData({
+                            name: '',
+                            email: '',
+                            phoneNumber: '',
+                            message:'',
+                        })
+                        setFormMessage(response.message)
 
+                        setSuccess(true)
+                    })
+                    .catch(error => {
+                        // Handle error
+                        console.error('Error:', error.message);
+                        setSuccess(true)
+
+                        setFormMessage(error.message)
+
+                        // Display your error message here
+                    });
+                    
+                  
+                    // close()
+                }
                 setErrors(newErrors);
                 console.log(formData)
-                
             if (Object.keys(newErrors).length === 0) {
                 setErrors({});
             }
-
       }
     return ( 
                 <>
                     <section>
-                        <form onSubmit={handleSubmit} className="font-roboto text-black">
+                        <form onSubmit={handleSubmit}  className={`font-roboto text-black ${success?"hidden":""}`}>
                             <div className="flex items-center ">
                             <h2 className="my-2 text-black font-playfair font-bold text-[20px]">Request for Quote</h2>
                             <button className="ml-auto cursor-pointer" onClick={(e) => { e.preventDefault(); close(); }}><i className="fa fa-times"></i></button>
@@ -138,7 +168,22 @@ const QuoteForm = ({close}) => {
                             <button  type="submit"  className="bg-private hover:bg-private hover:bg-opacity-90  text-white font-semibold py-4 px-4 rounded w-full">Submit</button>
                                 
                         </form>
+                        <div className= {` text-black ${success?"":"hidden"}`}> 
+                        <h2 className={`mb-2 ${formMessage && formMessage.includes("Error") ? "text-red " : "hidden text-black"}`}>
+                        {formMessage}
+                                 </h2>
+                                 <h2 className={`mb-2 ${formMessage && formMessage.includes("Success") ? "text-green" : "text-black hidden"}`}>
+                        {formMessage}
+                                 </h2>
+                        
+                        <button className={`bg-private w-full border-[1px] rounded-[4px] w-[50px] ${formMessage && formMessage.includes("Success") ? "text-green" : "hidden"}`} onClick={handleSuccess}>Close</button>
+                        <button className={`border-gray border-[1px] rounded-[4px] w-[50px] ${formMessage && formMessage.includes("Error") ? "text-green" : "hidden"}`}  onClick={handleRetry}>Retry</button>
+
+                    </div>
                     </section>
+
+                 
+                    
                 </>
      );
 }

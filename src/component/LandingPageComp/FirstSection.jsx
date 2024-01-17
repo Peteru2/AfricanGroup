@@ -49,14 +49,18 @@ const FirstSection = () => {
                 Image1,
                 
             ],
-            title:"Featured Project"
+            title:"Featured Project",
+            header:"We Are Africa's Finest",
+            content:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, mollitia? Odit, magni. Ducimus non, ad quam, fuga tempora voluptatum eligendi unde natus facilis libero incidunt atque voluptas enim cum ipsa."
         },
         {
             img: [
                 Image1,
             ],
             title:"About",
-            link: "/About"
+            header:"We Are Africa's Finest",
+            link: "/About",
+            content:"The company is driven by a group of highly trained,experienced, self-motivated, and very dynamic Professionals equipped to handle various categories of projects."
         },
     ]
     
@@ -116,12 +120,12 @@ const FirstSection = () => {
 
                             className='text-white tracking-[4px] font-serif font-bold font-lora mt-[0px]'>{image.title}</motion.p>
                            <p className='text-white my-4 md:text-5xl text-2xl font-bold break-words md:w-[350px] font-roboto'>
-  Queen Alima By AfricanGroup
-</p>
+                                    {image.header} 
+                        </p>
                        
                             <div className='text-white flex flex-wrap text-small font-serif'>
-                                <p className="max-w-full">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi soluta iusto porro beatae rem in veritatis asperiores obcaecati, incidunt quae distinctio sapiente sint sequi saepe odio, quo quam quidem lfuga?
+                                <p className="md:w-[400px]">
+                            {image.content}
                             </p>
                     
                             </div>
