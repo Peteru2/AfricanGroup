@@ -76,7 +76,9 @@ const handleRetry = () => {
                             phoneNumber: '',
                             message:'',
                         })
-                        setFormMessage(response.message)
+                        console.log('Success:', response.message);
+
+                        setFormMessage("Quote Submitted Successfully")
 
                         setSuccess(true)
                     })
@@ -168,15 +170,15 @@ const handleRetry = () => {
                             <button  type="submit"  className="bg-private hover:bg-private hover:bg-opacity-90  text-white font-semibold py-4 px-4 rounded w-full">Submit</button>
                                 
                         </form>
-                        <div className= {` text-black ${success?"":"hidden"}`}> 
-                        <h2 className={`mb-2 ${formMessage && formMessage.includes("Error") ? "text-red " : "hidden text-black"}`}>
+                        <div className= {`font-roboto text-black ${success?"":"hidden"}`}> 
+                        <h2 className={`mb-2 font-bold ${formMessage && formMessage.includes("Error") ? "text-red" : "hidden text-black"}`}>
                         {formMessage}
                                  </h2>
-                                 <h2 className={`mb-2 ${formMessage && formMessage.includes("Success") ? "text-green" : "text-black hidden"}`}>
+                                 <h2 className={`mb-2 font-bold ${formMessage && formMessage.includes("Successfully") ? "text-green" : "text-black hidden"}`}>
                         {formMessage}
                                  </h2>
                         
-                        <button className={`bg-private w-full border-[1px] rounded-[4px] w-[50px] ${formMessage && formMessage.includes("Success") ? "text-green" : "hidden"}`} onClick={handleSuccess}>Close</button>
+                        <button className={`bg-private w-full border-[1px] text-white rounded-[4px]  mt-3 ${formMessage && formMessage.includes("Successfully") ? "text-green" : "hidden"}`} onClick={handleSuccess}>Close</button>
                         <button className={`border-gray border-[1px] rounded-[4px] w-[50px] ${formMessage && formMessage.includes("Error") ? "text-green" : "hidden"}`}  onClick={handleRetry}>Retry</button>
 
                     </div>
