@@ -79,11 +79,11 @@ const FirstSection = () => {
     return (
         <> 
         <Helmet>
-                <meta charSet="utf-8" />
-                <title >Home - Land Surveying in Oyo Nigeria</title>
-                <meta name="description" content="Your meta description goes here." />
-                {/* Other meta tags go here */}
-            </Helmet>
+    <meta charSet="utf-8" />
+    <title>Home - Land Surveying in Oyo Nigeria</title>
+    <meta name="description" content="Leading land surveying services in Oyo, Nigeria. Accurate property assessments, boundary surveys, and topographic mapping. Expert surveyors for residential and commercial projects." />
+   
+</Helmet>
         <section>
             
         <Slide

@@ -14,7 +14,7 @@ const About = () => {
         <section>
             <Helmett 
                 title="About Us"
-                content = ""
+                content="Learn more about our reputable land surveying company in Oyo, Nigeria. Discover our commitment to precision, excellence, and client satisfaction. Meet our experienced surveyors dedicated to providing top-notch services for residential and commercial projects."
                 />
             <Navbar />
             <ImageWithOverlay

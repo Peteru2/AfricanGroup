@@ -30,13 +30,13 @@ function App() {
           <Route path={'/Project'} element={<Project />} />
           <Route path={'/Services'} element={<Services />} />
           <Route path={'/Contact-us'} element={<Contact />} />
-          <Route path={'/Quote_data'} element={<QuoteData />} />
+          <Route path={'/quote-data'} element={<QuoteData />} />
 
 
           <Route path={'/Blog'} element={<BlogList />} />
           <Route path={'/About/Team'} element={<Team />} />
 
-          <Route path="/blog/titleParam" element={<BlogPost />} />
+          <Route path="/blog/:titleParam" element={<BlogPost />} />
           <Route path="/service/:titleParam" element={<ServicePost />} />
 
           <Route path={'/FAQs'} element={<FaqsMain />} />

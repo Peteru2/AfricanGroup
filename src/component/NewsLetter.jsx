@@ -27,8 +27,18 @@ const NewsLetter = () => {
                 newErrors.email = 'Invalid email format';
             }
             else {
-            setErrors({});
                 axios.post('http://127.0.0.1/api/newsletter/submit', formData)
+                .then( response=>{
+                        newErrors.email = response.data.message;
+                        setErrors(newErrors);
+                        setFormData({email:""})
+                       
+
+                }   
+                )
+                .catch(error => {
+                    newErrors.email = 'Something went wrong'
+                })
             }
             setErrors(newErrors);
             console.log(formData)

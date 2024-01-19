@@ -12,8 +12,8 @@ const BlogList = () => {
   return (
     <div> 
        <Helmett 
-                title="The Best Surveying Company"
-                content = ""
+                title="Blog - The Best Surveying Company"
+                content="Explore our blog for insightful articles on land surveying in Oyo, Nigeria. Stay informed with expert tips, industry trends, and valuable information about property development. Dive into our blog to gain knowledge and make informed decisions for your projects."
                 />
       <Navbar />
             <ImageWithOverlay

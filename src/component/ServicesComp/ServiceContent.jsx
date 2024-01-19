@@ -21,7 +21,7 @@ const ServiceContent = () => {
         <section>
         <Helmett 
                 title="Our Service-Land surveying, Real Estate..."
-                content = ""
+                content="Explore our comprehensive land surveying services in Oyo, Nigeria. From accurate property assessments to boundary surveys and topographic mapping, our expert surveyors specialize in residential and commercial projects. Discover how we can assist you with precise and reliable surveying solutions."
                 />
             <ImageWithOverlay
                 imageUrl={image}
