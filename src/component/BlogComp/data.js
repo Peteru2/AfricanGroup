@@ -15,7 +15,7 @@ const blogData = [
       titleParam:"blog-post-2",
         title: "Blog Post 2",
         date: "February 6, 2003",
-        content: "Oh Lord our in ages past",
+        content: "Oh Lord our help in ages past",
         img: firstImg,
         type:"ESTATE"
 
