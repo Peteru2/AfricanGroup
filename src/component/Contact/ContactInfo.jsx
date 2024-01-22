@@ -6,7 +6,7 @@ const ContactInfo = () => {
             <section className="font-roboto mt-[40px] xl:ml-6 md:mx-0 mx-6 text-[15px]">
                     <div className="grid md:grid-cols-2 grid-cols-1  ">
                         <div className="">
-                            <h3 className="mb-2 text-private font-bold  tracking-[4px]">OUR HEAFQUARTER</h3>
+                            <h3 className="mb-2 text-private font-bold  tracking-[4px]">OUR HEADQUARTER</h3>
                             <h2 className="text-[30px]">Union Bank Road, Owode, Oyo</h2>
                         </div>
 

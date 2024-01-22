@@ -97,7 +97,7 @@ const FirstSection = () => {
              <div   className="each-slide-effect" key={index}>
                 <div style={{ 'backgroundImage': `url(${image.img}) `,  "backgroundSize":"cover", "width":"100%" }}>
                     {/* <span>{`Slide ${index + 1}`}</span> */}
-                    <div className='md:pt-32 pt-[90px]   md:pb-72 pb-[100px] md:px-14 px-6  bg-public bg-opacity-40'>
+                    <div className='md:pt-32 pt-[90px]   md:pb-72 pb-[100px] md:px-14 px-6  bg-public bg-opacity-50'>
                     <motion.h2 
                     initial ={{x: "100vw"}}
                     animate ={{x: 0}}

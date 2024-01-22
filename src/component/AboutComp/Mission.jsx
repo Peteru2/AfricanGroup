@@ -42,7 +42,7 @@ const Mission = () => {
                         className="text-[15px]">
                             <h4><b>AFRICAN GROUP</b> Nigeria, is a sole Nigerian Group of Companies existing over eight years, which was incorporated in 2020; for the purpose of providing first class services in the areas of: Surveying & Mapping, Real Estate, Construction & Agricultural services.</h4>
                             <h4 className="text-[15px] my-6">
-                        The company is driven by a group of highly trained,experienced, self-motivated, and very dynamic Professionals equipped to handle various categories of projects; LAND & ENGINEERING SURVEYING, MAPPING & GEO-DATA, ARCHITECTURAL DESIGNS, REAL ESTATE, CIVIL CONSTRUCTION, AGRO, SITE CLEARING & GROUND LEVELLING, DRILLING, ELECTRICAL ENGINEERING, INTERIOR & EXTERIOR FINISHING, and PROJECT MANAGEMENT.
+                        The company is driven by a group of highly trained, experienced, self-motivated, and very dynamic Professionals equipped to handle various categories of projects; LAND & ENGINEERING SURVEYING, MAPPING & GEO-DATA, ARCHITECTURAL DESIGNS, REAL ESTATE, CIVIL CONSTRUCTION, AGRO, SITE CLEARING & GROUND LEVELLING, DRILLING, ELECTRICAL ENGINEERING, INTERIOR & EXTERIOR FINISHING, and PROJECT MANAGEMENT.
                         </h4>
                         </motion.div>
                         <div>

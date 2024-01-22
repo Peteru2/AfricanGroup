@@ -2,6 +2,8 @@ import { useState } from "react";
 import axios from "axios"
 const QuoteForm = ({close}) => {
 const [success, setSuccess] = useState()
+const [icon, setIcon] = useState(false)
+
 const [formMessage, setFormMessage] =useState("chess")
 const [isSelectionValid, setIsSelectionValid] = useState(false);
 
@@ -15,9 +17,12 @@ const [isSelectionValid, setIsSelectionValid] = useState(false);
 const handleSuccess = () =>{
         setSuccess(false);
         close()
+        setIcon(false)
 }
 const handleRetry = () => {
     setSuccess(false);
+    setIcon(false)
+
     // setFormMessage("");
   };
     const [formData, setFormData] = useState({
@@ -66,6 +71,7 @@ const handleRetry = () => {
                     newErrors.message = 'Message is required';
                 }
                 else {
+                    setIcon(true)
                     axios.post('http://127.0.0.1/api/quoteform/submit', formData)
                     .then(response => {
                         // Handle success
@@ -167,7 +173,7 @@ const handleRetry = () => {
                                 </div>
                             </div>
 
-                            <button  type="submit"  className="bg-private hover:bg-private hover:bg-opacity-90  text-white font-semibold py-4 px-4 rounded w-full">Submit</button>
+                            <button  type="submit"  className="bg-private hover:bg-private hover:bg-opacity-90  text-white font-semibold py-4 px-4 rounded w-full">{icon ?( <span>Submitting <i class="fas fa-spinner fa-spin"></i></span>):( <span>Submit</span>  )}</button>
                                 
                         </form>
                         <div className= {`font-roboto text-black ${success?"":"hidden"}`}> 
