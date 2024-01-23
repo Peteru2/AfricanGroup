@@ -41,8 +41,8 @@ function App() {
 
           <Route path={'/FAQs'} element={<FaqsMain />} />
 
-        </Routes> */}
-        </Router>
+        </Routes> 
+  </Router> */}
       </section>
     </>
   )
