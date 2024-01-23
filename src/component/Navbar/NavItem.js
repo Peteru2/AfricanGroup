@@ -32,8 +32,8 @@ const NavMenu =
                 icon: "",
             },
             {
-                title : "CAREERS",
-                url: "l",
+                title : "CONTACT",
+                url: "/Contact-us",
                 cName : "nav-links",
                 icon: "",
             },

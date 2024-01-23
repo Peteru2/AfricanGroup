@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <section >
-        <Router>
+        {/* <Router>
         <ScrollToTop />
         <Routes>
           <Route path={'/'} element={<Landing />} />
@@ -41,7 +41,7 @@ function App() {
 
           <Route path={'/FAQs'} element={<FaqsMain />} />
 
-        </Routes>
+        </Routes> */}
         </Router>
       </section>
     </>
