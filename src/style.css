@@ -1,18 +1,19 @@
-.nextButtonStyle{
-    width: 35px;
-    height: 35px; 
-    background: transparent;
-    border-width: 3px;
-   
-    display: flex;
-    align-items:center;
-    /* // borderStyle: 'dotted'; */
-    padding: 10px; 
-    border-radius: 1%;
-     border-color: white; 
-    cursor: pointer;
-    margin-top: 300px
-}
+  @colos: #fff;
+  .nextButtonStyle{
+      width: 35px;
+      height: 35px; 
+      background: transparent;
+      border-width: 3px;
+    
+      display: flex;
+      align-items:center;
+      /* // borderStyle: 'dotted'; */
+      padding: 10px; 
+      border-radius: 1%;
+      border-color: white; 
+      cursor: pointer;
+      margin-top: 300px
+  }
 .about{
     background-image: url(../src/assets/images/about.jpg);
     background-size: cover;
@@ -93,7 +94,7 @@ mark{
   
   
   @keyframes change-color {
-    0%, 25% { color: white; }
+    0%, 25% { color: white }
     50%, 75% { color: rgba(0, 128, 0, .6); }
     100% { color: #008000; }
    

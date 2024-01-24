@@ -2,6 +2,7 @@ import Navbar from "../component/Navbar/Navbar";
 import image from "../assets/images/about.jpg"
 import ImageWithOverlay from "../component/ImageWithOverlay";
 import Helmett from "../component/Helmet";
+import ProjList from "../component/ProjectComp/ProjLists";
 const Project = () => {
     return ( 
         <>
@@ -23,6 +24,7 @@ const Project = () => {
                 height="400px"
 
       />
+      <ProjList />
             </section>
         </>
      );

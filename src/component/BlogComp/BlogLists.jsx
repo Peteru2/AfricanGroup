@@ -9,6 +9,15 @@ import ImageWithOverlay from '../ImageWithOverlay';
 import Footer from '../Footer';
 import Helmett from '../Helmet';
 const BlogList = () => {
+  const MAX_CONTENT_LENGTH = 180; // You can set your desired maximum length
+
+// Function to truncate text and add "..."
+const truncateText = (text, maxLength) => {
+  if (text.length > maxLength) {
+    return text.substring(0, maxLength) + '...';
+  }
+  return text;
+};
   return (
     <div> 
        <Helmett 
@@ -58,8 +67,9 @@ const BlogList = () => {
               </div>
               <div className="bg-white  p-6 rounded-br-[15px] rounded-bl-[15px]">
                 <h4 className='text-private'>{post.type}</h4>
-              <h2 className='text-[25px] text-vintage mt-4 mb-10'>{post.title}</h2>
-               <h4 className=''> {post.date} </h4>
+              <h2 className='text-[25px] text-vintage mt-4 mb-6'>{post.title}</h2>
+              <h4 className='text-[15px]'>{truncateText(post.content, MAX_CONTENT_LENGTH)}</h4>
+               <h4 className='text-gray mt-2'> {post.date} </h4>
               </div>
             </Link>
        
