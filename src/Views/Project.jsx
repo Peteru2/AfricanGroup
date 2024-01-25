@@ -3,6 +3,7 @@ import image from "../assets/images/about.jpg"
 import ImageWithOverlay from "../component/ImageWithOverlay";
 import Helmett from "../component/Helmet";
 import ProjList from "../component/ProjectComp/ProjLists";
+import Footer from "../component/Footer";
 const Project = () => {
     return ( 
         <>
@@ -25,7 +26,9 @@ const Project = () => {
 
       />
       <ProjList />
+
             </section>
+            <Footer />
         </>
      );
 }
