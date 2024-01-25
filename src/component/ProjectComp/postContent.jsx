@@ -9,11 +9,11 @@ const PostContent = () => {
     }
     return ( 
         <div className="xl:mx-[90px] md:mx-5 mx-6 mt-20">
-            <div className="grid grid-cols-2 gap-6">
-                <div>
+            <div className="grid md:grid-cols-5 grid-cols-1 md:gap-6">
+                <div className="col-span-3">
                     <img src={post.img} alt={post.title}/>
                 </div>
-                <div className="bg-gray bg-opacity-20">
+                <div className="bg-gray bg-opacity-20 col-span-2">
                 <h2>{post.title}</h2>
                 </div>
             </div>
