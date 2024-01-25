@@ -32,7 +32,7 @@ const ServiceContent = () => {
                 height="400px"
 
       />
-            <div className="xl:mx-6 md:mx-0  mx-6 border-t-[1px] pt-6 md:mt-[80px]  mt-[30px]  font-roboto">
+            <div className="xl:mx-[90px] md:mx-5  mx-6 border-t-[1px] pt-6 md:mt-[80px]  mt-[30px]  font-roboto">
                     <div className="flex justify-center">
                         <div className="mb-6">
                         <h4 className="text-3xl text-center font-bold my-3 text-private">What Service We Provide</h4>
@@ -56,7 +56,7 @@ const ServiceContent = () => {
                                     key={service.id}>
                                     <Link to={`/service/${service.titleParam}`}>
 
-                                        <div className="relative  md:mb-[] mb-[200px]">                          
+                                        <div className="relative  md:mb-[200px] mb-[120px]">                          
                             <img src={img} alt="img"  /> 
                             <div className={service.class1}>
                                 <div className="relative ">

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const ContactInfo = () => {
     return ( 
         <>
-            <section className="font-roboto mt-[40px] xl:ml-6 md:mx-0 mx-6 text-[15px]">
+            <section className="font-roboto mt-[40px] xl:mx-[90px] md:mx-5 mx-6 text-[15px]">
                     <div className="grid md:grid-cols-2 grid-cols-1  ">
                         <div className="">
                             <h3 className="mb-2 text-private font-bold  tracking-[4px]">OUR HEADQUARTER</h3>

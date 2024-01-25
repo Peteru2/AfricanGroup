@@ -3,27 +3,9 @@ import Navbar from "../Navbar/Navbar";
 import TeamImg from "../../assets/images/Team1.jpg"
 import image from "../../assets/images/about.jpg"
 import ImageWithOverlay from '../ImageWithOverlay';
+import TeamFirstData from "./TeamData";
 const Team = () => {
-    const TeamFirstData = [
-        {
-            name:"Olatunji Peter",
-            office: "Founder & CEO",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nostrum ipsum unde dolores, quaerat fugiat vel ducimus ullam modi doloremque quae aut labore rerum commodi illo deserunt, voluptates sequi cumque.",
-            img: TeamImg 
-        },
-        {
-            name:"Olatunji Peter",
-            office: "Founder & CEO",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nostrum ipsum unde dolores, quaerat fugiat vel ducimus ullam modi doloremque quae aut labore rerum commodi illo deserunt, voluptates sequi cumque.",
-            img: TeamImg 
-        },
-        {
-            name:"Olatunji Peter",
-            office: "Founder & CEO",
-            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit nostrum ipsum unde dolores, quaerat fugiat vel ducimus ullam modi doloremque quae aut labore rerum commodi illo deserunt, voluptates sequi cumque.",
-            img: TeamImg 
-        },
-]
+    
     return ( 
         <>
         <Navbar />
@@ -37,12 +19,12 @@ const Team = () => {
                 height="400px"
 
       />
-            <section className="font-roboto mt-8 xl:mx-6 md:mx-0 mx-6 my-10">
+            <section className="font-roboto mt-8 xl:mx-[90px] md:mx-5 mx-6 my-10">
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
                     {TeamFirstData.map((data, index)=>{
                             return(
                                 <>
-               <div className="grid md:grid-cols-1 xl:grid-cols-2 grid-cols-1">
+               <div key={index} className="grid md:grid-cols-1 xl:grid-cols-2 grid-cols-1">
   <div className="relative" style={{ 'maxWidth': '100%', 'height': 'auto' }}>
     <img
       className="w-full h-full object-cover"

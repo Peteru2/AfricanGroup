@@ -46,7 +46,7 @@ const firstThreeServiceItems = ServiceData.slice(0,3);
                     </div>
                 </div>
                 <div className="flex justify-center mt-[20px]">
-                        <div className="grid md:grid-cols-3 mt-4 md:mt-0 w-[1100px] gap-6 my-4  mx-6 md:mx-0">
+                        <div className="grid md:grid-cols-3 mt-4 md:mt-0 w-[1100px] gap-6 my-4  mx-6 md:mx-5">
                         <Bounce cascade triggerOnce direction=""> 
                                 
                                 {

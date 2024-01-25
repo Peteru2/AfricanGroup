@@ -14,6 +14,7 @@ import Team from './component/Team/Team';
 import Services from './Views/Service';
 import ServicePost from './component/ServicesComp/ServicePost';
 import FaqsMain from './component/FAQS/Faqs';
+import ProjPost from './component/ProjectComp/ProjPost';
 
 
 function App() {
@@ -38,6 +39,8 @@ function App() {
 
           <Route path="/blog/:titleParam" element={<BlogPost />} />
           <Route path="/service/:titleParam" element={<ServicePost />} />
+          <Route path="/project/:titleParam" element={<ProjPost />} />
+
 
           <Route path={'/FAQs'} element={<FaqsMain />} />
 

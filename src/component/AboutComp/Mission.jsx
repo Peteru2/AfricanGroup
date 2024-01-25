@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 const Mission = () => {
     return ( 
         <>
-                <section className="border-t-[1px] pt-6 mt-20 xl:mx-6 md:mx-0 mx-6 font-roboto">
+                <section className="border-t-[1px] pt-6 mt-20 xl:mx-[90px] md:mx-5 mx-6 font-roboto">
                     <div className="grid md:grid-cols-2 grid-cols-1 gap-14">
 
                         <motion.div

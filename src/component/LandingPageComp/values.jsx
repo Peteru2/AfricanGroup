@@ -6,10 +6,10 @@ const Values = () => {
         <>
             <section className="">
                   <div className="values ">
-                                <div className="bg-public pt-6 xl:px-6 md:px-0 px-6 font-bold bg-opacity-95 ">
+                                <div className="bg-public pt-6 xl:px-6 md:px-5 px-6 font-bold bg-opacity-95 ">
                                     <h2 className="e text-center text-white text-opacity-80  my-2 tracking-widest">Our Core Values</h2>
                                     <h2 className="text-white text-4xl text-center my-6 mb-10 font-roboto">P R C Q</h2>
-                        <div className="grid md:grid-cols-4 grid-cols-1 gap-4">
+                        <div className="grid md:grid-cols-2 xl:grid-cols-4 grid-cols-1 gap-4">
 
                         <motion.div
                         initial={{ opacity: 0 }}
@@ -89,7 +89,7 @@ const Values = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="bg-private mb-[0px] grid  items-center md:grid-cols-2 grid-cols-1 px-8 bg-opacity-70 font-roboto py-[80px]">
+            className="bg-private mb-[0px] grid  items-center md:grid-cols-2 grid-cols-1 xl:px-[90px] px-6 bg-opacity-70 font-roboto py-[80px]">
                 <div className="">
                    
                     <motion.h2 

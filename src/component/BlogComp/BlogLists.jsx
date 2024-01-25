@@ -35,7 +35,7 @@ const truncateText = (text, maxLength) => {
                 height="400px"
       />
             
-     <section className="font-roboto border-t-[1px] pt-6 mt-20 xl:mx-6 md:mx-0 mx-6 my-6">
+     <section className="font-roboto border-t-[1px] pt-6 mt-20 xl:mx-[90px] md:mx-5 mx-6 my-6">
      <div className="flex justify-center">
                         <div className="mb-6">
                         <h4 className="text-3xl text-private text-center font-bold my-2">News and happenings</h4>

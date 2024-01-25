@@ -14,7 +14,7 @@ const truncateText = (text, maxLength) => {
 const lastThreeBlogItems = blogData.slice(-3);
     return ( 
         <>
-            <section className='xl:mx-6 md:m-0 mx-6 font-roboto'>
+            <section className='xl:mx-[90px] md:m-5 mx-6 font-roboto'>
                 <div className="mt-16 text-center">
             <h2 className="tracker-[2px] text-vintage">OUR BLOG</h2>
             <h1 className="text-[30px] my-1">Latest Blog & Articles</h1>

@@ -21,13 +21,14 @@ const ServicePost = () => {
         <ImageWithOverlay
                 imageUrl={image}
                 span1="Service"
-                span2=""
-                title2={post.title}
-                decrip=""
-                height="300px"
+                span2={post.title}
+                spanClass ="text-private"
+                title2=""
+                decrip={post.title}
+                height="350px"
       />
       <section className='xl:mx-6 md:mx-0 mx-6 mt-10 font-roboto'>
-      <div className='grid md:grid-cols-2 grid-cols-1 gap-[60px] md:mx-20'>
+      <div className='grid md:grid-cols-2 grid-cols-1 gap-[65px] md:mx-20'>
         <div>
             <img src={post.img} alt={post.title} />
         </div>

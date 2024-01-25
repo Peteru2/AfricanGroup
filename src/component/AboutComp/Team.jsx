@@ -10,7 +10,7 @@ const Team = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
-            className="bg-private mb-[0px] grid  items-center md:grid-cols-2 grid-cols-1 px-8 bg-opacity-70 font-roboto py-6">
+            className="bg-private mb-[0px] grid  items-center md:grid-cols-2 grid-cols-1 xl:px-[90px] md:px-5 px-6 bg-opacity-70 font-roboto py-6">
                 <div className="">
                    
                     <h2 className="text-white text-[40px] font-playfair font-bold  md:w-[500px] ">Professional Land Surveying And Mapping</h2>
