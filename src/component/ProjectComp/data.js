@@ -5,9 +5,12 @@ const projData = [
       titleParam:"building-construction",
       title: "Buidling Constuction",
       date: "January 1, 2023",
-      content: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis.",
+      summary: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis.",
       img: firstImg,
-      type:"BUILDING"
+      category:"BUILDING",
+      client: "Kyber Private Ltd, USA",
+      location: "Banana Iceland, Lagos",
+      year: "2022",
 
     },
     {
@@ -15,9 +18,12 @@ const projData = [
       titleParam:"institute-design",
         title: "Institute Design",
         date: "February 6, 2003",
-        content: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis.",
+        summary: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis.",
         img: firstImg,
-        type:"COMMERCIAL"
+        category:"COMMERCIAL",
+        client: "Yusuf Private Ltd, Mexico",
+        location: "Lekki Phase 1, Lagos",
+        year: "2021",
 
       },
       {
@@ -25,9 +31,12 @@ const projData = [
       titleParam:"expert-mechanical",
         title: "Expert Mechanical",
         date: "February 6, 2003",
-        content: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis.",
+        summary: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis.",
         img: firstImg,
-        type:"RECONSTRUCTION"
+        category:"RECONSTRUCTION",
+        client: "Joyous Private Ltd, USA",
+        location: "Erelu, Oyo",
+        year: "2021",
 
       },
     

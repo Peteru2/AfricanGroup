@@ -29,7 +29,7 @@ const ProjList = () => {
     </div>  
     <div className="text-white px-4 absolute bottom-4 left-4">
             <h2 className="text-2xl font-bold">{data.title}</h2>
-            <h2 className="text-sm">{data.type}</h2>
+            <h2 className="text-sm">{data.category}</h2>
         </div>
     </div>
 </div>
