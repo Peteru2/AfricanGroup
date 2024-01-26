@@ -4,6 +4,7 @@ import Navbar from "../Navbar/Navbar";
 import { useParams } from "react-router-dom";
 import PostContent from "./postContent";
 import projData from "./data";
+import Footer from "../Footer";
 
 const ProjPost = () => {
     const { titleParam } = useParams();
@@ -25,6 +26,8 @@ const ProjPost = () => {
                 height="350px"
       />
       <PostContent />
+      <Footer />
+
             </>
      );
 }
