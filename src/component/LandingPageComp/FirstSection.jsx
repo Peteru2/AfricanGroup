@@ -150,12 +150,12 @@ const FirstSection = () => {
     transition={{ delay: 0.5, 
     staggerChildren: 2}}
     className="xl:mx-[90px] md:mx-5 mx-6 my-10">
-            <div className="mt-24 mb-4">
+            <div className="mt-14 md:mt-24 mb-4">
                 <h2 className="text-private  tracking-widest pb-4 border-b-[1px] border-black w-full">OUR STORY</h2>
 
-                <h4 className="font-roboto text-[18px] mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga assumenda dolore soluta labore nobis, voluptate illum, non reprehenderit necessitatibus, eaque aspernatur itaque officiis? Non dolorum eos ex exercitationem distinctio. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum saepe quam voluptates, excepturi nihil commodi quisquam, totam molestias dolore deleniti consequatur. Fugiat esse dolorem quibusdam illo ea. Iusto praesentium vitae cupiditate. Esse quaerat a, perspiciatis, sapiente non ullam qui praesentium sint beatae, magni eveniet illum! Quos eaque sit harum enim esse. Vel amet harum illo a delectus maxime soluta rem repudiandae necessitatibus ducimus quod labore reprehenderit facere qui nostrum animi vitae, praesentium optio molestiae ipsam in dolorem doloremque! Itaque, quibusdam!</h4>
+                <h4 className="font-roboto text-[18px] md:text-[24px] mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga assumenda dolore soluta labore nobis, voluptate illum, non reprehenderit necessitatibus, eaque aspernatur itaque officiis? Non dolorum eos ex exercitationem distinctio. Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h4>
             </div>
-            <div className="grid md:grid-cols-2 font-serif grid-cols-1 gap-6 mt-20 w-full flex-wrap">
+            <div className="grid md:grid-cols-2 font-serif grid-cols-1 gap-6 mt-16 w-full flex-wrap">
                 <motion.div 
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
@@ -182,8 +182,8 @@ const FirstSection = () => {
                     transition={{ delay: 0.5, 
                     staggerChildren: 2}}
                     className="">
-                        <h4 className="font-lora text-[15px]">
-                        AFRICAN GROUP Nigeria, is a sole Nigerian Group of Companies existing over eight years, which was incorporated in 2020; for the purpose of providing first class services in theareas of: Surveying & Mapping, Real Estate, Construction & Agricultural services.
+                        <h4 className="font-lora text-[16px]">
+                        <strong>AFRICAN GROUP</strong> Nigeria, is a sole Nigerian Group of Companies existing over eight years, which was incorporated in 2020; for the purpose of providing first class services in theareas of: Surveying & Mapping, Real Estate, Construction & Agricultural services.
                         <br />
                         The company is driven by a group of highly trained, experienced, self-motivated, and very dynamic Professionals equipped to handle various categories of projects; LAND & ENGINEERING SURVEYING, MAPPING & GEO-DATA, ARCHITECTURAL DESIGNS, REAL ESTATE, CIVILCONSTRUCTION, AGRO, SITE CLEARING & GROUND LEVELLING, DRILLING, ELECTRICALENGINEERING, INTERIOR & EXTERIOR FINISHING, and PROJECT MANAGEMENT.
                         </h4>
