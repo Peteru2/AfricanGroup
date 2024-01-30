@@ -10,7 +10,7 @@ const Mission = () => {
                         animate={{ opacity: 1 }}
                         transition={{ duration: 1 }}
                         >
-                            <h4 className="text-private font-roboto tracking-[3px] mb-6">COMPANY OVERVIEW</h4>
+                            <h4 className="text-private font-roboto tracking-[3px] font-bold mb-6">COMPANY OVERVIEW</h4>
                             <h2 className="font-playfair  text-[35px]">Diverse International recognition in the whole World</h2>
                             <div className="grid md:grid-cols-2 grid-cols-1 mt-6   gap-6">
                                 <div>

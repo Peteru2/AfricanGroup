@@ -73,8 +73,8 @@ const handleQuote = () => {
             </li>
           );
         })}
-<div onClick={handleQuote} className="xl:ml-auto flex text-white w-44  items-center bg-private hover:bg-private   transition ease-in-out delay-150 hover:bg-opacity-60 duration-900 rounded-lg">
-        <button  className=" text-xs flex items-center justify-center rounded-lg w-full"><span className="p-2 w-full flex justify-center">REQUEST A QUOTE</span><i className="bg-public bg-opacity-50 ml-auto p-3  rounded-tr-lg rounded-br-lg fa fa-chevron-right"></i></button>
+<div onClick={handleQuote} className="xl:ml-auto flex text-white w-44 group items-center bg-private hover:bg-public hover:bg-opacity-90   transition ease-in-out delay-150 duration-900 rounded-lg">
+        <button  className=" text-xs flex items-center justify-center rounded-lg w-full"><span className="p-2 w-full flex justify-center">REQUEST A QUOTE</span><i className="bg-public bg-opacity-50 ml-auto p-3 transition ease-in-out delay-150 duration-900 group-hover:bg-private rounded-tr-lg rounded-br-lg fa fa-chevron-right"></i></button>
      </div>
       </div>
      

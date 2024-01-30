@@ -124,7 +124,7 @@ const handleRetry = () => {
                                 <div className="flex items-center border border-gray rounded-[5px] mt-1 px-3  py-2">
                                 <i className="fa fa-user text-gray w-5 h-5  mr-2 mt-1"></i>
                                 <input type="text" className="w-full outline-none text-black"
-                                autoFocus 
+                                
                                 name="name"
                                 value={formData.name}
                                 onChange={handleInputChange}
