@@ -1,15 +1,9 @@
-
-
 import FAQItem from './FaqItems';
-
+import { motion } from 'framer-motion';
 const FAQSection = ({ title, faqItems, description }) => {
   return (
     
     <>    
-      
-    
-
-    
       <section className='xl:mx-[90px] md:mx-5 mx-6 my-10 font-roboto'>
         <div className='mb-14'>
             <div className='text-[39px] font-bold  my-1 text-opacity-90'>{title}</div>
@@ -18,11 +12,16 @@ const FAQSection = ({ title, faqItems, description }) => {
            
             <div className='grid md:grid-cols-2 grid-cols-1 gap-x-6 font-roboto'>
             {faqItems.map((faq, index) => (
-                <div className='grid grid-col-2'>
+                <motion.div 
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ delay: index* 0.1, 
+                staggerChildren: 2}}
+                className='grid grid-col-2'>
                 <div key={index} className="">
                 <FAQItem question={faq.question} answer={faq.answer} />
                 </div>
-            </div>
+            </motion.div>
           ))}
         </div>
         

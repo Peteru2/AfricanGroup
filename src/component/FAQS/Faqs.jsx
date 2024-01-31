@@ -8,13 +8,7 @@ import Helmett from '../Helmet';
 import Layout from '../Layout';
 
 
-const FaqsMain = () => {
-  
-   
-      
-    // dd more FAQ items as needed
-  
-    
+const FaqsMain = () => {  
   return (
    <Layout>
         <Helmett 
@@ -31,11 +25,8 @@ const FaqsMain = () => {
         decrip="Frequently Asked Questions"
         height="400px"
       />
-    
-
       <FAQSection title="About Survey" description="This is about it"faqItems={faqData[0]} />
       <FAQSection title="My Survey" faqItems={faqData[1]} />
-   
     </Layout>
   );
 };

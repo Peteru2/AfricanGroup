@@ -25,7 +25,13 @@ const Team = () => {
                     {TeamFirstData.map((data, index)=>{
                             return(
                                 <>
-               <div key={index} className="grid md:grid-cols-1 xl:grid-cols-2 grid-cols-1">
+               <motion.div 
+               initial={{ opacity: 0 }}
+               whileInView={{ opacity: 1 }}
+               transition={{ delay: index* 0.1, 
+               staggerChildren: 2}}
+               key={index} 
+               className="grid md:grid-cols-1 xl:grid-cols-2 grid-cols-1">
   <div className="relative" style={{ 'maxWidth': '100%', 'height': 'auto' }}>
     <img
       className="w-full h-full object-cover"
@@ -49,7 +55,7 @@ const Team = () => {
     <h4 className="text-gray">{data.office}</h4>
     <h4 className="my-6">{data.description}</h4>
   </div>
-</div>
+</motion.div>
 
                        </>     )
                     })}

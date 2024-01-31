@@ -1,6 +1,7 @@
 import img from "../../assets/images/FirstSectionImage1.jpg"
 import { Link } from "react-router-dom";
 import projData from "./data";
+import { motion } from "framer-motion";
 const ProjList = () => {
     return ( 
             <>
@@ -9,7 +10,14 @@ const ProjList = () => {
                         {
                             projData.map((data, index) =>{
                                 return(
-<div key={index} className="relative group" style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>
+<motion.div
+ initial={{ opacity: 0 }}
+ whileInView={{ opacity: 1 }}
+ transition={{ delay: index* 0.1, 
+ staggerChildren: 2}}
+key={index} 
+className="relative group"
+style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>
     <img
         className="w-full h-full object-cover"
         src={data.img}
@@ -32,7 +40,7 @@ const ProjList = () => {
             <h2 className="text-sm">{data.category}</h2>
         </div>
     </div>
-</div>
+</motion.div>
                    
                                 )
                             })
