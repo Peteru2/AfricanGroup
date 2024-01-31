@@ -28,7 +28,7 @@ const Team = () => {
                <motion.div 
                initial={{ opacity: 0 }}
                whileInView={{ opacity: 1 }}
-               transition={{ delay: index* 0.1, 
+               transition={{ delay: index * 0.1, 
                staggerChildren: 2}}
                key={index} 
                className="grid md:grid-cols-1 xl:grid-cols-2 grid-cols-1">

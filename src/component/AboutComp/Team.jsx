@@ -9,7 +9,7 @@ const Team = () => {
             <motion.section
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ delay: index* 0.1, 
+            transition={{ delay: 0.1, 
             staggerChildren: 2}}
             className="bg-private mb-[0px] grid  items-center md:grid-cols-2 grid-cols-1 xl:px-[90px] md:px-5 px-6 bg-opacity-70 font-roboto py-6">
                 <div className="">
