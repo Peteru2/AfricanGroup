@@ -1,13 +1,12 @@
-import Footer from "../component/Footer";
-import Navbar from "../component/Navbar/Navbar";
+import Layout from "../component/Layout";
 import ServiceContent from "../component/ServicesComp/ServiceContent";
 
 const Services = () => {
     return ( 
             <>
-                <Navbar />
+            <Layout>
                 <ServiceContent />
-                <Footer />
+                </Layout>
             </>
 
      );

@@ -8,6 +8,7 @@ import Navbar from "../component/Navbar/Navbar";
 import BlogSection from "../component/LandingPageComp/BlogSection";
 import Chat from "../component/SideChat";
 import { useEffect,useState } from "react";
+import Layout from "../component/Layout";
 // import "../style.css"
 
 const Landing = () => {
@@ -25,18 +26,17 @@ const Landing = () => {
 
 {loading ? <LoadingComponent /> : (
     <>
+    <Layout>
              <section>
-                <Navbar />
+               
                 <FirstSection />
                 <Services />
                 <Testimonials />
                 <Values />
                 <BlogSection />
             </section>
-            <Chat />
-            {/* <NewsLetter /> */}
-
-            <Footer />
+           
+            </Layout>
             </> 
             )}
        </>

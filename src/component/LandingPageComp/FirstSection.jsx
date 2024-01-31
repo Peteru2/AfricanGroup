@@ -170,7 +170,6 @@ const FirstSection = () => {
                             <h2 className='text-private text-3xl font-lora my-2'>800k +</h2>
                                 <h4>LAND SURVEY ACROSS THE WORLD</h4>
                             </div>
-
                             <div className="">
                             <h2 className='text-private text-3xl font-lora my-2'>5</h2>
                                 <h4>GLOBAL AWARDS </h4>

@@ -1,16 +1,17 @@
 import { motion } from "framer-motion";
-import Navbar from "../Navbar/Navbar";
-import TeamImg from "../../assets/images/Team1.jpg"
+
+  import TeamImg from "../../assets/images/Team1.jpg"
 import image from "../../assets/images/about.jpg"
 import ImageWithOverlay from '../ImageWithOverlay';
 import TeamFirstData from "./TeamData";
+import Layout from "../Layout";
 const Team = () => {
     
     return ( 
         <>
-        <Navbar />
-            
-            <ImageWithOverlay
+
+            <Layout>  
+              <ImageWithOverlay
                 imageUrl={image}
                 span1="About Us"
                 span2="Team"
@@ -87,6 +88,7 @@ const Team = () => {
                         
                     </div>          
             </section>
+        </Layout>
             
         </>
      );

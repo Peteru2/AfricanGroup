@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
-import Navbar from '../../component/Navbar/Navbar';
 import FAQSection from './FaqsSection';
 import faqData from './faqData';
 import ImageWithOverlay from '../ImageWithOverlay'
 import image from "../../assets/images/FirstSectionImage1.jpg"
-import Footer from '../Footer';
+
 import Helmett from '../Helmet';
+import Layout from '../Layout';
 
 
 const FaqsMain = () => {
@@ -16,12 +16,12 @@ const FaqsMain = () => {
   
     
   return (
-    <div>
+   <Layout>
         <Helmett 
                 title="Faqs"
                 content = ""
                 />
-     <Navbar />
+   
       <ImageWithOverlay
         imageUrl={image}
         title1="AfricanGroup"
@@ -35,8 +35,8 @@ const FaqsMain = () => {
 
       <FAQSection title="About Survey" description="This is about it"faqItems={faqData[0]} />
       <FAQSection title="My Survey" faqItems={faqData[1]} />
-      <Footer />
-    </div>
+   
+    </Layout>
   );
 };
 
