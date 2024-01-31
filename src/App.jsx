@@ -18,39 +18,6 @@ import ProjPost from './component/ProjectComp/ProjPost';
 
 
 function App() {
-  // Function to calculate the absolute difference between the sums of matrix diagonals
-function diagonalDifference(matrixSize, matrix) {
-  // Initialize the sums of the two diagonals
-  let primaryDiagonalSum = 0;
-  let secondaryDiagonalSum = 0;
-
-
-  for (let i = 0; i < matrixSize; i++) {
-      primaryDiagonalSum += matrix[i][i]; 
-      secondaryDiagonalSum += matrix[i][matrixSize - 1 - i]; 
-      console.log(secondaryDiagonalSum)
-
-  }
-
-
-  const absoluteDifference = Math.abs(primaryDiagonalSum - secondaryDiagonalSum);
-
-  return absoluteDifference;
-}
-
-
-const matrixSize = 3;
-const matrix = [
-  [6, 2, 9],
-  [4, 5, 6],
-  [6, 8, -12]
-];
-
-
-const result = diagonalDifference(matrixSize, matrix);
-console.log(result);
-
-
   return (
     <>
       <section >
