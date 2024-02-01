@@ -68,20 +68,22 @@ const firstThreeServiceItems = ServiceData.slice(0,3);
                                 }
                                
                                
-                                  <Link to={"/Services"}>
-                                  <div className="flex w-full">
-                                  <div className="ml-auto text-center border-2 rounded-full h-[30px] transition ease-in-out delay-150 duration-900 w-[120px] border-vintage bg-vintage hover:bg-white hover:text-vintage text-white">
-                                 <button>Learn More</button>
-                                  </div>
-                                </div>
-
-                                  </Link>
+                                  
                                 
                                  </Bounce>
                                 
                         </div>
                         
+                        
                         </div>
+                        <Link to={"/Services"}>
+                                  <div className="flex w-full justify-center my-[10px]">
+                                  <div className="ml- text-center border-2 rounded-full h-[30px] transition ease-in-out delay-150 duration-900 w-[120px] border-vintage bg-vintage hover:bg-white hover:text-vintage text-white">
+                                 <button>Learn More</button>
+                                  </div>
+                                </div>
+
+                                  </Link>
                         <div className="circle-container">
                                     <p className="text" ref={textRef}></p>
                                 </div>

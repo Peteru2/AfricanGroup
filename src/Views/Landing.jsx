@@ -24,7 +24,7 @@ const Landing = () => {
     return ( 
        <>
 
-{loading ? <LoadingComponent /> : (
+{loading ? (<LoadingComponent /> ) : (
     <>
     <Layout>
              <section>
