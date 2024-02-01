@@ -52,7 +52,13 @@ const handleQuote = () => {
     <nav className="nav flex font-roboto" ref={navbarRef}>
       <Link to={"/"} className="w-44 outline-none">
         <div className="nav-logo   outline-none">
-          <img src={AFLOG} className="navImg outline-none" alt="NavImg" />
+          <img 
+          src={AFLOG}
+          className="navImg outline-none" 
+          alt="NavImg"
+          loading="lazy"
+          
+          />
         
         </div>
       </Link>

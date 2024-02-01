@@ -1,4 +1,3 @@
-import img from "../../assets/images/AFLOG23.jpg"
 
 const LoadingComponent = () => {
     return (
