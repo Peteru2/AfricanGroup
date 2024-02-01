@@ -77,8 +77,8 @@ const firstThreeServiceItems = ServiceData.slice(0,3);
                         
                         </div>
                         <Link to={"/Services"}>
-                                  <div className="flex w-full justify-center my-[10px]">
-                                  <div className="ml- text-center border-2 rounded-full h-[30px] transition ease-in-out delay-150 duration-900 w-[120px] border-vintage bg-vintage hover:bg-white hover:text-vintage text-white">
+                                  <div className="flex w-full md:justify-center items-center my-[10px]">
+                                  <div className=" ml-auto md:ml-0 mr-6 text-center border-2 items-center flex  justify-center rounded-full h-[30px] transition ease-in-out delay-150 duration-900 h-[40px] w-[120px] border-vintage bg-vintage hover:bg-white hover:text-vintage text-white">
                                  <button>Learn More</button>
                                   </div>
                                 </div>

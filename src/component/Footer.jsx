@@ -35,7 +35,7 @@ const Footer = () => {
                         <h2 className="mb-6 md:text-[22px] text-[18px]">CONTACT INFO</h2>
                         <h4 className="my-2"><i className="fa fa-building mr-2"></i> Union Bank Road, Owode, Oyo, Nigeria</h4>
                         <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300"><i className="fa fa-phone mr-2"></i>+234 706 4255 373 </button></h4>
-                        <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300"> cc:     +234 706 4255 373 </button></h4>
+                        <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300"> cc:     +234 901 7730 877 </button></h4>
                       
                             <h4 className="my-2"> <button onClick={() => window.location = 'mailto:africangroupng@gmail.com'} className="hover:text-vintage  transition ease-in-out  duration-300"><i className="fa fa-envelope mr-2"></i>africangroupng@gmail.com</button></h4> 
 
