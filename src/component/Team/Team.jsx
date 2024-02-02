@@ -5,6 +5,7 @@ import image from "../../assets/images/about.jpg"
 import ImageWithOverlay from '../ImageWithOverlay';
 import TeamFirstData from "./TeamData";
 import Layout from "../Layout";
+import { Link } from "react-router-dom";
 const Team = () => {
     
     return ( 
@@ -38,16 +39,22 @@ const Team = () => {
       src={data.img}
       alt={data.name}
     />
-    <div className="absolute inset-0 px-10 flex pt-[250px]">
+    <div className="absolute  px-10 flex bottom-4">
+      <Link>
       <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
         <i className="fa fa-facebook"></i>
       </div>
+      </Link>
+      <Link>
       <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
-        <i className="fa fa-facebook"></i>
+        <i className="fa fa-twitter"></i>
       </div>
+      </Link>
+      <Link>
       <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
-        <i className="fa fa-facebook"></i>
+        <i className="fa fa-linkedin"></i>
       </div>
+      </Link>
     </div>
   </div>
   <div className="bg-white p-6">
@@ -71,15 +78,15 @@ const Team = () => {
                                     src={TeamImg}
                                     alt={'ldff'}
                                     />
-                                    <div className="absolute inset-0 px-10 flex pt-[250px]">
+                                    <div className="absolute  px-10 flex bottom-4">
                                     <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
                                         <i className="fa fa-facebook"></i>
                                     </div>
                                     <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
-                                        <i className="fa fa-facebook"></i>
+                                        <i className="fa fa-twitter"></i>
                                     </div>
                                     <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
-                                        <i className="fa fa-facebook"></i>
+                                        <i className="fa fa-linkedin"></i>
                                     </div>
                                     </div>
                                 </div>

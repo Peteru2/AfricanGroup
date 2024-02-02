@@ -32,7 +32,7 @@ const Mission = () => {
                                 <div>
                                     <div className="flex items-center">
                                         <h2 className="h-2 w-2 rounded-full bg-private mr-4"></h2>
-                                        <h2 className="my-3 tracking-[3px]">OUR MISSION</h2>
+                                        <h2 className="my-3 tracking-[3px]">OUR VISION</h2>
                                     </div>
                                     <h4 className="text-[15px] mb-6">
                         
