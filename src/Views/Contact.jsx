@@ -3,12 +3,19 @@ import ContactInfo from "../component/Contact/ContactInfo";
 import image from "../assets/images/about.jpg"
 import ImageWithOverlay from "../component/ImageWithOverlay";
 import Layout from "../component/Layout";
+import Helmett from "../component/Helmet";
 
 const Contact = () => {
     return ( 
         <>
         <Layout>
             <section>
+           <Helmett 
+                title="Contact"
+                content="Connect with us for reliable land surveying services in Oyo, Nigeria. Whether you're planning a residential development, commercial project, or need accurate property assessments, boundary surveys, or topographic mapping, we're here to assist. Reach out to our experienced team to discuss your requirements and discover how we can bring precision and expertise to your next project."
+                
+
+                />
                 <ImageWithOverlay
                 imageUrl={image}
                 span1="Contact Us"

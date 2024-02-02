@@ -90,8 +90,8 @@ const Team = () => {
                                     </div>
                                     </div>
                                 </div>
-                            <div className="bg-white p-4">
                             <h2 className="font-bold text-[25px] mb-1">James Brown</h2>
+                            <div className="bg-white p-4">
                             <h4 className="text-gray">Data</h4>
 
                             
