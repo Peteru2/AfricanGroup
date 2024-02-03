@@ -145,9 +145,13 @@ const FirstSection = () => {
     </Slide>
     </section>
     <motion.section 
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    transition={{ delay: 0.5, 
+    variants ={{
+        hidden:{opacity: 0, y: 75},
+        visible:{opacity: 1, y: 0},
+    }}
+    initial="hidden"
+    whileInView="visible"
+    transition={{ delay: 0.2, 
     staggerChildren: 2}}
     className="xl:mx-[90px] md:mx-5 mx-6 my-10">
             <div className="mt-14 md:mt-24 mb-4">
