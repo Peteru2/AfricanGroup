@@ -1,6 +1,6 @@
  import projData from "./data";
 import { useParams } from 'react-router-dom';
-
+import { motion } from "framer-motion";
 const PostContent = () => {
     const { titleParam } = useParams();
     const post = projData.find((post) => post.titleParam === titleParam);
@@ -11,10 +11,28 @@ const PostContent = () => {
         <>
         <div className="xl:mx-[90px] md:mx-5 mx-6 mt-20 font-lora ">
             <div className="grid md:grid-cols-5 grid-cols-1 md:gap-6">
-                <div className="col-span-3">
+                <motion.div 
+                variants ={{
+                    hidden:{opacity: 0, y: 75},
+                    visible:{opacity: 1, y: 0},
+                }}
+                initial="hidden"
+                whileInView="visible"
+                transition={{delay:  0.5, 
+                duration: 0.5}}
+                className="col-span-3">
                     <img src={post.img} alt={post.title}/>
-                </div>
-                <div className="bg-gray bg-opacity-20 col-span-2 p-[30px] font-lora">
+                </motion.div>
+                <motion.div
+                variants ={{
+                    hidden:{opacity: 0, y: 75},
+                    visible:{opacity: 1, y: 0},
+                }}
+                initial="hidden"
+                whileInView="visible"
+                transition={{delay:  0.5, 
+                duration: 0.5}}
+                className="bg-gray bg-opacity-20 col-span-2 p-[30px] font-lora">
                 <h2 className="text-[25px] font-bold font-lora text-vintage">Project Details</h2>
                 <h4 className="text-black text-opacity-60">This is the decription of the project</h4>
 
@@ -51,19 +69,37 @@ const PostContent = () => {
                     <h2 className="ml-6 text-black text-opacity-60">{post.year}</h2>
                 </div>
 
-                </div>
+                </motion.div>
 
             </div>
 
               <div className="grid md:grid-cols-6 grid-cols-1 gap-4 my-12">
-                <div className="col-span-2">
+                <motion.div
+                variants ={{
+                    hidden:{opacity: 0, y: 75},
+                    visible:{opacity: 1, y: 0},
+                }}
+                initial="hidden"
+                whileInView="visible"
+                transition={{delay:  0.5, 
+                duration: 0.5}}
+                className="col-span-2">
                     <h2 className="font-bold text-vintage  text-[25px]">Project Summary</h2>
-                </div>
-                <div className="col-span-4">
+                </motion.div>
+                <motion.div
+                variants ={{
+                    hidden:{opacity: 0, y: 75},
+                    visible:{opacity: 1, y: 0},
+                }}
+                initial="hidden"
+                whileInView="visible"
+                transition={{delay:  0.5, 
+                duration: 0.5}}
+                className="col-span-4">
                     <p>
                         {post.summary}
                     </p>
-                </div>
+                </motion.div>
               </div>
 
         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">

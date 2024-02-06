@@ -5,6 +5,7 @@ import NavMenu from "./NavItem";
 import "./navbar.css";
 import AFLOG from "../../assets/images/AFLOG.jpg"
 import QuoteForm from "./QuoteForm";
+import { motion } from "framer-motion";
 
 // import clickPng from "../clickIcon.png";
 
@@ -49,7 +50,9 @@ const handleQuote = () => {
   }, []);
 
   return (
-    <nav className="nav flex font-roboto" ref={navbarRef}>
+    <nav
+   
+    className="nav flex font-roboto" ref={navbarRef}>
       <Link to={"/"} className="w-44 outline-none">
         <div className="nav-logo   outline-none">
           <img 
@@ -74,7 +77,16 @@ const handleQuote = () => {
                 
               
               >
-                <span  className={`text-[19px] md:text-[17px] ${isActive? 'text-private font-bold':""}`}>{item.title}</span>
+                <motion.span  
+                variants ={{
+                  hidden:{opacity: 0, y: 75},
+                  visible:{opacity: 1, y: 0},
+              }}
+              initial="hidden"
+              whileInView="visible"
+              transition={{delay:  0.5, 
+              duration: 0.5}}
+                className={`text-[19px] md:text-[17px] ${isActive? 'text-private font-bold':""}`}>{item.title}</motion.span>
               </Link>
             </li>
           );

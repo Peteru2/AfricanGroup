@@ -71,8 +71,8 @@ const Footer = () => {
                             <h4 className="my-2"> <button onClick={() => window.location = 'mailto:africangroupng@gmail.com'} className="hover:text-vintage  transition ease-in-out  duration-300"><i className="fa fa-envelope mr-2"></i>africangroupng@gmail.com</button></h4> 
 
 
-                    </motion.div>
 
+                    </motion.div>
                     <motion.div
                      variants ={{
                         hidden:{opacity: 0, y: 75},
