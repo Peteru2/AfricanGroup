@@ -1,14 +1,25 @@
 import Navbar from "./Navbar/Navbar";
 import Footer from "./Footer";
 import Chat from "./SideChat";
+import { motion } from "framer-motion";
 
 const Layout = ({ children }) => {
     return (
       <div>
         <Navbar />
-        <main>{children}
+        <motion.main
+        variants ={{
+            hidden:{opacity: 0, y: 75},
+            visible:{opacity: 1, y: 0},
+        }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{ delay: 0.25, 
+        duration: 0.5}}
+        >{children}
+        </motion.main>
         <Chat />
-        </main>
+
         <Footer />
       </div>
     );

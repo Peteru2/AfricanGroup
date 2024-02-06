@@ -36,7 +36,16 @@ const truncateText = (text, maxLength) => {
       />
             
      <section className="font-roboto border-t-[1px] pt-6 mt-20 xl:mx-[90px] md:mx-5 mx-6 my-6">
-     <div className="flex justify-center">
+     <motion.div
+      variants ={{
+        hidden:{opacity: 0, y: 75},
+        visible:{opacity: 1, y: 0},
+    }}
+    initial="hidden"
+    whileInView="visible"
+    transition={{delay:  0.5, 
+    duration: 0.5}}
+      className="flex justify-center">
                         <div className="mb-6">
                         <h4 className="text-3xl text-private text-center font-bold my-2">News and happenings</h4>
                         
@@ -46,19 +55,32 @@ const truncateText = (text, maxLength) => {
                            
                             </div>
 
-                    </div>
+                    </motion.div>
       <ul>
         <motion.div 
-         initial={{ opacity: 0 }}
-         whileInView={{ opacity: 1 }}
-         transition={{ delay: 0.5 }}
+         variants ={{
+          hidden:{opacity: 0, y: 75},
+          visible:{opacity: 1, y: 0},
+      }}
+      initial="hidden"
+      whileInView="visible"
+      transition={{delay:  0.5, 
+      duration: 0.5}}
 
         className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1   gap-8   mb-4 font-roboto">
         {blogData.map((post) => (
           
           <motion.li
+          variants ={{
+            hidden:{opacity: 0, y: 75},
+            visible:{opacity: 1, y: 0},
+        }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{delay:  0.5, 
+        duration: 0.5}}
           whileHover={{y: -25}}
-           transition={{type:"spring", stiffness:200}}
+          
            key={post.id} className='rounded-xl shadow-xl hover:shadow-2xl'>
  
             <Link to={`/blog/${post.titleParam}`} className=''>

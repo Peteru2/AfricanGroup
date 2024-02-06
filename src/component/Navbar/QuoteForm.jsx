@@ -167,7 +167,7 @@ const handleRetry = () => {
                                 <div className="flex items-center border border-gray rounded-[5px]  px-3 mt-1  py-2">
                                
                                 <textarea type="text" name="message" className="w-full outline-none text-black" 
-                                value={formData.Message}
+                                value={formData.message}
                                 onChange={handleInputChange}
                                 placeholder="Your Message" />
                                 </div>

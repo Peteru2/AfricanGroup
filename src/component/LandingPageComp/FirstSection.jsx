@@ -105,10 +105,14 @@ const FirstSection = () => {
                     style ={{fontFamily:"'SangBleuSans', sans-serif"}}className="text-white text-[17px] md:text-2xl md:ml-10 font-roboto">CREDIT RATING <span className='text-private font-bold'>BBB</span></motion.h2>
         
                         <motion.div 
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ delay: 1, 
-                        staggerChildren: 2 }}
+                         variants ={{
+                            hidden:{opacity: 0, y: 75},
+                            visible:{opacity: 1, y: 0},
+                        }}
+                        initial="hidden"
+                        whileInView="visible"
+                        transition={{ delay: 0.25, 
+                        duration: 0.5}}
                         className='md:mx-24 mx-0 mt-[60px]'>
                             <motion.p 
                             initial ={{y: -250}}
@@ -151,8 +155,8 @@ const FirstSection = () => {
     }}
     initial="hidden"
     whileInView="visible"
-    transition={{ delay: 0.2, 
-    staggerChildren: 2}}
+    transition={{ delay: 0.25, 
+    duration: 0.5}}
     className="xl:mx-[90px] md:mx-5 mx-6 my-10">
             <div className="mt-14 md:mt-24 mb-4">
                 <h2 className="text-private  tracking-widest pb-4 border-b-[1px] border-black w-full">OUR STORY</h2>
@@ -180,10 +184,14 @@ const FirstSection = () => {
                             </div>
                     </motion.div>
                     <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    transition={{ delay: 0.5, 
-                    staggerChildren: 2}}
+                    variants ={{
+                        hidden:{opacity: 0, y: 75},
+                        visible:{opacity: 1, y: 0},
+                    }}
+                    initial="hidden"
+                    whileInView="visible"
+                    transition={{ delay: 0.25, 
+                    duration: 0.5}}
                     className="">
                         <h4 className="font-lora text-[16px]">
                         <strong>AFRICAN GROUP</strong> Nigeria, is a sole Nigerian Group of Companies existing over eight years, which was incorporated in 2020; for the purpose of providing first class services in theareas of: Surveying & Mapping, Real Estate, Construction & Agricultural services.

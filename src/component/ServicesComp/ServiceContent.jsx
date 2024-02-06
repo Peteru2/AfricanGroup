@@ -33,15 +33,26 @@ const ServiceContent = () => {
 
       />
             <div className="xl:mx-[90px] md:mx-5  mx-6 border-t-[1px] pt-6 md:mt-[80px]  mt-[30px]  font-roboto">
-                    <div className="flex justify-center">
-                        <div className="mb-6">
+                    <div
+                     
+                     className="flex justify-center">
+                        <motion.div
+                        variants ={{
+                            hidden:{opacity: 0, y: 75},
+                            visible:{opacity: 1, y: 0},
+                        }}
+                        initial="hidden"
+                        whileInView="visible"
+                        transition={{delay:  0.5, 
+                        duration: 0.5}}
+                        className="mb-6">
                         <h4 className="text-3xl text-center font-bold my-3 text-private">What Service We Provide</h4>
                         
                             <h5 className="md:w-[600px] text-center flex justify-center">Lorem ipsum dolor sit amet, consectetur adipisicing zelit. Porro sit, architecto dolores quam sequi hic quidem ut. Dolores, quasi rerum! Quae aperiam quia maxime et doloremque distinctio. Dolorum, doloremque. Molestias.
 
                             </h5>
                            
-                            </div>
+                            </motion.div>
 
                     </div>
                     <div className=" grid  xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-9">

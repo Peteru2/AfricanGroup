@@ -9,19 +9,27 @@ const Testimonials = () => {
                 <div className="py-28">
                     
                 <motion.div
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ delay: 0.5, 
-                staggerChildren: 2}}
+                variants ={{
+                    hidden:{opacity: 0, y: 75},
+                    visible:{opacity: 1, y: 0},
+                }}
+                initial="hidden"
+                whileInView="visible"
+                transition={{ delay: 0.25, 
+                duration: 0.5}}
                 >
                 <h2 className="font-bold py-2"><i className="fa fa-th text-private mr-2 font-bold"></i>TESTIMONIALS</h2>
                 <h1 className="text-4xl font-playfair text-private my-4">Our client reviews. </h1>
                 </motion.div>
             <motion.div 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ delay: 0.5, 
-            staggerChildren: 2}}
+            variants ={{
+                hidden:{opacity: 0, y: 75},
+                visible:{opacity: 1, y: 0},
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ delay: 0.25, 
+            duration: 0.5}}
             className=" bg-gray px-6 py-4 flex justify-center items-center bg-opacity-20 mt-10 md:h-[250px] h-[500px] ">
                 <Carousel showThumbs={false} autoPlay={true} ax>
                 <div>

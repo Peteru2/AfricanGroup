@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 import axios from "axios";
 const NewsLetter = () => {
     const [formData, setFormData] = useState({
@@ -50,7 +51,17 @@ const NewsLetter = () => {
 
     return ( 
         <>
-           <div className="flex justify-center items-center">
+           <motion.div 
+            variants ={{
+                hidden:{opacity: 0, y: 75},
+                visible:{opacity: 1, y: 0},
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{delay: 0.5, 
+            duration: 0.5}}
+              
+           className="flex justify-center items-center">
             <section className="footer-child  grid md:grid-cols-2 gap-4 grid-cols-1 bg-vintage  py-8 px-8  md:mx-16 mx-6 flex  text-white ">
                 <div className="">
                     <h2 className="text-[25px] font-playfair mb-6">Subscribe & get more information</h2>
@@ -66,7 +77,7 @@ const NewsLetter = () => {
                 </div>
                 </div>
             </section>
-            </div>
+            </motion.div>
         </>
      );
 }

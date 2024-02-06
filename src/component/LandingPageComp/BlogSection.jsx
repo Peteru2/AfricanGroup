@@ -26,9 +26,15 @@ const lastThreeBlogItems = blogData.slice(-3);
         {lastThreeBlogItems.map((post, index) => (
           
           <motion.div
-          initial={{ opacity: 0 }}
-         whileInView={{ opacity: 1 }}
-         transition={{ delay: index * 0.5 }}
+          variants ={{
+            hidden:{opacity: 0, y: 75},
+            visible:{opacity: 1, y: 0},
+        }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{delay: index * 0.5, 
+        duration: 0.5}}
+          
            key={post.id} className='`'>
 
 
