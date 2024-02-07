@@ -11,10 +11,14 @@ const ProjList = () => {
                             projData.map((data, index) =>{
                                 return(
 <motion.div
- initial={{ opacity: 0 }}
- whileInView={{ opacity: 1 }}
- transition={{ delay: index* 0.1, 
- staggerChildren: 2}}
+ variants ={{
+    hidden:{opacity: 0, y: 75},
+    visible:{opacity: 1, y: 0},
+}}
+initial="hidden"
+whileInView="visible"
+transition={{delay: index*  0.5, 
+duration: 0.5}}
 key={index} 
 className="relative group"
 style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>

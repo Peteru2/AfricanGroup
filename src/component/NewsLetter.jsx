@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import axios from "axios";
+import { useInView } from "react-intersection-observer";
 const NewsLetter = () => {
     const [formData, setFormData] = useState({
         email: ''
@@ -48,19 +49,22 @@ const NewsLetter = () => {
             setErrors({});
         }
   }
+  const { ref, inView } = useInView({
+    triggerOnce: true, // This ensures the animation is triggered only once
+    threshold: 0.5 // Adjust this threshold as needed
+});
 
     return ( 
         <>
-           <motion.div 
+          <motion.div 
+            ref={ref}
             variants ={{
                 hidden:{opacity: 0, y: 75},
                 visible:{opacity: 1, y: 0},
             }}
             initial="hidden"
-            whileInView="visible"
-            transition={{delay: 0.5, 
-            duration: 0.5}}
-              
+            animate={inView ? "visible" : "hidden"} // Use animate instead of whileInView
+            transition={{delay: 0.5, duration: 0.5}}      
            className="flex justify-center items-center">
             <section className="footer-child  grid md:grid-cols-2 gap-4 grid-cols-1 bg-vintage  py-8 px-8  md:mx-16 mx-6 flex  text-white ">
                 <div className="">
