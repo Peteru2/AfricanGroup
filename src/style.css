@@ -109,7 +109,7 @@ mark{
     max-width: 100%;
     letter-spacing: 0.15em; 
     animation:
-      typing 3s steps(25, end) 3s forwards
+      typing 3s steps(25, end) 2s forwards
   }
   @keyframes typing {
     from { width: 0; 

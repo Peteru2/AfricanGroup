@@ -10,7 +10,7 @@ import ImageWithOverlay from '../ImageWithOverlay';
 const ServicePost = () => {
   const { titleParam } = useParams();
   const post = ServiceData.find((post) => post.titleParam === titleParam);
-    const sentences = post.content.split(',');
+    const sentences = post.content.split(';');
   if (!post) {
     return <div>Post not found</div>;
   }
@@ -20,7 +20,7 @@ const ServicePost = () => {
         <Navbar />
         <ImageWithOverlay
                 imageUrl={image}
-                span1="Service"
+                span1="Services"
                 span2={post.title}
                 spanClass ="text-private"
                 title2=""
@@ -33,6 +33,7 @@ const ServicePost = () => {
             <img src={post.img} alt={post.title} />
         </div>
         <div className='my-3 mx-6'>
+          <h2 className="font-bold">{post.header}</h2>
                 <ol className='list'>
               {sentences.map((sentence, index) => (
                 <li className='my-2' key={index}>{sentence}</li>

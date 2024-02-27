@@ -32,21 +32,28 @@ const Mission = () => {
                                         <h2 className="h-2 w-2 rounded-full bg-private mr-4"></h2>
                                         <h2 className="my-3 tracking-[3px]">OUR MISSION</h2>
                                     </div>
-                                    <h4 
-                                     
-                                    className="text-[15px]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem assumenda, nobis expedita voluptatem consequatur ducimus laborum amet, aliquam architecto vero tenetur et, sint natus sequi? Laudantium earum vitae beatae qui. Dolorum natus labore dolorem, voluptate molestias laborum, blanditiis eligendi quam deserunt optio harum in error, unde alias sunt dolor x1</h4>
+                                    <h4 className="text-[15px]">
+                                        Our mission is to redifing luxury living locally in a global standard and deliver optimal solutions with top quality and best services.
+                                    </h4>
                                 </motion.div>
 
-                                <div>
+                                <motion.div 
+                                variants ={{
+                                    hidden:{opacity: 0, y: 75},
+                                    visible:{opacity: 1, y: 0},
+                                }}
+                                initial="hidden"
+                                whileInView="visible"
+                                transition={{delay:  0.5, 
+                                duration: 0.5}}>
                                     <div className="flex items-center">
                                         <h2 className="h-2 w-2 rounded-full bg-private mr-4"></h2>
                                         <h2 className="my-3 tracking-[3px]">OUR VISION</h2>
                                     </div>
-                                    <h4 className="text-[15px] mb-6">
-                        
-                         </h4>
-                       
-                                </div>
+                                    <h4 c className="text-[15px]">To be a world class and leading company in the surveying and Mapping, Real estate, Construction, Agro and Tech industries by offering quality and standard services to our customers, share our success with our partners and staff base and enhance our share holders investment. </h4>
+
+                                </motion.div    >
+
                             </div>
 
                             

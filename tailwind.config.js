@@ -13,7 +13,7 @@ export default {
       'black':'#000000',
       'gray':'#c7c6c1',
       'red':'#FF0000',
-      'vintage':'#540202',    
+      'vintage':'black',    
       'grayLight':'#ececec'
     },
     fontFamily:{

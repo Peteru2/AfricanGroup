@@ -12,7 +12,7 @@ const ContactInfo = () => {
                         staggerChildren: 2}}
                         className="">
                             <h3 className="mb-2 text-private font-bold  tracking-[4px]">OUR HEADQUARTER</h3>
-                            <h2 className="text-[30px]">Union Bank Road, Owode, Oyo</h2>
+                            <h2 className="text-[30px]">House 3, 1st Close, Behind Union Bank, Owode, Oyo, Oyo State.</h2>
                         </motion.div>
 
                         <div className="grid md:grid-cols-2 gird-cols-1">
@@ -57,8 +57,7 @@ const ContactInfo = () => {
                                     <h2 className="h-2 w-2 bg-private rounded-full mr-2 "></h2> <h3 className="tracking-[4px] font-bold">CONTACT</h3>
                                 </div>
                                 <h2 className="text-opacity-70 text-black">
-                                188, Awolowo Road, Ikoyi,
-                                                Lagos, Nigeria.
+                                +2347064255373
                                 </h2>
                                 <h2 className="text-opacity-70 text-black"><Link to={"tel://07064255373"}>+2347064255373</Link></h2>
                                 </div>
