@@ -120,7 +120,7 @@ const PostContent = () => {
                 <span className="flex items-center ">
                     <span className="bg-private text-white px-1 font-bold">02</span>
                     <span className="bg-private w-8 h-[.5px] mx-3"></span>
-                    <span className="font-bold text-[20px] text-vintage">Project Planning</span>
+                    <span className="font-bold text-[20px] text-vintage">Project Scheduling</span>
                 </span>
                 <div className="ml-20 mt-4">Joy to the world Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aliquid, deleniti aspernatur veniam error dolorem recusandae </div>
             </div>
@@ -131,7 +131,7 @@ const PostContent = () => {
                 <span className="flex items-center ">
                     <span className="bg-private text-white px-1 font-bold">03</span>
                     <span className="bg-private w-8 h-[.5px] mx-3"></span>
-                    <span className="font-bold text-[20px] text-vintage">Project Planning</span>
+                    <span className="font-bold text-[20px] text-vintage">Project Management</span>
                 </span>
                 <div className="ml-20 mt-4">Joy to the world Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aliquid, deleniti aspernatur veniam error dolorem recusandae </div>
             </div>
