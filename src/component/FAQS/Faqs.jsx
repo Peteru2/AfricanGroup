@@ -25,8 +25,12 @@ const FaqsMain = () => {
         decrip="Frequently Asked Questions"
         height="400px"
       />
-      <FAQSection title="About Survey" description="This is about it"faqItems={faqData[0]} />
-      <FAQSection title="My Survey" faqItems={faqData[1]} />
+      <FAQSection title="SURVEYING " description="This is about it"faqItems={faqData[0]} />
+      <FAQSection title="REAL-ESTATE" faqItems={faqData[1]} />
+      <FAQSection title="CONSTRUCTION" faqItems={faqData[2]} />
+      <FAQSection title="AFRI FARMS:" faqItems={faqData[3]} />
+
+
     </Layout>
   );
 };
