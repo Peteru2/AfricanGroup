@@ -15,6 +15,7 @@ import Services from './Views/Service';
 import ServicePost from './component/ServicesComp/ServicePost';
 import FaqsMain from './component/FAQS/Faqs';
 import ProjPost from './component/ProjectComp/ProjPost';
+import POQ from './component/POG';
 
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
           <Route path={'/Services'} element={<Services />} />
           <Route path={'/Contact-us'} element={<Contact />} />
           <Route path={'/quote-data'} element={<QuoteData />} />
+          <Route path={'/priority'} element={<POQ />} />
 
 
           <Route path={'/Blog'} element={<BlogList />} />

@@ -18,7 +18,7 @@ const Values = () => {
                         staggerChildren: 2}}
                          className="">
                             <div className="flex w-full  text-5xl md:justify-center font-bold">
-                                <h2><i className="fa fa-black-tie text-white  md:text-center text-left "></i></h2>
+                                <h2><i className="fa fa-gavel text-white  md:text-center text-left "></i></h2>
                                 
                                 </div>
                                     <h2 className="font-lora font-bold text-2xl my-4 text-white md:text-center text-left">Diligence</h2>
@@ -73,7 +73,7 @@ const Values = () => {
                                 transition={{ delay: 0.7, 
                                 staggerChildren: 2}}>
                             <div className="flex w-full  text-5xl mt-8 md:mt-0 md:justify-center text-center font-bold">
-                                <h2><i className="fa fa-creative-commons text-white md:text-center text-left "></i></h2>
+                                <h2><i className="fas fa-landmark text-white md:text-center text-left "></i></h2>
                                 
                                 </div>
                                     <h2 className="font-lora font-bold text-2xl my-4 text-white md:text-center text-left">Innovation</h2>
