@@ -1,6 +1,6 @@
 import { useState } from "react";
 import axios from "axios"
-const QuoteForm = ({close}) => {
+const QuoteForm = () => {
 const [success, setSuccess] = useState()
 const [icon, setIcon] = useState(false)
 

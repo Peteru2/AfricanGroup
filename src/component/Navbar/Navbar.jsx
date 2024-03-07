@@ -4,10 +4,8 @@ import { useState, useEffect, useRef } from "react";
 import NavMenu from "./NavItem";
 import "./navbar.css";
 import AFLOG from "../../assets/images/AFLOG.jpg"
-import QuoteForm from "./QuoteForm";
 import { motion } from "framer-motion";
 
-// import clickPng from "../clickIcon.png";
 
 const Navbar = () => {
 const location = useLocation()
@@ -18,12 +16,6 @@ const location = useLocation()
   };
 
   const navbarRef = useRef(null);
-  
-const [quote, setQuote] = useState(false)
-const handleQuote = () => {
-  setQuote((current) => !current);
-  setName(false)
-};
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 200) {
@@ -91,17 +83,15 @@ const handleQuote = () => {
             </li>
           );
         })}
-<div onClick={handleQuote} className="xl:ml-auto flex text-white w-44 group items-center bg-private hover:bg-public hover:bg-opacity-90   transition ease-in-out delay-150 duration-900 rounded-lg">
+        <Link to={"/request-quote"}>
+<div className="xl:ml-auto flex text-white w-44 group items-center bg-private hover:bg-public hover:bg-opacity-90   transition ease-in-out delay-150 duration-900 rounded-lg">
         <button  className=" text-xs flex items-center justify-center rounded-lg w-full"><span className="p-2 w-full flex justify-center">REQUEST A QUOTE</span><i className="bg-public bg-opacity-50 ml-auto p-3 transition ease-in-out delay-150 duration-900 group-hover:bg-private rounded-tr-lg rounded-br-lg fa fa-chevron-right"></i></button>
      </div>
+     </Link>
       </div>
      
       <div className="menu-icon ml-auto items-center" onClick={handleClick}>
         <i className={name ? "fa fa-times items-center text-private" : "fa fa-bars-staggered items-center"}></i>
-      </div>
-
-    <div className={`modal ${quote?"modal-show":""}`}>
-      <QuoteForm close={handleQuote}/>
       </div>
       <div>
 

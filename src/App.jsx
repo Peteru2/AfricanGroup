@@ -16,6 +16,7 @@ import ServicePost from './component/ServicesComp/ServicePost';
 import FaqsMain from './component/FAQS/Faqs';
 import ProjPost from './component/ProjectComp/ProjPost';
 import POQ from './component/POG';
+import RequestQuote from './component/Navbar/RequestQuote';
 
 
 function App() {
@@ -32,6 +33,8 @@ function App() {
           <Route path={'/Contact-us'} element={<Contact />} />
           <Route path={'/quote-data'} element={<QuoteData />} />
           <Route path={'/priority'} element={<POQ />} />
+          <Route path={'/request-quote'} element={<RequestQuote  />} />
+
 
 
           <Route path={'/Blog'} element={<BlogList />} />
