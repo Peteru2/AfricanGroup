@@ -26,7 +26,7 @@ const RequestQuote = () => {
       />
         </section>   
         <div className="border-t-[1px] pt-6 mt-20 xl:mx-[90px] md:mx-5 mx-6 font-roboto">
-        <div className="grid grid-cols-3 gap-10 font-roboto">
+        <div className="grid md:grid-cols-3 grid-cols-1 gap-10 font-roboto">
             <div>
 
             </div>
