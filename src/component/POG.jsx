@@ -2,7 +2,9 @@ import Helmett from "./Helmet";
 import ImageWithOverlay from "./ImageWithOverlay";
 import image from "../assets/images/about.jpg"
 import Layout from "./Layout";
-
+import female from "../assets/images/female.jpg"
+import { motion } from "framer-motion";
+import { Bounce, Roll } from "react-awesome-reveal";
 const POQ = () => {
     return ( 
         <>
@@ -21,12 +23,24 @@ const POQ = () => {
                 height="400px"
       />
            
-            <div className="pt-6 mt-20 xl:mx-[90px] md:mx-5 mx-6 font-roboto">
-                <div className="grid grid-cols-2 gap-4">
-                    <div>
-                        sdlfas
-                    </div>
-                    <div className="text-[16px]">
+            <div className=" border-t-[1px] pt-6 mt-20 xl:mx-[90px] md:mx-5 mx-6 font-roboto">
+                <div className="grid grid-cols-2 gap-6">
+
+                <Roll  cascade triggerOnce direction="left" className="w-[500px]">
+                        <img src={female} alt="female" />
+                    </Roll>
+
+                    <motion.div className="text-[16px]"
+                     variants ={{
+                        hidden:{opacity: 0, y: 75},
+                        visible:{opacity: 1, y: 0},
+                    }}
+                    initial="hidden"
+                    whileInView="visible"
+                    transition={{delay:  0.5, 
+                    duration: 0.5}}
+                    >
+                        <h1 className="w-14 bg-private h-1 mb-3"></h1>
                         <h2>
                         <strong>AT AFRICAN GROUP NIGERIA</strong>, quality is our North Star! We believe that when it comes to Surveying, Real Estate, Construction & Agro Projects, and Technology, nothing less than excellence will do. Here's why quality is at the heart of everything we do:
 
@@ -52,7 +66,7 @@ const POQ = () => {
                         <h2 className="my-5">At African Group, we don't just build structures; we create legacies. With a bold and concise objective, we aim to maximize value for our shareholders, deliver strong nancial performance, and achieve sustainable growth. Also, we are committed to the established quality management system (QMS), both administrative and operational, to work towards continuous improvement of our quality performance.
 
                         </h2>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
 

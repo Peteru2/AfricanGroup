@@ -49,7 +49,7 @@ const Footer = () => {
                         <Link to={"/Blog"}><h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300">Blog </button></h4></Link>
                         <Link to={"/Contact-us"}> <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300">Contact</button></h4></Link>
                        <Link to ={"/About"}> <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300 text-left">About Us</button></h4></Link>
-                       <Link to ={"/About/Team"}> <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300 text-left">Meat Our Team</button></h4></Link>
+                       <Link to ={"/priority"}> <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300 text-left">Priority On Quality</button></h4></Link>
 
                     </motion.div>
                     <motion.div
