@@ -28,7 +28,9 @@ const handleRetry = () => {
     const [formData, setFormData] = useState({
         name: '',
         email: '',
+        business: '',
         phoneNumber: '',
+        project:'',
         message:'',
 
       });
@@ -36,7 +38,9 @@ const handleRetry = () => {
       const [errors, setErrors] = useState({
         name: '', 
         email: '',
+        business: '',
         phoneNumber: '',
+        project: '',
         message:'',
       });
     
@@ -62,10 +66,16 @@ const handleRetry = () => {
                 } else if (!emailRegex.test(formData.email)) {
                     newErrors.email = 'Invalid email format';
                 }
+                else if (!formData.business.trim()) {
+                    newErrors.business = 'Your company or business is required';
+                }
                 else if (!formData.phoneNumber.trim()) {
                     newErrors.phoneNumber = 'Phone Number is required';
                 } else if (!phoneRegex.test(formData.phoneNumber)) {
                     newErrors.phoneNumber = 'Invalid phone number format';
+                }
+                else if(!formData.project.trim()){
+                    newErrors.message = 'Your Project is required';
                 }
                 else if(!formData.message.trim()){
                     newErrors.message = 'Message is required';
@@ -112,18 +122,17 @@ const handleRetry = () => {
                     <section>
                         <form onSubmit={handleSubmit}  className={`font-roboto text-black ${success?"hidden":""}`}>
                             <div className="flex items-center ">
-                            <h2 className="my-2 text-black font-playfair font-bold text-[20px]">Request for Quote</h2>
-                            <button className="ml-auto cursor-pointer" onClick={(e) => { e.preventDefault(); close(); }}><i className="fa fa-times"></i></button>
+                          
                             </div>
                         <div className="mb-6">  
                         
                         <label className="my-2 mt-4 label flex">
-                            <span>Name</span> <span className={`ml-auto text-red text-[14px] ${errors.name? "blink-error":""}`}> {errors.name}</span>
+                            <span>Full Name <span className="text-red">*</span></span> <span className={`ml-auto text-red text-[14px] ${errors.name? "blink-error":""}`}> {errors.name}</span>
                         </label> 
                       
-                                <div className="flex items-center border border-gray rounded-[5px] mt-1 px-3  py-2">
+                                <div className="flex items-center border border-private rounded-[5px] mt-1 px-3  py-2">
                                 <i className="fa fa-user text-gray w-5 h-5  mr-2 mt-1"></i>
-                                <input type="text" className="w-full outline-none text-black"
+                                <input type="text" className="w-full  bg-transparent outline-none text-black"
                                 
                                 name="name"
                                 value={formData.name}
@@ -134,15 +143,29 @@ const handleRetry = () => {
 
                             <div className="mb-6">  
                             <label className="my-2  label flex">
-                            <span>Email</span> <span className={`ml-auto text-red text-[14px] ${errors.email? "blink-error":""}`}> {errors.email}</span>
+                            <span>Email <span className="text-red">*</span> </span> <span className={`ml-auto text-red text-[14px] ${errors.email? "blink-error":""}`}> {errors.email}</span>
                         </label> 
-                                <div className="flex items-center border border-gray rounded-[5px] px-3  mt-1 py-2">
+                                <div className="flex items-center border border-private rounded-[5px] px-3  mt-1 py-2">
                                 <i className="fa fa-envelope  w-5 h-5 text-gray  mr-2 mt-1"></i>
                                 <input type="Email" 
                                 name="email"
                                 value={formData.email} 
                                 onChange={handleInputChange}
-                                className="w-full outline-none text-black" placeholder="Email" />
+                                className="w-full outline-none bg-transparent text-black" placeholder="Email" />
+                                </div>
+                            </div>
+
+                            <div className="mb-6">  
+                            <label className="my-2  label flex">
+                            <span>Your Company/Business/Organization <span className="text-red">*</span></span> <span className={`ml-auto text-red text-[14px] ${errors.business? "blink-error":""}`}> {errors.business}</span>
+                        </label> 
+                                <div className="flex items-center border border-private rounded-[5px] px-3  mt-1 py-2">
+                                <i className="fa fa-envelope  w-5 h-5 text-gray  mr-2 mt-1"></i>
+                                <input type="Email" 
+                                name="email"
+                                value={formData.business} 
+                                onChange={handleInputChange}
+                                className="w-full outline-none bg-transparent text-black" placeholder="Your Business" />
                                 </div>
                             </div>
 
@@ -150,13 +173,26 @@ const handleRetry = () => {
                             <label className="my-2 label flex">
                             <span>Phone Number</span> <span className={`ml-auto text-red text-[14px] ${errors.phoneNumber? "blink-error":""}`}> {errors.phoneNumber}</span>
                         </label> 
-                                <div className="flex items-center border border-gray rounded-[5px] px-3 mt-1  py-2">
+                                <div className="flex items-center border border-private rounded-[5px] px-3 mt-1  py-2">
                                 <i className="fa fa-phone text-gray w-5 h-5  mr-2 mt-1"></i>
                                 <input type="text" 
                                 name="phoneNumber"
                                 value={formData.phoneNumber}
                                 onChange={handleInputChange}
-                                className="w-full outline-none text-black" placeholder="Phone Number" />
+                                className="w-full outline-none bg-transparent text-black" placeholder="Phone Number" />
+                                </div>
+                            </div>
+
+                            <div className="mb-6">  
+                            <label className="my-2 label flex">
+                            <span>Describe Your Project <span className="text-red">*</span></span> <span className={`ml-auto text-red text-[14px] ${errors.project? "blink-error":""}`}> {errors.project}</span>
+                        </label> 
+                                <div className="flex items-center border border-private rounded-[5px]  px-3 mt-1  py-2">
+                               
+                                <textarea type="text" name="message" className="w-full h-[100px] bg-transparent outline-none text-black" 
+                                value={formData.project}
+                                onChange={handleInputChange}
+                                placeholder="Give Details Of Your Project" />
                                 </div>
                             </div>
 
@@ -164,16 +200,16 @@ const handleRetry = () => {
                             <label className="my-2 label flex">
                             <span>Your Message</span> <span className={`ml-auto text-red text-[14px] ${errors.message? "blink-error":""}`}> {errors.message}</span>
                         </label> 
-                                <div className="flex items-center border border-gray rounded-[5px]  px-3 mt-1  py-2">
+                                <div className="flex items-center border border-private rounded-[5px]  px-3 mt-1  py-2">
                                
-                                <textarea type="text" name="message" className="w-full outline-none text-black" 
+                                <textarea type="text" name="message" className="w-full h-[100px] bg-transparent outline-none text-black" 
                                 value={formData.message}
                                 onChange={handleInputChange}
                                 placeholder="Your Message" />
                                 </div>
                             </div>
 
-                            <button  type="submit"  className="bg-private hover:bg-private hover:bg-opacity-90  text-white font-semibold py-4 px-4 rounded w-full">{icon ?( <span>Submitting <i class="fas fa-spinner fa-spin"></i></span>):( <span>Submit</span>  )}</button>
+                            <button  type="submit"  className="bg-private hover:bg-private hover:bg-opacity-90  text-white font-semibold py-4 px-4 rounded w-full">{icon ?( <span>Submitting <i class="fas fa-spinner fa-spin"></i></span>):( <span>Request A Proposal</span>  )}</button>
                                 
                         </form>
                         <div className= {`font-roboto text-black ${success?"":"hidden"}`}> 

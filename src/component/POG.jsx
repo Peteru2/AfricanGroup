@@ -53,7 +53,7 @@ const POQ = () => {
 
                         </h2>
 
-                        <h2 className="my-5"><strong>. Sensitizing for Success:</strong>   We understand the importance of sensitizing our tradesmen on key areas like sustain ability, professional work practices, and safety. By equipping them with the knowledge and skills needed to excel, we create a workforce that is ready to tackle any challenge with nesse.
+                        <h2 className="my-5"><strong>. Sensitizing for Success:</strong>   We understand the importance of sensitizing our tradesmen on key areas like sustain ability, professional work practices, and safety. By equipping them with the knowledge and skills needed to excel, we create a workforce that is ready to tackle any challenge with finesse.
 
                         </h2>
 

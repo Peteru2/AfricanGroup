@@ -96,7 +96,6 @@ const location = useLocation()
       <div>
 
       </div>
-      <div className={quote?"overlay":""}></div>
     </nav>
   );
 };
