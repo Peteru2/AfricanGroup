@@ -28,15 +28,15 @@ const RequestQuote = () => {
       />
         </section>   
         <div className="border-t-[1px] pt-6 mt-20 xl:mx-[90px] md:mx-5 mx-6 font-roboto">
-        <div className="grid md:grid-cols-3 grid-cols-1 gap-10 font-roboto">
-        <div className="col-spam-1 bg-white bg-opacity-30 p-6 shadow-lg">
+        <div className="grid md:grid-cols-3 grid-cols-1 md:gap-10 font-roboto">
+        <div className=" w-full bg-white bg-opacity-30 p-6 mb-4 md:mb-0 shadow-lg">
                 <Roll  cascade triggerOnce direction="left" className="">
                         <img src={male} alt="female" />
                     </Roll>
             </div>
             <div className="col-span-2">
-                <h2>
-                Please schedule a consultation to see how we work. Our MEP designers ensure fast project completion, high-quality construction and accurate cost estimates
+                <h2 className="font-bold">
+                Experience the difference with our survey solutions. Schedule a consultation to see how our expertise can benefit your projects.
                 </h2>
                 <QuoteForm />
             </div>
