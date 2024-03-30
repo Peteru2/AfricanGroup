@@ -23,12 +23,11 @@ const Footer = () => {
                         <img src={Logo} alt="logo"  className="mb-4 rounded-[10px]"/>
                         <h4>African Group  is a fully licensed land surveying company serving the greater Nigeria and Africa as a whole</h4>
                         <div className="flex mt-2 text-[20px]">
-                           <Link className="hover:text-vintage  transition ease-in-out  duration-300"> <i className="fa fa-facebook mr-2"></i></Link>
-                           <Link className="hover:text-vintage  transition ease-in-out  duration-300">  <i className="fa fa-twitter mx-2"></i></Link>
-                           <Link className="hover:text-vintage  transition ease-in-out  duration-300"><i className="fa fa-instagram mx-2"></i></Link>
-                           <Link className="hover:text-vintage  transition ease-in-out  duration-300"><i className="fa fa-linkedin mx-2"></i></Link>
-                           <Link className="hover:text-vintage  transition ease-in-out  duration-300"><i className="fa fa-facebook mx-2"></i></Link>
-                           <Link className="hover:text-vintage  transition ease-in-out  duration-300"><i className="fa fa-facebook mx-2"></i></Link>
+                           <Link to={"https://web.facebook.com/africansurvey"} className="hover:text-vintage  transition ease-in-out  duration-300"> <i className="fa fa-facebook mr-2"></i></Link>
+                           <Link to={"https://twitter.com/africanrealty"} className="hover:text-vintage  transition ease-in-out  duration-300">  <i className="fa fa-twitter mx-2"></i></Link>
+                           <Link to={"https://instagram.com/africangroupng"} className="hover:text-vintage  transition ease-in-out  duration-300"><i className="fa fa-instagram mx-2"></i></Link>
+                           <Link to ={"https://www.linkedin.com/in/africangroupng/"}className="hover:text-vintage  transition ease-in-out  duration-300"><i className="fa fa-linkedin mx-2"></i></Link>
+                           
 
 
                         </div>
@@ -64,7 +63,7 @@ const Footer = () => {
                       
                     className="col-span-2">
                         <h2 className="mb-6 md:text-[22px] text-[18px]">CONTACT INFO</h2>
-                        <h4 className="my-2"><i className="fa fa-building mr-2"></i> Union Bank Road, Owode, Oyo, Nigeria</h4>
+                        <h4 className="my-2"><i className="fa fa-building mr-2"></i> House 3, 1st Close, Behind Union Bank, Owode, Oyo, Oyo State.</h4>
                         <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300"><i className="fa fa-phone mr-2"></i>+234 706 4255 373 </button></h4>
                         <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300"> cc:     +234 901 7730 877 </button></h4>
                       

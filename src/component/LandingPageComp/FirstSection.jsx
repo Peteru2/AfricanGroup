@@ -161,7 +161,7 @@ const FirstSection = () => {
             <div className="mt-14 md:mt-24 mb-4">
                 <h2 className="text-private  tracking-widest pb-4 border-b-[1px] border-black w-full">OUR STORY</h2>
 
-                <h4 className="font-roboto text-[18px] md:text-[24px] mt-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius fuga assumenda dolore soluta labore nobis, voluptate illum, non reprehenderit necessitatibus, eaque aspernatur itaque officiis? Non dolorum eos ex exercitationem distinctio. Lorem ipsum dolor, sit amet consectetur adipisicing elit. </h4>
+                <h4 className="font-roboto text-[18px] md:text-[24px] mt-8"><b>AFRICAN GROUP NG.</b>, is a sole Nigerian Group of Companies in operation about a decade, which is duly registered with corporate affairs commission; for the purpose of providing first class services in the areas of: Surveying & Mapping, Real Estate, Construction, Agricultural, and Technology services. </h4>
             </div>
             <div className="grid md:grid-cols-2 font-serif grid-cols-1 gap-6 mt-16 w-full flex-wrap">
                 <motion.div 

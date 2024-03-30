@@ -64,7 +64,7 @@ const Team = () => {
   <div className="bg-white p-6">
     <h2 className="font-bold text-[25px] mb-1">{data.name}</h2>
     <h4 className="text-gray">{data.office}</h4>
-    <h4 className="my-6">{data.description}</h4>
+    <h4 className="my-6 text-sm">{data.description}</h4>
   </div>
 </motion.div>
 

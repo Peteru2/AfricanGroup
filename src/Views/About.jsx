@@ -20,7 +20,7 @@ const About = () => {
                 span1="About Us"
                 span2=""
                 title2="Who are we?"
-                decrip="We are Africa's Finest"
+                decrip="The Land and Housing Experts"
                 height="400px"
       />
             <Mission />

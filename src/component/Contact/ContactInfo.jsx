@@ -32,10 +32,14 @@ const ContactInfo = () => {
                                 </h2>
                                 </div>
 
-                                                 
-                                <div className="flex mb-2 items-center md:mt-10 my-4">
+                                <div className=" md:mt-10 my-4 mb-2">
+                                <div className="flex  items-center ">
                                     <h2 className="h-2 w-2 bg-private rounded-full mr-2 "></h2><h3 className="tracking-[4px] font-bold">LAGOS</h3>
                                 </div>
+                                188, Awolowo Road, Ikoyi, Lagos, Nigeria.
+                                <h2></h2>
+                                </div>
+
                         </motion.div>
                         <motion.div 
                         initial={{ opacity: 0 }}
@@ -48,8 +52,7 @@ const ContactInfo = () => {
                                     <h2 className="h-2 w-2 bg-private rounded-full mr-2 "></h2> <h3 className="tracking-[4px] font-bold">OYO</h3>
                                 </div>
                                 <h2>
-                                188, Awolowo Road, Ikoyi,
-                                                Lagos, Nigeria.
+                                House 3, 1st Close, Behind Union Bank, Owode, Oyo, Oyo State.
                                 </h2>
 
                                 <div className="md:mt-10 my-6">                        
@@ -57,9 +60,9 @@ const ContactInfo = () => {
                                     <h2 className="h-2 w-2 bg-private rounded-full mr-2 "></h2> <h3 className="tracking-[4px] font-bold">CONTACT</h3>
                                 </div>
                                 <h2 className="text-opacity-70 text-black">
-                                +2347064255373
+                                +234 706 4255 373
                                 </h2>
-                                <h2 className="text-opacity-70 text-black"><Link to={"tel://07064255373"}>+2347064255373</Link></h2>
+                                <h2 className="text-opacity-70 text-black"><Link to={"tel://07064255373"}>+234 901 7730 877</Link></h2>
                                 </div>
                                 </motion.div>
 
