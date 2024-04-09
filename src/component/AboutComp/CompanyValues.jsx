@@ -24,7 +24,7 @@ const CompanyValues = () => {
       transition={{ duration: 0.5 }}
      // Animation settings
                                 
-                         className="bg-white w-[550px] md:mx-6  my-4 md:p-10 p-5">
+                         className="bg-white md:w-[400px] w-[550px] md:mx-6  my-4 md:p-10 p-5">
                             <div className="flex w-full mb-7 md:text-6xl  text-4xl font-bold">
                             <h2><i className="fa fa-gavel  text-private"></i></h2>
                                 <h2 className="ml-auto text-gray text-opacity-30 font-roboto">01</h2>
@@ -38,7 +38,7 @@ const CompanyValues = () => {
                         whileInView={{ opacity: 1 }}
                         transition={{ delay: 0.6, 
                          }}
-                        className="bg-white w-[550px] md:mx-6 my-4 md:p-10 p-5">
+                        className="bg-white md:w-[400px] w-[550px] md:mx-6 my-4 md:p-10 p-5">
                         <div className="flex w-full mb-7 md:text-6xl  text-4xl font-bold">
                         <h2><i className="fa fa-handshake text-private "></i></h2>
 
@@ -52,7 +52,7 @@ const CompanyValues = () => {
                          initial={{ opacity: 0 }}
                          whileInView={{ opacity: 1 }}
                          transition={{ delay: 0.7, }}
-                        className="bg-white w-[550px] md:mx-6 my-4 md:p-10 p-5">
+                        className="bg-white md:w-[400px] w-[550px] md:mx-6 my-4 md:p-10 p-5">
                         <div className="flex w-full mb-7 md:text-6xl l text-4xl font-bold">
                         <h2><i className=" fa fa-star text-private  "></i></h2>
 
@@ -65,7 +65,7 @@ const CompanyValues = () => {
                          initial={{ opacity: 0 }}
                          whileInView={{ opacity: 1 }}
                          transition={{ delay: 0.8, }}
-                        className="bg-white w-[550px] md:mx-6 my-4 md:p-10 p-5">
+                        className="bg-white     md:w-[400px] w-[550px] md:mx-6 my-4 md:p-10 p-5">
                         <div className="flex w-full mb-7 md:text-6xl  text-4xl  font-bold">
                         <h2><i className="fa fa-users text-private  "></i></h2>
 
@@ -78,7 +78,7 @@ const CompanyValues = () => {
                          initial={{ opacity: 0 }}
                          whileInView={{ opacity: 1 }}
                          transition={{ delay: 0.8, }}
-                        className="bg-white w-[550px] md:mx-6 my-4 md:p-10 p-5">
+                        className="bg-white md:w-[400px] w-[550px] md:mx-6 my-4 md:p-10 p-5">
                         <div className="flex w-full mb-7 md:text-6xl  text-4xl  font-bold">
                         <h2><i className="fas fa-landmark text-private  "></i></h2>
 
@@ -91,7 +91,7 @@ const CompanyValues = () => {
                          initial={{ opacity: 0 }}
                          whileInView={{ opacity: 1 }}
                          transition={{ delay: 0.8, }}
-                        className="bg-white w-[550px] md:mx-6 my-4 md:p-10 p-5">
+                        className="bg-white md:w-[400px] w-[550px] md:mx-6 my-4 md:p-10 p-5">
                         <div className="flex w-full mb-7 md:text-6xl  text-4xl  font-bold">
                         <h2><i className="fa fa-check-circle text-private  "></i></h2>
 

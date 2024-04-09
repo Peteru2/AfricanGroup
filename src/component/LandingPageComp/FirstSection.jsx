@@ -87,7 +87,7 @@ const FirstSection = () => {
         <section>
             
         <Slide
-        transitionDuration={500}
+        transitionDuration={400}
         scale={1.4}
         {...properties}
     >

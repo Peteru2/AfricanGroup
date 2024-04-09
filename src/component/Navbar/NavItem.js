@@ -37,6 +37,12 @@ const NavMenu =
                 cName : "nav-links",
                 icon: "",
             },
+            {
+                title : "PRIORITY ON QUALITY",
+                url: "/priority",
+                cName : "nav-links",
+                icon: "",
+            },
             
            
         ]

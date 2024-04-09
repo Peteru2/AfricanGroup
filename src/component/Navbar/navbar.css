@@ -47,8 +47,8 @@
 }
 .nav-menu{
     display :grid;
-    grid-template-columns: repeat(7, auto);
-    grid-gap: 40px;
+    grid-template-columns: repeat(8, auto);
+    grid-gap: 34px;
     margin-left: auto;
     align-items: center;
     z-index:9999;

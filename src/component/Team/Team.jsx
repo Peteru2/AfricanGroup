@@ -19,7 +19,6 @@ const Team = () => {
                 title2="Our Team"
                 decrip="Meet With The Expert Team"
                 height="400px"
-
       />
             <section className="font-roboto mt-8 xl:mx-[90px] md:mx-5 mx-6 my-10">
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-10">

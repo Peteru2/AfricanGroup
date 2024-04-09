@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Footer = () => {
     return ( 
         <>
-            <section className="footer  bg-public bg-opacity-90 px-6 md:px-4 xl:px-[90px] md:py-9  pb-12 mt-[150px] w-full font-roboto text-white text-[15px] font-bold">
+            <section className="footer  bg-public bg-opacity-90 px-6 md:px-4 xl:px-[90px] md:py-9  pb-12 mt-[150px] w-full font-roboto text-white text-[15px]   ">
                 <NewsLetter />
                 <div className="grid md:grid-cols-9  md:pt-[100px] pt-[290px] pb-10 grid-cols-1 gap-4 border-b-[1px] border-white ">
                     <motion.div
