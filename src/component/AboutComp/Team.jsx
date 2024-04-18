@@ -21,8 +21,24 @@ const Team = () => {
                 Image2,
             ],
             title:"About",
-            header:"Professional Land Surveying And Mapping",
-            content:"African Group routinely proides surveying solutions for business, real estate, land development and civil engineering in Boise area."
+            header:"Professional Land Surveying And Mapping  ",
+            content:"African Group routinely provides surveying solutions for business, real estate, land development and civil engineering in Boise area."
+        },
+        { 
+            img: [
+                Image2,
+            ],
+            title:"About",
+            header:"Quality Construction at Unbeatable Rates",
+            content:"We don't just build structures, we create legacies and embrace innovation. From incorporating eco-friendly materials to implementing energy efficient solutions, we strive to create spaces that not only meet the highest standards but also leave a positive impact on the environment."
+        },
+        { 
+            img: [
+                Image2,
+            ],
+            title:"About",
+            header:"African Legend of All Real Estate",
+            content:"Navigate the world of real estate with confidence, as we guide you through opportunities, negotiate great deals, and help you secure your ideal property."
         },
     ]
     const buttonStyle = {
@@ -77,14 +93,16 @@ const Team = () => {
               ))}
         </Slide>
 
-            <Link to={'/About/Team'}>
+            
             <div className="flex justify-center text-vintage font-roboto" >
+            <Link to={'/About/Team'}>
                             <div className="mb-[10px] h-20 shadow-xl flex justify-center w-[200px] bg-white">
                 <button className="text-center ">Meet Our Team</button>
             </div>
+            </Link>
+
             </div>
 
-            </Link>
         </>
      );
 }
