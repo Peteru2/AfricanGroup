@@ -4,11 +4,12 @@ import Navbar from "../Navbar/Navbar";
 import { useParams } from "react-router-dom";
 import PostContent from "./postContent";
 import projData from "./data";
+import ongoingData from "./ongoingData";
 import Footer from "../Footer";
 
 const ProjPost = () => {
     const { titleParam } = useParams();
-    const post = projData.find((post) => post.titleParam === titleParam);
+    const post = ongoingData.find((post) => post.titleParam === titleParam) || projData.find((post) => post.titleParam === titleParam);
     if (!post) {
       return <div>Post not found</div>;
     }

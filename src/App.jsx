@@ -17,6 +17,7 @@ import FaqsMain from './component/FAQS/Faqs';
 import ProjPost from './component/ProjectComp/ProjPost';
 import POQ from './component/POG';
 import RequestQuote from './component/Navbar/RequestQuote';
+import OngoingProjList from './component/ProjectComp/OngoingProjectList';
 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
           <Route path={'/'} element={<Landing />} />
           <Route path={'/About'} element={<About />} />
           <Route path={'/Project'} element={<Project />} />
+          <Route path={'/Ongoing-Project'} element={<OngoingProjList />} />
+
           <Route path={'/Services'} element={<Services />} />
           <Route path={'/Contact-us'} element={<Contact />} />
           <Route path={'/quote-data'} element={<QuoteData />} />

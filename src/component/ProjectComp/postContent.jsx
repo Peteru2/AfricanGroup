@@ -1,9 +1,11 @@
  import projData from "./data";
 import { useParams } from 'react-router-dom';
 import { motion } from "framer-motion";
+import ongoingData from "./ongoingData";
 const PostContent = () => {
     const { titleParam } = useParams();
-    const post = projData.find((post) => post.titleParam === titleParam);
+    
+    const post = ongoingData.find((post) => post.titleParam === titleParam) || projData.find((post) => post.titleParam === titleParam);
     if (!post) {
       return <div>Post not found</div>;
     }
@@ -67,6 +69,12 @@ const PostContent = () => {
                         <span className="w-2 h-2 bg-private mr-4 "></span> <span className="font-bold text-vintage">Year</span>
                     </div>
                     <h2 className="ml-6 text-black text-opacity-60">{post.year}</h2>
+                </div>
+                <div className="mt-5">
+                    <div className="flex items-center">
+                        <span className="w-2 h-2 bg-private mr-4 "></span> <span className="font-bold text-vintage">Status</span>
+                    </div>
+                    <h2 className="ml-6 text-black text-opacity-60">{post.status}</h2>
                 </div>
 
                 </motion.div>
