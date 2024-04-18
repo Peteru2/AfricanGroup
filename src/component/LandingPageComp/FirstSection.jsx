@@ -161,7 +161,7 @@ const FirstSection = () => {
             <div className="mt-14 md:mt-24 mb-4">
                 <h2 className="text-private  tracking-widest pb-4 border-b-[1px] border-black w-full">OUR STORY</h2>
 
-                <h4 className="font-roboto text-[18px] md:text-[24px] mt-8"><b>AFRICAN GROUP NG.</b>, is a sole Nigerian Group of Companies in operation about a decade, which is duly registered with corporate affairs commission; for the purpose of providing first class services in the areas of: Surveying & Mapping, Real Estate, Construction, Agricultural, and Technology services. </h4>
+                <h4 className="font-roboto text-[18px] md:text-[24px] mt-8"><b>AFRICAN GROUP NG</b>, is a sole Nigerian Group of Companies in operation about a decade, which is duly registered with corporate affairs commission; for the purpose of providing first class services in the areas of: Surveying & Mapping, Real Estate, Construction, Agricultural, and Technology services. </h4>
             </div>
             <div className="grid md:grid-cols-2 font-serif grid-cols-1 gap-6 mt-16 w-full flex-wrap">
                 <motion.div 
@@ -193,10 +193,13 @@ const FirstSection = () => {
                     transition={{ delay: 0.25, 
                     duration: 0.5}}
                     className="">
-                        <h4 className="font-lora text-[16px]">
-                        <strong>AFRICAN GROUP</strong> Nigeria, is a sole Nigerian Group of Companies existing over eight years, which was incorporated in 2020; for the purpose of providing first class services in theareas of: Surveying & Mapping, Real Estate, Construction & Agricultural services.
+                        <h4 className="font-lora text-[16px]"> At 
+                        African Group, our core competencies include high precision surveying, expertise in delivering high-quality construction projects with highest quality materials that can stand the test of time and within budget. We don’t just build structures; we build legacies. 
+                        <p className="pt-2">We build for the man who wants to live differently. 
+Our residential projects include private residential projects for private clients. Others projects includes Surveying, Mapping and Real Estate Sales.
+</p>
                         <br />
-                        The company is driven by a group of highly trained, experienced, self-motivated, and very dynamic Professionals equipped to handle various categories of projects; LAND & ENGINEERING SURVEYING, MAPPING & GEO-DATA, ARCHITECTURAL DESIGNS, REAL ESTATE, CIVILCONSTRUCTION, AGRO, SITE CLEARING & GROUND LEVELLING, DRILLING, ELECTRICALENGINEERING, INTERIOR & EXTERIOR FINISHING, and PROJECT MANAGEMENT.
+                        
                         </h4>
                         <div className="mt-8">
                              <motion.button 

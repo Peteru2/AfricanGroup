@@ -24,7 +24,7 @@ const ProjPost = () => {
                 spanClass ="text-private"
                 title2=""
                 decrip={post.title}
-                height="350px"
+                height="380px"
       />
       <PostContent />
       <Footer />

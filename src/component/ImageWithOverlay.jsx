@@ -40,7 +40,7 @@ const ImageWithOverlay = ({ imageUrl, span1, span2, title2, decrip,height, spanC
                     initial={{y:'100vw'}}
                     animate={{y:0}}
                     transition={{delay: 0.5, type: "spring"}}
-                    className="items-center  flex justify-center flex-wrap text-[16px]">African Group <span className="h-2 w-2 mx-4 bg-white bg-opacity-60 rounded-full"></span> {span1}  {span2 != ""? ( <><span className="h-2 w-2 mx-4 bg-white bg-opacity-60 rounded-full"></span> <span className={spanClass}>{span2}</span></>):""}
+                    className="items-center  flex justify-center  flex-wrap text-[16px]">African Group <span className="h-2 w-2 mx-4 bg-white bg-opacity-60 rounded-full"></span> {span1}  {span2 != ""? ( <><span className="h-2 w-2 mx-4 bg-white bg-opacity-60 rounded-full"></span> <span className={spanClass}>{span2}</span></>):""}
                     </motion.h2>
                    
                 </div>

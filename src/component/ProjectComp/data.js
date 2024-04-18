@@ -16,8 +16,8 @@ const projData = [
     },
       {
         id: 2,
-      titleParam:"expert-mechanical",
-        title: "Expert Mechanical",
+      titleParam:"land-siting",
+        title: "Land Siting",
         date: "February 6, 2003",
         summary: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis.",
         img: firstImg,

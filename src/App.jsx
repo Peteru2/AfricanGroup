@@ -18,6 +18,7 @@ import ProjPost from './component/ProjectComp/ProjPost';
 import POQ from './component/POG';
 import RequestQuote from './component/Navbar/RequestQuote';
 import OngoingProjList from './component/ProjectComp/OngoingProjectList';
+import OngoingInfoList from './component/ProjectComp/OngoingInfoList';
 
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
           <Route path={'/'} element={<Landing />} />
           <Route path={'/About'} element={<About />} />
           <Route path={'/Project'} element={<Project />} />
-          <Route path={'/Ongoing-Project'} element={<OngoingProjList />} />
+          <Route path={'/project/ongoing-Project'} element={<OngoingProjList />} />
 
           <Route path={'/Services'} element={<Services />} />
           <Route path={'/Contact-us'} element={<Contact />} />
@@ -46,6 +47,10 @@ function App() {
           <Route path="/blog/:titleParam" element={<BlogPost />} />
           <Route path="/service/:titleParam" element={<ServicePost />} />
           <Route path="/project/:titleParam" element={<ProjPost />} />
+          <Route path="/project/ongoing-project/:titleParam" element={<ProjPost />} />
+          <Route path="/project/ongoing-project/:titleparam/:titleParam" element={<OngoingInfoList/>} />
+
+
 
 
           <Route path={'/FAQs'} element={<FaqsMain />} />

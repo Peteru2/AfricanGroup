@@ -13,17 +13,16 @@ const Team = () => {
                 
             ],
             
-            header:"We Are Africa's Finest",
-            content:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, mollitia? Odit, magni. Ducimus non, ad quam, fuga tempora voluptatum eligendi unde natus facilis libero incidunt atque voluptas enim cum ipsa."
+            header:"Client Satisfaction",
+            content:"Our ultimate goal is to exceed client expectations. We work closely with our clients, understanding their vision and aspiration to deliver projects that not only meet their needs but surpass their wideat dream, your satisfaction is our driving force!"
         },
-        {
+        { 
             img: [
                 Image2,
             ],
             title:"About",
             header:"Professional Land Surveying And Mapping",
-            link: "/About",
-            content:"African Group routinely provides surveying solutions for business, real estate, land development and civil engineering in Boise area."
+            content:"African Group routinely proides surveying solutions for business, real estate, land development and civil engineering in Boise area."
         },
     ]
     const buttonStyle = {
@@ -52,7 +51,7 @@ const Team = () => {
 
         >
             {imageSlides.map((image, index) => (
-        <div style={{ 'backgroundImage': `url(${image.img}) `,  "backgroundSize":"cover"}}>
+        <div className="flex" style={{ 'backgroundImage': `url(${image.img}) `,  "backgroundSize":"cover"}}>
             <motion.section
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
@@ -64,7 +63,7 @@ const Team = () => {
                     <h2 className="text-white text-[40px] font-playfair font-bold  md:w-[500px] ">{image.header}</h2>
                 </div>
                 <div>
-                    <h4 className="text-[20px] text-white">{image.content}</h4>
+                    <h4 className="text-[16px] text-white">{image.content}</h4>
                     <div className="mt-2 flex">
                         <h3 className="w-20 h-2 bg-vintage"></h3>
                         <h3 className="w-2 h-2 bg-public ml-2"></h3>

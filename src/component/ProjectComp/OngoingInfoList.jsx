@@ -6,7 +6,11 @@ import ongoingData from "./ongoingData";
 import { motion } from "framer-motion";
 import Footer from "../Footer";
 import Navbar from "../Navbar/Navbar";
-const OngoingProjList = () => {
+import { useParams } from 'react-router-dom';
+
+const OngoingInfoList = () => {
+    const { titleParam } = useParams();
+
     return ( 
             <>
             <Navbar />
@@ -21,12 +25,15 @@ const OngoingProjList = () => {
       />
                 <section className="mx-6 md:mx-5 xl:mx-[90px] mt-10">
                     <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 my-[30px] font-roboto">
-                        {
-                           ongoingData && ongoingData.map((data, index) =>{
-                                return(
-                       <>
-<Link> 
-<motion.div
+                        
+                          {
+                            ongoingData &&
+                            ongoingData.map((data,index) => {
+                                const projects = Array.isArray(data.projects) && data.projects.filter((post) => post.titleParam === titleParam);
+                                if (projects.length > 0) {
+                                    return projects.map((data) => (
+                                        <div key={data.id}>
+                                           <motion.div
  variants ={{
     hidden:{opacity: 0, y: 75},
     visible:{opacity: 1, y: 0},
@@ -65,14 +72,14 @@ style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>
         </div>
         <div className="flex justify-center items-center  opacity-0  group-hover:opacity-100 transition ease-in-out  duration-500">
         {
-        Array.isArray(data.projects) && (
-          <Link  to={`/project/ongoing-project/${data.titleParam}`} className=''>
+        Array.isArray(data.projects) && data.projects.map(project => (
+          <Link key={project.id} to={`/project/ongoing-project/${project.titleParam}`} className=''>
             <div className=" w-8 mx-4 flex text-white h-8 cursor-pointer  bg-private hover:bg-white hover:text-public  justify-center items-center">
             <i className="fa fa-link"></i>
            </div>
           </Link>
       
-      )}   
+      ))}   
         {/* <Link to={`/project/ongoing-project/${data.projects.forEach((data)=>{data.titleParam})}`} className=''>
         
         </Link>  */}
@@ -84,13 +91,14 @@ style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>
         </div>
     </div>
 </motion.div>
-</Link> 
-</>
-                   
-                                )
+                                        </div>
+                                    ));
+                                }
+                                return null;
                             })
-                        }
                         
+                          }
+                    
                          </div>
                     
                 </section>
@@ -99,4 +107,4 @@ style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>
      );
 }
  
-export default OngoingProjList;
+export default OngoingInfoList;

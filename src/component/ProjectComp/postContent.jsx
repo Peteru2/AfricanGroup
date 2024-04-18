@@ -5,7 +5,9 @@ import ongoingData from "./ongoingData";
 const PostContent = () => {
     const { titleParam } = useParams();
     
-    const post = ongoingData.find((post) => post.titleParam === titleParam) || projData.find((post) => post.titleParam === titleParam);
+    const post = ongoingData.map((data) =>{
+        Array.isArray(data.projects) && data.projects.find((post) => post.titleParam === titleParam) 
+    })
     if (!post) {
       return <div>Post not found</div>;
     }
