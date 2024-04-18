@@ -26,11 +26,6 @@ const location = useLocation()
       } else {
         navbarRef.current.classList.remove("nav-active");
         navbarRef.current.classList.remove("shadow-xl");
-      
-        
-
-      
-
       }
     };
 
@@ -42,9 +37,11 @@ const location = useLocation()
   }, []);
 
   return (
-    <nav
+    <>
    
-    className="nav flex font-roboto" ref={navbarRef}>
+    <nav
+    className="nav  font-roboto" ref={navbarRef}>
+      <div className="flex navPad">
       <Link to={"/"} className="w-44 outline-none">
         <div className="nav-logo   outline-none">
           <img 
@@ -96,7 +93,17 @@ const location = useLocation()
       <div>
 
       </div>
+      
+</div>
+<Link to ={"/About"}>
+     <div className="">
+<h2 className="bg-private bg-opacity-60 text-white py-2  text-center w-full ">Our Future projects</h2>
+</div>
+</Link>
     </nav>
+   
+  
+</>
   );
 };
 

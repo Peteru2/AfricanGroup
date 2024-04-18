@@ -27,9 +27,12 @@ style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>
         src={data.img}
         alt="kasdka"
     />
-    
-    <div className="absolute inset-0 bg-public bg-opacity-60 group-hover:bg-public transition ease-in-out  duration-500" style={{  zIndex: 1}}>
    
+    <div className="absolute inset-0 bg-public bg-opacity-60 group-hover:bg-public transition ease-in-out  duration-500" style={{  zIndex: 1}}>
+
+    <div className={`${ data.status=="Available"? "bg-public text-white": data.status=="Ongoing"?"bg-yellow bg-opacity-80 text-black":data.status =="Sold Out"?"bg-red text-white":data.status=="Completed"?"bg-public text-white":""} text-sm absolute right-[17px] py-[6px] px-4  rounded-md  `}>
+    <h2>{data.status}</h2>
+    </div>
     <div className="absolute inset-1 px-10 flex justify-center items-center]">
 
          <div className="flex absolute bottom-[-4px] left-[-4px]  opacity-0  group-hover:opacity-100 transition ease-in-out  duration-500">

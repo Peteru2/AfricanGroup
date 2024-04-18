@@ -11,6 +11,7 @@ const projData = [
       client: "Kyber Private Ltd, USA",
       location: "Banana Iceland, Lagos",
       year: "2022",
+      status:"Available"
 
     },
     {
@@ -24,6 +25,8 @@ const projData = [
         client: "Yusuf Private Ltd, Mexico",
         location: "Lekki Phase 1, Lagos",
         year: "2021",
+        status:"Ongoing"
+
 
       },
       {
@@ -37,9 +40,25 @@ const projData = [
         client: "Joyous Private Ltd, USA",
         location: "Erelu, Oyo",
         year: "2021",
+        status:"Sold Out"
+
 
       },
-    
+      {
+        id: 3,
+      titleParam:"expert-mechanical",
+        title: "Expert Mechanical",
+        date: "February 6, 2003",
+        summary: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis.",
+        img: firstImg,
+        category:"RECONSTRUCTION",
+        client: "Joyous Private Ltd, USA",
+        location: "Erelu, Oyo",
+        year: "2021",
+        status:"Completed"
+
+
+      },    
    
   ];
   

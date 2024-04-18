@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Footer = () => {
     return ( 
         <>
-            <section className="footer  bg-public bg-opacity-90 px-6 md:px-4 xl:px-[90px] md:py-9  pb-12 mt-[150px] w-full font-roboto text-white text-[15px]   ">
+            <section className="footer   bg-public bg-opacity-90 px-6 md:px-4 xl:px-[90px] md:py-9  pb-12 mt-[150px] w-full font-roboto font-thin text-[14px] text-white    ">
                 <NewsLetter />
                 <div className="grid md:grid-cols-9  md:pt-[100px] pt-[290px] pb-10 grid-cols-1 gap-4 border-b-[1px] border-white ">
                     <motion.div
@@ -43,7 +43,7 @@ const Footer = () => {
                     duration: 0.5}}
                       
                     className="col-span-4 md:col-span-1">
-                        <h2 className="md:mb-4 mb-6 md:text-[22px] text-[18px]">USEFUL LINKS</h2>
+                        <h2 className="md:mb-4 mb-6 md:text-[18px] font-medium text-[18px]">USEFUL LINKS</h2>
 
                         <Link to={"/Blog"}><h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300">Blog </button></h4></Link>
                         <Link to={"/Contact-us"}> <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300">Contact</button></h4></Link>
@@ -62,7 +62,7 @@ const Footer = () => {
                     duration: 0.5}}
                       
                     className="col-span-2">
-                        <h2 className="mb-6 md:text-[22px] text-[18px]">CONTACT INFO</h2>
+                        <h2 className="mb-6 md:text-[18px] font-medium text-[18px]">CONTACT INFO</h2>
                         <h4 className="my-2"><i className="fa fa-building mr-2"></i> House 3, 1st Close, Behind Union Bank, Owode, Oyo, Oyo State.</h4>
                         <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300"><i className="fa fa-phone mr-2"></i>+234 706 4255 373 </button></h4>
                         <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300"> cc:     +234 901 7730 877 </button></h4>
@@ -84,7 +84,7 @@ const Footer = () => {
                       
                     className="col-span-4">
                         
-                        <h2 className="mb-6 font-serif md:text-[22px] text-[18px]">CAREERS</h2>
+                        <h2 className="mb-6 font-serif md:text-[18px] font-medium text-[18px]">CAREERS</h2>
                         <h4>We are constantly in quest of talented, passion-driven folks with a tenacity for excellence.</h4>
                         <Link to={"/FAQs"}><h2 className="md:text-[22px] text-[18px] mt-4 hover:text-vintage  transition ease-in-out  duration-300">FAQs</h2></Link>
                     </motion.div>                

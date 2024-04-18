@@ -42,7 +42,7 @@ const firstThreeServiceItems = ServiceData.slice(0,3);
 
                  
                     <h2 className="font-playfair md:text-3xl text-2xl  text-white text-center md:py-4 ">Our Services</h2>
-                    <h1 className="font-playfair text-3xl md:text-4xl text-white md:pb-2">Quality without compromise</h1>
+                    <h1 className="font-playfair text-2xl md:text-4xl  text-center text-white md:pb-2">Quality without compromise</h1>
                     </div>
                 </div>
                 <div className="flex justify-center mt-[20px]">

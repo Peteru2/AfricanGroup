@@ -102,7 +102,7 @@ const FirstSection = () => {
                     initial ={{x: "100vw"}}
                     animate ={{x: 0}}
                     transition={{ delay: 0.5, stiffness: 200, type: "spring" }}
-                    style ={{fontFamily:"'SangBleuSans', sans-serif"}}className="text-white text-[17px] md:text-2xl md:ml-10 font-roboto">CREDIT RATING <span className='text-private font-bold'>BBB</span></motion.h2>
+                    style ={{fontFamily:"'SangBleuSans', sans-serif"}}className="text-white text-[17px] md:text-2xl md:ml-10 mt-10 font-roboto">CREDIT RATING <span className='text-private font-bold'>BBB</span></motion.h2>
         
                         <motion.div 
                          variants ={{
