@@ -38,7 +38,7 @@ const Team = () => {
             ],
             title:"About",
             header:"African Legend of All Real Estate",
-            content:"Navigate the world of real estate with confidence, as we guide you through opportunities, negotiate great deals, and help you secure your ideal property."
+            content:"We Navigate the world of real estate with confidence, as we guide you through opportunities, negotiate great deals, and help you secure your ideal property."
         },
     ]
     const buttonStyle = {

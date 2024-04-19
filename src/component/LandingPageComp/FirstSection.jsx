@@ -50,8 +50,8 @@ const FirstSection = () => {
                 
             ],
             title:"Featured Project",
-            header:"We Are Africa's Finest",
-            content:"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque, mollitia? Odit, magni. Ducimus non, ad quam, fuga tempora voluptatum eligendi unde natus facilis libero incidunt atque voluptas enim cum ipsa."
+            header:"We are the Kabiesi of all Lands and Housing",
+            content:"African Group stands as beacon of excellence in the realms of Survey, Real Estate and Construction across Africa. Our mission is to redefine luxury living locally and elevate the industry with transformative experiences rooted in intricately designed architecture. "
         },
         {
             img: [
@@ -61,6 +61,15 @@ const FirstSection = () => {
             header:"We Are Africa's Finest",
             link: "/About",
             content:"The company is driven by a group of highly trained,experienced, self-motivated, and very dynamic Professionals equipped to handle various categories of projects."
+        },
+        {
+            img: [
+                Image1,
+            ],
+            title:"About",
+            header:"At African Group, we blend innovation with artistry",
+            link: "/About",
+            content:"Experience the pinnacle of luxury living with African Group, where every project is testament to our unwavering commitment to excellence in Survey, Real Estate and Construction. "
         },
     ]
     
@@ -123,7 +132,7 @@ const FirstSection = () => {
                             
 
                             className='text-white tracking-[4px] font-serif font-bold font-lora mt-[0px]'>{image.title}</motion.p>
-                           <p className='text-white my-4 md:text-5xl text-2xl font-bold break-words md:w-[350px] font-roboto'>
+                           <p className='text-white my-4 md:text-5xl text-2xl font-bold break-words md:w-[440px] font-roboto'>
                                     {image.header} 
                         </p>
                        

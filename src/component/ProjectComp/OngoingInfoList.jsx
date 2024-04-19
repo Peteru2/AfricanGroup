@@ -53,7 +53,7 @@ style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>
    
     <div className="absolute inset-0 bg-public bg-opacity-60 group-hover:bg-public transition ease-in-out  duration-500" style={{  zIndex: 1}}>
 
-    <div className={`${ data.status=="Available"? "bg-public text-white": data.status=="Ongoing"?"bg-yellow bg-opacity-80 text-black":data.status =="Sold Out"?"bg-red text-white":data.status=="Completed"?"bg-public text-white":""} text-sm absolute right-[17px] py-[6px] px-4  rounded-[2px]  `}>
+    <div className={`${ data.status=="Available"? "bg-public text-white": data.status=="Ongoing"?"bg-yellow bg-opacity-80 text-black":data.status =="xSold Out"?"bg-red text-white":data.status=="Completed"?"bg-public text-white":""} text-sm absolute right-[17px] py-[6px] px-4  rounded-[2px]  `}>
     <h2>{data.status}</h2>
     </div>
     <div className="absolute inset-1 px-10 flex justify-center items-center]">

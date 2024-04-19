@@ -6,7 +6,15 @@ import ongoingData from "./ongoingData";
 import { motion } from "framer-motion";
 import Footer from "../Footer";
 import Navbar from "../Navbar/Navbar";
+import projData from "./data";
+import { useParams } from 'react-router-dom';
+
 const OngoingProjList = () => {
+    // const { titleParam } = useParams();
+
+    // const data = projData.map((data) =>{
+    //     data.filter((post) => post.status === titleParam) 
+    // })
     return ( 
             <>
             <Navbar />
@@ -22,7 +30,9 @@ const OngoingProjList = () => {
                 <section className="mx-6 md:mx-5 xl:mx-[90px] mt-10">
                     <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10 my-[30px] font-roboto">
                         {
+                             
                            ongoingData && ongoingData.map((data, index) =>{
+                           
                                 return(
                        <>
 <Link> 

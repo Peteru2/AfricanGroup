@@ -33,8 +33,8 @@ const ImageWithOverlay = ({ imageUrl, span1, span2, title2, decrip,height, spanC
                     animate={{y:0}}
                     transition={{delay: 0.5, type: "spring"}}
                     className=" ">
-                        {/* <h4 className="text-white text-2xl font-lora flex justify-center ">{title2}</h4> */}
-                    <h1 className="text-white md:text-[35px] mb-4 text-3xl font-bold  flex justify-center  font-roboto">{decrip}</h1>
+                        <h4 className="text-gray text-sm font-lora mt-10  flex justify-center ">{title2}</h4>
+                    <h1 className="text-white md:text-[35px] mb-4 mt-2 text-3xl font-bold  flex justify-center  font-roboto">{decrip}</h1>
                     </motion.div>
         <motion.h2
                     initial={{y:'100vw'}}

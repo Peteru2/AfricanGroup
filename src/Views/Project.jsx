@@ -19,8 +19,8 @@ const Project = () => {
                 title1="AfricanGroup"
                 span1="Project"
                 span2=""
-                title2="This is AfricanGroup"
-                decrip="Our Projects"
+                title2=""
+                decrip="Explore the excellence in every project"
                 height="400px"
 
       />

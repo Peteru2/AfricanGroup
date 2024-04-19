@@ -48,7 +48,7 @@ const ServiceContent = () => {
                         className="mb-6">
                         <h4 className="text-3xl text-center font-bold my-3 text-private">What Service We Provide</h4>
                         
-                            <h5 className="md:w-[600px] text-center flex justify-center">Lorem ipsum dolor sit amet, consectetur adipisicing zelit. Porro sit, architecto dolores quam sequi hic quidem ut. Dolores, quasi rerum! Quae aperiam quia maxime et doloremque distinctio. Dolorum, doloremque. Molestias.
+                            <h5 className="md:w-[600px] text-center flex justify-center">Surveying excellence, real estate properties and construction mastering. We deliver transformative experiences through innovative design, creating bespoke spaces that redifines luxury living across Africa. 
 
                             </h5>
                            

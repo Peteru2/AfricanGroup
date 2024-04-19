@@ -10,7 +10,19 @@ import { motion } from "framer-motion";
 const Navbar = () => {
 const location = useLocation()
   const [name, setName] = useState(false);
+  const [url, setUrl] = useState("/About");
+    const [content, setContent] = useState("Cease your opportunity now at Evergreen Estate");
 
+    useEffect(() => {
+      const interval = setInterval(() => {
+          // Change the URL and content every five minutes
+          setUrl(prevUrl => prevUrl === "/About" ? "/Peace" : "/About");
+          setContent(prevContent => prevContent === "Cease your opportunity now at Evergreen Estate" ? "Act now and secure your piece of Peace Court Jobele!" : "Cease your opportunity now at Evergreen Estate");
+      }, 30000); // 300000 milliseconds = 5 minutes
+
+      // Clear the interval when the component unmounts
+      return () => clearInterval(interval);
+  }, []);
   const handleClick = () => {
     setName((current) => !current);
   };
@@ -95,11 +107,11 @@ const location = useLocation()
       </div>
       
 </div>
-<Link to ={"/About"}>
-     <div className="">
-<h2 className="bg-private bg-opacity-60 text-white py-2  text-center w-full ">Our Future projects</h2>
-</div>
-</Link>
+<Link to={url}>
+            <div>
+                <h2 className="bg-private bg-opacity-60 text-white font-light py-2 text-center w-full">{content}</h2>
+            </div>
+        </Link>
     </nav>
    
   

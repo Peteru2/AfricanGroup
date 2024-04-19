@@ -19,8 +19,8 @@ const About = () => {
                 imageUrl={image}
                 span1="About Us"
                 span2=""
-                title2="Who are we?"
-                decrip="The Land and Housing Experts"
+                title2="This is African Group"
+                decrip="The Kabiesi Of Lands and Housing"
                 height="400px"
       />
             <Mission />
