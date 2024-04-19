@@ -47,7 +47,7 @@ const lastThreeBlogItems = blogData.slice(-3);
               <h4 className='text-[12px] text-private'> {post.date} </h4>
 
               <h4 className='text-black text-opacity-70 my-3'>{truncateText(post.content, MAX_CONTENT_LENGTH)}</h4>
-              <Link to={`/blog/${post.id}`} className=''>
+              <Link to={`/blog/${post.titleParam}`} className=''>
               <motion.button 
               whileHover={{scale: 1.0}}
               transition={{type:"spring", stiffness:200, }}
