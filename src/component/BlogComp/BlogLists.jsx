@@ -30,7 +30,7 @@ const truncateText = (text, maxLength) => {
                 title1="AfricanGroup"
                 span1="Blog"
                 span2=""
-                title2="This is AfricanGroup"
+                title2="  "
                 decrip="Our Blog"
                 height="400px"
       />
@@ -47,9 +47,9 @@ const truncateText = (text, maxLength) => {
     duration: 0.5}}
       className="flex justify-center">
                         <div className="mb-6">
-                        <h4 className="text-3xl text-private text-center font-bold my-2">News and happenings</h4>
+                        {/* <h4 className="text-3xl text-private text-center font-bold my-2">News and happenings</h4> */}
                         
-                            <h5 className="md:w-[600px] text-center flex justify-center">Lorem ipsum dolor sit amet, consectetur adipisicing zelit. Porro sit, architecto dolores quam sequi hic quidem ut. Dolores, quasi rerum! Quae aperiam quia maxime et doloremque distinctio. Dolorum, doloremque. Molestias.
+                            <h5 className="md:w-[600px] text-center flex justify-center">Welcome to our blog hub, where expertice meets innovations. Explore insightful articles, industry trends and expert tips on real estates, construction, surveying and more. Empower your journey with us today.
 
                             </h5>
                            
