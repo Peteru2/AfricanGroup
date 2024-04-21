@@ -90,7 +90,7 @@ const truncateText = (text, maxLength) => {
               <div className="bg-white  p-6 rounded-br-[15px] rounded-bl-[15px]">
                 <h4 className='text-private'>{post.type}</h4>
               <h2 className='text-[25px] text-vintage mt-4 mb-6'>{post.title}</h2>
-              <h4 className='text-[15px]'>{truncateText(post.content, MAX_CONTENT_LENGTH)}</h4>
+              <h4 className='text-[15px]'>{truncateText(post.p1, MAX_CONTENT_LENGTH)}</h4>
                <h4 className='text-gray mt-2'> {post.date} </h4>
               </div>
             </Link>

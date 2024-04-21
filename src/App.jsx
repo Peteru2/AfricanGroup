@@ -9,7 +9,6 @@ import Contact from './Views/Contact';
 import QuoteData from './component/QuoteData';
 import ScrollToTop from './component/ScrollTop';
 import BlogList from './component/BlogComp/BlogLists';
-import BlogPost from './component/BlogComp/BlogPost';
 import Team from './component/Team/Team';
 import Services from './Views/Service';
 import ServicePost from './component/ServicesComp/ServicePost';
@@ -19,6 +18,8 @@ import POQ from './component/POG';
 import RequestQuote from './component/Navbar/RequestQuote';
 import OngoingProjList from './component/ProjectComp/OngoingProjectList';
 import OngoingInfoList from './component/ProjectComp/OngoingInfoList';
+import Blog from './Views/Blog';
+import BlogPost from './component/BlogComp/BlogPost';
 
 
 function App() {
@@ -44,7 +45,7 @@ function App() {
           <Route path={'/Blog'} element={<BlogList />} />
           <Route path={'/About/Team'} element={<Team />} />
 
-          <Route path="/blog/:titleParam" element={<BlogPost />} />
+          <Route path="/blog/:titleParam" element={<Blog />} />
           <Route path="/service/:titleParam" element={<ServicePost />} />
           <Route path="/project/:titleParam" element={<ProjPost />} />
           <Route path="/project/ongoing-project/:titleParam" element={<ProjPost />} />
