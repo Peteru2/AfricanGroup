@@ -22,7 +22,7 @@ const blogData = [
     },
     {
         id: 2,
-      titleParam:"blog-post-2",
+        titleParam:"blog-post-2",
         title: "Blog Post 2",
         date: "February 6, 2003",
         p1: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis.",
@@ -33,6 +33,7 @@ const blogData = [
         p5: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritati",
         h2:"Knicker lining concealed back zip fasten swing style high ",
         h3:"Knicker lining concealed back ",
+        list: "Jesus is the Way; He is the truth; And the Light",
 
         img: firstImg,
         type:"ESTATE"
