@@ -11,7 +11,8 @@ const projData = [
       client: "Kyber Private Ltd, USA",
       location: "Banana Iceland, Lagos",
       year: "2022",
-      status:"Available"
+      status:"Available",
+      type:"Construction"
 
     },
       {
@@ -25,7 +26,9 @@ const projData = [
         client: "Joyous Private Ltd, USA",
         location: "Erelu, Oyo",
         year: "2021",
-        status:"Sold Out"
+        status:"Sold Out",
+        type:"Real Estate"
+
 
 
       },
@@ -40,7 +43,9 @@ const projData = [
         client: "Joyous Private Ltd, USA",
         location: "Erelu, Oyo",
         year: "2021",
-        status:"Completed"
+        status:"Completed",
+        type:"Construction"
+
 
 
       },    
@@ -55,7 +60,9 @@ const projData = [
         client: "Kyber Private Ltd, USA",
         location: "Banana Iceland, Lagos",
         year: "2022",
-        status:"Available"
+        status:"Available",
+        type:"Construction"
+
   
       },
         {
@@ -69,7 +76,9 @@ const projData = [
           client: "Joyous Private Ltd, USA",
           location: "Erelu, Oyo",
           year: "2021",
-          status:"Sold Out"
+          status:"Sold Out",
+          type:"Real Estate"
+
   
   
         },
@@ -84,7 +93,9 @@ const projData = [
           client: "Joyous Private Ltd, USA",
           location: "Erelu, Oyo",
           year: "2021",
-          status:"Completed"
+          status:"Completed",
+          type:"Construction"
+
   
   
         },    
