@@ -34,7 +34,6 @@ const blogData = [
         h2:"Knicker lining concealed back zip fasten swing style high ",
         h3:"Knicker lining concealed back ",
         list: "Jesus is the Way; He is the truth; And the Light",
-
         img: firstImg,
         type:"ESTATE"
 

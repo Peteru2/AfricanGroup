@@ -9,6 +9,7 @@ import BlogSection from "../component/LandingPageComp/BlogSection";
 import Chat from "../component/SideChat";
 import { useEffect,useState } from "react";
 import Layout from "../component/Layout";
+import Partners from "../component/LandingPageComp/Partners";
 // import "../style.css"
 
 const Landing = () => {
@@ -34,6 +35,7 @@ const Landing = () => {
                 <Testimonials />
                 <Values />
                 <BlogSection />
+                <Partners />
             </section>
            
             </Layout>
