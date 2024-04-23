@@ -22,7 +22,7 @@ const [quotes, setQuotes] = useState(null)
                         QUOTES
                     </h2>
                     <div style={{ overflowX: 'auto' }} className=" justify-center">
-                    <table className="rounded-md  font-roboto borde ">
+                    <table className="rounded-md  font-roboto border ">
                     <tr className="text-white bg-private h-10 px-2 text-xs rounded-t-md items-center">
                                     <th>Id</th>
                                     <th>FullName</th>
@@ -33,12 +33,12 @@ const [quotes, setQuotes] = useState(null)
                                     <th>Message</th>
                                 </tr>    
 
-                                {quotes ? (
+                                {quotes && (
                                         quotes.map((quote, index) =>{
                                             return(
                                                 <tr key={index} className="  text-center w-[10-0px]  text-black gap-2 bg-white shadow-lg h-10 px-2 text-[15px] rounded-b-md items-center">
                                                     
-                                                    <td>{quote._id}</td>
+                                                    <td>{quote.id}</td>
                                                     <td>{quote.fullname}</td>
                                                     <td>{quote.email}</td>
                                                     <td>{quote.business}</td>
@@ -49,16 +49,18 @@ const [quotes, setQuotes] = useState(null)
                                             )
                                         }
                                         )
-                                ):
-                                
-                                (
-                                            <div     className="flex justify-center w-full">
-                                                <h2 className="flex text-center justify-center w-full">Loading...</h2>
-                                            </div>
                                 )
                             }
+                                
+                                
+                                            
                    
                    </table>
+                   {!quotes && (
+                        <div className="flex bg-white justify-center w-full">
+                            <h2 className="flex text-center justify-center w-full">Loading...</h2>
+                         </div>
+                    )}
                    </div>
 
                 </section>
