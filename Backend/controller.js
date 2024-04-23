@@ -36,7 +36,22 @@ const postNewsLetter = async (req, res) => {
         res.status(500).json({ error: 'An error occurred while creating quote' });
     }
 }
+const getQuotes = async (req, res) => {
+    try {
+       
+        const quotes =  await Quote.find()
+        if(quotes){
+            console.log(quotes)
+            return res.status(200).json({ quotes, message: 'Quotes Data gotten successfully' });
+        }
+       
+    } catch (error) {
+        console.error('Error:', error);
+        res.status(500).json({ error: 'An error occurred while creating quote' });
+    }
+}
 module.exports = {
     postQuote,
-    postNewsLetter
+    postNewsLetter,
+    getQuotes
 };

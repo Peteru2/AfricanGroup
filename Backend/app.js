@@ -1,8 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const http = require('http');
-const { postQuote }= require("./controller.js")
-const { postNewsLetter }= require("./controller.js")
+    const { postQuote, postNewsLetter, getQuotes }= require("./controller.js")
 
 const connectDB = require('./db.js');
 // const Controller = require('./src/Backend/controller/verifyController.js');
@@ -27,6 +26,8 @@ connectDB().then(() => {
 
 app.post('/request-quote', postQuote);
 app.post('/newsletter', postNewsLetter)
+app.get('/getquotes', getQuotes)
+
 
 // app.post('/Login', Controller.Post_login);
 // app.post('/verifyOTP', Controller.verifyOTP);
