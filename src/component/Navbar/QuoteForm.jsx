@@ -5,15 +5,6 @@ const [success, setSuccess] = useState()
 const [icon, setIcon] = useState(false)
 
 const [formMessage, setFormMessage] =useState("chess")
-const [isSelectionValid, setIsSelectionValid] = useState(false);
-
-    
-
-    
-    // const handleButtonClick = (index) => {
-    //     setSelectedDivIndex(index); 
-        
-    //     }
 const handleSuccess = () =>{
         setSuccess(false);
         close()
@@ -26,7 +17,7 @@ const handleRetry = () => {
     // setFormMessage("");
   };
     const [formData, setFormData] = useState({
-        name: '',
+        fullname: '',
         email: '',
         business: '',
         phoneNumber: '',
@@ -36,7 +27,7 @@ const handleRetry = () => {
       });
     
       const [errors, setErrors] = useState({
-        name: '', 
+        fullname: '', 
         email: '',
         business: '',
         phoneNumber: '',
@@ -57,9 +48,9 @@ const handleRetry = () => {
       const phoneRegex = /^\+?\d{1,4}?[-.\s]?\(?\d{1,3}\)?[-.\s]?\d{1,4}[-.\s]?\d{1,9}$/;
 
    
-            if (formData.name.trim() === '') {
+            if (formData.fullname.trim() === '') {
 
-            newErrors.name = 'Name is required';
+            newErrors.fullname = 'Name is required';
             }
                 else if (!formData.email.trim()) {
                     newErrors.email = 'Email is required';
@@ -82,27 +73,25 @@ const handleRetry = () => {
                 }
                 else {
                     setIcon(true)
-                    axios.post('http://127.0.0.1/api/quoteform/submit', formData)
+                    axios.post('http://localhost:8000/request-quote', formData)
                     .then(response => {
-                        // Handle success
-                        console.log('Success:', response.data);
+                        setIcon(false)
                         setFormData({
-                            name: '',
+                            fullname: '',
                             email: '',
+                            business: '',
                             phoneNumber: '',
+                            project:'',
                             message:'',
                         })
-                        console.log('Success:', response.message);
-
+                        console.log('Success:');
                         setFormMessage("Quote Submitted Successfully")
-
                         setSuccess(true)
                     })
                     .catch(error => {
                         // Handle error
                         console.error('Error:', error.message);
                         setSuccess(true)
-
                         setFormMessage(error.message)
 
                         // Display your error message here
@@ -127,15 +116,15 @@ const handleRetry = () => {
                         <div className="mb-6">  
                         
                         <label className="my-2 mt-4 label flex">
-                            <span>Full Name <span className="text-red">*</span></span> <span className={`ml-auto text-red text-[14px] ${errors.name? "blink-error":""}`}> {errors.name}</span>
+                            <span>Full Name <span className="text-red">*</span></span> <span className={`ml-auto text-red text-[14px] ${errors.fullname? "blink-error":""}`}> {errors.fullname}</span>
                         </label> 
                       
                                 <div className="flex items-center border border-private rounded-[5px] mt-1 px-3  py-2">
                                 <i className="fa fa-user text-gray w-5 h-5  mr-2 mt-1"></i>
                                 <input type="text" className="w-full  bg-transparent outline-none text-black"
                                 
-                                name="name"
-                                value={formData.name}
+                                name="fullname"
+                                value={formData.fullname}
                                 onChange={handleInputChange}
                                 placeholder="Name" />
                                 </div>
@@ -161,8 +150,8 @@ const handleRetry = () => {
                         </label> 
                                 <div className="flex items-center border border-private rounded-[5px] px-3  mt-1 py-2">
                                 <i className="fa fa-envelope  w-5 h-5 text-gray  mr-2 mt-1"></i>
-                                <input type="Email" 
-                                name="email"
+                                <input type="text" 
+                                name="business"
                                 value={formData.business} 
                                 onChange={handleInputChange}
                                 className="w-full outline-none bg-transparent text-black" placeholder="Your Business" />
@@ -189,7 +178,7 @@ const handleRetry = () => {
                         </label> 
                                 <div className="flex items-center border border-private rounded-[5px]  px-3 mt-1  py-2">
                                
-                                <textarea type="text" name="message" className="w-full h-[100px] bg-transparent outline-none text-black" 
+                                <textarea type="text" name="project" className="w-full h-[100px] bg-transparent outline-none text-black" 
                                 value={formData.project}
                                 onChange={handleInputChange}
                                 placeholder="Give Details Of Your Project" />
@@ -202,7 +191,9 @@ const handleRetry = () => {
                         </label> 
                                 <div className="flex items-center border border-private rounded-[5px]  px-3 mt-1  py-2">
                                
-                                <textarea type="text" name="message" className="w-full h-[100px] bg-transparent outline-none text-black" 
+                                <textarea type="text" 
+                                name="message" 
+                                className="w-full h-[100px] bg-transparent outline-none text-black" 
                                 value={formData.message}
                                 onChange={handleInputChange}
                                 placeholder="Your Message" />

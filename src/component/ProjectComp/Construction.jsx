@@ -22,7 +22,7 @@ const Construction = () => {
 initial="hidden"
 whileInView="visible"
 transition={{delay: index*  0.5, 
-duration: 0.5}}
+duration: 0.3}}
 key={index} 
 className="relative group"
 style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>

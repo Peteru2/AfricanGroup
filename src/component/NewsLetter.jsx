@@ -29,21 +29,24 @@ const NewsLetter = () => {
                 newErrors.email = 'Invalid email format';
             }
             else {
-                axios.post('http://127.0.0.1/api/newsletter/submit', formData)
+                axios.post('http://localhost:8000/newsletter', formData)
                 .then( response=>{
                         newErrors.email = response.data.message;
                         setErrors(newErrors);
-                        setFormData({email:""})
-                       
-
+                        setFormData({
+                            email:""
+                        })
                 }   
                 )
                 .catch(error => {
-                    newErrors.email = 'Something went wrong'
+                    if(error.response.status === 401){
+                        newErrors.email = error.response.data.error
+                        setErrors(newErrors);
+                      }
+                    console.log(error)
                 })
             }
             setErrors(newErrors);
-            console.log(formData)
             
         if (Object.keys(newErrors).length === 0) {
             setErrors({});
@@ -74,7 +77,7 @@ const NewsLetter = () => {
                 <div className="md:ml-auto  flex items-center"> 
                 <div className=" w-full">
                 <form  onSubmit={handleSubmit} className="md:ml-auto md:w-auto  w-full grid md:grid-cols-2 grid-cols-1 gap-2 ">
-                    <input type="email" onChange={handleInputChange} name="email" className="px-2 py-4 text-black outline-none" placeholder="Email"/>
+                    <input type="email" onChange={handleInputChange} value={formData.email} name="email" className="px-2 py-4 text-black outline-none" placeholder="Email"/>
                     <button  type ="submit" className=" font-roboto  bg-public border-white border-2 py-4  text-center  hover:text-public hover:bg-white hover:border-public  transition ease-in-out  duration-300">Subscribe</button>
                     </form>
                     {errors.email}
