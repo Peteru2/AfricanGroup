@@ -60,10 +60,10 @@ const ProjList = () => {
 
                     </div>
                     <div className="flex justify-center mb-14">
-                        <h2 onClick={handleAll} className={`${all?" border-b-2  text-center":" text-black text-opacity-60"} py-3 px-4  mx-2 cursor-pointer  `}>All</h2>
-                        <h2 onClick={handleConstruction} className={`${construction?" border-b-2  text-center":" text-black text-opacity-60"} py-3 px-4  mx-2 cursor-pointer    `}>Construction</h2>
-                        <h2  onClick={handleRealEstate} className={`${realEstate?" border-b-2  text-center":" text-black text-opacity-60"} py-3 px-4  mx-2 cursor-pointer   `}>Real Estate</h2>
-                        <h2  onClick={handleSurvey} className={`${survey?" border-b-2  text-center":" text-black text-opacity-60"} py-3 px-4  mx-2 cursor-pointer   `}>Surveying</h2>
+                        <h2 onClick={handleAll} className={`${all?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 px-4  mx-2 cursor-pointer  `}>All</h2>
+                        <h2 onClick={handleConstruction} className={`${construction?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 px-4  mx-2 cursor-pointer    `}>Construction</h2>
+                        <h2  onClick={handleRealEstate} className={`${realEstate?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 px-4  mx-2 cursor-pointer   `}>Real Estate</h2>
+                        <h2  onClick={handleSurvey} className={`${survey?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 px-4  mx-2 cursor-pointer   `}>Surveying</h2>
 
 
                     </div>
@@ -80,7 +80,7 @@ const ProjList = () => {
 }}
 initial="hidden"
 whileInView="visible"
-transition={{delay: index*  0.5, 
+transition={{delay: index*  0.2, 
 duration: 0.5}}
 key={index} 
 className="relative group"
@@ -93,7 +93,7 @@ style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>
    
     <div className="absolute inset-0 bg-public bg-opacity-60 group-hover:bg-public transition ease-in-out  duration-500" style={{  zIndex: 1}}>
 
-    <div className={`${ data.status=="Available"? "bg-public text-white": data.status=="Ongoing"?"bg-yellow bg-opacity-80 text-black":data.status =="Sold Out"?"bg-red text-white":data.status=="Completed"?"bg-public text-white":""} text-sm absolute right-[17px] py-[6px] px-4  rounded-[2px]  `}>
+    <div className={`${ data.status=="Available"? "bg-private text-white": data.status=="Ongoing"?"bg-yellow bg-opacity-80 text-black":data.status =="Sold Out"?"bg-red text-white":data.status=="Completed"?"bg-public text-white":""} text-sm absolute right-[17px] py-[6px] px-4  rounded-[2px]  `}>
     <h2>{data.status}</h2>
     </div>
     <div className="absolute inset-1 px-10 flex justify-center items-center]">
