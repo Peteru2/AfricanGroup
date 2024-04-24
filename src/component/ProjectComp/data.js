@@ -11,7 +11,7 @@ const projData = [
       client: "Kyber Private Ltd, USA",
       location: "Banana Iceland, Lagos",
       year: "2022",
-      status:"Available",
+      status:"Ongoing",
       type:"Construction"
 
     },
@@ -60,7 +60,7 @@ const projData = [
         client: "Kyber Private Ltd, USA",
         location: "Banana Iceland, Lagos",
         year: "2022",
-        status:"Available",
+        status:"Completed",
         type:"Construction"
 
   
@@ -93,11 +93,53 @@ const projData = [
           client: "Joyous Private Ltd, USA",
           location: "Erelu, Oyo",
           year: "2021",
-          status:"Completed",
+          status:"Ongoing",
           type:"Construction"
 
   
   
+        },    
+        {
+          id: 6,
+        titleParam:"expert-mechanical",
+          title: "Expert Mechanical",
+          date: "February 6, 2003",
+          summary: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis.",
+          img: firstImg,
+          category:"Reconstruction",
+          client: "Joyous Private Ltd, USA",
+          location: "Erelu, Oyo",
+          year: "2021",
+          status:"Available",
+          type:"Real Estate"
+        },    
+        {
+          id: 6,
+          titleParam:"expert-mechanical",
+          title: "Expert Mechanical",
+          date: "February 6, 2003",
+          summary: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis.",
+          img: firstImg,
+          category:"Reconstruction",
+          client: "Joyous Private Ltd, USA",
+          location: "Erelu, Oyo",
+          year: "2021",
+          status:"Completed",
+          type:"Survey"
+        },    
+        {
+          id: 6,
+          titleParam:"expert-mechanical",
+          title: "Expert Mechanical",
+          date: "February 6, 2003",
+          summary: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis.",
+          img: firstImg,
+          category:"Reconstruction",
+          client: "Joyous Private Ltd, USA",
+          location: "Erelu, Oyo",
+          year: "2021",
+          status:"Ongoing",
+          type:"Survey"
         },    
    
   ];

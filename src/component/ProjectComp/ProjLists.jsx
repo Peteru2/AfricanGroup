@@ -4,6 +4,8 @@ import projData from "./data";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import Construction from "./Construction";
+import RealEstate from "./RealEstate";
+import Survey from "./Survey";
 const ProjList = () => {
 
     const [all, setAll] = useState(true)
@@ -134,6 +136,14 @@ style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>
             <div className={`${construction ? "block" : " hidden"}`}>
 
                 <Construction />
+            </div>
+            <div className={`${realEstate ? "block" : " hidden"}`}>
+
+                <RealEstate />
+            </div>
+            <div className={`${survey ? "block" : " hidden"}`}>
+
+                <Survey />
             </div>
                 </section>
             </>
