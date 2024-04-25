@@ -45,9 +45,9 @@ const Footer = () => {
                     className="col-span-4 md:col-span-1">
                         <h2 className="md:mb-4 mb-6 font-medium text-[14px]">USEFUL LINKS</h2>
 
-                        <Link to={"/Blog"}><h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300">Blog </button></h4></Link>
-                        <Link to={"/Contact-us"}> <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300">Contact</button></h4></Link>
-                       <Link to ={"/About"}> <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300 text-left">About Us</button></h4></Link>
+                        <Link to={"/blog"}><h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300">Blog </button></h4></Link>
+                        <Link to={"/contact-us"}> <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300">Contact</button></h4></Link>
+                       <Link to ={"/about"}> <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300 text-left">About Us</button></h4></Link>
                        <Link to ={"/priority"}> <h4 className="my-2"> <button className="hover:text-vintage  transition ease-in-out  duration-300 text-left">Priority On Quality</button></h4></Link>
 
                     </motion.div>
@@ -86,7 +86,7 @@ const Footer = () => {
                         
                         <h2 className="mb-6 font-serif md:text-[14px] font-medium text-[14px]">CAREERS</h2>
                         <h4>We are constantly in quest of talented, passion-driven folks with a tenacity for excellence.</h4>
-                        <Link to={"/FAQs"}><h2 className="md:text-[22px] text-[18px] mt-4 hover:text-vintage  transition ease-in-out  duration-300">FAQs</h2></Link>
+                        <Link to={"/faqs"}><h2 className="md:text-[22px] text-[18px] mt-4 hover:text-vintage  transition ease-in-out  duration-300">FAQs</h2></Link>
                     </motion.div>                
                     </div>
                     <div className="my-3">
