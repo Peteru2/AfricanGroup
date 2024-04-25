@@ -77,10 +77,10 @@ const Mission = () => {
                         transition={{delay:  0.5, 
                         duration: 0.5}}
                         className="text-[15px] mt-6  order-first md:order-last">
-                            <h2> African Group Nigeria(RC No: 7385369), is a wholly-owned Nigerian Company with a vision of achieving service distinction through value-added Land surveying, Engineering surveying and excellent delivery of projects in Mapping, site clearing, together with General Engineering contracts.</h2>
+                            <h2> African Group Nigeria(RC No: 7385369), is a wholly-owned Nigerian Company with a vision of achieving service distinction through value-added Land surveying, Engineering surveying and excellent delivery of projects in Mapping, Site Clearing, together with General Engineering contracts.</h2>
                             <h2 className="my-2">Our services cater to those who have refined taste for the finer things in life and value opulence in its truest and purest form.  </h2>
                             <h2>
-                                We embrace innovation and sustainability in all our endeavors. From incoporating Eco-friendly materials to implementing  energy efficient solutions, we strive to create spaces that not only meet the highest standards but also leave a positive impact on the environment.
+                                We embrace innovation and sustainability in all our endeavors. From incorporating eco-friendly materials to implementing  energy efficient solutions, we strive to create spaces that not only meet the highest standards but also leave a positive impact on the environment.
                             </h2>
                             <h4 className="my-2"> Our philosophy of completing any survey and construction projects within budget is the stamp of satisfaction for our many commercial and industrial customers. With all our well-maintained fleet and professional expertise, we can handle any site size development.</h4>
                             

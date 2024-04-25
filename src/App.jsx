@@ -30,20 +30,20 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path={'/'} element={<Landing />} />
-          <Route path={'/About'} element={<About />} />
-          <Route path={'/Project'} element={<Project />} />
+          <Route path={'/about'} element={<About />} />
+          <Route path={'/project'} element={<Project />} />
           <Route path={'/project/ongoing-Project'} element={<OngoingProjList />} />
 
-          <Route path={'/Services'} element={<Services />} />
-          <Route path={'/Contact-us'} element={<Contact />} />
+          <Route path={'/services'} element={<Services />} />
+          <Route path={'/contact-us'} element={<Contact />} />
           <Route path={'/quote-data'} element={<QuoteData />} />
           <Route path={'/priority'} element={<POQ />} />
           <Route path={'/request-quote'} element={<RequestQuote  />} />
 
 
 
-          <Route path={'/Blog'} element={<BlogList />} />
-          <Route path={'/About/Team'} element={<Team />} />
+          <Route path={'/blog'} element={<BlogList />} />
+          <Route path={'/about/team'} element={<Team />} />
 
           <Route path="/blog/:titleParam" element={<Blog />} />
           <Route path="/service/:titleParam" element={<ServicePost />} />
@@ -54,7 +54,7 @@ function App() {
 
 
 
-          <Route path={'/FAQs'} element={<FaqsMain />} />
+          <Route path={'/faqs'} element={<FaqsMain />} />
 
         </Routes> 
   </Router>

@@ -8,32 +8,32 @@ const NavMenu =
             },
             {
                 title : "ABOUT",
-                url: "/About",
+                url: "/about",
                 cName : "nav-links",
                 icon: "fa fa-chevron-down",
             },
             {
                 title : "BLOG",
-                url: "/Blog",
+                url: "/blog",
                 cName : "nav-links",
                 icon: "fa fa-chevron-down",
             },
             {
                 title : "SERVICES",
-                url: "/Services",
+                url: "/services",
                 cName : "nav-links",
                 icon: "",
             },
             
             {
                 title : "PROJECT",
-                url: "/Project",
+                url: "/project",
                 cName : "nav-links",
                 icon: "",
             },
             {
                 title : "CONTACT",
-                url: "/Contact-us",
+                url: "/contact-us",
                 cName : "nav-links",
                 icon: "",
             },
