@@ -43,7 +43,7 @@ const POQ = () => {
                     >
                         <h1 className="w-14 bg-private h-1 mb-3"></h1>
                         <h2>
-                        <strong>AT AFRICAN GROUP NIGERIA</strong>, quality is our North Star! We believe that when it comes to Surveying, Real Estate, Construction & Agro Projects, and Technology, nothing less than excellence will do. Here's why quality is at the heart of everything we do:
+                        <strong>AT AFRICAN GROUP NIGERIA</strong>, quality is our North Star! We believe that when it comes to Surveying, Real Estate, Construction, Agro Projects, and Technology, nothing less than excellence will do. Here's why quality is at the heart of everything we do:
 
                         </h2>
 

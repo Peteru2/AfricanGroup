@@ -10,7 +10,7 @@ const faqData = [
       },
       {
         question: "How can I hire a surveyor for my project?",
-        answer: "You can contact us through our social media channels @africangroupng, africangroupng@gmail.com , give us a call or send us a DM on watsapp. We’ll be happy to assist you.",
+        answer: "You can contact us through our social media channels @africangroupng, africangroupng@gmail.com , give us a call or send us a DM on whatsapp. We’ll be happy to assist you.",
       },
       {
         question: "How long does a survey typically take?",
@@ -22,7 +22,7 @@ const faqData = [
       },
       {
         question: "Do I need a survey before buying a property?",
-        answer: "It’s highly recommended to have a survey done before purchasing a property. It identifies potential boundary issues, encroachment or other important information about the land.",
+        answer: "It’s highly recommended to have a survey chart(Land Information) done before purchasing a property. It identifies potential boundary issues, encroachment or other important information about the land.",
       },
       {
         question: "Can you help with land subdivision?",

@@ -167,7 +167,7 @@ const FirstSection = () => {
     transition={{ delay: 0.25, 
     duration: 0.5}}
     className="xl:mx-[90px] md:mx-5 mx-6 my-10">
-            <div className="mt-14 md:mt-24 mb-4">
+            <div className="mt-14 md:mt-0 mb-4">
                 <h2 className="text-private  tracking-widest pb-4 border-b-[1px] border-black w-full">OUR STORY</h2>
 
                 <h4 className="font-roboto text-[18px] md:text-[24px] mt-8"><b>AFRICAN GROUP NG</b>, is a sole Nigerian Group of Companies in operation about a decade, which is duly registered with corporate affairs commission; for the purpose of providing first class services in the areas of: Surveying & Mapping, Real Estate, Construction, Agricultural, and Technology services. </h4>

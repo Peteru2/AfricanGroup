@@ -36,7 +36,7 @@ const RequestQuote = () => {
             </div>
             <div className="col-span-2">
                 <h2 className="font-bold">
-                Experience the difference with our survey solutions. Schedule a consultation to see how our expertise can benefit your projects.
+                Experience the difference with our survey and construction solutions. Schedule a consultation to see how our expertise can benefit your projects.
                 </h2>
                 <QuoteForm />
             </div>
