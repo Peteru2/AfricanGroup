@@ -148,7 +148,7 @@ const Team = () => {
             duration: 0.5}}
                key={index} 
                className="grid md:grid-cols-1 xl:grid-cols-2 grid-cols-1">
-  <div className="relative" style={{ 'maxWidth': '100%', 'height': 'auto' }}>
+  <div className="relative" style={{ 'maxWidth': '100%', 'height': '100%' }}>
     <img
       className="w-full h-full object-cover"
       src={data.img}

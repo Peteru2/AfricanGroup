@@ -114,7 +114,7 @@ const PostContent = () => {
                 </motion.div>
               </div>
 
-        <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-6">
+        <div className="grid  md:grid-cols-2 grid-cols-1 gap-6">
             <div className="relative">
                 <h2 className="text-gray text-opacity-50  font-bold text-[80px] m-0 absolute">01</h2>
                 <div className="mt-8">
@@ -123,7 +123,7 @@ const PostContent = () => {
                     <span className="bg-private w-8 h-[.5px] mx-3"></span>
                     <span className="font-bold text-[20px] text-vintage">Project Planning</span>
                 </span>
-                <div className="ml-20 mt-4">Joy to the world Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aliquid, deleniti aspernatur veniam error dolorem recusandae </div>
+                <div className="ml-20 mt-4">{post.planning} </div>
             </div>
             </div>
             <div className="relative">
@@ -134,20 +134,11 @@ const PostContent = () => {
                     <span className="bg-private w-8 h-[.5px] mx-3"></span>
                     <span className="font-bold text-[20px] text-vintage">Project Scheduling</span>
                 </span>
-                <div className="ml-20 mt-4">Joy to the world Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aliquid, deleniti aspernatur veniam error dolorem recusandae </div>
+                <div className="ml-20 mt-4">{post.scheduling} </div>
+                
             </div>
             </div>
-            <div className="relative">
-                <h2 className="text-gray text-opacity-50  font-bold text-[80px] m-0 index-0 absolute">03</h2>
-                <div className="mt-8">
-                <span className="flex items-center ">
-                    <span className="bg-private text-white px-1 font-bold">03</span>
-                    <span className="bg-private w-8 h-[.5px] mx-3"></span>
-                    <span className="font-bold text-[20px] text-vintage">Project Management</span>
-                </span>
-                <div className="ml-20 mt-4">Joy to the world Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi aliquid, deleniti aspernatur veniam error dolorem recusandae </div>
-            </div>
-            </div>
+            
         </div>
 
     <div className="grid md:grid-cols-3 gap-5  grid-cols-1 my-10">
@@ -176,10 +167,11 @@ const PostContent = () => {
                 <div className="col-span-2">
                     <h2 className="text-vintage text-[25px] font-bold">Overview & Challenge</h2>
                 </div>
-                <div className="col-span-4 text-[15px]">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At consequuntur necessitatibus commodi repellendus aliquam pariatur, nesciunt, obcaecati culpa, dolores corporis autem? Optio nulla similique consequuntur, facere nihil voluptas est laboriosam commodi, uam officia voluptas placeat rem, provident modi, dicta quisquam cupiditate inventore libero vero odit voluptate?
-                    </p>
-                    <p className="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sint tempora alias eveniet error, nam ea, impedit voluptatem quaerat commodi consequatur repellendus fugiat quis accusamus? Minima quo inventore vitae aperiam!</p>
+                <div className="col-span-4 mb-3 text-[15px]">
+                <div className="md:ml-20 ">{post.overview} </div>
+                <div className="md:ml-20 mt-4">{post.overview2} </div>
+
+
                 </div>
     </div>
         </div>
@@ -195,9 +187,10 @@ const PostContent = () => {
                         <h3 className="text-[25px] font-bold text-vintage">Solution & Results</h3>
                     </div>
                     <div className="col-span-4 text-[15px]">
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At consequuntur necessitatibus commodi repellendus aliquam pariatur, nesciunt, obcaecati culpa, dolores corporis autem? Optio nulla similique consequuntur, facere nihil voluptas est laboriosam commodi, uam officia voluptas placeat rem, provident modi, dicta quisquam cupiditate inventore libero vero odit voluptate?
-                    </p>
-                    <p className="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sint tempora alias eveniet error, nam ea, impedit voluptatem quaerat commodi consequatur repellendus fugiat quis accusamus? Minima quo inventore vitae aperiam!</p>
+                    <div className="md:ml-20 mt-4">{post.solution} </div>
+                    <div className="md:ml-20 mt-4">{post.solution2} </div>
+
+
                 </div>
                 </div>
         </div>

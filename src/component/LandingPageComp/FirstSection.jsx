@@ -181,11 +181,11 @@ const FirstSection = () => {
                 className="grid md:grid-cols-3 grid-cols-1 md:mt-6 mt-0 gap-4 ">
                             <div className="">
                                 <h2 className='text-private text-3xl font-lora my-2'>48</h2>
-                                <h4>COMPLETED PROJECTS ACROSS THE WORLD</h4>
+                                <h4>COMPLETED PROJECTS ACROSS AFRICA</h4>
                             </div>
                             <div className="">
                             <h2 className='text-private text-3xl font-lora my-2'>2k +</h2>
-                                <h4>LAND SURVEY ACROSS THE WORLD</h4>
+                                <h4>LAND SURVEYED ACROSS THE WORLD</h4>
                             </div>
                             <div className="">
                             <h2 className='text-private text-3xl font-lora my-2'>2</h2>

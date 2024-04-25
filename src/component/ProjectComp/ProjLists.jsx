@@ -92,7 +92,7 @@ style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>
         src={data.img}
         alt="kasdka"
     />
-   
+   <Link to={`/project/${data.titleParam}`} >
     <div className="absolute inset-0 bg-public bg-opacity-60 group-hover:bg-public transition ease-in-out  duration-500" style={{  zIndex: 1}}>
 
     <div className={`${ data.status=="Available"? "bg-private text-white": data.status=="Ongoing"?"bg-yellow bg-opacity-80 text-black":data.status =="Sold Out"?"bg-red text-white":data.status=="Completed"?"bg-public text-white":""} text-sm absolute right-[17px] py-[6px] px-4  rounded-[2px]  `}>
@@ -125,6 +125,7 @@ style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>
             <h2 className="text-sm capitalize">{data.category}</h2>
         </div>
     </div>
+    </Link>
 </motion.div>
 </>
                    
