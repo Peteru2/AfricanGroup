@@ -180,15 +180,15 @@ const FirstSection = () => {
                     staggerChildren: 2}}
                 className="grid md:grid-cols-3 grid-cols-1 md:mt-6 mt-0 gap-4 ">
                             <div className="">
-                                <h2 className='text-private text-3xl font-lora my-2'>35</h2>
+                                <h2 className='text-private text-3xl font-lora my-2'>48</h2>
                                 <h4>COMPLETED PROJECTS ACROSS THE WORLD</h4>
                             </div>
                             <div className="">
-                            <h2 className='text-private text-3xl font-lora my-2'>800k +</h2>
+                            <h2 className='text-private text-3xl font-lora my-2'>2k +</h2>
                                 <h4>LAND SURVEY ACROSS THE WORLD</h4>
                             </div>
                             <div className="">
-                            <h2 className='text-private text-3xl font-lora my-2'>5</h2>
+                            <h2 className='text-private text-3xl font-lora my-2'>2</h2>
                                 <h4>GLOBAL AWARDS </h4>
                             </div>
                     </motion.div>

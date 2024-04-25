@@ -199,3 +199,26 @@ mark{
     
   }
   }
+  .car-container {
+    overflow: hidden;
+    width: 800px;
+    background-color: white;
+  }
+  
+  .car {
+    display: flex;
+    animation: moveCar 10s linear infinite;
+    /* justify-content:center */
+  }
+  
+  @keyframes moveCar {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  
+  

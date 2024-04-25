@@ -10,7 +10,7 @@ const Values = () => {
                                     <h2 className="e text-center text-white text-opacity-80  my-2 tracking-widest">Our Core Values</h2>
                                     <h2 className="text-white text-4xl text-center my-6 mb-10 font-roboto">D.I.E. & L.I.E.</h2>
                         <div className="grid md:grid-cols-2 xl:grid-cols-3 grid-cols-1 gap-6">
-
+        
                         <motion.div
                         initial={{ opacity: 0 }}
                         whileInView={{ opacity: 1 }}

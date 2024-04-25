@@ -1,6 +1,6 @@
 import TeamImg from "../../assets/images/Team1.jpg"
 
-const TeamFirstData = [
+const TeamData = [
     {
         name:"Olawoore Oladayo",
         office: "Founder & CEO",
@@ -21,4 +21,4 @@ const TeamFirstData = [
     },
 ]
 
-export default TeamFirstData
+export default TeamData

@@ -62,10 +62,10 @@ const ProjList = () => {
 
                     </div>
                     <div className="flex justify-center mb-14">
-                        <h2 onClick={handleAll} className={`${all?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 px-4  mx-2 cursor-pointer  `}>All</h2>
-                        <h2 onClick={handleConstruction} className={`${construction?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 px-4  mx-2 cursor-pointer    `}>Construction</h2>
-                        <h2  onClick={handleRealEstate} className={`${realEstate?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 px-4  mx-2 cursor-pointer   `}>Real Estate</h2>
-                        <h2  onClick={handleSurvey} className={`${survey?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 px-4  mx-2 cursor-pointer   `}>Surveying</h2>
+                        <h2 onClick={handleAll} className={`${all?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 md:px-4 px-2  md:mx-2 mx-[2px] cursor-pointer  `}>All</h2>
+                        <h2 onClick={handleConstruction} className={`${construction?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 md:px-4 px-2 md:mx-2 mx-[2px] cursor-pointer    `}>Construction</h2>
+                        <h2  onClick={handleRealEstate} className={`${realEstate?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 md:px-4 px-2  md:mx-2 mx-[2px] cursor-pointer   `}>Real Estate</h2>
+                        <h2  onClick={handleSurvey} className={`${survey?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 md:px-4 px-2  md:mx-2 mx-[2px] cursor-pointer   `}>Surveying</h2>
 
 
                     </div>

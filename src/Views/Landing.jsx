@@ -33,9 +33,10 @@ const Landing = () => {
                 <FirstSection />
                 <Services />
                 <Testimonials />
+                <Partners />
+
                 <Values />
                 <BlogSection />
-                <Partners />
             </section>
            
             </Layout>
