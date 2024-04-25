@@ -15,12 +15,11 @@ const location = useLocation()
 
     useEffect(() => {
       const interval = setInterval(() => {
-          // Change the URL and content every five minutes
+          
           setUrl(prevUrl => prevUrl === "/About" ? "/Peace" : "/About");
           setContent(prevContent => prevContent === "Cease your opportunity now at Evergreen Estate" ? "Act now and secure your piece of Peace Court Jobele!" : "Cease your opportunity now at Evergreen Estate");
-      }, 30000); // 300000 milliseconds = 5 minutes
+      }, 5000); // 300000 milliseconds = 5 minutes
 
-      // Clear the interval when the component unmounts
       return () => clearInterval(interval);
   }, []);
   const handleClick = () => {

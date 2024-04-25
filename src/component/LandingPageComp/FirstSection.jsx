@@ -51,6 +51,7 @@ const FirstSection = () => {
             ],
             title:"Featured Project",
             header:"We are the Kabiesi of all Lands and Housing",
+            vip:"",
             content:"African Group stands as beacon of excellence in the realms of Survey, Real Estate and Construction across Africa. Our mission is to redefine luxury living locally and elevate the industry with transformative experiences rooted in intricately designed architecture. "
         },
         {
@@ -59,6 +60,7 @@ const FirstSection = () => {
             ],
             title:"About",
             header:"We Are Africa's Finest",
+            vip:"",
             link: "/About",
             content:"The company is driven by a group of highly trained,experienced, self-motivated, and very dynamic Professionals equipped to handle various categories of projects."
         },
@@ -68,8 +70,19 @@ const FirstSection = () => {
             ],
             title:"About",
             header:"At African Group, we blend innovation with artistry",
+            vip:"",
             link: "/About",
             content:"Experience the pinnacle of luxury living with African Group, where every project is testament to our unwavering commitment to excellence in Survey, Real Estate and Construction. "
+        },
+        {
+            img: [
+                Image1,
+            ],
+            title:"About",
+            header:"Luxury Duplex By African Group",
+            vip:"Only for the VIPs",
+            link: "/About",
+            content:"Built on a pedestal of D.I.E the luxury duplex embodies our dedication to Diligence, Innovation and Excellence, setting a global standard locally in a luxury real estate with transformative experiences through intricately designed architecture. "
         },
     ]
     
@@ -133,9 +146,10 @@ const FirstSection = () => {
 
                             className='text-white tracking-[4px] font-serif font-bold font-lora mt-[0px]'>{image.title}</motion.p>
                            <p className='text-white my-4 md:text-5xl text-2xl font-bold break-words md:w-[440px] font-roboto'>
-                                    {image.header} 
+                                   <p> {image.header} </p> 
+                                    <p className="text-sm font-thin">{image.vip}</p>
+
                         </p>
-                       
                             <div className='text-white flex flex-wrap text-small font-serif'>
                                 <p className="md:w-[400px]">
                             {image.content}
@@ -205,7 +219,7 @@ const FirstSection = () => {
                         <h4 className="font-lora text-[16px]"> At 
                         African Group, our core competencies include high precision surveying, expertise in delivering high-quality construction projects with highest quality materials that can stand the test of time and within budget. We don’t just build structures; we build legacies. 
                         <p className="pt-2">We build for the man who wants to live differently. 
-Our residential projects include private residential projects for private clients. Others projects includes Surveying, Mapping and Real Estate Sales.
+                        Our real estate projects includes Peace Court, Evergreen Estate and Navy Park Estate while our core business models are Survey, Real Estate, Construction, Agro and Tech.
 </p>
                         <br />
                         
