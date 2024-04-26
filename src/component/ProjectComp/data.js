@@ -151,9 +151,9 @@ const projData = [
         id: 8,
         titleParam:"peace-court",
         title: "Peace Court",
+        sqm:"470", 
         price:"800,000",
         img: firstImg,
-  
         location: "Along Amuloke Road, Jobele, Oyo, Oyo State",
         status:"Available",
         description1:"Peace Court Estate offers the key to unlocking your future. Own a spacious 470 sqm plot just minutes from Jobele, a prime location for building your dream home or a strategic investment. Stop dreaming, start building! Peace Court Estate boasts affordability, perfect for first-time buyers and savvy investors alike",
@@ -188,6 +188,7 @@ const projData = [
         titleParam:"idera-city-phase1",
         title: "Idera City Phase 1",
         price:"250,000",
+        sqm:"470", 
         img: firstImg,
         location: "Ilora, Oyo State",
         status:"Sold Out",
@@ -216,6 +217,7 @@ const projData = [
         titleParam:"idera-city-phase2",
         title: "Idera City Phase 2",
         price:"300,000",
+        sqm:"470", 
         img: firstImg,
         location: "Ilora, Oyo State",
         status:"Sold Out",
@@ -242,6 +244,7 @@ const projData = [
         titleParam:"idera-city-phase2-extention",
         title: "Idera City Phase 2 Extention",
         price:"500,000",
+        sqm:"470",
         img: firstImg,
         location: "Ilora, Oyo State",
         status:"Available",
@@ -274,12 +277,13 @@ const projData = [
         titleParam:"hilltop-view-estate",
         title: "HillTop View Estate",
         price:"4,000,000",
+        sqm:"500", 
         img: firstImg,
         location: "Igbonla, Epe, Lagos State.",
         status:"Available",
-        description1: "Idera City Phase 2 Extension offers a limited-time 10% discount on spacious 470 sqm plots, perfect for building your dream home. Located just a 7-minute drive from the Oyo/Ibadan Expressway, Idera City Phase 2 Extension provides tranquility and effortless convenience.",
-        description2:"Experience the advantages of a meticulously planned community and another offer to get your share of Idera City offering standard road networks and layouts ensure easy navigation, while a modern aesthetic defines the very essence of Idera City Phase 2 Extension. Invest with absolute confidence – Idera CityPhase 2 Extension also guarantees freedom from 'Omo Onile Wahala,' eliminating ownership disputes and anxieties. Additionally, the development boasts unparalleled convenience with its close proximity to the Moniya-Ibadan Expressway, keeping you effortlessly connected for travel and daily commutes.",   
-        description3:"Embrace the opportunity to become a homeowner on your terms. Choose an outright purchase for immediate land ownership (₦500,000) and the complete satisfaction of full possession or a 6-Month Payment Plan (Down Payment: ₦300,000 and a a full payment of #800,000), making your dream home a more attainable reality making your dream home a more attainable reality. Don't miss out on this chance to build your future. Secure your plot at Idera City today and escape to the life you deserve.",
+        description1: "Hilltop View Estate in Igbonla-Epe, Lagos State, offers the perfect blend of tranquility and accessibility. Build your dream home on a spacious 500 sqm plot, just minutes from prominent landmarks like St. Augustine University, Lekki-Epe Toll Gate, and Yaba College of Technology. Hilltop View Estate goes beyond just location. Here, you'll embrace the peace of mind that comes with a secure and well-planned community",
+        description2:"With Unmatched Security, Perimeter fencing, a gatehouse for controlled access, and street lights for nighttime illumination ensure your safety and well-being and Modern Infrastructure like a well-designed drainage system and concrete electric poles guarantee proper water management and reliable power supply for your dream home.",   
+        description3:"This is your chance to become a homeowner on your terms. Choose an outright purchase (₦4,000,000) for immediate land ownership or spread the cost over a flexible 6-month payment plan (Down Payment: ₦2,000,000; total price: ₦5,000,000). Don't miss out on this opportunity to build a life you deserve. Secure your plot at Hilltop View Estate today and experience the serenity of a well-planned community with effortless convenience. Escape the ordinary and embrace a life that's both peaceful and connected.",
         amenities:"Perimeter fencing; Gate house; Street Light; Drainage; Cooperate electric poles; Free from all known Government accusations ",
         landmarks:"Close to St augustin University; Lekki/Epe toll gate; Yaba Polytechnic ",
         documents:"Free provisional survey in client name; Acknowledgement Letter; Payment Reciept; Contract of Sales; Allocation Letter; Deeds of agreement",
@@ -297,6 +301,98 @@ const projData = [
           currentValue:""
         },
         
+      ]
+        ,
+        type:"Real Estate"
+      },
+
+      {
+        id: 13,
+        titleParam:"adun-estate",
+        title: "Adun Estate",
+        price:"600,000",
+        sqm:"470", 
+        img: firstImg,
+        location: "Mogaji, Oyo, Oyo State.",
+        status:"Sold Out",
+        description1: "Hilltop View Estate in Igbonla-Epe, Lagos State, offers the perfect blend of tranquility and accessibility. Build your dream home on a spacious 500 sqm plot, just minutes from prominent landmarks like St. Augustine University, Lekki-Epe Toll Gate, and Yaba College of Technology. Hilltop View Estate goes beyond just location. Here, you'll embrace the peace of mind that comes with a secure and well-planned community",
+        description2:"With Unmatched Security, Perimeter fencing, a gatehouse for controlled access, and street lights for nighttime illumination ensure your safety and well-being and Modern Infrastructure like a well-designed drainage system and concrete electric poles guarantee proper water management and reliable power supply for your dream home.",   
+        description3:"This is your chance to become a homeowner on your terms. Choose an outright purchase (₦4,000,000) for immediate land ownership or spread the cost over a flexible 6-month payment plan (Down Payment: ₦2,000,000; total price: ₦5,000,000). Don't miss out on this opportunity to build a life you deserve. Secure your plot at Hilltop View Estate today and experience the serenity of a well-planned community with effortless convenience. Escape the ordinary and embrace a life that's both peaceful and connected.",
+        amenities:"24/7 Electricity; Dry Land; No Omo Onile Wahala; Free from all known govenrment accusations ",
+        landmarks:"",
+        documents:"Free provisional survey in client name; Acknowledgement Letter; Payment Reciept; Contract of Sales; Allocation Letter; Deeds of agreement",
+        paymentPlan:[
+          {
+          sqr:"470SQM",
+          paymentMethod:"Outright/2 months",
+          price:"600,000",
+          currentValue:"800,000"
+        }, 
+      ]
+        ,
+        type:"Real Estate"
+      },
+      {
+        id: 14,
+        titleParam:"west-city-estate",
+        title: "West City Estate",
+        price:"700,000",
+        sqm:"500", 
+        img: firstImg,
+        location: "Ilora, Oyo State.",
+        status:"Available",
+        description1: "Hilltop View Estate in Igbonla-Epe, Lagos State, offers the perfect blend of tranquility and accessibility. Build your dream home on a spacious 500 sqm plot, just minutes from prominent landmarks like St. Augustine University, Lekki-Epe Toll Gate, and Yaba College of Technology. Hilltop View Estate goes beyond just location. Here, you'll embrace the peace of mind that comes with a secure and well-planned community",
+        description2:"With Unmatched Security, Perimeter fencing, a gatehouse for controlled access, and street lights for nighttime illumination ensure your safety and well-being and Modern Infrastructure like a well-designed drainage system and concrete electric poles guarantee proper water management and reliable power supply for your dream home.",   
+        description3:"This is your chance to become a homeowner on your terms. Choose an outright purchase (₦4,000,000) for immediate land ownership or spread the cost over a flexible 6-month payment plan (Down Payment: ₦2,000,000; total price: ₦5,000,000). Don't miss out on this opportunity to build a life you deserve. Secure your plot at Hilltop View Estate today and experience the serenity of a well-planned community with effortless convenience. Escape the ordinary and embrace a life that's both peaceful and connected.",
+        amenities:"Standard layout; Standard road network; Concrete electric poles; Road network; Free documentation",
+        landmarks:"",
+        documents:"Free provisional survey in client name; Acknowledgement Letter; Payment Reciept; Contract of Sales; Allocation Letter; Deeds of agreement",
+        paymentPlan:[
+          {
+          sqr:"500SQM",
+          paymentMethod:"Outright/2 months",
+          price:"700,000",
+          currentValue:""
+        }, 
+        {
+          sqr:"500SQM",
+          paymentMethod:"Outright/6 months",
+          price:"1,000,000",
+          currentValue:""
+        }, 
+      ]
+        ,
+        type:"Real Estate"
+      },
+
+      {
+        id: 15,
+        titleParam:"navy-park-city",
+        title: "Navy Park City",
+        price:"4,000,000",
+        sqm:"470", 
+        img: firstImg,
+        location: "Along Idi-igba/Akinmoorin road, Oyo, Oyo State.",
+        status:"Available",
+        description1: "Hilltop View Estate in Igbonla-Epe, Lagos State, offers the perfect blend of tranquility and accessibility. Build your dream home on a spacious 500 sqm plot, just minutes from prominent landmarks like St. Augustine University, Lekki-Epe Toll Gate, and Yaba College of Technology. Hilltop View Estate goes beyond just location. Here, you'll embrace the peace of mind that comes with a secure and well-planned community",
+        description2:"With Unmatched Security, Perimeter fencing, a gatehouse for controlled access, and street lights for nighttime illumination ensure your safety and well-being and Modern Infrastructure like a well-designed drainage system and concrete electric poles guarantee proper water management and reliable power supply for your dream home.",   
+        description3:"This is your chance to become a homeowner on your terms. Choose an outright purchase (₦4,000,000) for immediate land ownership or spread the cost over a flexible 6-month payment plan (Down Payment: ₦2,000,000; total price: ₦5,000,000). Don't miss out on this opportunity to build a life you deserve. Secure your plot at Hilltop View Estate today and experience the serenity of a well-planned community with effortless convenience. Escape the ordinary and embrace a life that's both peaceful and connected.",
+        amenities:"Standard layout; Standard road network; Concrete electric poles; Road network; Free documentation",
+        landmarks:"",
+        documents:"Free provisional survey in client name; Acknowledgement Letter; Payment Reciept; Contract of Sales; Allocation Letter; Deeds of agreement",
+        paymentPlan:[
+          {
+          sqr:"470SQM",
+          paymentMethod:"Outright/3 months",
+          price:"4,000,000",
+          currentValue:""
+        }, 
+        {
+          sqr:"500SQM",
+          paymentMethod:"Outright/6 months",
+          price:"5,000,000",
+          currentValue:""
+        }, 
       ]
         ,
         type:"Real Estate"

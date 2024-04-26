@@ -16,7 +16,7 @@ const location = useLocation()
     useEffect(() => {
       const interval = setInterval(() => {
           
-          setUrl(prevUrl => prevUrl === "/About" ? "/Peace" : "/About");
+          setUrl(prevUrl => prevUrl === "/About" ? "real-estate/peace-court" : "/About");
           setContent(prevContent => prevContent === "Cease your opportunity now at Evergreen Estate" ? "Act now and secure your piece of Peace Court Jobele!" : "Cease your opportunity now at Evergreen Estate");
       }, 5000); // 300000 milliseconds = 5 minutes
 
@@ -74,8 +74,6 @@ const location = useLocation()
               <Link
                 className={`flex w-full`}
                 to={item.url}
-                
-              
               >
                 <motion.span  
                 variants ={{
@@ -112,8 +110,6 @@ const location = useLocation()
             </div>
         </Link>
     </nav>
-   
-  
 </>
   );
 };
