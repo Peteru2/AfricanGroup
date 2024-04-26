@@ -16,7 +16,7 @@ const location = useLocation()
     useEffect(() => {
       const interval = setInterval(() => {
           
-          setUrl(prevUrl => prevUrl === "/About" ? "real-estate/peace-court" : "/About");
+          setUrl(prevUrl => prevUrl === "/About" ? "project/real-estate/peace-court" : "/About");
           setContent(prevContent => prevContent === "Cease your opportunity now at Evergreen Estate" ? "Act now and secure your piece of Peace Court Jobele!" : "Cease your opportunity now at Evergreen Estate");
       }, 5000); // 300000 milliseconds = 5 minutes
 
@@ -106,7 +106,7 @@ const location = useLocation()
 </div>
 <Link to={url}>
             <div>
-                <h2 className="bg-private bg-opacity-60 text-white font-light py-2 text-center w-full">{content}</h2>
+                <h2 className="bg-private bg-opacity-60 text-white font-light py-2 text-center">{content}</h2>
             </div>
         </Link>
     </nav>
