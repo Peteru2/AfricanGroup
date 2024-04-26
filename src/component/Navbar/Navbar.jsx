@@ -16,7 +16,7 @@ const location = useLocation()
     useEffect(() => {
       const interval = setInterval(() => {
           
-          setUrl(prevUrl => prevUrl === "/About" ? "project/real-estate/peace-court" : "/About");
+          setUrl(prevUrl => prevUrl === "/About" ? "../project/real-estate/peace-court" : "/About");
           setContent(prevContent => prevContent === "Cease your opportunity now at Evergreen Estate" ? "Act now and secure your piece of Peace Court Jobele!" : "Cease your opportunity now at Evergreen Estate");
       }, 5000); // 300000 milliseconds = 5 minutes
 
