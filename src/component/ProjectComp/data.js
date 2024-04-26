@@ -159,7 +159,6 @@ const projData = [
         description1:"Peace Court Estate offers the key to unlocking your future. Own a spacious 470 sqm plot just minutes from Jobele, a prime location for building your dream home or a strategic investment. Stop dreaming, start building! Peace Court Estate boasts affordability, perfect for first-time buyers and savvy investors alike",
         description2:"Peace Court Estate seamlessly integrates affordability with essential amenities: standard infrastructure provides a solid foundation for your future, a secure environment offers peace of mind for you and your loved ones, and excellent accessibility ensures a convenient commute.",
         description3:"Choose your path to ownership: become a homeowner immediately with an outright purchase (₦6,000,000) or spread the cost over 6 months with our flexible payment plan (Down Payment: ₦800,000). This limited-time pre-launch discount won't last forever. Secure your plot at Peace Court Estate today and transform your dreams into reality! Build your legacy, brick by brick. Don't miss out on this opportunity to escape the rent trap and build your future.",
-        whyOwnLand:"",
         amenities:"Standard Road Network; Concrete Electric Poles; 24 hours solar street light; General cleaning; Good electricity; Easy accesibility; Standard layout",
         landmarks:"Federal College of Education SP.; Proposed Federal University(SPED); Al Hadi Group of School; Afijio Local Government Secretariat",
         documents:"Free provisional survey in client name; Acknowledgement Letter; Payment Reciept; Contract of Sales; Allocation Letter; Deeds of agreement",
@@ -167,12 +166,16 @@ const projData = [
           {
           sqr:"470SQM",
           paymentMethod:"Outright/2 months",
-          price:"600,000"
+          price:"600,000",
+          currentValue:""
+
         },
         {
           sqr:"470SQM",
           paymentMethod:"6 months",
-          price:"800000"
+          price:"800000",
+          currentValue:""
+
         },
 
       ]
@@ -182,33 +185,123 @@ const projData = [
 
       {
         id: 9,
-        titleParam:"idera-city",
-        title: "Idera City",
-        price:"800,000",
-        date: "February 6, 2003",
+        titleParam:"idera-city-phase1",
+        title: "Idera City Phase 1",
+        price:"250,000",
         img: firstImg,
         location: "Ilora, Oyo State",
-        status:"Available",
-        whyOwnLand:"",
-        amenities:"",
-        landmarks:"Federal College of Education SP.; Proposed Federal University(SPED); Al Hadi Group of School; Afijio Local Government Secretariat",
+        status:"Sold Out",
+        description1: "Idera City Phase 1, nestled in Ilora, Oyo State, just a 7-minute drive from the Oyo/Ibadan Expressway, Idera City offers spacious 470 sqm plots, the perfect foundation for building your dream home. Whether you're a family seeking a peaceful escape or a savvy investor, Idera City promises an environment that surpasses the ordinary.",
+        description2:"Experience the advantages of a meticulously planned community. Standard road networks and layouts ensure easy navigation, while a modern aesthetic defines the very essence of Idera City. Invest with absolute confidence – Idera City guarantees freedom from 'Omo Onile Wahala,' eliminating ownership disputes and anxieties. Additionally, the development boasts unparalleled convenience with its close proximity to the Moniya-Ibadan Expressway, keeping you effortlessly connected for travel and daily commutes.",
+        description3:"Embrace the opportunity to become a homeowner on your terms. Choose an outright purchase for immediate land ownership (₦250,000) and the complete satisfaction of full possession making your dream home a more attainable reality. Don't miss out on this chance to build your future. Secure your plot at Idera City today and escape to the life you deserve.",
+       
+        amenities:"Standard road network; Standard layout; No Omo Onile Wahala, Free documentation; Concrete Electric Poles; Directl to the main road, leading to Ilora to Ibadan",
+        landmarks:"Ilora Central market; Prohimity to a mini hotel ",
         documents:"Free provisional survey in client name; Acknowledgement Letter; Payment Reciept; Contract of Sales; Allocation Letter; Deeds of agreement",
         paymentPlan:[
           {
           sqr:"470SQM",
           paymentMethod:"Outright/2 months",
-          price:"600,000"
+          price:"250,000",
+          currentValue:"400,000"
         },
-        {
-          sqr:"470SQM",
-          paymentMethod:"6 months",
-          price:"800000"
-        },
+        
 
       ]
         ,
         type:"Real Estate"
       },
+      {
+        id: 10,
+        titleParam:"idera-city-phase2",
+        title: "Idera City Phase 2",
+        price:"300,000",
+        img: firstImg,
+        location: "Ilora, Oyo State",
+        status:"Sold Out",
+        description1: "Idera City Phase 2, nestled in Ilora, Oyo State, just a 7-minute drive from the Oyo/Ibadan Expressway, Idera City offers spacious 470 sqm plots, and now, even more affordable! Located just a 7-minute drive from the Oyo/Ibadan Expressway, Idera City Phase 2 offers spacious 470 sqm plots, the perfect foundation for building your dream home.",
+        description2:"Experience the advantages of a meticulously planned community. Standard road networks and layouts ensure easy navigation, while a modern aesthetic defines the very essence of Idera City Phase 2. Invest with absolute confidence – Idera City guarantees freedom from 'Omo Onile Wahala,' eliminating ownership disputes and anxieties. Additionally, the development boasts unparalleled convenience with its close proximity to the Moniya-Ibadan Expressway, keeping you effortlessly connected for travel and daily commutes.",
+        description3:"Embrace the opportunity to become a homeowner on your terms. Choose an outright purchase for immediate land ownership (₦300,000) and the complete satisfaction of full possession making your dream home a more attainable reality. Don't miss out on this chance to build your future. Secure your plot at Idera City today and escape to the life you deserve.",
+        amenities:"Standard road network; Standard layout; No Omo Onile Wahala, Free documentation; Concrete Electric Poles; Directl to the main road, leading to Ilora to Ibadan",
+        landmarks:"Ilora Central market; Prohimity to a mini hotel ",
+        documents:"Free provisional survey in client name; Acknowledgement Letter; Payment Reciept; Contract of Sales; Allocation Letter; Deeds of agreement",
+        paymentPlan:[
+          {
+          sqr:"470SQM",
+          paymentMethod:"Outright/2 months",
+          price:"300,000",
+          currentValue:"500,000"
+        },
+        
+      ]
+        ,
+        type:"Real Estate"
+      },
+      {
+        id: 11,
+        titleParam:"idera-city-phase2-extention",
+        title: "Idera City Phase 2 Extention",
+        price:"500,000",
+        img: firstImg,
+        location: "Ilora, Oyo State",
+        status:"Available",
+        description1: "Idera City Phase 2 Extension offers a limited-time 10% discount on spacious 470 sqm plots, perfect for building your dream home. Located just a 7-minute drive from the Oyo/Ibadan Expressway, Idera City Phase 2 Extension provides tranquility and effortless convenience.",
+        description2:"Experience the advantages of a meticulously planned community and another offer to get your share of Idera City offering standard road networks and layouts ensure easy navigation, while a modern aesthetic defines the very essence of Idera City Phase 2 Extension. Invest with absolute confidence – Idera CityPhase 2 Extension also guarantees freedom from 'Omo Onile Wahala,' eliminating ownership disputes and anxieties. Additionally, the development boasts unparalleled convenience with its close proximity to the Moniya-Ibadan Expressway, keeping you effortlessly connected for travel and daily commutes.",   
+        description3:"Embrace the opportunity to become a homeowner on your terms. Choose an outright purchase for immediate land ownership (₦500,000) and the complete satisfaction of full possession or a 6-Month Payment Plan (Down Payment: ₦300,000 and a a full payment of #800,000), making your dream home a more attainable reality making your dream home a more attainable reality. Don't miss out on this chance to build your future. Secure your plot at Idera City today and escape to the life you deserve.",
+        amenities:"Standard road network; Standard layout; No Omo Onile Wahala, Free documentation; Concrete Electric Poles; Directl to the main road, leading to Ilora to Ibadan",
+        landmarks:"Ilora Central market; Prohimity to a mini hotel ",
+        documents:"Free provisional survey in client name; Acknowledgement Letter; Payment Reciept; Contract of Sales; Allocation Letter; Deeds of agreement",
+        paymentPlan:[
+          {
+          sqr:"470SQM",
+          paymentMethod:"Outright/2 months",
+          price:"300,000",
+          currentValue:""
+        },
+        {
+          sqr:"470SQM",
+          paymentMethod:"Outright/6 months",
+          price:"800,000",
+          currentValue:""
+        },
+        
+      ]
+        ,
+        type:"Real Estate"
+      },
+      {
+        id: 12,
+        titleParam:"hilltop-view-estate",
+        title: "HillTop View Estate",
+        price:"4,000,000",
+        img: firstImg,
+        location: "Igbonla, Epe, Lagos State.",
+        status:"Available",
+        description1: "Idera City Phase 2 Extension offers a limited-time 10% discount on spacious 470 sqm plots, perfect for building your dream home. Located just a 7-minute drive from the Oyo/Ibadan Expressway, Idera City Phase 2 Extension provides tranquility and effortless convenience.",
+        description2:"Experience the advantages of a meticulously planned community and another offer to get your share of Idera City offering standard road networks and layouts ensure easy navigation, while a modern aesthetic defines the very essence of Idera City Phase 2 Extension. Invest with absolute confidence – Idera CityPhase 2 Extension also guarantees freedom from 'Omo Onile Wahala,' eliminating ownership disputes and anxieties. Additionally, the development boasts unparalleled convenience with its close proximity to the Moniya-Ibadan Expressway, keeping you effortlessly connected for travel and daily commutes.",   
+        description3:"Embrace the opportunity to become a homeowner on your terms. Choose an outright purchase for immediate land ownership (₦500,000) and the complete satisfaction of full possession or a 6-Month Payment Plan (Down Payment: ₦300,000 and a a full payment of #800,000), making your dream home a more attainable reality making your dream home a more attainable reality. Don't miss out on this chance to build your future. Secure your plot at Idera City today and escape to the life you deserve.",
+        amenities:"Perimeter fencing; Gate house; Street Light; Drainage; Cooperate electric poles; Free from all known Government accusations ",
+        landmarks:"Close to St augustin University; Lekki/Epe toll gate; Yaba Polytechnic ",
+        documents:"Free provisional survey in client name; Acknowledgement Letter; Payment Reciept; Contract of Sales; Allocation Letter; Deeds of agreement",
+        paymentPlan:[
+          {
+          sqr:"500SQM",
+          paymentMethod:"Outright/2 months",
+          price:"4,000,000",
+          currentValue:""
+        },
+        {
+          sqr:"500SQM",
+          paymentMethod:"Outright/6 months",
+          price:"5,000,000",
+          currentValue:""
+        },
+        
+      ]
+        ,
+        type:"Real Estate"
+      },
+
       {
         id: 3,
       titleParam:"expert-mechanical",

@@ -8,6 +8,9 @@ import image from "../../assets/images/about.jpg"
 const RealEstatePost = () => {
     const { titleParam } = useParams();
     const post = projData.find((post) => post.titleParam === titleParam);
+    const amenities = post.amenities.split(';') 
+    const landmarks = post.landmarks.split(';') 
+
     if (!post) {
       return <div>Post not found</div>;
     }
@@ -37,6 +40,33 @@ const RealEstatePost = () => {
         <p className="my-2">{post.description2}</p>
         <p className="my-2">{post.description3}</p>
 
+        </div>
+        <div>
+            <h2 className="font-bold text-[18px] my-2 mt-3">
+                Amenities
+            </h2>
+            <div className="md:ml-10">
+            <ol className='list'>
+              {amenities.map((amenities, index) => (
+                <li className='my-2' key={index}>{amenities}</li>
+              ))}
+            </ol>
+            </div>
+            
+        </div>
+
+        <div>
+            <h2 className="font-bold text-[18px] my-2 mt-8">
+                Landmarks
+            </h2>
+            <div className="md:ml-10">
+            <ol className='list'>
+              {landmarks.map((landmarks, index) => (
+                <li className='my-2' key={index}>{landmarks}</li>
+              ))}
+            </ol>
+            </div>
+            
         </div>
       </div>
         </Layout>
