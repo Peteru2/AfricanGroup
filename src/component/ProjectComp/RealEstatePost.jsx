@@ -10,6 +10,8 @@ const RealEstatePost = () => {
     const post = projData.find((post) => post.titleParam === titleParam);
     const amenities = post.amenities.split(';') 
     const landmarks = post.landmarks.split(';') 
+    const documents = post.documents.split(';') 
+
 
     if (!post) {
       return <div>Post not found</div>;
@@ -29,13 +31,13 @@ const RealEstatePost = () => {
 
       <div className="my-4 xl:mx-[90px] md:mx-5 mx-6 font-roboto">
         <div className="my-3">
-            <div className="flex w-full">
+            <div className="grid md:grid-cols-2 grid-cols-1 w-full">
                 <div>
                     <h2 className="text-black font-bold text-[18px] mb-4 text-opacity-80">{post.location}</h2>
                     <h2 className="text-black font-normal text-opacity-60 flex items-center"><span className="rounded font-thin text-sm py-1 bg-gray bg-opacity-20 test-gray px-3 mr-3">Land</span><span className={`${ post.status=="Available"? "bg-private bg-opacity-20  text-private": post.status =="Sold Out"?"bg-red bg-opacity-20 font-thin text-red":""} text-sm   px-3 py-1 rounded  `}>{post.status}</span></h2>
 
                 </div>
-                <div className="ml-auto">
+                <div className="md:ml-auto md:mt-0 mt-5">
                         <h2 className="font-bold text-black text-opacity-80 text-[18px] mb-2"><i>{post.price}</i></h2>
                         <h2 className="text-black font-normal text-opacity-60"><i> per {post.sqm} sqm</i></h2>
 
@@ -43,7 +45,7 @@ const RealEstatePost = () => {
             </div>
         </div>
         <div className="flex w-full">
-                <div className="ml-auto">
+                <div className="md:ml-auto md:my-0 my-4">
                     <button className="p-2 border-[1px] rounded-md ">Book and appointment</button>
                     <button className="bg-public rounded-md text-white p-2 ml-4">Contact Us</button>
                 </div>
@@ -59,7 +61,7 @@ const RealEstatePost = () => {
             <h2 className="font-bold text-[18px] my-2 ">
                 Amenities
             </h2>
-            <div className="md:ml-10">
+            <div className="md:ml-10 ml-6">
             <ol className='list'>
               {amenities.map((amenities, index) => (
                 <li className='my-2' key={index}>{amenities}</li>
@@ -73,7 +75,7 @@ const RealEstatePost = () => {
             <h2 className="font-bold text-[18px] my-2">
                 Landmarks
             </h2>
-            <div className="md:ml-10">
+            <div className="md:ml-10 ml-6">
             <ol className='list'>
               {landmarks.map((landmarks, index) => (
                 <li className='my-2' key={index}>{landmarks}</li>
@@ -82,6 +84,42 @@ const RealEstatePost = () => {
             </div>
             
         </div>
+        <div className=" mt-8">
+            <h2 className="font-bold text-[18px] my-2">
+                Documents
+            </h2>
+            <div className="md:ml-10 ml-6">
+            <ol className='list'>
+              {documents.map((document, index) => (
+                <li className='my-2' key={index}>{document}</li>
+              ))}
+            </ol>
+            </div>
+            
+        </div>
+        <div className=" mt-8">
+            <h2 className="font-bold text-[18px] my-2">
+                Available Payment plan
+            </h2>
+            <div className="md:ml-10 ">
+            <div className='my-2'>
+
+              {post.paymentPlan.map((plan, index) => (
+                <div key={index} className="my-3">
+                <h2 className='my-2 font-bold text-black text-opacity-80' >{plan.sqr}</h2>
+                <h2 className='my-2  text-black text-opacity-80 italic ' >{plan.paymentMethod}</h2>
+                <h2 className='my-2 text-black text-opacity-80' >{plan.price}</h2>
+                {plan.currentValue != "" &&(
+                <h2 className='my-2  text-black text-opacity-80' > Current Value: {plan.currentValue}</h2>
+                    )}
+                </div>
+              ))}
+
+            </div>
+            </div>
+            
+        </div>
+        
       </div>
         </Layout>
         </>

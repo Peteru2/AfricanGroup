@@ -172,10 +172,9 @@ const projData = [
         },
         {
           sqr:"470SQM",
-          paymentMethod:"6 months",
+          paymentMethod:"Outright/6 months",
           price:"800000",
           currentValue:""
-
         },
 
       ]
