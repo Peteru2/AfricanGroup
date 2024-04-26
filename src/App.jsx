@@ -20,6 +20,8 @@ import OngoingProjList from './component/ProjectComp/OngoingProjectList';
 import OngoingInfoList from './component/ProjectComp/OngoingInfoList';
 import Blog from './Views/Blog';
 import BlogPost from './component/BlogComp/BlogPost';
+import SurveyPost from './component/ProjectComp/SurveyPost';
+import RealEstatePost from './component/ProjectComp/RealEstatePost';
 
 
 function App() {
@@ -47,7 +49,9 @@ function App() {
 
           <Route path="/blog/:titleParam" element={<Blog />} />
           <Route path="/service/:titleParam" element={<ServicePost />} />
-          <Route path="/project/:titleParam" element={<ProjPost />} />
+          <Route path="/project/construction/:titleParam" element={<ProjPost />} />
+          <Route path="/project/survey/:titleParam" element={<SurveyPost />} />
+          <Route path="/project/real-estate/:titleParam" element={<RealEstatePost />} />
           <Route path="/project/ongoing-project/:titleParam" element={<ProjPost />} />
           <Route path="/project/ongoing-project/:titleparam/:titleParam" element={<OngoingInfoList/>} />
 

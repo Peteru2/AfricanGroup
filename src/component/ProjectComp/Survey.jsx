@@ -52,7 +52,7 @@ style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>
                     <h1 className="h-3 w-3 bg-private"></h1>
         </div>
         <div className="flex justify-center items-center  opacity-0  group-hover:opacity-100 transition ease-in-out  duration-500">
-        <Link to={`/project/${data.titleParam}`} className=''>
+        <Link to={`/project/survey/${data.titleParam}`} className=''>
         <div className=" w-8 mx-4 flex text-white h-8 cursor-pointer  bg-private hover:bg-white hover:text-public  justify-center items-center">
             <i className="fa fa-link"></i>
         </div>

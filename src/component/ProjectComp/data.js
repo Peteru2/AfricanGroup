@@ -148,21 +148,66 @@ const projData = [
       type:"Construction"
     },
     {
-        id: 2,
-      titleParam:"land-siting",
-        title: "Land Siting",
-        date: "February 6, 2003",
-        summary: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis.",
+        id: 8,
+        titleParam:"peace-court",
+        title: "Peace Court",
+        price:"800,000",
         img: firstImg,
-        category:"Reconstruction",
-        client: "Joyous Private Ltd, USA",
-        location: "Erelu, Oyo",
-        year: "2021",
-        status:"Sold Out",
+  
+        location: "Along Amuloke Road, Jobele, Oyo, Oyo State",
+        status:"Available",
+        description1:"Peace Court Estate offers the key to unlocking your future. Own a spacious 470 sqm plot just minutes from Jobele, a prime location for building your dream home or a strategic investment. Stop dreaming, start building! Peace Court Estate boasts affordability, perfect for first-time buyers and savvy investors alike",
+        description2:"Peace Court Estate seamlessly integrates affordability with essential amenities: standard infrastructure provides a solid foundation for your future, a secure environment offers peace of mind for you and your loved ones, and excellent accessibility ensures a convenient commute.",
+        description3:"Choose your path to ownership: become a homeowner immediately with an outright purchase (₦6,000,000) or spread the cost over 6 months with our flexible payment plan (Down Payment: ₦800,000). This limited-time pre-launch discount won't last forever. Secure your plot at Peace Court Estate today and transform your dreams into reality! Build your legacy, brick by brick. Don't miss out on this opportunity to escape the rent trap and build your future.",
+        whyOwnLand:"",
+        amenities:"Standard Road Network; Concrete Electric Poles; 24 hours solar street light; General cleaning; Good electricity; Easy accesibility; Standard layout",
+        landmarks:"Federal College of Education SP.; Proposed Federal University(SPED); Al Hadi Group of School; Afijio Local Government Secretariat",
+        documents:"Free provisional survey in client name; Acknowledgement Letter; Payment Reciept; Contract of Sales; Allocation Letter; Deeds of agreement",
+        paymentPlan:[
+          {
+          sqr:"470SQM",
+          paymentMethod:"Outright/2 months",
+          price:"600,000"
+        },
+        {
+          sqr:"470SQM",
+          paymentMethod:"6 months",
+          price:"800000"
+        },
+
+      ]
+        ,
         type:"Real Estate"
+      },
 
+      {
+        id: 9,
+        titleParam:"idera-city",
+        title: "Idera City",
+        price:"800,000",
+        date: "February 6, 2003",
+        img: firstImg,
+        location: "Ilora, Oyo State",
+        status:"Available",
+        whyOwnLand:"",
+        amenities:"",
+        landmarks:"Federal College of Education SP.; Proposed Federal University(SPED); Al Hadi Group of School; Afijio Local Government Secretariat",
+        documents:"Free provisional survey in client name; Acknowledgement Letter; Payment Reciept; Contract of Sales; Allocation Letter; Deeds of agreement",
+        paymentPlan:[
+          {
+          sqr:"470SQM",
+          paymentMethod:"Outright/2 months",
+          price:"600,000"
+        },
+        {
+          sqr:"470SQM",
+          paymentMethod:"6 months",
+          price:"800000"
+        },
 
-
+      ]
+        ,
+        type:"Real Estate"
       },
       {
         id: 3,

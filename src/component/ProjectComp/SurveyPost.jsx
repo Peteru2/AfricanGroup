@@ -1,22 +1,20 @@
-import image from "../../assets/images/about.jpg"
-import ImageWithOverlay from '../ImageWithOverlay'
-import { useParams } from "react-router-dom";
-import PostContent from "./postContent";
-import projData from "./data";
-import ongoingData from "./ongoingData";
 import Layout from "../Layout";
+import ImageWithOverlay from "../ImageWithOverlay";
+import { useParams } from "react-router-dom";
+import projData from "./data";
+import image from "../../assets/images/about.jpg"
 
-const ProjPost = () => {
+
+const SurveyPost = () => {
     const { titleParam } = useParams();
     const post = ongoingData.find((post) => post.titleParam === titleParam) || projData.find((post) => post.titleParam === titleParam);
     if (!post) {
       return <div>Post not found</div>;
     }
-  
     return ( 
-            <>
-       <Layout>
-                 <ImageWithOverlay
+        <>
+        <Layout>
+        <ImageWithOverlay
                 imageUrl={image}
                 span1="Project"
                 span2={post.title}
@@ -25,11 +23,9 @@ const ProjPost = () => {
                 decrip={post.title}
                 height="380px"
       />
-      <PostContent />
-      </Layout>
-
-            </>
+        </Layout>
+        </>
      );
 }
  
-export default ProjPost;
+export default SurveyPost;

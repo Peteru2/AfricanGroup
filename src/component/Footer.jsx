@@ -81,9 +81,7 @@ const Footer = () => {
                     whileInView="visible"
                     transition={{delay:  0.5, 
                     duration: 0.5}}
-                      
                     className="col-span-4">
-                        
                         <h2 className="mb-6 font-serif md:text-[14px] font-medium text-[14px]">CAREERS</h2>
                         <h4>We are constantly in quest of talented, passion-driven folks with a tenacity for excellence.</h4>
                         <Link to={"/faqs"}><h2 className="md:text-[22px] text-[18px] mt-4 hover:text-vintage  transition ease-in-out  duration-300">FAQs</h2></Link>
@@ -92,7 +90,6 @@ const Footer = () => {
                     <div className="my-3">
                         <p>
                         African Group Nigeria is duly registered by the Corporate Affairs Commission, Nigeria (RC:7385369). It is duly registered with the Real Estate Developer Association of Nigeria (REDAN) and the Economic and Financial Crimes Commission via its Special Control Unit Money Laundering (SCUML) in accordance with the provisions of section 5 (1)(a) and (4) of the money laundering (Prevention and prohibition) Act, 2011 and any other law or regulation. 
-
                         </p>
                     </div>
                     <h2 className="my-4">©2023 All Rights Reserved</h2>

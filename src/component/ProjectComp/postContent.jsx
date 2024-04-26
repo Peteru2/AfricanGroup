@@ -1,15 +1,10 @@
  import projData from "./data";
 import { useParams } from 'react-router-dom';
 import { motion } from "framer-motion";
-import ongoingData from "./ongoingData";
 const PostContent = () => {
     const { titleParam } = useParams();
     
-    const post = 
-    // ongoingData.map((data) =>{
-    //     Array.isArray(data.projects) && data.projects.find((post) => post.titleParam === titleParam) 
-    // })|| 
-    projData.find((post) => post.titleParam === titleParam);
+    const post =  projData.find((post) => post.titleParam === titleParam);
     if (!post) {
       return <div>Post not found</div>;
     }
