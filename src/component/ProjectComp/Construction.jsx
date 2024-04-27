@@ -21,8 +21,8 @@ const Construction = () => {
 }}
 initial="hidden"
 whileInView="visible"
-transition={{delay: index*  0.2, 
-duration: 0.3}}
+transition={{delay:  0.1, 
+duration: 0.1}}
 key={index} 
 className="relative group"
 style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>

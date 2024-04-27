@@ -53,8 +53,8 @@ const ProjList = () => {
                         }}
                         initial="hidden"
                         whileInView="visible"
-                        transition={{delay:  0.5, 
-                        duration: 0.5}}
+                        transition={{delay:  0.1, 
+                        duration: 0.1}}
                         className="mb-6">
                             <h5 className="md:w-[620px] text-center flex font-medium justify-center mb-4">We understand how hard it is to get the best, that's why we provide the best in class property deals, innovative designs and outstanding constructions to our clients. </h5>
                            

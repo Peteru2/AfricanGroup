@@ -32,8 +32,6 @@ const location = useLocation()
       if (window.scrollY > 200) {
         navbarRef.current.classList.add("nav-active");
         navbarRef.current.classList.add("shadow-xl")
-        
-
       } else {
         navbarRef.current.classList.remove("nav-active");
         navbarRef.current.classList.remove("shadow-xl");
