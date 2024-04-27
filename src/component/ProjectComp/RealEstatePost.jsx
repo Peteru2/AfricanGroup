@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import projData from "./data";
 import image from "../../assets/images/about.jpg"
 import RecommendedRealEstate from "./RecommendedRealEstate";
+import RealEstateImgSlide from "./RealEstateImgSlide";
 
 
 const RealEstatePost = () => {
@@ -45,10 +46,12 @@ const RealEstatePost = () => {
                 </div>
             </div>
         </div>
-        <div className="flex w-full">
+        <RealEstateImgSlide />
+
+        <div className="flex w-full mt-2">
                 <div className="md:ml-auto md:my-0 my-4">
-                    <button className="p-2 border-[1px] rounded-md ">Book and appointment</button>
-                    <button className="bg-public rounded-md text-white p-2 ml-4">Contact Us</button>
+                    <button className="p-2 py-3 border-[1px] border-gray shadow rounded-md ">Book appointment</button>
+                    <button className="bg-public rounded-md text-white p-2 py-3 ml-4">Contact Us</button>
                 </div>
         </div>
         <div className="mt-2">
