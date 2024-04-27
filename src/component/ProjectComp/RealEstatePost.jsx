@@ -3,7 +3,7 @@ import ImageWithOverlay from "../ImageWithOverlay";
 import { useParams } from "react-router-dom";
 import projData from "./data";
 import image from "../../assets/images/about.jpg"
-import RecommendedREalEstate from "./RecommendedRealEstate";
+import RecommendedRealEstate from "./RecommendedRealEstate";
 
 
 const RealEstatePost = () => {
@@ -140,7 +140,7 @@ const RealEstatePost = () => {
         </div>
         
       </div>
-      <RecommendedREalEstate />
+      <RecommendedRealEstate />
         </Layout>
         </>
      );

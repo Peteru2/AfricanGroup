@@ -1,21 +1,29 @@
 import projData from "./data";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-const RecommendedREalEstate = () => {
-const firstThreeProjectItems = projData.slice(0,3);
+
+const shuffleArray = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+}
+const RecommendedRealEstate = () => {
+   
+    const realEstateProjects = projData.filter(data => data.type === "Real Estate");
+    const randomThreeProjects = shuffleArray(realEstateProjects).slice(0, 3);
 
     return ( 
         <>
-            <div className="bg-white mt-4 py-3">
-                <h2 className="font-bold text-[25px] text-center text-black text-opacity-70">Also recommended</h2>
-            </div>
-            <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10  mb-[30px] font-roboto">
-
+            <div className="bg-white my-6 pb-6 ">
+                <h2 className="font-bold text-[25px] text-center text-black text-opacity-70 py-8">Also recommended</h2>
+            
+            <div className=" xl:mx-[90px] md:mx-5 mx-6 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10  mb-[30px] font-roboto">
 {
-                    firstThreeProjectItems.map((data, index) => {
+                   randomThreeProjects.map((data, index) => {
                         return(
                             <>
-                            {data.type==="Real Estate" && (
 <motion.div
 variants ={{
 hidden:{opacity: 0, y: 75},
@@ -69,7 +77,7 @@ alt="kasdka"
 </div>
 </div>
 </motion.div>
-)}
+
 </>
            
                         )
@@ -77,8 +85,9 @@ alt="kasdka"
                 } 
         
 </div>
+</div>
         </>
      );
 }
  
-export default RecommendedREalEstate;
+export default RecommendedRealEstate;
