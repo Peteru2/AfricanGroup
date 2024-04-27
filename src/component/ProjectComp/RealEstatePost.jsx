@@ -3,6 +3,7 @@ import ImageWithOverlay from "../ImageWithOverlay";
 import { useParams } from "react-router-dom";
 import projData from "./data";
 import image from "../../assets/images/about.jpg"
+import RecommendedREalEstate from "./RecommendedRealEstate";
 
 
 const RealEstatePost = () => {
@@ -118,9 +119,28 @@ const RealEstatePost = () => {
             </div>
             </div>
             
+
+            <div className="border-y-[1px] border-gray py-8 mt-6">
+                <h2 className="font-bold text-[18px] mb-1">Payment Details</h2>
+                <h2><span  className="font-bold text-[17px] text-black text-opacity-70">Bank name:</span> <span className="text-opacity-80 text-black text-[17px]">Gt Bank</span></h2>
+
+                <div className="md:flex w-full mt-5">
+                  <div>
+                <h2><span  className="font-bold text-[17px] text-black text-opacity-70">Account name:</span> <span className="text-opacity-80 text-black text-[17px]">Gt Ban k</span></h2>
+                <h2><span  className="font-bold text-[17px] text-black text-opacity-70">Account number:</span> <span className="text-opacity-80 text-black text-[17px]">Gt Bank</span></h2>
+
+                  </div>
+                  <button className="md:ml-auto md:mt-0 mt-3 bg-private text-white p-4 rounded">
+                    Pay now
+                  </button>
+                </div>
+            </div>
+
+            
         </div>
         
       </div>
+      <RecommendedREalEstate />
         </Layout>
         </>
      );
