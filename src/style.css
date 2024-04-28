@@ -239,7 +239,7 @@ mark{
   border-radius: 50%;
   height: 50px;
   width: 50px;
-  bottom: -32%;
+  bottom: -250px;
   margin: 5px;
 }
   
@@ -257,16 +257,31 @@ mark{
   border-radius: 50%;
   height: 50px;
   width: 50px;
-  bottom: -45%;
+  bottom: -250px;
   margin: 5px;
 }
-
+@media only screen  and (max-width: 1400px){
+  .nav-btn2,.nav-btn1{
+   bottom: -200px;
+  }
+ }
+ @media only screen  and (max-width: 1000px){
+  .nav-btn2,.nav-btn1{
+   bottom: -150px;
+  }
+ }
 @media only screen  and (max-width: 768px){
-  /* .image {
-    width: 1800px;
-    height: 600px;
-    margin: 5px;
-    margin-right:20px;
-    border-radius: 8px;
-  } */
+ .nav-btn2,.nav-btn1{
+  bottom: -110px;
+ }
 }
+@media only screen  and (max-width: 600px){
+  .nav-btn2,.nav-btn1{
+   bottom: -90px;
+  }
+ }
+ @media only screen  and (max-width: 480px){
+  .nav-btn2,.nav-btn1{
+   bottom: -25px;
+  }
+ }

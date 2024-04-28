@@ -5,9 +5,11 @@ const RealEstateImgSlide = () => {
     const sliderRef = useRef(null);
     const [showButtons, setShowButtons] = useState(true);
     const scrollAmountDesktop = 840; 
-    const scrollAmountMobile = 400; 
+    const scrollAmountTablet = 400; 
+    const scrollAmountMobile = 330; 
+
     console.log(window.innerWidth)
-    const scrollAmount = window.innerWidth <= 768 ? scrollAmountMobile : scrollAmountDesktop;
+    const scrollAmount = window.innerWidth <= 768 ? scrollAmountMobile : window.innerWidth <= 480 ? scrollAmountMobile : scrollAmountDesktop;
 
 
     return ( 
