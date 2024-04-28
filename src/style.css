@@ -281,7 +281,14 @@ mark{
   }
  }
  @media only screen  and (max-width: 480px){
-  .nav-btn2,.nav-btn1{
-   bottom: -25px;
+  .nav-btn1{
+   bottom: -1px;
+  right: 340px;
+
+  }
+  .nav-btn2{
+    right: 2px;
+   bottom: -1px;
+
   }
  }
