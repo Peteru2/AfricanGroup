@@ -4,7 +4,6 @@
       height: 35px; 
       background: transparent;
       border-width: 3px;
-    
       display: flex;
       align-items:center;
       /* // borderStyle: 'dotted'; */
@@ -219,9 +218,10 @@ mark{
 }
 
 .image {
-  width: 2000px;
-  height: 800px;
+  width: 70%;
+  /* height: 60%; */
   margin: 5px;
+  margin-right:20px;
   border-radius: 8px;
 }
 
@@ -237,9 +237,9 @@ mark{
   outline: inherit;
   background-color: rgba(0, 0, 0, .4);
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  bottom: -550px;
+  height: 50px;
+  width: 50px;
+  bottom: -32%;
   margin: 5px;
 }
   
@@ -255,8 +255,18 @@ mark{
   outline: inherit;
   background-color: rgba(0, 0, 0, .4);
   border-radius: 50%;
-  height: 40px;
-  width: 40px;
-  bottom: -550px;
+  height: 50px;
+  width: 50px;
+  bottom: -45%;
   margin: 5px;
+}
+
+@media only screen  and (max-width: 768px){
+  /* .image {
+    width: 1800px;
+    height: 600px;
+    margin: 5px;
+    margin-right:20px;
+    border-radius: 8px;
+  } */
 }
