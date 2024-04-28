@@ -7,55 +7,8 @@ const RealEstateImgSlide = () => {
     const scrollAmountDesktop = 840; 
     const scrollAmountMobile = 400; 
     console.log(window.innerWidth)
-
     const scrollAmount = window.innerWidth <= 768 ? scrollAmountMobile : scrollAmountDesktop;
-    useEffect(() => {
-        const container = sliderRef.current;
-        let startX = 0;
-        let isScrolling = false;
 
-        const handleTouchStart = (e) => {
-            isScrolling = true;
-            startX = e.touches[0].clientX;
-        };
-
-        const handleTouchMove = (e) => {
-            if (!isScrolling) return;
-            const distance = startX - e.touches[0].clientX;
-            container.scrollLeft += distance;
-            startX = e.touches[0].clientX;
-        };
-
-        const handleTouchEnd = () => {
-            isScrolling = false;
-        };
-
-        container.addEventListener("touchstart", handleTouchStart);
-        container.addEventListener("touchmove", handleTouchMove);
-        container.addEventListener("touchend", handleTouchEnd);
-
-        return () => {
-            container.removeEventListener("touchstart", handleTouchStart);
-            container.removeEventListener("touchmove", handleTouchMove);
-            container.removeEventListener("touchend", handleTouchEnd);
-        };
-    }, []);
-
-    // Toggle visibility of navigation buttons based on screen width
-    useEffect(() => {
-        const handleResize = () => {
-            if (window.innerWidth <= 768) {
-                setShowButtons(false);
-            } else {
-                setShowButtons(true);
-            }
-        };
-
-        window.addEventListener("resize", handleResize);
-        handleResize();
-
-        return () => window.removeEventListener("resize", handleResize);
-    }, []);
 
     return ( 
         <>
