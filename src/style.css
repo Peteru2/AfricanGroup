@@ -239,7 +239,7 @@ mark{
   border-radius: 50%;
   height: 50px;
   width: 50px;
-  bottom: -250px;
+  bottom: -260px;
   margin: 5px;
 }
   
@@ -257,7 +257,7 @@ mark{
   border-radius: 50%;
   height: 50px;
   width: 50px;
-  bottom: -250px;
+  bottom: -260px;
   margin: 5px;
 }
 @media only screen  and (max-width: 1400px){

@@ -314,9 +314,9 @@ const projData = [
         img: firstImg,
         location: "Mogaji, Oyo, Oyo State.",
         status:"Sold Out",
-        description1: "Hilltop View Estate in Igbonla-Epe, Lagos State, offers the perfect blend of tranquility and accessibility. Build your dream home on a spacious 500 sqm plot, just minutes from prominent landmarks like St. Augustine University, Lekki-Epe Toll Gate, and Yaba College of Technology. Hilltop View Estate goes beyond just location. Here, you'll embrace the peace of mind that comes with a secure and well-planned community",
-        description2:"With Unmatched Security, Perimeter fencing, a gatehouse for controlled access, and street lights for nighttime illumination ensure your safety and well-being and Modern Infrastructure like a well-designed drainage system and concrete electric poles guarantee proper water management and reliable power supply for your dream home.",   
-        description3:"This is your chance to become a homeowner on your terms. Choose an outright purchase (₦4,000,000) for immediate land ownership or spread the cost over a flexible 6-month payment plan (Down Payment: ₦2,000,000; total price: ₦5,000,000). Don't miss out on this opportunity to build a life you deserve. Secure your plot at Hilltop View Estate today and experience the serenity of a well-planned community with effortless convenience. Escape the ordinary and embrace a life that's both peaceful and connected.",
+        description1: "Imagine a place where you can build your dream home, a place with a solid foundation for your future. Adun Estate offers spacious 470 sqm plots, perfect for families or savvy investors seeking an opportunity to create something special. Nestled in a prime location, Adun Estate provides the ideal canvas for you to turn your vision into reality.",
+        description2:"This thoughtfully planned community goes beyond just land. Adun Estate boasts the infrastructure necessary for a comfortable and convenient life. A well-established network ensures you stay connected, while a meticulously designed road system allows for smooth travel within the estate. Concrete electric poles guarantee a dependable power supply, and Adun Estate even takes care of the documentation process, saving you time and money. Invest with confidence, knowing your land ownership is clear and secure.",   
+        description3:"Embrace the opportunity to become a homeowner today. With an outright purchase of just ₦600,000 you can own your piece of Adun Estate and begin building your future. Don't miss out on this chance to create a life you deserve – secure your plot today and let Adun Estate be the foundation of your dreams.",
         amenities:"24/7 Electricity; Dry Land; No Omo Onile Wahala; Free from all known govenrment accusations ",
         landmarks:"",
         documents:"Free provisional survey in client name; Acknowledgement Letter; Payment Reciept; Contract of Sales; Allocation Letter; Deeds of agreement",
@@ -397,115 +397,28 @@ const projData = [
         type:"Real Estate"
       },
 
+      
       {
-        id: 3,
-      titleParam:"expert-mechanical",
-        title: "Expert Mechanical",
-        date: "February 6, 2003",
-        summary: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis.",
+        id: 16,
+        titleParam:"kinikan-title",
+        title: "Kinikan Title",
+        description:"The 20 Acres extent was established/set out by African Group with our sophisticated equipment such as differential Global Positioning System {ProMac 3 GPS} and Leica 307 total station for precise and accurate positioning for one of the best Gas Terminals in Lagos.",
         img: firstImg,
-        category:"Reconstruction",
-        client: "Joyous Private Ltd, USA",
-        location: "Erelu, Oyo",
-        year: "2021",
-        status:"Completed",
-        type:"Construction"
-
-
-
-      },    
-      {
-        id: 4,
-        titleParam:"building-construction",
-        title: "Buidling Constuction",
-        date: "January 1, 2023",
-        summary: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis.",
-        img: firstImg,
-        category:"Building",
-        client: "Kyber Private Ltd, USA",
-        location: "Banana Iceland, Lagos",
+        totalArea:"20 Acres",
+        duration:"1 week",
+        serviceType:"Engineering Survey {Setting Out} ",
+        client: "Green Gas Terminal	",
+        location: "Apapa, Lagos",
         year: "2022",
         status:"Completed",
-        type:"Construction"
-
+        type:"Survey"
   
       },
-        {
-          id: 5,
-        titleParam:"land-siting",
-          title: "Land Siting",
-          date: "February 6, 2003",
-          summary: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis.",
-          img: firstImg,
-          category:"Reconstruction",
-          client: "Joyous Private Ltd, USA",
-          location: "Erelu, Oyo",
-          year: "2021",
-          status:"Sold Out",
-          type:"Real Estate"
-
-  
-  
-        },
-        {
-          id: 6,
-        titleParam:"expert-mechanical",
-          title: "Expert Mechanical",
-          date: "February 6, 2003",
-          summary: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis.",
-          img: firstImg,
-          category:"Reconstruction",
-          client: "Joyous Private Ltd, USA",
-          location: "Erelu, Oyo",
-          year: "2021",
-          status:"Ongoing",
-          type:"Construction"
-
-  
-  
-        },    
-        {
-          id: 6,
-        titleParam:"expert-mechanical",
-          title: "Expert Mechanical",
-          date: "February 6, 2003",
-          summary: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis.",
-          img: firstImg,
-          category:"Reconstruction",
-          client: "Joyous Private Ltd, USA",
-          location: "Erelu, Oyo",
-          year: "2021",
-          status:"Available",
-          type:"Real Estate"
-        },    
-        {
-          id: 6,
-          titleParam:"expert-mechanical",
-          title: "Expert Mechanical",
-          date: "February 6, 2003",
-          summary: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis.",
-          img: firstImg,
-          category:"Reconstruction",
-          client: "Joyous Private Ltd, USA",
-          location: "Erelu, Oyo",
-          year: "2021",
-          status:"Completed",
-          type:"Survey"
-        },    
-        {
-          id: 6,
-          titleParam:"expert-mechanical",
-          title: "Expert Mechanical",
-          date: "February 6, 2003",
-          summary: " Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti porro, nobis dignissimos nihil aliquid quae ullam, explicabo numquam qui sint, a ratione impedit temporibus optio libero nostrum atque voluptatum veritatis.",
-          img: firstImg,
-          category:"Reconstruction",
-          client: "Joyous Private Ltd, USA",
-          location: "Erelu, Oyo",
-          year: "2021",
-          status:"Ongoing",
-          type:"Survey"
-        },    
+        
+        
+        
+       
+       
    
   ];
   

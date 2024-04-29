@@ -16,8 +16,6 @@ import FaqsMain from './component/FAQS/Faqs';
 import ProjPost from './component/ProjectComp/ProjPost';
 import POQ from './component/POG';
 import RequestQuote from './component/Navbar/RequestQuote';
-import OngoingProjList from './component/ProjectComp/OngoingProjectList';
-import OngoingInfoList from './component/ProjectComp/OngoingInfoList';
 import Blog from './Views/Blog';
 import BlogPost from './component/BlogComp/BlogPost';
 import SurveyPost from './component/ProjectComp/SurveyPost';
@@ -34,7 +32,6 @@ function App() {
           <Route path={'/'} element={<Landing />} />
           <Route path={'/about'} element={<About />} />
           <Route path={'/project'} element={<Project />} />
-          <Route path={'/project/ongoing-Project'} element={<OngoingProjList />} />
 
           <Route path={'/services'} element={<Services />} />
           <Route path={'/contact-us'} element={<Contact />} />
@@ -52,8 +49,7 @@ function App() {
           <Route path="/project/construction/:titleParam" element={<ProjPost />} />
           <Route path="/project/survey/:titleParam" element={<SurveyPost />} />
           <Route path="/project/real-estate/:titleParam" element={<RealEstatePost />} />
-          <Route path="/project/ongoing-project/:titleParam" element={<ProjPost />} />
-          <Route path="/project/ongoing-project/:titleparam/:titleParam" element={<OngoingInfoList/>} />
+          
 
 
 
