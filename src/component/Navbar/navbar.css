@@ -16,13 +16,14 @@
     color: white
 }
 .navPad{
+    background-color: transparent;
     padding: 0px 88px;
     border-bottom: 1px solid rgba(255, 255, 255,.5);
 
 
 }
 .nav-active { 
-    background: white;  
+    /* background: white;   */
     color : black
 }
 .bg{
@@ -130,6 +131,7 @@ a, LINK {
     }
     .navPad{
         padding: 0px 20px;
+        background-color: transparent
     }   
     .nav-menu {
         background-color: white;

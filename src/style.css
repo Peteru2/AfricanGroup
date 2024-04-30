@@ -1,4 +1,6 @@
-  @colos: #fff;
+ /* html,body{
+  background-color: transparent;
+ } */
   .nextButtonStyle{
       width: 35px;
       height: 35px; 
@@ -13,7 +15,7 @@
       cursor: pointer;
       margin-top: 300px
   }
-a, LINK {
+a, LINK, button {
     -webkit-tap-highlight-color: transparent !important;
     outline: none !important;
 }

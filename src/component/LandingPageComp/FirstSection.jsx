@@ -7,10 +7,7 @@ import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
 
 const FirstSection = () => {
-    const indicators = (index) => (
-        <div className="indicator">{index +1}</div>
-    
-    );
+
     const buttonStyle = {
         width: '60px',
         height: '60px', // Added height for better circular appearance
@@ -115,17 +112,17 @@ const FirstSection = () => {
         {...properties}
     >
         {imageSlides.map((image, index) => (
-            <div>
            
-             <div   className="each-slide-effect" key={index}>
-                <div style={{ 'backgroundImage': `url(${image.img}) `,  "backgroundSize":"cover", "width":"100%" }}>
-                    {/* <span>{`Slide ${index + 1}`}</span> */}
+           
+            
+                <div  style={{ 'backgroundImage': `url(${image.img}) `,  "backgroundSize":"cover", "width":"100%" }}>
+                   
                     <div className='md:pt-32 pt-[90px]   md:pb-72 pb-[100px] md:px-14 px-6  bg-public bg-opacity-60'>
                     <motion.h2 
                     initial ={{x: "100vw"}}
                     animate ={{x: 0}}
                     transition={{ delay: 0.5, stiffness: 200, type: "spring" }}
-                    style ={{fontFamily:"'SangBleuSans', sans-serif"}}className="text-white text-[17px] md:text-2xl md:ml-10 mt-10 font-roboto">CREDIT RATING <span className='text-private font-bold'>BBB</span></motion.h2>
+                    style ={{fontFamily:"'SangBleuSans', sans-serif"}} className="text-white text-[17px] md:text-2xl md:ml-10 mt-10 font-roboto">CREDIT RATING <span className='text-private font-bold'>BBB</span></motion.h2>
         
                         <motion.div 
                          variants ={{
@@ -166,12 +163,13 @@ const FirstSection = () => {
                         
                     </div>
                     
-                </div>
-                </div>
+                
+                
             </div>
         ))}
     </Slide>
     </section>
+
     <motion.section 
     variants ={{
         hidden:{opacity: 0, y: 75},

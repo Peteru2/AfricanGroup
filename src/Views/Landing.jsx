@@ -34,7 +34,6 @@ const Landing = () => {
                 <Services />
                 <Testimonials />
                 <Partners />
-
                 <Values />
                 <BlogSection />
             </section>
