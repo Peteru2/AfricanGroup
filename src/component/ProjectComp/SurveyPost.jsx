@@ -53,9 +53,9 @@ const SurveyPost = () => {
                 <h2 className="flex items-center mb-2 text-[14px] md:ml-4"><span className="flex bg-private justify-center text-white text-xs items-center w-5 h-5 mt-[2px] rounded-full"><i className="fa fa-check"></i></span> <span className="ml-6">Location</span> <span className="w-4 mx-2 mt-[2px] h-[1px] flex items-center bg-black"></span> <span>{post.totalArea}</span></h2>
               </div>
 
-            <div className="grid md:grid-cols-2 grid-cols-1">
-              <h2 className="font-semibold text-[18px]">Project Summary</h2>
-              <p className="text-[15px] my-4">
+            <div className="grid md:grid-cols-8 grid-cols-1 mt-4 bg-white shadow py-4 px-2">
+              <h2 className="font-semibold text-[22px] col-span-3">Project Summary</h2>
+              <p className="text-[15px]  col-span-5">
 
                 {post.description}
               </p>
