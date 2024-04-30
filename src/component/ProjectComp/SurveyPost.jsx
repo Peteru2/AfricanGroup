@@ -54,7 +54,7 @@ const SurveyPost = () => {
               </div>
 
             <div className="grid md:grid-cols-8 grid-cols-1 mt-4 bg-white shadow py-4 px-2">
-              <h2 className="font-semibold text-[22px] col-span-3">Project Summary</h2>
+              <h2 className="font-semibold text-[22px] md:mb-0 mb-3 col-span-3">Project Summary</h2>
               <p className="text-[15px]  col-span-5">
 
                 {post.description}
