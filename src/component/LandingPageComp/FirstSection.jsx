@@ -110,20 +110,16 @@ const FirstSection = () => {
         transitionDuration={400}
         scale={1.4}
         {...properties}
-    >
-        {imageSlides.map((image, index) => (
-           
-           
-            
+        className=""
+    >   
+        {imageSlides.map((image, index) => ( 
                 <div  style={{ 'backgroundImage': `url(${image.img}) `,  "backgroundSize":"cover", "width":"100%" }}>
-                   
                     <div className='md:pt-32 pt-[90px]   md:pb-72 pb-[100px] md:px-14 px-6  bg-public bg-opacity-60'>
                     <motion.h2 
                     initial ={{x: "100vw"}}
                     animate ={{x: 0}}
                     transition={{ delay: 0.5, stiffness: 200, type: "spring" }}
-                    style ={{fontFamily:"'SangBleuSans', sans-serif"}} className="text-white text-[17px] md:text-2xl md:ml-10 mt-10 font-roboto">CREDIT RATING <span className='text-private font-bold'>BBB</span></motion.h2>
-        
+                    style ={{fontFamily:"'SangBleuSans', sans-serif"}} className="text-white text-[17px] md:text-2xl md:ml-10  font-roboto">CREDIT RATING <span className='text-private font-bold'>BBB</span></motion.h2>
                         <motion.div 
                          variants ={{
                             hidden:{opacity: 0, y: 75},
@@ -138,10 +134,8 @@ const FirstSection = () => {
                             initial ={{y: -250}}
                             animate ={{y: -10}}
                             transition={{ delay: 1.5, stiffness: 300, type: "spring" }
-                           
                     }
                             
-
                             className='text-white tracking-[4px] font-serif font-bold font-lora mt-[0px]'>{image.title}</motion.p>
                            <p className='text-white my-4 md:text-5xl text-2xl font-bold break-words md:w-[440px] font-roboto'>
                                    <p> {image.header} </p> 

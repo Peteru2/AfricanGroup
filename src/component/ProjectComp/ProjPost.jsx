@@ -3,12 +3,11 @@ import ImageWithOverlay from '../ImageWithOverlay'
 import { useParams } from "react-router-dom";
 import PostContent from "./postContent";
 import projData from "./data";
-import ongoingData from "./ongoingData";
 import Layout from "../Layout";
 
 const ProjPost = () => {
     const { titleParam } = useParams();
-    const post = ongoingData.find((post) => post.titleParam === titleParam) || projData.find((post) => post.titleParam === titleParam);
+    const post = projData.find((post) => post.titleParam === titleParam);
     if (!post) {
       return <div>Post not found</div>;
     }

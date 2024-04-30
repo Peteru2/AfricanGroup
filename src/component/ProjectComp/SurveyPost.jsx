@@ -28,30 +28,38 @@ const SurveyPost = () => {
 
           <div className="xl:mx-[90px] md:mx-5 mx-6">
            
-            <div className="flex w-full my-5">
+            <div className="grid md:grid-cols-2 grid-cols-1 w-full my-5">
               <div>
                 <h2 className="flex items-center mb-2 text-[14px]"><span className="flex bg-private justify-center text-white text-xs items-center w-5 h-5 mt-[2px] rounded-full"><i className="fa fa-check"></i></span> <span className="ml-6">Source Type</span> <span className="w-4 mx-2 mt-[2px] h-[1px] flex items-center bg-black"></span> <span>{post.serviceType}</span></h2>
                 <h2 className="flex items-center mb-2 text-[14px]"><span className="flex bg-private justify-center text-white text-xs items-center w-5 h-5 mt-[2px] rounded-full"><i className="fa fa-check"></i></span> <span className="ml-6">Total Area</span> <span className="w-4 mx-2 mt-[2px] h-[1px] flex items-center bg-black"></span> <span>{post.totalArea}</span></h2>
               </div>
-              <div className="ml-auto">
+              <div className="">
                 <h2 className="flex items-center mb-2 text-[14px]"><span className="flex bg-private justify-center text-white text-xs items-center w-5 h-5 mt-[2px] rounded-full"><i className="fa fa-check"></i></span> <span className="ml-6">Status</span> <span className="w-4 mx-2 mt-[2px] h-[1px] flex items-center bg-black"></span> <span>{post.status}</span></h2>
                 <h2 className="flex items-center mb-2 text-[14px]"><span className="flex bg-private justify-center text-white text-xs items-center w-5 h-5 mt-[2px] rounded-full"><i className="fa fa-check"></i></span> <span className="ml-6">Project Duration</span> <span className="w-4 mx-2 mt-[2px] h-[1px] flex items-center bg-black"></span> <span>{post.duration}</span></h2>
               </div>
               
             </div>
-            <div>
+            <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
+              <div>
                 <img src={post.img}  alt={post.title}/>
               </div>
-
-              <div className="flex mt-4"> 
-              <h2 className="flex items-center mb-2 text-[14px]"><span className="flex bg-private justify-center text-white text-xs items-center w-5 h-5 mt-[2px] rounded-full"><i className="fa fa-check"></i></span> <span className="ml-6">Client</span> <span className="w-4 mx-2 mt-[2px] h-[1px] flex items-center bg-black"></span> <span>{post.client}</span></h2>
-                <h2 className="flex items-center mb-2 text-[14px] ml-4"><span className="flex bg-private justify-center text-white text-xs items-center w-5 h-5 mt-[2px] rounded-full"><i className="fa fa-check"></i></span> <span className="ml-6">Location</span> <span className="w-4 mx-2 mt-[2px] h-[1px] flex items-center bg-black"></span> <span>{post.totalArea}</span></h2>
+              <div>
+                <img src={post.img}  alt={post.title}/>
+              </div>
               </div>
 
+              <div className="md:flex mt-4"> 
+              <h2 className="flex items-center mb-2 text-[14px]"><span className="flex bg-private justify-center text-white text-xs items-center w-5 h-5 mt-[2px] rounded-full"><i className="fa fa-check"></i></span> <span className="ml-6">Client</span> <span className="w-4 mx-2 mt-[2px] h-[1px] flex items-center bg-black"></span> <span>{post.client}</span></h2>
+                <h2 className="flex items-center mb-2 text-[14px] md:ml-4"><span className="flex bg-private justify-center text-white text-xs items-center w-5 h-5 mt-[2px] rounded-full"><i className="fa fa-check"></i></span> <span className="ml-6">Location</span> <span className="w-4 mx-2 mt-[2px] h-[1px] flex items-center bg-black"></span> <span>{post.totalArea}</span></h2>
+              </div>
+
+            <div className="grid md:grid-cols-2 grid-cols-1">
+              <h2 className="font-semibold text-[18px]">Project Summary</h2>
               <p className="text-[15px] my-4">
+
                 {post.description}
               </p>
-
+              </div>
                 <div className="flex w-full justify-center mt-4">
                   <Link to={"/request-quote"}>
               <button className=" border-[1px] p-3 border-private text-private">
