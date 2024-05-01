@@ -409,7 +409,51 @@ const projData = [
         serviceType:"Engineering Survey {Setting Out} ",
         client: "Green Gas Terminal	",
         location: "Apapa, Lagos",
-        year: "2022",
+        status:"Completed",
+        type:"Survey"
+  
+      },
+      {
+        id: 17,
+        titleParam:"cadastral-boundary-survey",
+        title: "Cadastral Boundary Survey",
+        description:"Atmost Farm Project, off Moniya/Iseyin Road, Serafu, Iseyin Local Government Area. Is another feather on our cap, the real challenging experience for the African Group Team, to establish the boundary that has been achieved only on surveying from start to finish. It took 15 days to complete both field and office tasks of the project against the 10 days schedule due to natural instinct like rain and animal interventions. We are proud to Highlight that we bagged this project in tender bidding from Atmost Integrated Services as a result of credibility gained through previous assignments.",
+        img: firstImg,
+        totalArea:"550 Acres",
+        duration:"2 week",
+        serviceType:"Cadastral Boundary Survey ",
+        client: "Atmost Integrated services		",
+        location: "Serafu Village off Moniya/Iseyin Road",
+        status:"Completed",
+        type:"Survey"
+  
+      },
+      {
+        id: 18,
+        titleParam:"topographical-survey",
+        title: "Topographical Survey",
+        description:"The topographical survey for the MTN office at No.1 Opebi Road, Ikeja, Lagos, which was conducted by African Group has been successfully completed. This survey, covering 1 acre of land, provided essential data for the project such as terrain, elevation, and natural features (XYZ) contributing to efficient planning and development of the site.",
+        img: firstImg,
+        totalArea:"1 Acre",
+        duration:"3 days",
+        serviceType:"Topographical Survey   ",
+        client: "MTN Office		",
+        location: "No.1, Opebi, Ikeja, Lagos",
+        status:"Completed",
+        type:"Survey"
+  
+      },
+      {
+        id: 19,
+        titleParam:"topographical-survey",
+        title: "Cadastral and Boundary Survey  ",
+        description:"The boundary/layout survey of Hilltop Estate by African Group in Igbonla, Epe – Lagos in 2021 for mcyouniverse group ensured precise property boundaries, elimination of known disputes, and supported transparent land transactions, enhancing organized land ownership and development.",
+        img: firstImg,
+        totalArea:"7 Acres",
+        duration:"3 weeks",
+        serviceType:"Topographical Survey   ",
+        client: "Macouniverse Group",
+        location: "Epe, Lagos",
         status:"Completed",
         type:"Survey"
   

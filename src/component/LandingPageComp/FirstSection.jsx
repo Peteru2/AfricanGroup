@@ -54,13 +54,12 @@ const FirstSection = () => {
         </Helmet>
 
         <section>  
-              <div className="py-10 bg-private">We have props</div>
+             
         <Slide
             transitionDuration={400}
             scale={1.4}
             {...properties}
         >
-            <div className='py-20 bg-public'>We will get there</div>
 
             {slides.map((slide) => ( 
                 <div  style={{ 'backgroundImage': `url(${slide.img}) `,  "backgroundSize":"cover", "width":"100%"}}>
