@@ -10,41 +10,34 @@ const FirstSection = () => {
 
     const buttonStyle = {
         width: '60px',
-        height: '60px', // Added height for better circular appearance
+        height: '60px', 
         background: 'rgba(225,225,225,.4)',
-        // borderWidth: '3px',
-        // borderColor: '#8AB863',
         borderRadius:'50%',
         display: 'flex',
         alignItems:"center",
         justifyContent:'center',
-        // borderStyle: 'dotted',
         padding: '20px', 
+        position:'absolute',
         marginRight: '10px',
-        marginLeft: '10px',// Using 'none' for no border
+        marginLeft: '10px',
         color: 'white', 
         cursor: 'pointer',
-        marginTop:'400px',
+        marginTop:'500px',
         webkitTapHighlightColor: 'transparent' ,
         outline: 'none' 
     };
     if (window.innerWidth <= 767) {
-        // Adjust the marginTop for mobile devices
         buttonStyle.marginTop = '320px';
         buttonStyle.marginRight= '0px';
         buttonStyle.marginLeft='0px';
         buttonStyle.width= '45px';
-        buttonStyle.height= '45px';
-        // buttonStyle.borderStyle= 'dotted';
-        // buttonStyle.borderColor= '#FD972D';
-        
+        buttonStyle.height= '45px';    
       }
       
-    const imageSlides = [
+    const slides = [
         {
             img: [
                 Image1,
-                
             ],
             title:"About",
             header:"We are the Kabiesi of all Lands and Housing",
@@ -86,34 +79,31 @@ const FirstSection = () => {
     
     const properties = {
         prevArrow:(
-           
-         <button style={{ ...buttonStyle }}><i className='fa fa-arrow-left'></i></button>
-        
+            <button style={{ ...buttonStyle }}><i className='fa fa-arrow-left'></i></button>
          ),
         nextArrow: (
-       
-            <button  className ="hidden"style={{ ...buttonStyle }}><i className='fa fa-arrow-right'></i></button>
+            <button  style={{ ...buttonStyle }}><i className='fa fa-arrow-right'></i></button>
         )
-    }
+     }
     
     return (
         <> 
         <Helmet>
-    <meta charSet="utf-8" />
-    <title>Home - Land Surveying in Oyo Nigeria</title>
-    <meta name="description" content="Leading land surveying services in Oyo, Nigeria. Accurate property assessments, boundary surveys, and topographic mapping. Expert surveyors for residential and commercial projects." />
-   
-</Helmet>
-        <section>
-            
+            <meta charSet="utf-8" />
+            <title>Home - Land Surveying in Oyo Nigeria</title>
+            <meta name="description" content="Leading land surveying services in Oyo, Nigeria. Accurate property assessments, boundary surveys, and topographic mapping. Expert surveyors for residential and commercial projects." />
+        </Helmet>
+
+        <section>  
+              <div className="py-10 bg-private">We have props</div>
         <Slide
-        transitionDuration={400}
-        scale={1.4}
-        {...properties}
-        className=""
-    >   
-        {imageSlides.map((image, index) => ( 
-                <div  style={{ 'backgroundImage': `url(${image.img}) `,  "backgroundSize":"cover", "width":"100%" }}>
+            transitionDuration={400}
+            scale={1.4}
+            {...properties}
+        >
+
+            {slides.map((slide, index) => ( 
+                <div  style={{ 'backgroundImage': `url(${slide.img}) `,  "backgroundSize":"cover", "width":"100%" }}>
                     <div className='md:pt-32 pt-[90px]   md:pb-72 pb-[100px] md:px-14 px-6  bg-public bg-opacity-60'>
                     <motion.h2 
                     initial ={{x: "100vw"}}
@@ -134,21 +124,19 @@ const FirstSection = () => {
                             initial ={{y: -250}}
                             animate ={{y: -10}}
                             transition={{ delay: 1.5, stiffness: 300, type: "spring" }
-                    }
-                            
-                            className='text-white tracking-[4px] font-serif font-bold font-lora mt-[0px]'>{image.title}</motion.p>
+                    }                
+                            className='text-white tracking-[4px] font-serif font-bold font-lora mt-[0px]'>{slide.title}</motion.p>
                            <p className='text-white my-4 md:text-5xl text-2xl font-bold break-words md:w-[440px] font-roboto'>
-                                   <p> {image.header} </p> 
-                                    <p className="text-sm font-thin">{image.vip}</p>
-
+                                   <p> {slide.header} </p> 
+                                    <p className="text-sm font-thin">{slide.vip}</p>
                         </p>
                             <div className='text-white flex flex-wrap text-small font-serif'>
                                 <p className="md:w-[400px]">
-                            {image.content}
+                            {slide.content}
                             </p>
                     
                             </div>
-                            <Link to={image.link}>
+                            <Link to={slide.link}>
                         <div className='bg-private rounded-full md:mt-8 mt-6 flex justify-center items-center text-white w-12 h-12'>
                             <i className='fa fa-arrow-right'></i>
                     </div>

@@ -400,8 +400,8 @@ const projData = [
       
       {
         id: 16,
-        titleParam:"kinikan-title",
-        title: "Kinikan Title",
+        titleParam:"engineering-survey",
+        title: "Engineering Survey",
         description:"The 20 Acres extent was established/set out by African Group with our sophisticated equipment such as differential Global Positioning System {ProMac 3 GPS} and Leica 307 total station for precise and accurate positioning for one of the best Gas Terminals in Lagos.",
         img: firstImg,
         totalArea:"20 Acres",

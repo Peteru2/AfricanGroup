@@ -29,7 +29,9 @@ const Landing = () => {
     <>
     <Layout>
              <section>
-               
+                {/* <div className="py-20 bg-red">
+                  Jesus is Lord
+                </div> */}
                 <FirstSection />
                 <Services />
                 <Testimonials />
