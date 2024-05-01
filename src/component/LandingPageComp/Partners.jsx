@@ -24,7 +24,7 @@ const Partners = () => {
     return ( 
         <>
            <div className="car-container bg-white">
-                <div className="car flex bg-white" ref={carRef}>
+                <div className="car flex flex-wrap  bg-white" ref={carRef}>
                 {/* <div className="flex py-2 bg-white"> */}
 
                 <img src={Image1} alt="image!" className="w-[150px] h-[150px] mr-5"/>

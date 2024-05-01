@@ -10,7 +10,7 @@ import { Slide } from 'react-slideshow-image';
 
 const Team = () => {
   const buttonStyle = {
-    width: '0px',
+    width: '100px',
     display: 'none',
     margin: '0px'
     

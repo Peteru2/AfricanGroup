@@ -1,10 +1,10 @@
 import React from 'react';
 import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-import Image1 from "../../assets/images/FirstSectionImage1.jpg"
 import { motion } from "framer-motion"
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';
+import slides from './slideData';
 
 const FirstSection = () => {
 
@@ -34,48 +34,6 @@ const FirstSection = () => {
         buttonStyle.height= '45px';    
       }
       
-    const slides = [
-        {
-            img: [
-                Image1,
-            ],
-            title:"About",
-            header:"We are the Kabiesi of all Lands and Housing",
-            vip:"",
-            link: "/about",
-            content:"African Group stands as beacon of excellence in the realms of Survey, Real Estate and Construction across Africa. Our mission is to redefine luxury living locally and elevate the industry with transformative experiences rooted in intricately designed architecture. "
-        },
-        {
-            img: [
-                Image1,
-            ],
-            title:"Our Team",
-            header:"We Are Africa's Finest",
-            vip:"",
-            link: "about/team",
-            content:"The company is driven by a group of highly trained, experienced, self-motivated, and very dynamic Professionals equipped to handle various categories of projects."
-        },
-        {
-            img: [
-                Image1,
-            ],
-            title:"Featured Project",
-            header:"At African Group, we blend innovation with artistry",
-            vip:"",
-            link: "/project",
-            content:"Experience the pinnacle of luxury living with African Group, where every project is testament to our unwavering commitment to excellence in Survey, Real Estate and Construction. "
-        },
-        {
-            img: [
-                Image1,
-            ],
-            title:"Construction",
-            header:"Luxury Duplex By African Group",
-            vip:"Only for the VIPs",
-            link: "/project/construction-of-luxury-duplex-building",
-            content:"Built on a pedestal of D.I.E the luxury duplex embodies our dedication to Diligence, Innovation and Excellence, setting a global standard locally in a luxury real estate with transformative experiences through intricately designed architecture. "
-        },
-    ]
     
     const properties = {
         prevArrow:(
@@ -83,7 +41,8 @@ const FirstSection = () => {
          ),
         nextArrow: (
             <button  style={{ ...buttonStyle }}><i className='fa fa-arrow-right'></i></button>
-        )
+        ),
+        marginTop:"0px"
      }
     
     return (
@@ -101,9 +60,10 @@ const FirstSection = () => {
             scale={1.4}
             {...properties}
         >
+            <div className='py-20 bg-public'>We will get there</div>
 
-            {slides.map((slide, index) => ( 
-                <div  style={{ 'backgroundImage': `url(${slide.img}) `,  "backgroundSize":"cover", "width":"100%" }}>
+            {slides.map((slide) => ( 
+                <div  style={{ 'backgroundImage': `url(${slide.img}) `,  "backgroundSize":"cover", "width":"100%"}}>
                     <div className='md:pt-32 pt-[90px]   md:pb-72 pb-[100px] md:px-14 px-6  bg-public bg-opacity-60'>
                     <motion.h2 
                     initial ={{x: "100vw"}}
@@ -150,6 +110,7 @@ const FirstSection = () => {
             </div>
         ))}
     </Slide>
+
     </section>
 
     <motion.section 
