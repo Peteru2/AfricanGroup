@@ -1,5 +1,5 @@
 import React from 'react';
-import { Slide } from 'react-slideshow-image';
+import { Slide, Fade, Zoom } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
 import { motion } from "framer-motion"
 import { Link } from 'react-router-dom';
@@ -55,7 +55,7 @@ const FirstSection = () => {
 
         <section>  
              
-        <Slide
+        <Zoom
             transitionDuration={400}
             scale={1.4}
             {...properties}
@@ -68,7 +68,7 @@ const FirstSection = () => {
                     initial ={{x: "100vw"}}
                     animate ={{x: 0}}
                     transition={{ delay: 0.5, stiffness: 200, type: "spring" }}
-                    style ={{fontFamily:"'SangBleuSans', sans-serif"}} className="text-white text-[17px] md:text-2xl md:ml-10  font-roboto">CREDIT RATING <span className='text-private font-bold'>BBB</span></motion.h2>
+                    style ={{fontFamily:"'SangBleuSans', sans-serif"}} className="text-white text-[17px] md:text-2xl pt-20 md:ml-10  font-roboto">CREDIT RATING <span className='text-private font-bold'>BBB</span></motion.h2>
                         <motion.div 
                          variants ={{
                             hidden:{opacity: 0, y: 75},
@@ -108,7 +108,7 @@ const FirstSection = () => {
                 
             </div>
         ))}
-    </Slide>
+    </Zoom>
 
     </section>
 
