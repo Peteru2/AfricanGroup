@@ -15,8 +15,8 @@ const Footer = () => {
                     }}
                     initial="hidden"
                     whileInView="visible"
-                    transition={{delay: 0.5, 
-                    duration: 0.5}}
+                    transition={{delay: 0.2, 
+                    duration: 0.2}}
                       
                     className="col-span-2 w-full border-b-[1px]  md:py-0 py-4 pb-6 border-white md:border-0">
                        

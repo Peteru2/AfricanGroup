@@ -67,7 +67,7 @@ const NewsLetter = () => {
             }}
             initial="hidden"
             animate={inView ? "visible" : "hidden"} // Use animate instead of whileInView
-            transition={{delay: 0.5, duration: 0.5}}      
+            transition={{delay: 0.2, duration: 0.2}}      
            className="flex justify-center items-center">
             <section className="footer-child  grid md:grid-cols-2 gap-4 grid-cols-1 bg-vintage  py-8 px-8  md:mx-16 mx-6 flex  text-white ">
                 <div className="">
