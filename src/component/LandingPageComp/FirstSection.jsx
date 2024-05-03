@@ -56,7 +56,7 @@ const FirstSection = () => {
         <section>  
              
         <Zoom
-            transitionDuration={400}
+            transitionDuration={300}
             scale={1.4}
             {...properties}
         >

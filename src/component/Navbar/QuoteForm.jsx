@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import axios from "axios"
+import emailjs from '@emailjs/browser';
 const QuoteForm = () => {
 const [success, setSuccess] = useState()
 const [icon, setIcon] = useState(false)
 
 const [formMessage, setFormMessage] =useState("chess")
+const form = useRef()
+
 const handleSuccess = () =>{
         setSuccess(false);
         close()
@@ -41,7 +44,7 @@ const handleRetry = () => {
        const { name, value } = e.target;
         setFormData({ ...formData, [name]: value });
       };
-      const handleSubmit = (e) =>{
+      const sendEmail = (e) =>{
             e.preventDefault();
       const newErrors = {};
       const emailRegex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i;
@@ -72,10 +75,14 @@ const handleRetry = () => {
                     newErrors.message = 'Message is required';
                 }
                 else {
-                    setIcon(true)
-                    axios.post('http://localhost:8000/request-quote', formData)
-                    .then(response => {
-                        setIcon(false)
+                             emailjs
+                            .sendForm('service_nknhv37', 'template_rs1od1o', form.current, {
+                            publicKey: 'SSp2tcbV6_hOBLqfI',
+                        })
+                        .then(
+                            () => {
+                            console.log('SUCCESS!');
+                            setIcon(false)
                         setFormData({
                             fullname: '',
                             email: '',
@@ -87,15 +94,25 @@ const handleRetry = () => {
                         console.log('Success:');
                         setFormMessage("Quote Submitted Successfully")
                         setSuccess(true)
-                    })
-                    .catch(error => {
-                        // Handle error
-                        console.error('Error:', error.message);
-                        setSuccess(true)
-                        setFormMessage(error.message)
-
-                        // Display your error message here
-                    });
+                            },
+                            (error) => {
+                            console.log('FAILED...', error.text);
+                            console.error('Error:', error.message);
+                            setSuccess(true)
+                            setFormMessage(error.message)
+    
+                            },
+                        );
+                    setIcon(true)
+                    // axios.post('http://localhost:8000/request-quote', formData)
+                    // .then(response => {
+                        
+                    // })
+                    // .catch(error => {
+                    //     // Handle error
+                       
+                    //     // Display your error message here
+                    // });
                     
                   
                     // close()
@@ -109,7 +126,7 @@ const handleRetry = () => {
     return ( 
                 <>
                     <section>
-                        <form onSubmit={handleSubmit}  className={`font-roboto text-black ${success?"hidden":""}`}>
+                        <form onSubmit={sendEmail} ref={form} className={`font-roboto text-black ${success?"hidden":""}`}>
                             <div className="flex items-center ">
                           
                             </div>
