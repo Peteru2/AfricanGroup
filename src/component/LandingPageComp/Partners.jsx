@@ -1,46 +1,47 @@
 import Image1 from "../../assets/images/FirstSectionImage1.jpg"
 import  { useEffect, useRef } from 'react';
 const Partners = () => {
-    const carRef = useRef(null);
+  const imgRow = [
+    Image1,
+    Image1,
+    Image1,
+    Image1,
+    Image1,
 
-  useEffect(() => {
-    const car = carRef.current;
-    const handleAnimationEnd = () => {
-      car.style.transition = 'none';
-      car.style.transform = 'translateX(0)';
-      requestAnimationFrame(() => {
-        car.style.transition = 'transform 0s';
-      });
-    };
+    Image1,
+    Image1,
+    Image1,
+    Image1,
+    Image1,
 
-    car.addEventListener('animationiteration', handleAnimationEnd);
-
-    return () => {
-      car.removeEventListener('animationiteration', handleAnimationEnd);
-    };
-  }, []);
-
+  ]
+   
 
     return ( 
         <>
-           <div className="car-container bg-white">
-                <div className="car flex flex-wrap  bg-white" ref={carRef}>
-                {/* <div className="flex py-2 bg-white"> */}
+          <div className="imgContainer overflow-hidden">
+  <div className="wrapper">
+    <div className="text"></div>
+    <div className="marque">
+      <div className="marqueGroup">
+        {imgRow.map((img) => (
+          <div className="imageGroup" key={img}>
+            <img src={img} className="image" alt="image" />
+          </div>
+        ))}
+      </div>
+      <div className="marqueGroup">
+        {imgRow.map((img) => (
+          <div className="imageGroup" key={img}>
+            <img src={img} className="image" alt="image" />
+          </div>
+        ))}
+      </div>
+      
+    </div>
+  </div>
+</div>
 
-                <img src={Image1} alt="image!" className="w-[150px] h-[150px] mr-5"/>
-                <img src={Image1} alt="image!" className="w-[150px] h-[150px] mr-5"/>
-                <img src={Image1} alt="image!" className="w-[150px] h-[150px] mr-5"/>
-                <img src={Image1} alt="image!" className="w-[150px] h-[150px] mr-5"/>
-                <img src={Image1} alt="image!" className="w-[150px] h-[150px] mr-5"/>
-                <img src={Image1} alt="image!" className="w-[150px] h-[150px] mr-5"/>
-                <img src={Image1} alt="image!" className="w-[150px] h-[150px] mr-5"/>
-                <img src={Image1} alt="image!" className="w-[150px] h-[150px] mr-5"/>
-                <img src={Image1} alt="image!" className="w-[150px] h-[150px] mr-5"/>
-                <img src={Image1} alt="image!" className="w-[150px] h-[150px] mr-5"/>
-                
-                </div>
-
-           </div>
         </>
      );
 }
