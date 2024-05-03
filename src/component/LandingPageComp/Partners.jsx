@@ -1,25 +1,12 @@
 import Image1 from "../../assets/images/FirstSectionImage1.jpg"
 import  { useEffect, useRef } from 'react';
 const Partners = () => {
-  const imgRow = [
-    Image1,
-    Image1,
-    Image1,
-    Image1,
-    Image1,
 
-    Image1,
-    Image1,
-    Image1,
-    Image1,
-    Image1,
-
-  ]
    
 
     return ( 
         <>
-          <div className="imgContainer overflow-hidden">
+          {/* <div className="imgContainer overflow-hidden">
   <div className="wrapper">
     <div className="text"></div>
     <div className="marque">
@@ -40,8 +27,84 @@ const Partners = () => {
       
     </div>
   </div>
-</div>
+</div> */}
 
+{/* <div className="logos">
+    <div className="logos-slide" >
+   
+    <img src={Image1}  alt="image" />
+    <img src={Image1}  alt="image" />
+    <img src={Image1}  alt="image" />
+    <img src={Image1}  alt="image" />
+    <img src={Image1}  alt="image" />
+    <img src={Image1}  alt="image" />
+    <img src={Image1}  alt="image" />
+    </div>
+    <div className="logos-slide" >
+   
+   <img src={Image1}  alt="image" />
+   <img src={Image1}  alt="image" />
+   <img src={Image1}  alt="image" />
+   <img src={Image1}  alt="image" />
+   <img src={Image1}  alt="image" />
+   <img src={Image1}  alt="image" />
+   <img src={Image1}  alt="image" />
+   </div>
+    
+  </div> */}
+
+<div class="wrapper">
+        <div class="track">
+            
+            <div class="logo">
+                <img src={Image1} alt="lll"/>
+            </div>
+            <div class="logo">
+                <img src={Image1} alt="lll"/>
+            </div><div class="logo">
+                <img src={Image1} alt="lll"/>
+            </div><div class="logo">
+                <img src={Image1} alt="lll"/>
+            </div><div class="logo">
+                <img src={Image1} alt="lll"/>
+            </div><div class="logo">
+                <img src={Image1} alt="lll"/>
+            </div><div class="logo">
+                <img src={Image1} alt="lll"/>
+            </div><div class="logo">
+                <img src={Image1} alt="lll"/>
+            </div><div class="logo">
+                <img src={Image1} alt="lll"/>
+            </div><div class="logo">
+                <img src={Image1} alt="lll"/>
+            </div>
+        </div>
+        <div class="track">
+            
+            <div class="logo">
+                <img src={Image1} alt="lll"/>
+            </div>
+            <div class="logo">
+                <img src={Image1} alt="lll"/>
+            </div><div class="logo">
+                <img src={Image1} alt="lll"/>
+            </div><div class="logo">
+                <img src={Image1} alt="lll"/>
+            </div><div class="logo">
+                <img src={Image1} alt="lll"/>
+            </div><div class="logo">
+                <img src={Image1} alt="lll"/>
+            </div><div class="logo">
+                <img src={Image1} alt="lll"/>
+            </div><div class="logo">
+                <img src={Image1} alt="lll"/>
+            </div><div class="logo">
+                <img src={Image1} alt="lll"/>
+            </div><div class="logo">
+                <img src={Image1} alt="lll"/>
+            </div>
+        </div>
+    </div>
         </>
      );
 }
