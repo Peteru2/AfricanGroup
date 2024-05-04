@@ -2,42 +2,57 @@ import img from "../../assets/images/FirstSectionImage1.jpg"
 import { Link } from "react-router-dom";
 import projData from "./data";
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState , useEffect} from "react";
 import Construction from "./Construction";
 import RealEstate from "./RealEstate";
 import Survey from "./Survey";
 const ProjList = () => {
 
-    const [all, setAll] = useState(true)
+  
     const [construction, setConstruction] = useState(false)
     const [realEstate, setRealEstate] = useState(false)
     const [survey, setSurvey] = useState(false)
     
+    useEffect(() => {
+        // Check if there is a saved state in localStorage
+        const savedState = localStorage.getItem('projListState');
+        if (savedState) {
+            const { construction, realEstate, survey } = JSON.parse(savedState);
+            setConstruction(construction);
+            setRealEstate(realEstate);
+            setSurvey(survey);
+        }
+    }, []);
+
     const handleAll =() =>{
-        setAll(true)
         setConstruction(false)
         setRealEstate(false)
         setSurvey(false)
+        updateLocalStorage(false, false, false);
     }
 
     const handleConstruction =() =>{
-        setAll(false)
         setConstruction(true)
         setRealEstate(false)
         setSurvey(false)
+        updateLocalStorage(true, false, false);
     }
     const handleRealEstate =() =>{
-        setAll(false)
         setConstruction(false)
         setRealEstate(true)
         setSurvey(false)
+        updateLocalStorage(false, true, false);
     }
     const handleSurvey =() =>{
-        setAll(false)
         setConstruction(false)
         setRealEstate(false)
         setSurvey(true)
+        updateLocalStorage(false, false, true);
     }
+    const updateLocalStorage = (construction, realEstate, survey) => {
+        localStorage.setItem('projListState', JSON.stringify({ construction, realEstate, survey }));
+    }
+
     return ( 
             <>
 
@@ -62,7 +77,7 @@ const ProjList = () => {
 
                     </div>
                     <div className="flex justify-center mb-14">
-                        <h2 onClick={handleAll} className={`${all?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 md:px-4 px-2  md:mx-2 mx-[2px] cursor-pointer  `}>All</h2>
+                        <h2 onClick={handleAll} className={`${!construction && !realEstate && !survey?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 md:px-4 px-2  md:mx-2 mx-[2px] cursor-pointer  `}>All</h2>
                         <h2 onClick={handleConstruction} className={`${construction?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 md:px-4 px-2 md:mx-2 mx-[2px] cursor-pointer    `}>Construction</h2>
                         <h2  onClick={handleRealEstate} className={`${realEstate?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 md:px-4 px-2  md:mx-2 mx-[2px] cursor-pointer   `}>Real Estate</h2>
                         <h2  onClick={handleSurvey} className={`${survey?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 md:px-4 px-2  md:mx-2 mx-[2px] cursor-pointer   `}>Surveying</h2>
@@ -70,7 +85,7 @@ const ProjList = () => {
 
                     </div>
                     
-                    <div className={ `${all ? "block" : " hidden"} grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10  mb-[30px] font-roboto`}>
+                    <div className={ `${!construction && !realEstate && !survey ? "block" : " hidden"} grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10  mb-[30px] font-roboto`}>
                          {
                             projData.map((data, index) => {
                                 return(
