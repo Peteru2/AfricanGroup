@@ -63,7 +63,7 @@ style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>
     </Link> 
     <div className="text-white px-4 absolute bottom-4 left-4">
             <h2 className="text-2xl font-bold">{data.title}</h2>
-            <h2 className="text-sm capitalize">{data.category}</h2>
+            <h2 className="text-sm capitalize">{data.serviceType}</h2>
         </div>
     </div>
 </motion.div>

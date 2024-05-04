@@ -82,8 +82,8 @@ const ProjList = () => {
 }}
 initial="hidden"
 whileInView="visible"
-transition={{delay: index*  0.2, 
-duration: 0.5}}
+transition={{delay: 0.2, 
+duration: 0.2}}
 key={index} 
 className="relative group"
 style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>
