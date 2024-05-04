@@ -18,8 +18,7 @@ const RecommendedRealEstate = () => {
         <>
             <div className="bg-white my-6 pb-6 ">
                 <h2 className="font-bold text-[25px] text-center text-black text-opacity-70 py-8">Also recommended</h2>
-            
-            <div className=" xl:mx-[90px] md:mx-5 mx-6 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10  mb-[30px] font-roboto">
+                <div className=" xl:mx-[90px] md:mx-5 mx-6 grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10  mb-[30px] font-roboto">
 {
                    randomThreeProjects.map((data, index) => {
                         return(

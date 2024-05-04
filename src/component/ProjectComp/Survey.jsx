@@ -1,19 +1,20 @@
 import projData from "./data";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import shuffleProj from "./Shuffle";
 
 const Survey= () => {
+    const surveyProjects = projData.filter(data => data.type === "Survey");
+    const randomProjects = shuffleProj(surveyProjects);
     return ( 
         <>
         <section>
         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10  mb-[30px] font-roboto">
 
         {
-                            projData.map((data, index) => {
+                            randomProjects.map((data, index) => {
                                 return(
-                                    <>
-                                    {data.type==="Survey" && (
+                                   
 <motion.div
  variants ={{
     hidden:{opacity: 0, y: 75},
@@ -68,10 +69,8 @@ style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>
     </div>
 </motion.div>
 )}
-</>
-                   
-                                )
-                            })
+
+                            )
                         } 
                 
 </div>

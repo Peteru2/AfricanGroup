@@ -12,6 +12,7 @@ const ProjList = () => {
     const [construction, setConstruction] = useState(false)
     const [realEstate, setRealEstate] = useState(false)
     const [survey, setSurvey] = useState(false)
+    const [shuffledData, setShuffledData] = useState([]);
     
     useEffect(() => {
         // Check if there is a saved state in localStorage
@@ -22,6 +23,9 @@ const ProjList = () => {
             setRealEstate(realEstate);
             setSurvey(survey);
         }
+
+
+        shuffleData()
     }, []);
 
     const handleAll =() =>{
@@ -53,6 +57,11 @@ const ProjList = () => {
         localStorage.setItem('projListState', JSON.stringify({ construction, realEstate, survey }));
     }
 
+    const shuffleData = () => {
+        // Create a copy of projData and shuffle it
+        const shuffledArray = [...projData].sort(() => Math.random() - 0.5);
+        setShuffledData(shuffledArray);
+    }
     return ( 
             <>
 
@@ -87,7 +96,7 @@ const ProjList = () => {
                     
                     <div className={ `${!construction && !realEstate && !survey ? "block" : " hidden"} grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10  mb-[30px] font-roboto`}>
                          {
-                            projData.map((data, index) => {
+                            shuffledData.map((data, index) => {
                                 return(
                                     <>
 <motion.div
@@ -138,7 +147,16 @@ style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>
     </div>  
     <div className="text-white px-4 absolute bottom-4 left-4">
             <h2 className="text-2xl font-bold">{data.title}</h2>
+            {data.type === "Construction" ?(
             <h2 className="text-sm capitalize">{data.category}</h2>
+
+            ): data.type === "Real Estate" ?(
+            <h2 className="text-sm capitalize">{data.location}</h2>
+
+            ):(
+            <h2 className="text-sm capitalize">{data.serviceType}</h2>
+
+            )}
         </div>
     </div>
     </Link>

@@ -1,16 +1,18 @@
 import projData from "./data";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-
+import shuffleProj from "./Shuffle";
 
 const Construction = () => {
+    const constructionProjects = projData.filter(data => data.type === "Construction");
+    const randomProjects = shuffleProj(constructionProjects);
     return ( 
         <>
         <section>
         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10  mb-[30px] font-roboto">
 
         {
-                            projData.map((data, index) => {
+                           randomProjects.map((data, index) => {
                                 return(
                                     <>
                                     {data.type==="Construction" && (

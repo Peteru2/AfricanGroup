@@ -7,6 +7,8 @@ import { Link } from "react-router-dom";
 
 
 const SurveyPost = () => {
+  
+
     const { titleParam } = useParams();
     const post = projData.find((post) => post.titleParam === titleParam);
     if (!post) {
