@@ -9,7 +9,7 @@ const CompanyValues = () => {
                     initial={{y:-3}}
                     animate={{y:0}}
                     transition={{delay: 0.5, type: "spring"}} 
-                    className="bg-white font-lora  font-bold text-private flex justify-center h-40 items-center">
+                    className="bg-white font-lora  font-bold text-private flex justify-center h-24 items-center">
                         <div>
                         <h2 className="md:text-4xl text-2xl">OUR CORE VALUES</h2>
                         <h2 className="text-[19px] text-center  ">D.I.E & L.I.E</h2>
