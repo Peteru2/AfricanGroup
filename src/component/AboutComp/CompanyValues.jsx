@@ -16,7 +16,7 @@ const CompanyValues = () => {
                         </div>
                     </motion.h2>
             
-                    <div className="flex flex-wrap justify-center mx-6 mt-8">
+                    <div className="flex flex-wrap justify-center mx-6 ">
                         
                     <motion.div
       initial={{ opacity: 0 }}
