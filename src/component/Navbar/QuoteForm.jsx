@@ -53,7 +53,7 @@ const handleRetry = () => {
    
             if (formData.fullname.trim() === '') {
 
-            newErrors.fullname = 'Name is required';
+            newErrors.fullname = 'Fullname is required';
             }
                 else if (!formData.email.trim()) {
                     newErrors.email = 'Email is required';

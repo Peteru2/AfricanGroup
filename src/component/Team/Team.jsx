@@ -26,10 +26,17 @@ const Team = () => {
         <button  className ="hidden"style={{ ...buttonStyle }}><i className='fa fa-arrow-right'></i></button>
     )
 }
-    
+const handleNext = () => {
+  const items = document.querySelectorAll('.item');
+  document.querySelector('.slide').appendChild(items[0]);
+};
+
+const handlePrev = () => {
+  const items = document.querySelectorAll('.item');
+  document.querySelector('.slide').prepend(items[items.length - 1]);
+};
     return ( 
         <>
-
             <Layout>  
               <ImageWithOverlay
                 imageUrl={image}
@@ -39,7 +46,7 @@ const Team = () => {
                 decrip="Meet With The Expert Team"
                 height="400px"
       />
-            {/* <section className="font-roboto mt-8 xl:mx-[90px] md:mx-5 mx-6 my-10">
+  {/* <section className="font-roboto mt-8 xl:mx-[90px] md:mx-5 mx-6 my-10">
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
                     {TeamFirstData.map((data, index)=>{
                             return(
@@ -123,74 +130,62 @@ const Team = () => {
                         
                     </div>          
             </section> */}
+  <div className="slider-container">
+        <div className="container">
+            <div className="slide">
+                <div className="item" style={{backgroundImage: 'url(https://i.ibb.co/qCkd9jS/img1.jpg)'}}>
+                    <div className="content">
+                        <div className="name">Olawoore Oladayo</div>
+                        <div className="text-[28px] text-white font-semibold mb-2">Founder & CEO</div>
 
-<Slide
-        transitionDuration={400}
-        scale={1.4}
-        {...properties}
-        
-    >
-             
-        {TeamData.map((data, index) => (
-            <div className="xl:mx-[90px]  md:mx-5 mx-6">
-           
-             <div   className="each-slide-effect my-2" key={index}>
-                <div >
-                    {/* <span>{`Slide ${index + 1}`}</span> */}
-                    <motion.div 
-              variants ={{
-                hidden:{opacity: 0, y: 75},
-                visible:{opacity: 1, y: 0},
-            }}
-            initial="hidden"
-            whileInView="visible"
-            transition={{delay: index * 0.1, 
-            duration: 0.5}}
-               key={index} 
-               className="grid md:grid-cols-1 xl:grid-cols-2 grid-cols-1">
-  <div className="relative" style={{ 'maxWidth': '100%', 'height': '100%' }}>
-    <img
-      className="w-full h-full object-cover"
-      src={data.img}
-      alt={data.name}
-    />
-    
-  </div>
-  <div className="bg-white p-6">
-    <h2 className="font-bold text-[25px] mb-1">{data.name}</h2>
-    <h4 className="text-gray">{data.office}</h4>
-    <h4 className="my-6 text-sm">{data.description}</h4>
-    <div className=" flex ">
-      <Link>
-      <div className="w-10 mr-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
-        <i className="fa fa-facebook"></i>
-      </div>
-      </Link>
-      <Link>
-      <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
-        <i className="fa fa-twitter"></i>
-      </div>
-      </Link>
-      <Link>
-      <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
-        <i className="fa fa-linkedin"></i>
-      </div>
-      </Link>
-      <Link>
-      <div className="w-10 mx-4 text-white h-10 rounded-full bg-private flex justify-center items-center">
-        <i className="fa fa-instagram"></i>
-      </div>
-      </Link>
-    </div>
-  </div>
-</motion.div>
-                    
+                        <div className="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
+                        <button>See More</button>
+                    </div>
                 </div>
+                <div className="item" style={{backgroundImage: 'url(https://i.ibb.co/jrRb11q/img2.jpg)'}}>
+                    <div className="content">
+                        <div className="name">Finland</div>
+                        <div className="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div className="item" style={{backgroundImage: 'url(https://i.ibb.co/NSwVv8D/img3.jpg)'}}>
+                    <div className="content">
+                        <div className="name">Iceland</div>
+                        <div className="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div className="item" style={{backgroundImage: 'url(https://i.ibb.co/Bq4Q0M8/img4.jpg)'}}>
+                    <div className="content">
+                        <div className="name">Australia</div>
+                        <div className="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div className="item" style={{backgroundImage: 'url(https://i.ibb.co/jTQfmTq/img5.jpg)'}}>
+                    <div className="content">
+                        <div className="name">Netherland</div>
+                        <div className="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
+                        <button>See More</button>
+                    </div>
+                </div>
+                <div className="item" style={{backgroundImage: 'url(https://i.ibb.co/RNkk6L0/img6.jpg)'}}>
+                    <div className="content">
+                        <div className="name">Ireland</div>
+                        <div className="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
+                        <button>See More</button>
+                    </div>
                 </div>
             </div>
-        ))}
-       
-    </Slide>
+
+            <div className="button">
+                <button className="prev" onClick={handlePrev}><i className="fa-solid fa-arrow-left"></i></button>
+                <button className="next" onClick={handleNext}><i className="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+        </div>
+
         </Layout>
             
         </>

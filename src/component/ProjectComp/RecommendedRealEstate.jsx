@@ -1,18 +1,12 @@
 import projData from "./data";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import shuffleProj from "./Shuffle";
 
-const shuffleArray = (array) => {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-    return array;
-}
 const RecommendedRealEstate = () => {
    
     const realEstateProjects = projData.filter(data => data.type === "Real Estate");
-    const randomThreeProjects = shuffleArray(realEstateProjects).slice(0, 3);
+    const randomThreeProjects = shuffleProj(realEstateProjects).slice(0, 3);
 
     return ( 
         <>
