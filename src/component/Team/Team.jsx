@@ -135,46 +135,56 @@ const handlePrev = () => {
             <div className="slide">
                 <div className="item" style={{backgroundImage: 'url(https://i.ibb.co/qCkd9jS/img1.jpg)'}}>
                     <div className="content">
-                        <div className="name">Olawoore Oladayo</div>
-                        <div className="text-[28px] text-white font-semibold mb-2">Founder & CEO</div>
+                        <div className="text-[26px] font-lora  text-white font-semibold mb-2">Olawoore Oladayo</div>
+                        <div className="text-[20px] uppercase text-white font-semibold mb-2">Founder & CEO</div>
 
-                        <div className="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
-                        <button>See More</button>
+                        <div className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
+                       
                     </div>
                 </div>
                 <div className="item" style={{backgroundImage: 'url(https://i.ibb.co/jrRb11q/img2.jpg)'}}>
-                    <div className="content">
-                        <div className="name">Finland</div>
-                        <div className="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
-                        <button>See More</button>
+                <div className="content">
+                        <div className="text-[26px] font-lora  text-white font-semibold mb-2">Africa Group</div>
+                        <div className="text-[20px] uppercase text-white font-semibold mb-2">Founder & CEO</div>
+
+                        <div className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
+                       
                     </div>
                 </div>
                 <div className="item" style={{backgroundImage: 'url(https://i.ibb.co/NSwVv8D/img3.jpg)'}}>
-                    <div className="content">
-                        <div className="name">Iceland</div>
-                        <div className="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
-                        <button>See More</button>
+                <div className="content">
+                        <div className="text-[26px] font-lora  text-white font-semibold mb-2">Olawoore Oladayo</div>
+                        <div className="text-[20px] uppercase text-white font-semibold mb-2">Founder & CEO</div>
+
+                        <div className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
+                       
                     </div>
                 </div>
                 <div className="item" style={{backgroundImage: 'url(https://i.ibb.co/Bq4Q0M8/img4.jpg)'}}>
                     <div className="content">
-                        <div className="name">Australia</div>
-                        <div className="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
-                        <button>See More</button>
+                        <div className="text-[26px] font-lora  text-white font-semibold mb-2">Olawoore Oladayo</div>
+                        <div className="text-[20px] uppercase text-white font-semibold mb-2">Founder & CEO</div>
+
+                        <div className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
+                       
                     </div>
                 </div>
                 <div className="item" style={{backgroundImage: 'url(https://i.ibb.co/jTQfmTq/img5.jpg)'}}>
-                    <div className="content">
-                        <div className="name">Netherland</div>
-                        <div className="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
-                        <button>See More</button>
+                <div className="content">
+                        <div className="text-[26px] font-lora  text-white font-semibold mb-2">Olawoore Oladayo</div>
+                        <div className="text-[20px] uppercase text-white font-semibold mb-2">Founder & CEO</div>
+
+                        <div className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
+                       
                     </div>
                 </div>
                 <div className="item" style={{backgroundImage: 'url(https://i.ibb.co/RNkk6L0/img6.jpg)'}}>
-                    <div className="content">
-                        <div className="name">Ireland</div>
-                        <div className="des">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
-                        <button>See More</button>
+                <div className="content">
+                        <div className="text-[26px] font-lora  text-white font-semibold mb-2">Olawoore Oladayo</div>
+                        <div className="text-[20px] uppercase text-white font-semibold mb-2">Founder & CEO</div>
+
+                        <div className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
+                       
                     </div>
                 </div>
             </div>

@@ -219,7 +219,7 @@ mark{
     height: 600px;
     background: #f5f5f5;
     box-shadow: 0 30px 50px #dbdbdb;
-  overflow-x: hidden;
+    overflow-x: hidden;
 
 }
 
@@ -332,8 +332,8 @@ mark{
 }
 
 .button button{
-    width: 40px;
-    height: 35px;
+    width: 50px;
+    height: 45px;
     border-radius: 8px;
     border: none;
     color: white;
@@ -481,11 +481,6 @@ mark{
  .nav-btn2,.nav-btn1{
   bottom: -110px;
  }
- .item .content{
-  left: 20px;
-  width: 290px
-  
-}
 .slide .item:nth-child(3){
   left: 100%;
 }
@@ -495,22 +490,50 @@ mark{
 .slide .item:nth-child(5){
   left: calc(100% + 440px);
 }
+.slider-container{
+  position: relative;
+  margin-top: 400px ;
+  margin-bottom: 700px;
+}
+.item .content {
+  position: absolute;
+  top: 35%;
+  left: auto;
+  transform: none;
+  width: auto;
+  display: block;
+  opacity: 1;
+  animation: none;
+  background: #8AB863;
+  padding:0px 15px
+}
 .container{
+  height: 700px;
+  box-shadow:none;
+  overflow-y: hidden;
+  background-color: #8AB863;
 
-  height: 300px;
- 
 }
-.item .content{
-  position: relative ;
-  bottom: -100%;
-  left: 80px;
-  width: 400px;
-  text-align: left;
-  color: #eee;
+.container .slide .item{
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  height: 800px;
+  transform: translate(0%, 0%);
+  top: 0;
+  box-shadow: none;
 
-  font-family: system-ui;
- 
 }
+
+.button{
+  width: 100%;
+  text-align: right;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+ padding: 20px 0px;
+}
+
 }
 @media only screen  and (max-width: 600px){
   .nav-btn2,.nav-btn1{
