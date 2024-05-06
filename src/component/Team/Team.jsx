@@ -9,23 +9,7 @@ import { Link } from "react-router-dom";
 import { Slide } from 'react-slideshow-image';
 
 const Team = () => {
-  const buttonStyle = {
-    width: '100px',
-    display: 'none',
-    margin: '0px'
-    
-};
-  const properties = {
-    prevArrow:(
-       
-     <button style={{ ...buttonStyle }}><i className='fa fa-arrow-left'></i></button>
-    
-     ),
-    nextArrow: (
-   
-        <button  className ="hidden"style={{ ...buttonStyle }}><i className='fa fa-arrow-right'></i></button>
-    )
-}
+  
 const handleNext = () => {
   const items = document.querySelectorAll('.item');
   document.querySelector('.slide').appendChild(items[0]);
@@ -133,7 +117,7 @@ const handlePrev = () => {
   <div className="slider-container">
         <div className="container">
             <div className="slide">
-                <div className="item" style={{backgroundImage: 'url(https://i.ibb.co/qCkd9jS/img1.jpg)'}}>
+                <div className="item"  onClick={handleNext} style={{backgroundImage: 'url(https://i.ibb.co/qCkd9jS/img1.jpg)'}}>
                     <div className="content">
                         <div className="text-[26px] font-lora  text-white font-semibold mb-2">Olawoore Oladayo</div>
                         <div className="text-[20px] uppercase text-white font-semibold mb-2">Founder & CEO</div>
@@ -142,8 +126,8 @@ const handlePrev = () => {
                        
                     </div>
                 </div>
-                <div className="item" style={{backgroundImage: 'url(https://i.ibb.co/jrRb11q/img2.jpg)'}}>
-                <div className="content">
+                <div className="item" onClick={handleNext} style={{backgroundImage: 'url(https://i.ibb.co/jrRb11q/img2.jpg)'}}>
+                <div className="content" >
                         <div className="text-[26px] font-lora  text-white font-semibold mb-2">Africa Group</div>
                         <div className="text-[20px] uppercase text-white font-semibold mb-2">Founder & CEO</div>
 
@@ -151,7 +135,7 @@ const handlePrev = () => {
                        
                     </div>
                 </div>
-                <div className="item" style={{backgroundImage: 'url(https://i.ibb.co/NSwVv8D/img3.jpg)'}}>
+                <div className="item" onClick={handleNext} style={{backgroundImage: 'url(https://i.ibb.co/NSwVv8D/img3.jpg)'}}>
                 <div className="content">
                         <div className="text-[26px] font-lora  text-white font-semibold mb-2">Olawoore Oladayo</div>
                         <div className="text-[20px] uppercase text-white font-semibold mb-2">Founder & CEO</div>
@@ -160,7 +144,7 @@ const handlePrev = () => {
                        
                     </div>
                 </div>
-                <div className="item" style={{backgroundImage: 'url(https://i.ibb.co/Bq4Q0M8/img4.jpg)'}}>
+                <div className="item" onClick={handleNext} style={{backgroundImage: 'url(https://i.ibb.co/Bq4Q0M8/img4.jpg)'}}>
                     <div className="content">
                         <div className="text-[26px] font-lora  text-white font-semibold mb-2">Olawoore Oladayo</div>
                         <div className="text-[20px] uppercase text-white font-semibold mb-2">Founder & CEO</div>
@@ -169,7 +153,7 @@ const handlePrev = () => {
                        
                     </div>
                 </div>
-                <div className="item" style={{backgroundImage: 'url(https://i.ibb.co/jTQfmTq/img5.jpg)'}}>
+                <div className="item" onClick={handleNext} style={{backgroundImage: 'url(https://i.ibb.co/jTQfmTq/img5.jpg)'}}>
                 <div className="content">
                         <div className="text-[26px] font-lora  text-white font-semibold mb-2">Olawoore Oladayo</div>
                         <div className="text-[20px] uppercase text-white font-semibold mb-2">Founder & CEO</div>
