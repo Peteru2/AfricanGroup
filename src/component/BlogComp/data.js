@@ -4,7 +4,7 @@ const blogData = [
       id: 1,
       titleParam:"top5-reasons-why-the-wealthy-invest-in-real-estate",
       title: "Top 5 Reasons Why the Wealthy Invest in Real Estate",
-      date: "January 1, 2023",
+      date: "February 7, 2024",
       p1: " Ever wondered exactly where your property line ends? Or maybe you're planning a new deck and want to avoid any post-construction surprises? A property survey is the answer!",
       p2: " This blog will explore the many reasons why getting your property surveyed is a smart decision for any homeowner.  Whether you're a seasoned property owner or a fresh-faced newbie, a survey can save you time, money, and a whole lot of hassle down the line.",
       h2:"Unlike depreciating assets like cars, real estate generally appreciates in value over time..",
@@ -16,7 +16,7 @@ const blogData = [
       list: " A Steady Stream of Income ; A Path to Financial Freedom; Tangible Assets, Tangible Security: Peace of Mind You Can Hold",
       img: firstImg,
       type:"BLOG",
-      author:"James Brown",
+      author:"Antonia Olawoore",
       readTime: 3
 
     },
@@ -24,7 +24,7 @@ const blogData = [
       id: 2,
       titleParam:"5-reasons-why-property-surveys-are-essential",
       title: "5 Reasons Why Property Surveys Are Essential",
-      date: "January 1, 2023",
+      date: "March 2, 2024",
       p1: " Ever planted the perfect mango tree, only to discover later it's encroaching on your neighbor's prized yam patch? Land disputes can be messy and stressful, turning dream projects into nightmares. But fear not! There's a simple solution: a property survey.",
       p2: " This blog will explore the top 5 reasons why getting your property surveyed is a wise decision, whether you're a seasoned homeowner or a fresh-faced first-time buyer. A survey can save you time, money, and a whole lot of future headaches.",
       h2:"The cornerstone of a secure property is knowing exactly what land you own.",
@@ -37,7 +37,7 @@ const blogData = [
       p6: " Remember, a small investment upfront can save you a lot of drama down the line. At African Group, we offer comprehensive surveying services to empower you to own your land with confidence. Contact us today to discuss your specific needs and let our expert surveyors help you navigate the world of property boundaries. Don't let land issues steal your shine – get a property survey today.",
       img: firstImg,
       type:"BLOG",
-      author:"James Brown",
+      author:"Antonia Olawoore",
       readTime: 3
 
     },

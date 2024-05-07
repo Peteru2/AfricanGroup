@@ -276,6 +276,7 @@ mark{
     transform: translate(0, -50%);
     font-family: system-ui;
     display: none;
+   
 }
 
 
@@ -384,7 +385,7 @@ mark{
   }
   
   .wrapper .logo {
-    width: 150px;
+    width: 130px;
     padding: 0px 20px
   }
   
