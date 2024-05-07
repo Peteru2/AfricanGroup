@@ -346,7 +346,7 @@ mark{
 .button button:hover{
     background: #ababab;
     color: #fff;
-}
+} 
   .wrapper {
     background-color: #E1E2E2;
     height: 130px;
@@ -385,6 +385,7 @@ mark{
   
   .wrapper .logo {
     width: 150px;
+    padding: 0px 20px
   }
   
   .wrapper .logo img {

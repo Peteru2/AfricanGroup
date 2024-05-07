@@ -162,7 +162,7 @@ const handlePrev = () => {
                        
                     </div>
                 </div>
-                <div className="item" style={{backgroundImage: 'url(https://i.ibb.co/RNkk6L0/img6.jpg)'}}>
+                <div className="item" onClick={handleNext} style={{backgroundImage: 'url(https://i.ibb.co/RNkk6L0/img6.jpg)'}}>
                 <div className="content">
                         <div className="text-[26px] font-lora  text-white font-semibold mb-2">Olawoore Oladayo</div>
                         <div className="text-[20px] uppercase text-white font-semibold mb-2">Founder & CEO</div>
