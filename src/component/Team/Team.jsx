@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 
   import TeamImg from "../../assets/images/Team1.jpg"
 import image from "../../assets/images/about.jpg"
+import avatar from "../../assets/images/avatar.jfif"
+
 import ImageWithOverlay from '../ImageWithOverlay';
 import TeamData from "./TeamData";
 import Layout from "../Layout";
@@ -114,15 +116,17 @@ const handlePrev = () => {
                         
                     </div>          
             </section> */}
+
   <div className="slider-container">
         <div className="container">
             <div className="slide">
-                <div className="item"  onClick={handleNext} style={{backgroundImage: 'url(https://i.ibb.co/qCkd9jS/img1.jpg)'}}>
+                <div className="item"  onClick={handleNext} style={{backgroundImage: `url(${avatar})`}}>
                     <div className="content">
                         <div className="text-[26px] font-lora  text-white font-semibold mb-2">Olawoore Oladayo</div>
                         <div className="text-[20px] uppercase text-white font-semibold mb-2">Founder & CEO</div>
 
-                        <div className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
+                        <div className="text-white">Oladayo Olawoore spearheads African Group with over 1 billion naira in executed deals across surveying, construction, and real estate over his career. His expertise spans the entire project lifecycle, from concept to completion, ensuring stakeholder alignment, procurement and business development with a Law degree in pursuit.
+                    </div>
                        
                     </div>
                 </div>
