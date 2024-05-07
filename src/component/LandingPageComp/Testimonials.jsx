@@ -6,7 +6,7 @@ const Testimonials = () => {
     return ( 
         <>
             <section className="bg-white xl:px-[90px] md:px-5 px-6 w-full md:h-[600px] h-[800px] sm:h-[900px] font-roboto">
-                <div className="py-28">
+                <div className="py-24">
                     
                 <motion.div
                 variants ={{
@@ -16,7 +16,7 @@ const Testimonials = () => {
                 initial="hidden"
                 whileInView="visible"
                 transition={{ delay: 0.25, 
-                duration: 0.5}}
+                duration: 0.3}}
                 >
                 <h2 className="font-bold py-2"><i className="fa fa-th text-private mr-2 font-bold"></i>TESTIMONIALS</h2>
                 <h1 className="text-4xl font-playfair text-private my-4">Our client reviews. </h1>

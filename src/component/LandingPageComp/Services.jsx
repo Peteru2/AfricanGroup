@@ -34,7 +34,10 @@ const firstThreeServiceItems = ServiceData.slice(0,3);
     
     return ( 
         <>
-         <Fade triggerOnce direction="left"  >
+         <Fade 
+         transitionDuration={200}
+         scale={1.2}
+         triggerOnce direction="left"  >
             <section className="md:bg-public bg-white md:bg-opacity-50 md:h-[300px]  w-full  md:mb-[350px]">
                 <div></div>
                 <div className=" flex justify-center md:bg-transparent md:bg-opacity-0 bg-public bg-opacity-50 py-4 md:py-0">

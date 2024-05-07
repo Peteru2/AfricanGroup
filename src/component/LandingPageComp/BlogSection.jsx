@@ -32,8 +32,8 @@ const lastThreeBlogItems = blogData.slice(-3);
         }}
         initial="hidden"
         whileInView="visible"
-        transition={{delay: index * 0.5, 
-        duration: 0.5}}
+        transition={{delay: index * 0.2, 
+        duration: 0.2}}
           
            key={post.id} className='`'>
 

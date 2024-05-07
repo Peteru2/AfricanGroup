@@ -120,7 +120,7 @@ const FirstSection = () => {
     initial="hidden"
     whileInView="visible"
     transition={{ delay: 0.25, 
-    duration: 0.5}}
+    duration: 0.2}}
     className="xl:mx-[90px] md:mx-5 mx-6 my-10">
             <div className="mt-14 md:mt-0 mb-4">
                 <h2 className="text-private  tracking-widest pb-4 border-b-[1px] border-black w-full">OUR STORY</h2>
@@ -131,7 +131,7 @@ const FirstSection = () => {
                 <motion.div 
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
-                    transition={{ delay: 0.5, 
+                    transition={{ delay: 0.3, 
                     staggerChildren: 2}}
                 className="grid md:grid-cols-3 grid-cols-1 md:mt-6 mt-0 gap-4 ">
                             <div className="">
@@ -155,7 +155,7 @@ const FirstSection = () => {
                     initial="hidden"
                     whileInView="visible"
                     transition={{ delay: 0.25, 
-                    duration: 0.5}}
+                    duration: 0.3}}
                     className="">
                         <h4 className="font-lora text-[16px]"> At 
                         African Group, our core competencies include high precision surveying, expertise in delivering high-quality construction projects with highest quality materials that can stand the test of time and within budget. We don’t just build structures; we build legacies. 
