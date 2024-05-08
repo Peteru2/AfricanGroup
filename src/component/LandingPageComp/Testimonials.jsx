@@ -5,8 +5,8 @@ import { motion } from "framer-motion";
 const Testimonials = () => {
     return ( 
         <>
-            <section className="bg-white xl:px-[90px] md:px-5 px-6 w-full md:h-[600px] h-[800px] sm:h-[900px] font-roboto">
-                <div className="py-24">
+            <section className="bg-white xl:px-[90px] md:px-5 px-6 w-full md:h-[500px] h-[75~0px] sm:h-[900px] font-roboto">
+                <div className="py-16 ">
                     
                 <motion.div
                 variants ={{

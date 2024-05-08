@@ -1,6 +1,6 @@
 // BlogPost.js
 import React from 'react';
-
+import RecommendedBlog from './RecommendedBlog';
 const BlogPost = ({post}) => {
   const sentences = post.list.split(';');
  
@@ -34,6 +34,7 @@ const BlogPost = ({post}) => {
       <p className='my-3'>{post.p6}</p>
       </div>
       </div>
+      <RecommendedBlog />
     </div>
   );
 };

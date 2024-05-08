@@ -1,7 +1,7 @@
 import projData from "./data";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import shuffleProj from "./Shuffle";
+import shuffleProj from "../Shuffle";
 
 const Survey= () => {
     const surveyProjects = projData.filter(data => data.type === "Survey");

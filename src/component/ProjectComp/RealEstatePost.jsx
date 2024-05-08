@@ -2,6 +2,7 @@ import Layout from "../Layout";
 import ImageWithOverlay from "../ImageWithOverlay";
 import { useParams } from "react-router-dom";
 import projData from "./data";
+import { Link } from "react-router-dom";
 import image from "../../assets/images/about.jpg"
 import RecommendedRealEstate from "./RecommendedRealEstate";
 import RealEstateImgSlide from "./RealEstateImgSlide";
@@ -50,8 +51,12 @@ const RealEstatePost = () => {
 
         <div className="flex w-full mt-2">
                 <div className="md:ml-auto md:my-0 my-4">
+                  <Link to={"/request-quote"}>
                     <button className="p-2 py-3 border-[1px] border-gray shadow rounded-md ">Book appointment</button>
+                    </Link>
+                    <Link to={'https://wa.me/2349017730877'}>
                     <button className="bg-public rounded-md text-white p-2 py-3 ml-4">Contact Us</button>
+                    </Link>
                 </div>
         </div>
         <div className="mt-2">
@@ -129,7 +134,7 @@ const RealEstatePost = () => {
 
                 <div className="md:flex w-full mt-5">
                   <div>
-                <h2><span  className="font-bold text-[17px] text-black text-opacity-70">Account name:</span> <span className="text-opacity-80 text-black text-[17px]">Gt Ban k</span></h2>
+                <h2><span  className="font-bold text-[17px] text-black text-opacity-70">Account name:</span> <span className="text-opacity-80 text-black text-[17px]">Gt Bank</span></h2>
                 <h2><span  className="font-bold text-[17px] text-black text-opacity-70">Account number:</span> <span className="text-opacity-80 text-black text-[17px]">Gt Bank</span></h2>
 
                   </div>
