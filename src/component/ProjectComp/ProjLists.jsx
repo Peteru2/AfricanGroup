@@ -9,40 +9,13 @@ import Survey from "./Survey";
 const ProjList = () => {
 
   
-    const [construction, setConstruction] = useState(false)
-    const [realEstate, setRealEstate] = useState(false)
-    const [survey, setSurvey] = useState(false)
+    const [construction, setConstruction] = useState(false);
+    const [realEstate, setRealEstate] = useState(false);
+    const [survey, setSurvey] = useState(false);
     const [shuffledData, setShuffledData] = useState([]);
     const [searchQuery, setSearchQuery] = useState("");
     const [filteredData, setFilteredData] = useState([]);
 
-    useEffect(() => {
-        if (searchQuery.trim() !== "") {
-            const filterData = () => {
-                const filtered =shuffledData && shuffledData.filter((item) => {
-                    const { title, serviceType, category, location } = item;
-                    const searchText = searchQuery.toLowerCase();
-                    return (
-                        title && title.toLowerCase().includes(searchText) 
-                        // serviceType && serviceType.toLowerCase().includes(searchText) ||
-                        // category &&  category.toLowerCase().includes(searchText) ||
-                        // location && location.toLowerCase().includes(searchText)
-                    );
-                });
-                setFilteredData(filtered);
-            };
-            filterData();
-        } else {
-            // If search query is empty, display all data
-            setFilteredData(shuffleData);
-        }
-    }, [searchQuery]);
-
-    const handleChange = (event) => {
-        setSearchQuery(event.target.value);
-    };
-
-    
     useEffect(() => {
         // Check if there is a saved state in localStorage
         const savedState = localStorage.getItem('projListState');
@@ -52,45 +25,73 @@ const ProjList = () => {
             setRealEstate(realEstate);
             setSurvey(survey);
         }
-
-
-        shuffleData()
+        shuffleData();
     }, []);
 
-    const handleAll =() =>{
-        setConstruction(false)
-        setRealEstate(false)
-        setSurvey(false)
-        updateLocalStorage(false, false, false);
-    }
+    useEffect(() => {
+        if (searchQuery.trim() !== "") {
+            const filterData = () => {
+                const filtered = shuffledData.filter((item) => {
+                    const { title, serviceType, category, location } = item;
+                    const searchText = searchQuery.toLowerCase();
+                    return (
+                        title &&  title.toLowerCase().includes(searchText) ||
+                        serviceType && serviceType.toLowerCase().includes(searchText) ||
+                        category && category.toLowerCase().includes(searchText) ||
+                        location && location.toLowerCase().includes(searchText)
+                    );
+                });
+                setFilteredData(filtered);
+            };
+            filterData();
+        } else {
+            // If search query is empty, display all data
+            setFilteredData(shuffledData);
+        }
+    }, [searchQuery, shuffledData]);
 
-    const handleConstruction =() =>{
-        setConstruction(true)
-        setRealEstate(false)
-        setSurvey(false)
+    const handleChange = (event) => {
+        setSearchQuery(event.target.value);
+    };
+
+    const handleAll = () => {
+        setConstruction(false);
+        setRealEstate(false);
+        setSurvey(false);
+        updateLocalStorage(false, false, false);
+    };
+
+    const handleConstruction = () => {
+        setConstruction(true);
+        setRealEstate(false);
+        setSurvey(false);
         updateLocalStorage(true, false, false);
-    }
-    const handleRealEstate =() =>{
-        setConstruction(false)
-        setRealEstate(true)
-        setSurvey(false)
+    };
+
+    const handleRealEstate = () => {
+        setConstruction(false);
+        setRealEstate(true);
+        setSurvey(false);
         updateLocalStorage(false, true, false);
-    }
-    const handleSurvey =() =>{
-        setConstruction(false)
-        setRealEstate(false)
-        setSurvey(true)
+    };
+
+    const handleSurvey = () => {
+        setConstruction(false);
+        setRealEstate(false);
+        setSurvey(true);
         updateLocalStorage(false, false, true);
-    }
+    };
+
     const updateLocalStorage = (construction, realEstate, survey) => {
         localStorage.setItem('projListState', JSON.stringify({ construction, realEstate, survey }));
-    }
+    };
 
     const shuffleData = () => {
         // Create a copy of projData and shuffle it
         const shuffledArray = [...projData].sort(() => Math.random() - 0.5);
         setShuffledData(shuffledArray);
-    }
+    };
+
     return ( 
             <>
 
@@ -133,7 +134,7 @@ const ProjList = () => {
                     
                     <div className={ `${!construction && !realEstate && !survey ? "block" : " hidden"} grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10  mb-[30px] font-roboto`}>
                          {
-                            shuffledData.map((data, index) => {
+                            filteredData.map((data, index) => {
                                 return(
                                     <>
 <motion.div
