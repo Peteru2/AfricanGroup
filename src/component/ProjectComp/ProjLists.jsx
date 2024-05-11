@@ -13,6 +13,35 @@ const ProjList = () => {
     const [realEstate, setRealEstate] = useState(false)
     const [survey, setSurvey] = useState(false)
     const [shuffledData, setShuffledData] = useState([]);
+    const [searchQuery, setSearchQuery] = useState("");
+    const [filteredData, setFilteredData] = useState([]);
+
+    useEffect(() => {
+        if (searchQuery.trim() !== "") {
+            const filterData = () => {
+                const filtered =shuffledData && shuffledData.filter((item) => {
+                    const { title, serviceType, category, location } = item;
+                    const searchText = searchQuery.toLowerCase();
+                    return (
+                        title && title.toLowerCase().includes(searchText) 
+                        // serviceType && serviceType.toLowerCase().includes(searchText) ||
+                        // category &&  category.toLowerCase().includes(searchText) ||
+                        // location && location.toLowerCase().includes(searchText)
+                    );
+                });
+                setFilteredData(filtered);
+            };
+            filterData();
+        } else {
+            // If search query is empty, display all data
+            setFilteredData(shuffleData);
+        }
+    }, [searchQuery]);
+
+    const handleChange = (event) => {
+        setSearchQuery(event.target.value);
+    };
+
     
     useEffect(() => {
         // Check if there is a saved state in localStorage
@@ -85,6 +114,14 @@ const ProjList = () => {
                             </motion.div>
 
                     </div>
+                    <div className="search-container">
+                <input
+                    type="text"
+                    placeholder="Search..."
+                    value={searchQuery}
+                    onChange={handleChange}
+                />
+            </div>
                     <div className="flex justify-center mb-14">
                         <h2 onClick={handleAll} className={`${!construction && !realEstate && !survey?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 md:px-4 px-2  md:mx-2 mx-[2px] cursor-pointer  `}>All</h2>
                         <h2 onClick={handleConstruction} className={`${construction?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 md:px-4 px-2 md:mx-2 mx-[2px] cursor-pointer    `}>Construction</h2>
