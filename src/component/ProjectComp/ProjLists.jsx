@@ -6,6 +6,8 @@ import { useState , useEffect} from "react";
 import Construction from "./Construction";
 import RealEstate from "./RealEstate";
 import Survey from "./Survey";
+import SearchFilter from './SearchFilter';
+
 const ProjList = () => {
 
   
@@ -13,11 +15,9 @@ const ProjList = () => {
     const [realEstate, setRealEstate] = useState(false);
     const [survey, setSurvey] = useState(false);
     const [shuffledData, setShuffledData] = useState([]);
-    const [searchQuery, setSearchQuery] = useState("");
     const [filteredData, setFilteredData] = useState([]);
 
     useEffect(() => {
-        // Check if there is a saved state in localStorage
         const savedState = localStorage.getItem('projListState');
         if (savedState) {
             const { construction, realEstate, survey } = JSON.parse(savedState);
@@ -28,31 +28,6 @@ const ProjList = () => {
         shuffleData();
     }, []);
 
-    useEffect(() => {
-        if (searchQuery.trim() !== "") {
-            const filterData = () => {
-                const filtered = shuffledData.filter((item) => {
-                    const { title, serviceType, category, location } = item;
-                    const searchText = searchQuery.toLowerCase();
-                    return (
-                        title &&  title.toLowerCase().includes(searchText) ||
-                        serviceType && serviceType.toLowerCase().includes(searchText) ||
-                        category && category.toLowerCase().includes(searchText) ||
-                        location && location.toLowerCase().includes(searchText)
-                    );
-                });
-                setFilteredData(filtered);
-            };
-            filterData();
-        } else {
-            // If search query is empty, display all data
-            setFilteredData(shuffledData);
-        }
-    }, [searchQuery, shuffledData]);
-
-    const handleChange = (event) => {
-        setSearchQuery(event.target.value);
-    };
 
     const handleAll = () => {
         setConstruction(false);
@@ -87,11 +62,13 @@ const ProjList = () => {
     };
 
     const shuffleData = () => {
-        // Create a copy of projData and shuffle it
         const shuffledArray = [...projData].sort(() => Math.random() - 0.5);
         setShuffledData(shuffledArray);
     };
-
+    
+    const handleFilteredData = (filteredData) => {
+        setFilteredData(filteredData);
+      };
     return ( 
             <>
 
@@ -124,41 +101,35 @@ const ProjList = () => {
 
 
                     </div>
-                    <div className="flex justify-center mb-4 ">
-                    
-                    <div className="py-2 border-[1px] my-2 rounded-md w-[500px]">
-                <input
-                    type="text"
-                    placeholder="Search..."
-                    value={searchQuery}
-                    onChange={handleChange}
-                    className="w-full outline-none px-3"
-                />
-            </div>
-            </div>
-                    <div className={ `${!construction && !realEstate && !survey ? "block" : " hidden"} grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10  mb-[30px] font-roboto`}>
-                         {
-                            filteredData.map((data, index) => {
-                                return(
-                                    <>
-<motion.div
- variants ={{
-    hidden:{opacity: 0, y: 75},
-    visible:{opacity: 1, y: 0},
-}}
-initial="hidden"
-whileInView="visible"
-transition={{delay: 0.2, 
-duration: 0.2}}
-key={index} 
-className="relative group"
-style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>
-    <img
-        className="w-full h-full object-cover"
-        src={data.img}
-        alt="kasdka"
-    />
-   <Link to={data.type === "Construction" ? `/project/construction/${data.titleParam}` : data.type === "Survey" ? `/project/survey/${data.titleParam}` : data.type === "Real Estate" ? `/project/real-estate/${data.titleParam}`: null} >
+                
+                    {!construction && !realEstate && !survey && (
+                            <SearchFilter data={shuffledData} onDataFiltered={handleFilteredData} />
+
+                    )}
+
+    <div className={ `${!construction && !realEstate && !survey ? "block" : " hidden"} grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10  mb-[30px] font-roboto`}>
+                {
+            filteredData.map((data, index) => {
+                     return(
+                        <>
+        <motion.div
+        variants ={{
+            hidden:{opacity: 0, y: 75},
+            visible:{opacity: 1, y: 0},
+        }}
+        initial="hidden"
+        whileInView="visible"
+        transition={{delay: 0.2, 
+        duration: 0.2}}
+        key={index} 
+        className="relative group"
+        style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>
+            <img
+                className="w-full h-full object-cover"
+                src={data.img}
+                alt="kasdka"
+            />
+        <Link to={data.type === "Construction" ? `/project/construction/${data.titleParam}` : data.type === "Survey" ? `/project/survey/${data.titleParam}` : data.type === "Real Estate" ? `/project/real-estate/${data.titleParam}`: null} >
 
     <div className="absolute inset-0 bg-public bg-opacity-60 group-hover:bg-public transition ease-in-out  duration-500" style={{  zIndex: 1}}>
 

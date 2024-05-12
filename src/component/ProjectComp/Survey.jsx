@@ -1,18 +1,36 @@
 import projData from "./data";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import shuffleProj from "../Shuffle";
-
+import { useState, useEffect } from "react";
+import SearchFilter from "./SearchFilter";
 const Survey= () => {
+    const [filteredData, setFilteredData] = useState([]);
+    const [shuffledData, setShuffledData] = useState([]);
+
+    useEffect(() => {
+        
+        shuffleData();
+    }, []);
+
     const surveyProjects = projData.filter(data => data.type === "Survey");
-    const randomProjects = shuffleProj(surveyProjects);
+ 
+    const shuffleData = () => {
+        const shuffledArray = [...surveyProjects].sort(() => Math.random() - 0.5);
+        setShuffledData(shuffledArray);
+    };
+    const handleFilteredData = (filteredData) => {
+        setFilteredData(filteredData);
+      };
+
     return ( 
         <>
         <section>
+        <SearchFilter data={shuffledData} onDataFiltered={handleFilteredData} />
+
         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10  mb-[30px] font-roboto">
 
         {
-                            randomProjects.map((data, index) => {
+                            filteredData.map((data, index) => {
                                 return(
                                    
 <motion.div
