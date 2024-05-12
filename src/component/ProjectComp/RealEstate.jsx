@@ -10,7 +10,6 @@ const RealEstate = () => {
         <>
         <section>
         <div className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10  mb-[30px] font-roboto">
-
         {
                             randomProjects.map((data, index) => {
                                 return(
@@ -40,7 +39,6 @@ style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>
     </div>
     <Link to={`/project/real-estate/${data.titleParam}`} className=''>
     <div className="absolute inset-1 px-10 flex justify-center items-center]">
-
          <div className="flex absolute bottom-[-4px] left-[-4px]  opacity-0  group-hover:opacity-100 transition ease-in-out  duration-500">
                     <h1 className="h-3 w-3 bg-private"></h1>
         </div>

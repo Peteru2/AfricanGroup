@@ -115,15 +115,8 @@ const ProjList = () => {
                             </motion.div>
 
                     </div>
-                    <div className="search-container">
-                <input
-                    type="text"
-                    placeholder="Search..."
-                    value={searchQuery}
-                    onChange={handleChange}
-                />
-            </div>
-                    <div className="flex justify-center mb-14">
+                    
+                    <div className="flex justify-center mb-5">
                         <h2 onClick={handleAll} className={`${!construction && !realEstate && !survey?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 md:px-4 px-2  md:mx-2 mx-[2px] cursor-pointer  `}>All</h2>
                         <h2 onClick={handleConstruction} className={`${construction?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 md:px-4 px-2 md:mx-2 mx-[2px] cursor-pointer    `}>Construction</h2>
                         <h2  onClick={handleRealEstate} className={`${realEstate?" border-b-2 transition-all duration-300 ease-in-out text-center":" text-black text-opacity-60"} py-3 md:px-4 px-2  md:mx-2 mx-[2px] cursor-pointer   `}>Real Estate</h2>
@@ -131,7 +124,18 @@ const ProjList = () => {
 
 
                     </div>
+                    <div className="flex justify-center mb-4 ">
                     
+                    <div className="py-2 border-[1px] my-2 rounded-md w-[500px]">
+                <input
+                    type="text"
+                    placeholder="Search..."
+                    value={searchQuery}
+                    onChange={handleChange}
+                    className="w-full outline-none px-3"
+                />
+            </div>
+            </div>
                     <div className={ `${!construction && !realEstate && !survey ? "block" : " hidden"} grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10  mb-[30px] font-roboto`}>
                          {
                             filteredData.map((data, index) => {
