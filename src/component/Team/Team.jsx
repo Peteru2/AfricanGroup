@@ -132,10 +132,10 @@ const handlePrev = () => {
                 </div>
                 <div className="item" onClick={handleNext} style={{backgroundImage: 'url(https://i.ibb.co/jrRb11q/img2.jpg)'}}>
                 <div className="content" >
-                        <div className="text-[26px] font-lora  text-white font-semibold mb-2">Africa Group</div>
-                        <div className="text-[20px] uppercase text-white font-semibold mb-2">Founder & CEO</div>
+                        <div className="text-[26px] font-lora  text-white font-semibold mb-2">Fatoki Micheal</div>
+                        <div className="text-[20px] uppercase text-white font-semibold mb-2">Executive Director</div>
 
-                        <div className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
+                        <div className="text-white">A young and dynamic entrepreneur, with a blend of experience in entrepreneur, information and communication technology, project management, and business development. Mr. Fatoki brings a fresh perspective and proven skills in real estate packaging and leadership to African Group.</div>
                        
                     </div>
                 </div>

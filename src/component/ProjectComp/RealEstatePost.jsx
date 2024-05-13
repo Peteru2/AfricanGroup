@@ -137,8 +137,12 @@ const RealEstatePost = () => {
                 <h2><span  className="font-bold text-[17px] text-black text-opacity-70">Account number:</span> <span className="text-opacity-80 text-black text-[17px]">1474270252</span></h2>
 
                   </div>
-                  <button className="md:ml-auto md:mt-0 mt-3 bg-private text-white p-4 rounded">
+                  
+                 
+                  <button className="md:ml-auto md:mt-0 mt-3 ">
+                  <Link to={'https://wa.me/2349017730877'} className="bg-private text-white p-4 rounded">
                     Pay now
+                  </Link>
                   </button>
                 </div>
             </div>
