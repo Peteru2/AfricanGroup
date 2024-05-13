@@ -36,7 +36,7 @@ const RealEstatePost = () => {
         <div className="my-3">
             <div className="grid md:grid-cols-2 grid-cols-1 w-full">
                 <div>
-                    <h2 className="text-black font-bold text-[18px] mb-4 text-opacity-80"><i className="fa fa-map-maker"></i> {post.location}</h2>
+                    <h2 className="text-black font-bold text-[18px] mb-4 text-opacity-80"><i className="fa fa-map-marker"></i> {post.location}</h2>
                     <h2 className="text-black font-normal text-opacity-60 flex items-center"><span className="rounded font-thin text-sm py-1 bg-gray bg-opacity-20 test-gray px-3 mr-3">Land</span><span className={`${ post.status=="Available"? "bg-private bg-opacity-20  text-private": post.status =="Sold Out"?"bg-red bg-opacity-20 font-thin text-red":""} text-sm   px-3 py-1 rounded  `}>{post.status}</span></h2>
 
                 </div>
@@ -131,7 +131,7 @@ const RealEstatePost = () => {
                 <h2 className="font-bold text-[18px] mb-1">Payment Details</h2>
                 <h2><span  className="font-bold text-[17px] text-black text-opacity-70">Bank name:</span> <span className="text-opacity-80 text-black text-[17px]">Access Bank</span></h2>
 
-                <div className="md:flex w-full mt-5">
+                <div className="md:flex w-full mt-3">
                   <div>
                 <h2><span  className="font-bold text-[17px] text-black text-opacity-70">Account name:</span> <span className="text-opacity-80 text-black text-[17px]">African Survey and Realty limited</span></h2>
                 <h2><span  className="font-bold text-[17px] text-black text-opacity-70">Account number:</span> <span className="text-opacity-80 text-black text-[17px]">1474270252</span></h2>
