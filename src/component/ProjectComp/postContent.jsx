@@ -137,7 +137,13 @@ const PostContent = () => {
         </div>
 
     <div className="grid md:grid-cols-3 gap-5  grid-cols-1 my-10">
-        <div>
+        {post.images.map((img, index) => (
+            <div key={index}>
+                <img src={img} alt={post.title} />
+            </div>
+        ))}
+        
+        {/* <div>
                 <img src={post.img} alt={post.name} />
         </div>
         <div>
@@ -151,10 +157,7 @@ const PostContent = () => {
         </div>
         <div>
                 <img src={post.img} alt={post.name} />
-        </div>
-        <div>
-                <img src={post.img} alt={post.name} />
-        </div>
+        </div> */}
     </div>
 
     {/* overview and Challenge */}
@@ -172,9 +175,9 @@ const PostContent = () => {
         </div>
         
         {/* Image  */}
-        <div className="my-2">
-            <img className="w-full h-[300px]" src={post.img} alt={post.name} />
-        </div>
+        {/* <div className="my-2">
+            <img className="w-full " src={post.images[2]} alt={post.name} />
+        </div> */}
 
         <div className="xl:mx-[90px] md:mx-5 mx-6 mt-10 font-lora ">
                 <div className="grid md:grid-cols-6 gap-4">

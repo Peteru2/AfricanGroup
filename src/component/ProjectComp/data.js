@@ -1,4 +1,17 @@
 import firstImg from "../../assets/images/FirstSectionImage1.jpg"
+import sereneVilla1 from "../../assets/images/constructionImg/sereneVilla1.jpg"
+import sereneVilla2 from "../../assets/images/constructionImg/sereneVilla2.jpg"
+import sereneVilla3 from "../../assets/images/constructionImg/sereneVilla3.jpg"
+import sereneVilla4 from "../../assets/images/constructionImg/sereneVilla4.jpg"
+import harmony1 from "../../assets/images/constructionImg/harmony1.jpg"
+import harmony2 from "../../assets/images/constructionImg/harmony2.jpg"
+import harmony3 from "../../assets/images/constructionImg/harmony3.jpg"
+import harmony4 from "../../assets/images/constructionImg/harmony4.jpg"
+
+
+
+ 
+
 const projData = [
     {
       id: 1,
@@ -28,7 +41,14 @@ const projData = [
       title: "Construction of a serene villa  ",
       date: "January 1, 2023",
       summary: "Currenctly underway, the construction of this serene villa combines modern suphistication with timeless allure, while offering bespoke interiors, premium amenities, and exquisite craftmanship, setting new standards for opulent living.  ",
-      img: firstImg,
+      img: sereneVilla1,
+      images: [
+          sereneVilla2,
+          sereneVilla3,
+          sereneVilla4,
+
+
+      ],
       category:"Residential",
       client: "Undisclosed",
       location: "Bole Area, Akinmoorin Area, Oyo, Oyo State",
@@ -38,7 +58,6 @@ const projData = [
       scheduling:"We strive to complete the luxury construction project withing the agreed upon time and budget, while conducting a final inspection to ensure that all works meets the client's expectations and quality standards upon satisfactory completion and handover the project to our client.",
       overview:"Budget management, luxury project tends to have higher budget, so effectively managing cost and ensuring value for money is crucial in the project.",
       overview2:"Quality control, maintianing high quality standard throughout the construction process is essential for excellence in our projects.",
-
       solution:"We create detailed budget plan and regularly monitor expenses to priotize spending on key element and making neccessary adjustment when needed.",
       solution2:"We hire experience architect and designers who have expertise in luxury project. Also we established clear communication channels to ensure all customization requirements are understood and implemented accurately. ",
       type:"Construction"
@@ -51,7 +70,14 @@ const projData = [
       title: "Luxe Harmony Suites  ",
       date: "January 1, 2023",
       summary: "Luxe Harmony Suites offers six(6) exquisite apartment, designed for luxury living. Its modern design echo-friendly features and premium amenities creates a harmonious environment for suphisticated resident seeking elegance, comfort and sustainability.  ",
-      img: firstImg,
+      img: harmony1,
+      images:[
+     
+        harmony2,
+        harmony3,
+        harmony4,
+
+      ],
       category:"Residential",
       client: "Undisclosed",
       location: "Oladele Family, at Bole Area, Akinmoorin, Afijio L.G.A, Oyo State",
