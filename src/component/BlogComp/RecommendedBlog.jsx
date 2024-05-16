@@ -18,7 +18,7 @@ const randomThreeBlogs = shuffleProj(blogData).slice(0, 3);
         <>
             <section className='xl:mx-[90px] md:m-5 mx-6 font-roboto'>
                 <div className="mt-10 text-center">
-            <h2 className="tracker-[2px] text-[35px] text-vintage font-semibold">Recommended Blogs</h2>
+            <h2 className="tracker-[2px] md:text-[35px] text-[28px] text-vintage font-semibold">Recommended Blogs</h2>
           
             </div>
             <div 

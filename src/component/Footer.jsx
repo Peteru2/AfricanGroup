@@ -40,7 +40,7 @@ const Footer = () => {
                     initial="hidden"
                     whileInView="visible"
                     transition={{delay: 0.6, 
-                    duration: 0.5}}
+                    duration: 0.2}}
                       
                     className="col-span-4 md:col-span-1">
                         <h2 className="md:mb-4 mb-6 font-medium text-[14px]">USEFUL LINKS</h2>
@@ -59,7 +59,7 @@ const Footer = () => {
                     initial="hidden"
                     whileInView="visible"
                     transition={{delay:  0.7, 
-                    duration: 0.5}}
+                    duration: 0.2}}
                       
                     className="col-span-2">
                         <h2 className="mb-6  font-medium text-[14px]">CONTACT INFO</h2>
@@ -80,7 +80,7 @@ const Footer = () => {
                     initial="hidden"
                     whileInView="visible"
                     transition={{delay:  0.5, 
-                    duration: 0.5}}
+                    duration: 0.2}}
                     className="col-span-4">
                         <h2 className="mb-6 font-serif md:text-[14px] font-medium text-[14px]">CAREERS</h2>
                         <h4>We are constantly in quest of talented, passion-driven folks with a tenacity for excellence.</h4>

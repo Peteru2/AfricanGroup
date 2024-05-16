@@ -18,13 +18,13 @@ const BlogPost = ({post}) => {
       
       <div className="flex items-center mt-6">
         <p className='text-gray text-[50px] mr-12'><i className="fa fa-quote-right"></i></p>
-        <p className="font-bold md:w-[850px] text-[40px]">{post.h2}</p>
+        <p className="font-bold md:w-[850px] md:text-[40px] text-[33px]">{post.h2}</p>
       </div>
       <p className='my-3'>{post.p3}</p>
       <p className='my-3'>{post.p4}</p>
 
       <div className="mt-8">
-        <h2 className='font-bold text-[25px]'>{post.h3}</h2>
+        <h2 className='font-bold md:text-[25px] text-[20px]'>{post.h3}</h2>
       <p className='my-3'>{post.p5}</p>
         <ol className='list ml-14'>
               {sentences.map((sentence, index) => (
