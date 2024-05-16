@@ -70,7 +70,7 @@ const projData = [
       title: "Luxe Harmony Suites  ",
       date: "January 1, 2023",
       summary: "Luxe Harmony Suites offers six(6) exquisite apartment, designed for luxury living. Its modern design echo-friendly features and premium amenities creates a harmonious environment for suphisticated resident seeking elegance, comfort and sustainability.  ",
-      img: harmony1,
+      img: harmony1, 
       images:[
      
         harmony2,

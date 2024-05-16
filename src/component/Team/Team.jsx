@@ -139,42 +139,10 @@ const handlePrev = () => {
                        
                     </div>
                 </div>
-                <div className="item" onClick={handleNext} style={{backgroundImage: 'url(https://i.ibb.co/NSwVv8D/img3.jpg)'}}>
-                <div className="content">
-                        <div className="text-[26px] font-lora  text-white font-semibold mb-2">Olawoore Oladayo</div>
-                        <div className="text-[20px] uppercase text-white font-semibold mb-2">Founder & CEO</div>
-
-                        <div className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
-                       
-                    </div>
-                </div>
-                <div className="item" onClick={handleNext} style={{backgroundImage: 'url(https://i.ibb.co/Bq4Q0M8/img4.jpg)'}}>
-                    <div className="content">
-                        <div className="text-[26px] font-lora  text-white font-semibold mb-2">Olawoore Oladayo</div>
-                        <div className="text-[20px] uppercase text-white font-semibold mb-2">Founder & CEO</div>
-
-                        <div className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
-                       
-                    </div>
-                </div>
-                <div className="item" onClick={handleNext} style={{backgroundImage: 'url(https://i.ibb.co/jTQfmTq/img5.jpg)'}}>
-                <div className="content">
-                        <div className="text-[26px] font-lora  text-white font-semibold mb-2">Olawoore Oladayo</div>
-                        <div className="text-[20px] uppercase text-white font-semibold mb-2">Founder & CEO</div>
-
-                        <div className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
-                       
-                    </div>
-                </div>
-                <div className="item" onClick={handleNext} style={{backgroundImage: 'url(https://i.ibb.co/RNkk6L0/img6.jpg)'}}>
-                <div className="content">
-                        <div className="text-[26px] font-lora  text-white font-semibold mb-2">Olawoore Oladayo</div>
-                        <div className="text-[20px] uppercase text-white font-semibold mb-2">Founder & CEO</div>
-
-                        <div className="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ab, eum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime possimus praesentium at porro, nulla recusandae architecto molestiae, accusamus molestias ex est, quasi aliquid eius mollitia excepturi? Odio rerum eum reiciendis.</div>
-                       
-                    </div>
-                </div>
+                
+               
+                
+                
             </div>
 
             <div className="button">
