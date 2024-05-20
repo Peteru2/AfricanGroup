@@ -11,6 +11,14 @@ import navy1 from "../../assets/images/realEstateImg/navy1.jpg"
 import navy2 from "../../assets/images/realEstateImg/navy2.jpg"
 import navy3 from "../../assets/images/realEstateImg/navy3.jpg"
 import navy4 from "../../assets/images/realEstateImg/navy4.jpg"
+import ideraP11 from "../../assets/images/realEstateImg/ideraP11.jpg"
+import ideraP12 from "../../assets/images/realEstateImg/ideraP12.jpg"
+import ideraP13 from "../../assets/images/realEstateImg/ideraP13.jpg"
+import ideraP14 from "../../assets/images/realEstateImg/ideraP14.jpg"
+import ideraP15 from "../../assets/images/realEstateImg/ideraP15.jpg"
+
+
+
 
 
 
@@ -220,7 +228,16 @@ const projData = [
         title: "Idera City Phase 1",
         price:"250,000",
         sqm:"470", 
-        img: firstImg,
+        img: ideraP11,
+        images:[
+          ideraP11,
+          ideraP12,
+          ideraP13,
+          ideraP14,
+          ideraP15,
+
+
+        ],
         location: "Ilora, Oyo State",
         status:"Sold Out",
         description1: "Idera City Phase 1, nestled in Ilora, Oyo State, just a 7-minute drive from the Oyo/Ibadan Expressway, Idera City offers spacious 470 sqm plots, the perfect foundation for building your dream home. Whether you're a family seeking a peaceful escape or a savvy investor, Idera City promises an environment that surpasses the ordinary.",
