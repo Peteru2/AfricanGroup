@@ -43,7 +43,7 @@ const blogData = [
     },
     {
       id: 3,
-      titleParam:"top-strategies-to-sell-like-crazy!",
+      titleParam:"top-strategies-to-sell-like-crazy",
       title: "Top Strategies to Sell Like Crazy!",
       date: "March 10, 2024",
       p1: ` Ever feel like your "For Sale" sign is gathering dust, and potential buyers are mysteriously missing in action? Selling a property can be a daunting task, but fear not! Here at African Group Blog, we're spilling the tea on the top 5 secrets real estate agents won't tell you.`,
@@ -64,7 +64,7 @@ const blogData = [
     },
     {
       id: 4,
-      titleParam:"the-kabiesi-of-all-lands-and-housing!",
+      titleParam:"the-kabiesi-of-all-lands-and-housing",
       title: "The Kabiesi of all Lands and Housing!",
       date: "March 18, 2024",
       p1: ` African Group isn't just a company, it's a legacy. Like esteemed monarchs (Kabiesi) who oversee vast and treasured lands, we stand as a beacon of excellence in surveying, real estate, construction and agro across Nigeria and Africa as a whole.`,
@@ -83,7 +83,7 @@ const blogData = [
     },
     {
       id: 5,
-      titleParam:"african-group-sprouts-hope:",
+      titleParam:"african-group-sprouts-hope",
       title: "African Group Sprouts Hope",
       date: "April 5, 2024",
       p1: ` African group set to unveil African farm to tackle food insecurity with 200 acres of maize, cassava and tomato farms.

@@ -7,6 +7,12 @@ import harmony1 from "../../assets/images/constructionImg/harmony1.jpg"
 import harmony2 from "../../assets/images/constructionImg/harmony2.jpg"
 import harmony3 from "../../assets/images/constructionImg/harmony3.jpg"
 import harmony4 from "../../assets/images/constructionImg/harmony4.jpg"
+import navy1 from "../../assets/images/realEstateImg/navy1.jpg"
+import navy2 from "../../assets/images/realEstateImg/navy2.jpg"
+import navy3 from "../../assets/images/realEstateImg/navy3.jpg"
+import navy4 from "../../assets/images/realEstateImg/navy4.jpg"
+
+
 
 
 
@@ -396,14 +402,23 @@ const projData = [
         title: "Navy Park City",
         price:"4,000,000",
         sqm:"470", 
-        img: firstImg,
-        location: "Along Idi-igba/Akinmoorin road, Oyo, Oyo State.",
+        img: navy2,
+        images:[
+     
+          navy1,
+          navy2,
+          navy3,
+          navy4,
+
+  
+        ],
+        location: "Along Idi-igba/Akinmoorin Road, Oyo, Oyo State.",
         status:"Available",
         description1: "Envision a future filled with peace of mind and exciting possibilities. Navy Park City, situated strategically along Idi-Igba/Akinmoorin Road in Oyo, Oyo State, offers you the perfect canvas for building your dream. Own a spacious 470 sqm plot at an attractive price of ₦4,000,000 – perfect for families, investors, or anyone seeking a solid foundation for their future.",
         description2:"This up-and-coming location boasts more than just affordability. Navy Park City is designed to foster a sense of uniqueness and well-being,  With Ideal Location to enjoy easy access to major transportation routes, keeping you connected to the vibrant pulse of Oyo State and a secure environment for you to  Invest with confidence, knowing your land ownership is protected.",   
         description3:"Embrace the opportunity to become a homeowner today. Secure your plot at Navy Park City and start building a future brimming with potential. Don't miss out on this chance to be part of a thriving community.",
         amenities:"Standard layout; Standard road network; Concrete electric poles; Road network; Free documentation",
-        landmarks:"Lord’s Group of School; Bumat International Hotel; Kofo Garden Estate; Idi/Igba main Road; Federal College University",
+        landmarks:"Lord’s Group of School; Adebat Hotel; Kofo Garden Estate; Idi-Igba Main Road; Federal College University",
         documents:" Payment Reciept; Contract of Sales; Allocation Letter; Record Copy Survey",
 
         paymentPlan:[
@@ -414,8 +429,8 @@ const projData = [
           currentValue:""
         }, 
         {
-          sqr:"500SQM",
-          paymentMethod:"Outright/6 months",
+          sqr:"470SQM",
+          paymentMethod:"Installment/6 months",
           price:"5,000,000",
           currentValue:""
         }, 

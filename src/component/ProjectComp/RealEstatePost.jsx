@@ -47,7 +47,7 @@ const RealEstatePost = () => {
                 </div>
             </div>
         </div>
-        <RealEstateImgSlide />
+        <RealEstateImgSlide post={post} />
 
         <div className="flex w-full mt-2">
                 <div className="md:ml-auto md:my-0 my-4">
@@ -131,7 +131,7 @@ const RealEstatePost = () => {
                 <h2 className="font-bold text-[18px] mb-1">Payment Details</h2>
                 <h2><span  className="font-bold text-[17px] text-black text-opacity-70">Bank name:</span> <span className="text-opacity-80 text-black text-[17px]">Access Bank</span></h2>
 
-                <div className="md:flex w-full mt-3">
+                <div className="md:flex w-full ">
                   <div>
                 <h2><span  className="font-bold text-[17px] text-black text-opacity-70">Account name:</span> <span className="text-opacity-80 text-black text-[17px]">African Survey and Realty limited</span></h2>
                 <h2><span  className="font-bold text-[17px] text-black text-opacity-70">Account number:</span> <span className="text-opacity-80 text-black text-[17px]">1474270252</span></h2>

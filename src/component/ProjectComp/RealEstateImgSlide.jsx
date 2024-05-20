@@ -1,15 +1,15 @@
 import { useRef, useEffect, useState } from "react";
 import img from "../../assets/images/FirstSectionImage1.jpg"
 
-const RealEstateImgSlide = () => {
+const RealEstateImgSlide = ({post}) => {
     const sliderRef = useRef(null);
     const [showButtons, setShowButtons] = useState(true);
-    const scrollAmountDesktop = 840; 
-    const scrollAmountTablet = 400; 
-    const scrollAmountMobile = 250; 
+    const scrollAmountDesktop = 500; 
+    const scrollAmountTablet = 200; 
+    const scrollAmountMobile = 150; 
 
     console.log(window.innerWidth)
-    const scrollAmount = window.innerWidth <= 768 ? scrollAmountMobile : window.innerWidth <= 480 ? scrollAmountMobile : scrollAmountDesktop;
+    const scrollAmount = window.innerWidth <= 768 ? scrollAmountMobile : window.innerWidth <= 480 ? scrollAmountTablet : scrollAmountDesktop;
 
 
     return ( 
@@ -19,17 +19,18 @@ const RealEstateImgSlide = () => {
      
   
       <div className="images-container" ref={sliderRef}>
-        {/* {images.map((image) => {
+      
+        {post.images.map((image) => {
           return (
             <img
               className="image"
               alt="sliderImage"
               key={image?.id}
-              src={image?.url}
+              src={image}
             />
           );
-        })} */}
-         <img
+        })}
+         {/* <img
               className="image"
               alt="sliderImage"
               key={img}
@@ -52,7 +53,7 @@ const RealEstateImgSlide = () => {
             alt="sliderImage"
             key={img}
             src={img}
-          />
+          /> */}
            <button
         className="nav-btn1"
         onClick={() => {
