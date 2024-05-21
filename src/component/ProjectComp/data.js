@@ -510,7 +510,7 @@ const projData = [
         img: firstImg,
         totalArea:"7 Acres",
         duration:"3 weeks",
-        serviceType:"Topographical Survey",
+        serviceType:"Boundary/Layout Survey",
         client: "Macouniverse Group",
         location: "Epe, Lagos",
         status:"Completed",

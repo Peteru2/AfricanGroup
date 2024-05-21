@@ -32,7 +32,7 @@ const SurveyPost = () => {
           <div className="my-3">
             <div className="grid md:grid-cols-2 grid-cols-1 w-full">
                 <div>
-                    <h2 className="text-black font-bold text-[18px] mb-4 text-opacity-80">{post.location}</h2>
+                    <h2 className="text-black font-bold text-[18px] mb-4 text-opacity-80"><i className="fa fa-map-marker"></i> {post.location}</h2>
                     <h2 className="text-black font-normal text-opacity-60 flex items-center"><span className="rounded font-thin text-sm py-1 bg-gray bg-opacity-20 test-gray px-3 mr-3">Survey</span><span className={`${ post.status=="Completed"? "bg-public bg-opacity-60  text-white": post.status =="Ongoing"?"bg-yellow bg-opacity-80 text-black":""} text-sm   px-3 py-1 rounded  `}>{post.status}</span></h2>
 
                 </div>
