@@ -64,7 +64,7 @@ const POQ = () => {
                         <h2 className="my-5"><strong>  . Client Satisfaction:</strong>  Our ultimate goal is to exceed client expectations. We work closely with our clients, understanding their vision and aspirations, to deliver projects that not only meet their needs but also surpass their wildest dreams. Your satisfaction is our driving force!
                         </h2>
 
-                        <h2 className="my-5">At African Group, we don't just build structures; we create legacies. With a bold and concise objective, we aim to maximize value for our shareholders, deliver strong nancial performance, and achieve sustainable growth. Also, we are committed to the established quality management system (QMS), both administrative and operational, to work towards continuous improvement of our quality performance.
+                        <h2 className="my-5">At African Group, we don't just build structures; we create legacies. With a bold and concise objective, we aim to maximize value for our shareholders, deliver strong financial performance, and achieve sustainable growth. Also, we are committed to the established quality management system (QMS), both administrative and operational, to work towards continuous improvement of our quality performance.
 
                         </h2>
                     </motion.div>
