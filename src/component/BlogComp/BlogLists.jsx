@@ -2,12 +2,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import blogData from './data';
-import Navbar from '../Navbar/Navbar';
 import { motion } from 'framer-motion';
 import image from "../../assets/images/about.jpg"
 import ImageWithOverlay from '../ImageWithOverlay';
-import Footer from '../Footer';
 import Helmett from '../Helmet';
+import Layout from '../Layout';
 const BlogList = () => {
   const MAX_CONTENT_LENGTH = 180; // You can set your desired maximum length
 
@@ -24,7 +23,7 @@ const truncateText = (text, maxLength) => {
                 title="Blog - The Best Surveying Company"
                 content="Explore our blog for insightful articles on land surveying in Oyo, Nigeria. Stay informed with expert tips, industry trends, and valuable information about property development. Dive into our blog to gain knowledge and make informed decisions for your projects."
                 />
-      <Navbar />
+      <Layout>
             <ImageWithOverlay
                 imageUrl={image}
                 title1="AfricanGroup"
@@ -102,7 +101,7 @@ const truncateText = (text, maxLength) => {
         </motion.div>
       </ul>
       </section>
-      <Footer />
+      </Layout>
     </div>
   );
 };

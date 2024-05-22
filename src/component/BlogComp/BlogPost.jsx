@@ -1,11 +1,17 @@
 // BlogPost.js
 import React from 'react';
 import RecommendedBlog from './RecommendedBlog';
+import Helmett from '../Helmet';
 const BlogPost = ({post}) => {
   const sentences = post.list.split(';');
  
 
   return (
+  <>
+  <Helmett 
+                title={`Blog - ${post.title}`}
+               
+                />
       <div className="xl:mx-[90px] md:mx-5  mx-6 my-5 font-roboto">
         <h2 className="text-sm text-black text-opacity-50 flex items-center "> <span>by {post.author} </span> <span className='w-6 mx-2 flex h-[1px] bg-black bg-opacity-50'></span><span>{post.readTime} minutes read</span></h2>
         <div className="my-3">
@@ -36,6 +42,7 @@ const BlogPost = ({post}) => {
       </div>
       <RecommendedBlog />
     </div>
+  </>
   );
 };
 

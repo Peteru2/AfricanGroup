@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import image from "../../assets/images/about.jpg"
 import RecommendedRealEstate from "./RecommendedRealEstate";
 import RealEstateImgSlide from "./RealEstateImgSlide";
+import Helmett from "../Helmet";
 
 
 const RealEstatePost = () => {
@@ -21,6 +22,10 @@ const RealEstatePost = () => {
     }
     return ( 
         <>
+         <Helmett 
+                title={`Real Estate - ${post.title}`}
+               
+                />
         <Layout>
         <ImageWithOverlay
                 imageUrl={image}

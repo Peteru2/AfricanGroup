@@ -6,6 +6,8 @@ import Navbar from '../Navbar/Navbar';
 import Footer from '../Footer';
 import image from "../../assets/images/about.jpg"
 import ImageWithOverlay from '../ImageWithOverlay';
+import Layout from '../Layout';
+import Helmett from '../Helmet';
 
 const ServicePost = () => {
   const { titleParam } = useParams();
@@ -16,9 +18,13 @@ const ServicePost = () => {
   }
 
   return (
-    <div>
-        <Navbar />
-        <ImageWithOverlay
+      <>
+       <Helmett 
+                title={`Services - ${post.title}`}
+               
+                />
+       <Layout>
+                <ImageWithOverlay
                 imageUrl={image}
                 span1="Services"
                 span2={post.title}
@@ -43,9 +49,9 @@ const ServicePost = () => {
         </div>
       </section>
      
-     
-      <Footer />
-    </div>
+      </Layout>
+      </>
+    
   );
 };
 

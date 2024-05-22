@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import projData from "./data";
 import image from "../../assets/images/about.jpg"
 import { Link } from "react-router-dom";
-
+import Helmett from "../Helmet";
 
 const SurveyPost = () => {
   
@@ -16,6 +16,10 @@ const SurveyPost = () => {
     }
     return ( 
         <>
+         <Helmett 
+                title={`Survey - ${post.title}`}
+               
+                />
         <Layout>
         <ImageWithOverlay
                 imageUrl={image}

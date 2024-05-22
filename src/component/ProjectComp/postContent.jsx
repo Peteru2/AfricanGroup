@@ -1,6 +1,7 @@
  import projData from "./data";
 import { useParams } from 'react-router-dom';
 import { motion } from "framer-motion";
+import Helmett from "../Helmet";
 const PostContent = () => {
     const { titleParam } = useParams();
     
@@ -10,6 +11,10 @@ const PostContent = () => {
     }
     return ( 
         <>
+         <Helmett 
+                title={`Construction - ${post.title}`}
+               
+                />
         <div className="xl:mx-[90px] md:mx-5 mx-6 mt-20 font-lora ">
             <div className="grid md:grid-cols-5 grid-cols-1 md:gap-6">
                 <motion.div 

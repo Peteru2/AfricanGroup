@@ -1,9 +1,8 @@
-import Navbar from "../component/Navbar/Navbar";
 import ImageWithOverlay from "../component/ImageWithOverlay";
-import Footer from "../component/Footer";
 import BlogPost from "../component/BlogComp/BlogPost";
 import { useParams } from 'react-router-dom';
 import blogData from "../component/BlogComp/data";
+import Layout from "../component/Layout";
 const Blog = () => {
     const { titleParam } = useParams();
     const post = blogData.find((post) => post.titleParam === titleParam);
@@ -13,7 +12,7 @@ const Blog = () => {
     }
     return ( 
             <>
-            <Navbar />
+            <Layout>
             <ImageWithOverlay
                 imageUrl={post.img}
                 span1="Blog"
@@ -24,7 +23,7 @@ const Blog = () => {
 
             />
             <BlogPost post={post} />
-            <Footer />
+            </Layout>
             </>
      );
 }
