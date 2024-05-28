@@ -20,7 +20,7 @@ const RealEstateImgSlide = ({post}) => {
   
       <div className="images-container" ref={sliderRef}>
       
-        {post.images.map((image) => {
+        {/* {post.images.map((image) => {
           return (
             <img
               className="image"
@@ -29,13 +29,14 @@ const RealEstateImgSlide = ({post}) => {
               src={image}
             />
           );
-        })}
-         {/* <img
+        })} */}
+          <img
               className="image"
               alt="sliderImage"
               key={img}
               src={img}
             />
+            {/*
              <img
               className="image"
               alt="sliderImage"
