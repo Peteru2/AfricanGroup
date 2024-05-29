@@ -1,4 +1,3 @@
-import img from "../../assets/images/FirstSectionImage1.jpg"
 import ServiceData from "./ServiceData";
 import Helmett from "../Helmet";
 import image from "../../assets/images/about.jpg"
@@ -68,7 +67,7 @@ const ServiceContent = () => {
                                     <Link to={`/service/${service.titleParam}`}>
 
                                         <div className="relative  md:mb-[200px] mb-[120px]">                          
-                            <img src={img} alt="img"  /> 
+                            <img src={service.img} alt="img" className="h-[300px] w-full" /> 
                             <div className={service.class1}>
                                 <div className="relative ">
                                     <div className={service.class2}>
