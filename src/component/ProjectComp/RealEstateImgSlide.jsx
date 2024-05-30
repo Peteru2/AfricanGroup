@@ -20,22 +20,22 @@ const RealEstateImgSlide = ({post}) => {
   
       <div className="images-container" ref={sliderRef}>
       
-        {/* {post.images.map((image) => {
+        {post.images.map((image) => {
           return (
             <img
-              className="image"
+              className="image md:h-[400px] md:w-[500px]"
               alt="sliderImage"
               key={image?.id}
               src={image}
             />
           );
-        })} */}
-          <img
+        })}
+          {/* <img
               className="image"
               alt="sliderImage"
               key={img}
               src={img}
-            />
+            /> */}
             {/*
              <img
               className="image"

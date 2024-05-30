@@ -144,7 +144,7 @@ const PostContent = () => {
     <div className="grid md:grid-cols-3 gap-5  grid-cols-1 my-10">
         {post.images.map((img, index) => (
             <div key={index}>
-                <img src={img} alt={post.title} />
+                <img src={img} alt={post.title}  className="h-[300px] w-full"/>
             </div>
         ))}
         

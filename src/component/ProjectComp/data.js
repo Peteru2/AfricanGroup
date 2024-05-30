@@ -3,6 +3,8 @@ import sereneVilla1 from "../../assets/images/constructionImg/sereneVilla1.jpg"
 import sereneVilla2 from "../../assets/images/constructionImg/sereneVilla2.jpg"
 import sereneVilla3 from "../../assets/images/constructionImg/sereneVilla3.jpg"
 import sereneVilla4 from "../../assets/images/constructionImg/sereneVilla4.jpg"
+import luxuryGad1 from "../../assets/images/constructionImg/luxuryGad1.jpg"
+import luxuryGad2 from "../../assets/images/constructionImg/luxuryGad2.jpg"
 import harmony1 from "../../assets/images/constructionImg/harmony1.jpg"
 import harmony2 from "../../assets/images/constructionImg/harmony2.jpg"
 import harmony3 from "../../assets/images/constructionImg/harmony3.jpg"
@@ -16,6 +18,10 @@ import ideraP12 from "../../assets/images/realEstateImg/ideraP12.jpg"
 import ideraP13 from "../../assets/images/realEstateImg/ideraP13.jpg"
 import ideraP14 from "../../assets/images/realEstateImg/ideraP14.jpg"
 import ideraP15 from "../../assets/images/realEstateImg/ideraP15.jpg"
+
+
+
+
 
 
 
@@ -153,7 +159,13 @@ const projData = [
       title: "Luxury Gadget Gallery ",
       date: "January 1, 2023",
       summary: "Comfort Abode Residence, epitomizes the essence of cozy welcoming living. This recidential offers thoughtfully designed spaces, modern comfort and worm atmosphere, creating a perfect santuary for families seeking a peaceful and comfortable lifestyle.",
-      img: firstImg,
+      img: luxuryGad1,
+      images:[
+     
+       luxuryGad1,
+       luxuryGad2,
+
+      ],
       category:"Commercial",
       client: "03 Phones and Gadgets",
       location: "At Tobacco Area, Off Old Oyo / Ogbomoso Road, Aroromi Oyo. Oyo East LGA, Oyo State",

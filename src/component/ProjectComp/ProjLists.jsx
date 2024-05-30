@@ -125,9 +125,9 @@ const ProjList = () => {
         className="relative group"
         style={{ 'maxWidth': '100%', 'height': 'auto', position: 'relative' }}>
             <img
-                className="w-full h-full object-cover"
+                className="w-full h-[300px] object-cover"
                 src={data.img}
-                alt="kasdka"
+                alt={data.title}
             />
         <Link to={data.type === "Construction" ? `/project/construction/${data.titleParam}` : data.type === "Survey" ? `/project/survey/${data.titleParam}` : data.type === "Real Estate" ? `/project/real-estate/${data.titleParam}`: null} >
 
