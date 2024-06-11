@@ -4,18 +4,15 @@ import Chat from "./SideChat";
 import { motion } from "framer-motion";
 
 const Layout = ({ children }) => {
-    return (
-      <div>
-        <Navbar />
-        <motion.main
-       
-        >{children}
-        </motion.main>
-        <Chat />
+  return (
+    <div>
+      <Navbar />
+      <motion.main>{children}</motion.main>
+      <Chat />
 
-        <Footer />
-      </div>
-    );
-  };
-  
-  export default Layout;
+      <Footer />
+    </div>
+  );
+};
+
+export default Layout;

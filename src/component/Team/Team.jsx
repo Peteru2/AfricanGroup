@@ -1,38 +1,37 @@
 import { motion } from "framer-motion";
 
-  import TeamImg from "../../assets/images/Team1.jpg"
-import image from "../../assets/images/about.jpg"
-import avatar from "../../assets/images/avatar.jfif"
+import TeamImg from "../../assets/images/Team1.jpg";
+import image from "../../assets/images/about.jpg";
+import avatar from "../../assets/images/avatar.jfif";
 
-import ImageWithOverlay from '../ImageWithOverlay';
+import ImageWithOverlay from "../ImageWithOverlay";
 import TeamData from "./TeamData";
 import Layout from "../Layout";
 import { Link } from "react-router-dom";
-import { Slide } from 'react-slideshow-image';
+import { Slide } from "react-slideshow-image";
 
 const Team = () => {
-  
-const handleNext = () => {
-  const items = document.querySelectorAll('.item');
-  document.querySelector('.slide').appendChild(items[0]);
-};
+  const handleNext = () => {
+    const items = document.querySelectorAll(".item");
+    document.querySelector(".slide").appendChild(items[0]);
+  };
 
-const handlePrev = () => {
-  const items = document.querySelectorAll('.item');
-  document.querySelector('.slide').prepend(items[items.length - 1]);
-};
-    return ( 
-        <>
-            <Layout>  
-              <ImageWithOverlay
-                imageUrl={image}
-                span1="About Us"
-                span2="Team"
-                title2="Our Team"
-                decrip="Meet With The Expert Team"
-                height="400px"
-      />
-  {/* <section className="font-roboto mt-8 xl:mx-[90px] md:mx-5 mx-6 my-10">
+  const handlePrev = () => {
+    const items = document.querySelectorAll(".item");
+    document.querySelector(".slide").prepend(items[items.length - 1]);
+  };
+  return (
+    <>
+      <Layout>
+        <ImageWithOverlay
+          imageUrl={image}
+          span1="About Us"
+          span2="Team"
+          title2="Our Team"
+          decrip="Meet With The Expert Team"
+          height="400px"
+        />
+        {/* <section className="font-roboto mt-8 xl:mx-[90px] md:mx-5 mx-6 my-10">
                 <div className="grid md:grid-cols-2 grid-cols-1 gap-10">
                     {TeamFirstData.map((data, index)=>{
                             return(
@@ -117,45 +116,71 @@ const handlePrev = () => {
                     </div>          
             </section> */}
 
-  <div className="slider-container">
-        <div className="container">
+        <div className="slider-container">
+          <div className="container">
             <div className="slide">
-                <div className="item"  onClick={handleNext} style={{backgroundImage: `url(${avatar})`}}>
-                    <div className="content">
-                        <div className="text-[26px] font-lora  text-white font-semibold mb-2">Olawoore Oladayo</div>
-                        <div className="text-[20px] uppercase text-white font-semibold mb-2">Founder & CEO</div>
+              <div
+                className="item"
+                onClick={handleNext}
+                style={{ backgroundImage: `url(${avatar})` }}
+              >
+                <div className="content">
+                  <div className="text-[26px] font-lora  text-white font-semibold mb-2">
+                    Olawoore Oladayo
+                  </div>
+                  <div className="text-[20px] uppercase text-white font-semibold mb-2">
+                    Founder & CEO
+                  </div>
 
-                        <div className="text-white">Oladayo Olawoore spearheads African Group with over 1 billion naira in executed deals across surveying, construction, and real estate over his career. His expertise spans the entire project lifecycle, from concept to completion, ensuring stakeholder alignment, procurement and business development with a Law degree in pursuit.
-                    </div>
-                       
-                    </div>
+                  <div className="text-white">
+                    Oladayo Olawoore spearheads African Group with over 1
+                    billion naira in executed deals across surveying,
+                    construction, and real estate over his career. His expertise
+                    spans the entire project lifecycle, from concept to
+                    completion, ensuring stakeholder alignment, procurement and
+                    business development with a Law degree in pursuit.
+                  </div>
                 </div>
-                <div className="item" onClick={handleNext} style={{backgroundImage: 'url(https://i.ibb.co/jrRb11q/img2.jpg)'}}>
-                <div className="content" >
-                        <div className="text-[26px] font-lora  text-white font-semibold mb-2">Fatoki Micheal</div>
-                        <div className="text-[20px] uppercase text-white font-semibold mb-2">Executive Director</div>
+              </div>
+              <div
+                className="item"
+                onClick={handleNext}
+                style={{
+                  backgroundImage: "url(https://i.ibb.co/jrRb11q/img2.jpg)",
+                }}
+              >
+                <div className="content">
+                  <div className="text-[26px] font-lora  text-white font-semibold mb-2">
+                    Fatoki Micheal
+                  </div>
+                  <div className="text-[20px] uppercase text-white font-semibold mb-2">
+                    Executive Director
+                  </div>
 
-                        <div className="text-white">A young and dynamic entrepreneur, with a blend of experience in entrepreneur, information and communication technology, project management, and business development. Mr. Fatoki brings a fresh perspective and proven skills in real estate packaging and leadership to African Group.</div>
-                       
-                    </div>
+                  <div className="text-white">
+                    A young and dynamic entrepreneur, with a blend of experience
+                    in entrepreneur, information and communication technology,
+                    project management, and business development. Mr. Fatoki
+                    brings a fresh perspective and proven skills in real estate
+                    packaging and leadership to African Group.
+                  </div>
                 </div>
-                
-               
-                
-                
+              </div>
             </div>
 
             <div className="button">
-                <button className="prev" onClick={handlePrev}><i className="fa-solid fa-arrow-left"></i></button>
-                <button className="next" onClick={handleNext}><i className="fa-solid fa-arrow-right"></i></button>
+              <button className="prev" onClick={handlePrev}>
+                <i className="fa-solid fa-arrow-left"></i>
+              </button>
+              <button className="next" onClick={handleNext}>
+                <i className="fa-solid fa-arrow-right"></i>
+              </button>
             </div>
+          </div>
         </div>
-        </div>
+      </Layout>
+    </>
+  );
+};
 
-        </Layout>
-            
-        </>
-     );
-}
- 
 export default Team;

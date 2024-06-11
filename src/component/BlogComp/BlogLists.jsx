@@ -1,106 +1,109 @@
 // BlogList.js
-import React from 'react';
-import { Link } from 'react-router-dom';
-import blogData from './data';
-import { motion } from 'framer-motion';
-import image from "../../assets/images/about.jpg"
-import ImageWithOverlay from '../ImageWithOverlay';
-import Helmett from '../Helmet';
-import Layout from '../Layout';
+import React from "react";
+import { Link } from "react-router-dom";
+import blogData from "./data";
+import { motion } from "framer-motion";
+import image from "../../assets/images/about.jpg";
+import ImageWithOverlay from "../ImageWithOverlay";
+import Helmett from "../Helmet";
+import Layout from "../Layout";
 const BlogList = () => {
   const MAX_CONTENT_LENGTH = 180; // You can set your desired maximum length
 
-// Function to truncate text and add "..."
-const truncateText = (text, maxLength) => {
-  if (text.length > maxLength) {
-    return text.substring(0, maxLength) + '...';
-  }
-  return text;
-};
+  // Function to truncate text and add "..."
+  const truncateText = (text, maxLength) => {
+    if (text.length > maxLength) {
+      return text.substring(0, maxLength) + "...";
+    }
+    return text;
+  };
   return (
-    <div> 
-       <Helmett 
-                title="Blog - The Best Surveying Company"
-                content="Explore our blog for insightful articles on land surveying in Oyo, Nigeria. Stay informed with expert tips, industry trends, and valuable information about property development. Dive into our blog to gain knowledge and make informed decisions for your projects."
-                />
-      <Layout>
-            <ImageWithOverlay
-                imageUrl={image}
-                title1="AfricanGroup"
-                span1="Blog"
-                span2=""
-                title2="  "
-                decrip="Our Blog"
-                height="400px"
+    <div>
+      <Helmett
+        title="Blog - The Best Surveying Company"
+        content="Explore our blog for insightful articles on land surveying in Oyo, Nigeria. Stay informed with expert tips, industry trends, and valuable information about property development. Dive into our blog to gain knowledge and make informed decisions for your projects."
       />
-            
-     <section className="font-roboto border-t-[1px] pt-6 mt-20 xl:mx-[90px] md:mx-5 mx-6 my-6">
-     <motion.div
-      variants ={{
-        hidden:{opacity: 0, y: 75},
-        visible:{opacity: 1, y: 0},
-    }}
-    initial="hidden"
-    whileInView="visible"
-    transition={{delay:  0.5, 
-    duration: 0.5}}
-      className="flex justify-center">
-                        <div className="mb-6">
-                        {/* <h4 className="text-3xl text-private text-center font-bold my-2">News and happenings</h4> */}
-                        
-                            <h5 className="md:w-[600px] text-center flex justify-center">Welcome to our blog hub, where expertice meets innovations. Explore insightful articles, industry trends and expert tips on real estates, construction, surveying and more. Empower your journey with us today.
+      <Layout>
+        <ImageWithOverlay
+          imageUrl={image}
+          title1="AfricanGroup"
+          span1="Blog"
+          span2=""
+          title2="  "
+          decrip="Our Blog"
+          height="400px"
+        />
 
-                            </h5>
-                           
-                            </div>
+        <section className="font-roboto border-t-[1px] pt-6 mt-20 xl:mx-[90px] md:mx-5 mx-6 my-6">
+          <motion.div
+            variants={{
+              hidden: { opacity: 0, y: 75 },
+              visible: { opacity: 1, y: 0 },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ delay: 0.5, duration: 0.5 }}
+            className="flex justify-center"
+          >
+            <div className="mb-6">
+              {/* <h4 className="text-3xl text-private text-center font-bold my-2">News and happenings</h4> */}
 
-                    </motion.div>
-      <ul>
-        <motion.div 
-         variants ={{
-          hidden:{opacity: 0, y: 75},
-          visible:{opacity: 1, y: 0},
-      }}
-      initial="hidden"
-      whileInView="visible"
-      transition={{delay:  0.5, 
-      duration: 0.5}}
-
-        className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1   gap-8   mb-4 font-roboto">
-        {blogData.map((post) => (
-          
-          <motion.li
-          variants ={{
-            hidden:{opacity: 0, y: 75},
-            visible:{opacity: 1, y: 0},
-        }}
-        initial="hidden"
-        whileInView="visible"
-        transition={{delay:  0.5, 
-        duration: 0.5}}
-          whileHover={{y: -25}}
-          
-           key={post.id} className='rounded-xl shadow-xl hover:shadow-2xl'>
- 
-            <Link to={`/blog/${post.titleParam}`} className=''>
-              <div className='rounded-lg'>
-                <img src={post.img} alt={post.name} className='rounded-tr-[15px] rounded-tl-[15px]'/>
-              </div>
-              <div className="bg-white  p-6 rounded-br-[15px] rounded-bl-[15px]">
-                <h4 className='text-private'>{post.type}</h4>
-              <h2 className='text-[25px] text-vintage mt-4 mb-6'>{post.title}</h2>
-              <h4 className='text-[15px]'>{truncateText(post.p1, MAX_CONTENT_LENGTH)}</h4>
-               <h4 className='text-gray mt-2'> {post.date} </h4>
-              </div>
-            </Link>
-       
-
-          </motion.li>
-
-        ))}
-        </motion.div>
-      </ul>
-      </section>
+              <h5 className="md:w-[600px] text-center flex justify-center">
+                Welcome to our blog hub, where expertice meets innovations.
+                Explore insightful articles, industry trends and expert tips on
+                real estates, construction, surveying and more. Empower your
+                journey with us today.
+              </h5>
+            </div>
+          </motion.div>
+          <ul>
+            <motion.div
+              variants={{
+                hidden: { opacity: 0, y: 75 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              initial="hidden"
+              whileInView="visible"
+              transition={{ delay: 0.5, duration: 0.5 }}
+              className="grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1   gap-8   mb-4 font-roboto"
+            >
+              {blogData.map((post) => (
+                <motion.li
+                  variants={{
+                    hidden: { opacity: 0, y: 75 },
+                    visible: { opacity: 1, y: 0 },
+                  }}
+                  initial="hidden"
+                  whileInView="visible"
+                  transition={{ delay: 0.5, duration: 0.5 }}
+                  whileHover={{ y: -25 }}
+                  key={post.id}
+                  className="rounded-xl shadow-xl hover:shadow-2xl"
+                >
+                  <Link to={`/blog/${post.titleParam}`} className="">
+                    <div className="rounded-lg">
+                      <img
+                        src={post.img}
+                        alt={post.name}
+                        className="rounded-tr-[15px] rounded-tl-[15px]"
+                      />
+                    </div>
+                    <div className="bg-white  p-6 rounded-br-[15px] rounded-bl-[15px]">
+                      <h4 className="text-private">{post.type}</h4>
+                      <h2 className="text-[25px] text-vintage mt-4 mb-6">
+                        {post.title}
+                      </h2>
+                      <h4 className="text-[15px]">
+                        {truncateText(post.p1, MAX_CONTENT_LENGTH)}
+                      </h4>
+                      <h4 className="text-gray mt-2"> {post.date} </h4>
+                    </div>
+                  </Link>
+                </motion.li>
+              ))}
+            </motion.div>
+          </ul>
+        </section>
       </Layout>
     </div>
   );

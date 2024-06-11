@@ -7,44 +7,44 @@ import Values from "../component/LandingPageComp/values";
 import Navbar from "../component/Navbar/Navbar";
 import BlogSection from "../component/LandingPageComp/BlogSection";
 import Chat from "../component/SideChat";
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import Layout from "../component/Layout";
 import Partners from "../component/LandingPageComp/Partners";
 // import "../style.css"
 
 const Landing = () => {
-    const [loading, setLoading] = useState(true);
-  
-    useEffect(() => {
-      // Simulate loading delay for 2 seconds
-      setTimeout(() => {
-        setLoading(false);
-      }, 3000);
-    }, []);
+  const [loading, setLoading] = useState(true);
 
-    return ( 
-       <>
+  useEffect(() => {
+    // Simulate loading delay for 2 seconds
+    setTimeout(() => {
+      setLoading(false);
+    }, 3000);
+  }, []);
 
-{loading ? (<LoadingComponent /> ) : (
+  return (
     <>
-    <Layout>
-             <section>
-                {/* <div className="py-20 bg-red">
+      {loading ? (
+        <LoadingComponent />
+      ) : (
+        <>
+          <Layout>
+            <section>
+              {/* <div className="py-20 bg-red">
                   Jesus is Lord
                 </div> */}
-                <FirstSection />
-                <Services />
-                <Testimonials />
-                <Partners />
-                <Values />
-                <BlogSection />
+              <FirstSection />
+              <Services />
+              <Testimonials />
+              <Partners />
+              <Values />
+              <BlogSection />
             </section>
-           
-            </Layout>
-            </> 
-            )}
-       </>
-     );
-}
- 
+          </Layout>
+        </>
+      )}
+    </>
+  );
+};
+
 export default Landing;

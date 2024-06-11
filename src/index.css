@@ -1,21 +1,17 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,900;1,400;1,500;1,600;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,900;1,400;1,500;1,600;1,800;1,900&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,500;1,700;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body{
-  background: transparent; 
+body {
+  background: transparent;
   /* overflow-x: hidden */
 }
 
-
-  .btnValueCore {
-      @apply p-2 rounded-[30px] border-private hover:bg-private text-white text-center transition ease-in-out delay-150  font-bold hover:border-white border-[2px] w-36 bg-gradient-to-r from-private to-vintage
-  }
-  .navMenu::after{
-        @apply content-[''] bg-white h-[3px] w-[100%] left-0 -bottom-[5px] rounded-xl absolute
-  }
-
+.btnValueCore {
+  @apply p-2 rounded-[30px] border-private hover:bg-private text-white text-center transition ease-in-out delay-150  font-bold hover:border-white border-[2px] w-36 bg-gradient-to-r from-private to-vintage;
+}
+.navMenu::after {
+  @apply content-[''] bg-white h-[3px] w-[100%] left-0 -bottom-[5px] rounded-xl absolute;
+}

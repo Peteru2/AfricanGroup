@@ -34,16 +34,15 @@ function SearchFilter({ data, onDataFiltered }) {
 
   return (
     <div className="flex justify-center mb-4 ">
-                    
-    <div className="py-2 border-[1px] border-gray my-2 rounded-md w-[500px]">
-      <input
-        type="text"
-        placeholder="Search..."
-        value={searchQuery}
-        onChange={handleChange}
-        className="w-full outline-none px-3"
-      />
-    </div>
+      <div className="py-2 border-[1px] border-gray my-2 rounded-md w-[500px]">
+        <input
+          type="text"
+          placeholder="Search..."
+          value={searchQuery}
+          onChange={handleChange}
+          className="w-full outline-none px-3"
+        />
+      </div>
     </div>
   );
 }
