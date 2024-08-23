@@ -12,52 +12,85 @@ const ProjList = () => {
   const [construction, setConstruction] = useState(false);
   const [realEstate, setRealEstate] = useState(false);
   const [survey, setSurvey] = useState(false);
+  const [agro, setAgro] = useState(false);
+  const [tech, setTech] = useState(false);
+
   const [shuffledData, setShuffledData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
 
-  useEffect(() => {
-    const savedState = localStorage.getItem("projListState");
-    if (savedState) {
-      const { construction, realEstate, survey } = JSON.parse(savedState);
-      setConstruction(construction);
-      setRealEstate(realEstate);
-      setSurvey(survey);
-    }
-    shuffleData();
-  }, []);
-
+  
   const handleAll = () => {
     setConstruction(false);
     setRealEstate(false);
     setSurvey(false);
-    updateLocalStorage(false, false, false);
+    setAgro(false);
+    setTech(false);
+    updateLocalStorage(false, false, false, false, false);
   };
 
   const handleConstruction = () => {
     setConstruction(true);
     setRealEstate(false);
     setSurvey(false);
-    updateLocalStorage(true, false, false);
+    setAgro(false);
+    setTech(false);
+    updateLocalStorage(true, false, false, false, false);
   };
 
   const handleRealEstate = () => {
     setConstruction(false);
     setRealEstate(true);
     setSurvey(false);
-    updateLocalStorage(false, true, false);
+    setAgro(false);
+    setTech(false);
+    updateLocalStorage(false, true, false, false, false);
   };
 
   const handleSurvey = () => {
     setConstruction(false);
     setRealEstate(false);
     setSurvey(true);
-    updateLocalStorage(false, false, true);
+    setAgro(false);
+    setTech(false);
+    updateLocalStorage(false, false, true, false, false);
   };
 
-  const updateLocalStorage = (construction, realEstate, survey) => {
+
+  const handleAgro = () => {
+    setConstruction(false);
+    setRealEstate(false);
+    setSurvey(false);
+    setAgro(true);
+    setTech(false);
+    updateLocalStorage(false, false, false, true, false);
+  }
+  const handleTech = () => {
+    setConstruction(false);
+    setRealEstate(false);
+    setSurvey(false);
+    setAgro(false);
+    setTech(true);
+    updateLocalStorage(false, false, false, false, true);
+  }
+
+  useEffect(() => {
+    const savedState = localStorage.getItem("projListState");
+    if (savedState) {
+      const { construction, realEstate, survey, agro, tech } = JSON.parse(savedState);
+      setConstruction(construction);
+      setRealEstate(realEstate);
+      setSurvey(survey);
+      setAgro(agro);
+      setTech(tech)
+
+    }
+    shuffleData();
+  }, []);
+
+  const updateLocalStorage = (construction, realEstate, survey, agro, tech) => {
     localStorage.setItem(
       "projListState",
-      JSON.stringify({ construction, realEstate, survey })
+      JSON.stringify({ construction, realEstate, survey, agro, tech })
     );
   };
 
@@ -95,7 +128,7 @@ const ProjList = () => {
           <h2
             onClick={handleAll}
             className={`${
-              !construction && !realEstate && !survey
+              !construction && !realEstate && !survey && !agro && !tech
                 ? " border-b-2 transition-all duration-300 ease-in-out text-center"
                 : " text-black text-opacity-60"
             } py-3 md:px-4 px-2  md:mx-2 mx-[2px] cursor-pointer  `}
@@ -132,6 +165,27 @@ const ProjList = () => {
           >
             Surveying
           </h2>
+          <h2
+            onClick={handleAgro}
+            className={`${
+              agro
+                ? " border-b-2 transition-all duration-300 ease-in-out text-center"
+                : " text-black text-opacity-60"
+            } py-3 md:px-4 px-2  md:mx-2 mx-[2px] cursor-pointer   `}
+          >
+            Agro
+          </h2>
+          <h2
+            onClick={handleTech}
+            className={`${
+              tech
+                ? " border-b-2 transition-all duration-300 ease-in-out text-center"
+                : " text-black text-opacity-60"
+            } py-3 md:px-4 px-2  md:mx-2 mx-[2px] cursor-pointer   `}
+          >
+            Tech
+          </h2>
+          
         </div>
 
         {!construction && !realEstate && !survey && (
@@ -143,7 +197,7 @@ const ProjList = () => {
 
         <div
           className={`${
-            !construction && !realEstate && !survey ? "block" : " hidden"
+            !construction && !realEstate && !survey && !agro && ! tech ? "block" : " hidden"
           } grid xl:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10  mb-[30px] font-roboto`}
         >
           {filteredData.map((data, index) => {
@@ -251,6 +305,12 @@ const ProjList = () => {
         </div>
         <div className={`${survey ? "block" : " hidden"}`}>
           <Survey />
+        </div>
+        <div className={`${agro ? "block" : " hidden"}`}>
+          <h2 className="text-center">Coming soon...</h2>
+        </div>
+        <div className={`${tech ? "block" : " hidden"}`}>
+          <h2 className="text-center">Coming soon... </h2>
         </div>
       </section>
     </>

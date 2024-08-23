@@ -18,7 +18,7 @@ import ideraP12 from "../../assets/images/realEstateImg/ideraP12.jpg";
 import ideraP13 from "../../assets/images/realEstateImg/ideraP13.jpg";
 import ideraP14 from "../../assets/images/realEstateImg/ideraP14.jpg";
 import ideraP15 from "../../assets/images/realEstateImg/ideraP15.jpg";
-
+import survey1 from "../../assets/images/surveyImg/survey1.jpg";
 const projData = [
   {
     id: 1,
@@ -673,7 +673,7 @@ const projData = [
     title: "Foxon International Services",
     description:
       "  African Group is currently engaged in an ongoing boundary re-establishment survey spanning 675 acres for Foxcon International Services Limited. at Odigbo local government, Ondo State. This meticulous survey employs advanced techniques to ensure precise boundary fixing, providing legal clarity and efficient land management for Foxcon International Services Limited's operations in the area. African group has a breathtaking opportunity to complete the survey without proper food and water with the first of its kind tough hilly terrain as one of the major challenges during the project. Foxcon team provided extended support for the successful completion of the project",
-    img: firstImg,
+    img: survey1,
     totalArea: "675 Acres",
     duration: "",
     serviceType: "Boundary Re-establishment Survey   ",
