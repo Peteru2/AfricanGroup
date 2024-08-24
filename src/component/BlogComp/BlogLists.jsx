@@ -5,6 +5,7 @@ import blogData from "./data";
 import { motion } from "framer-motion";
 import image from "../../assets/images/about.jpg";
 import ImageWithOverlay from "../ImageWithOverlay";
+import landImg3 from "../../assets/images/landImg3.jpeg"
 import Helmett from "../Helmet";
 import Layout from "../Layout";
 const BlogList = () => {
@@ -25,7 +26,7 @@ const BlogList = () => {
       />
       <Layout>
         <ImageWithOverlay
-          imageUrl={image}
+          imageUrl={landImg3}
           title1="AfricanGroup"
           span1="Blog"
           span2=""
@@ -85,7 +86,7 @@ const BlogList = () => {
                       <img
                         src={post.img}
                         alt={post.name}
-                        className="rounded-tr-[15px] rounded-tl-[15px]"
+                        className="rounded-tr-[15px] h-[250px]   w-[500px]  rounded-tl-[15px]"
                       />
                     </div>
                     <div className="bg-white  p-6 rounded-br-[15px] rounded-bl-[15px]">

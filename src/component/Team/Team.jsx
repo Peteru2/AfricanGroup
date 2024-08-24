@@ -3,6 +3,9 @@ import { motion } from "framer-motion";
 import TeamImg from "../../assets/images/Team1.jpg";
 import image from "../../assets/images/about.jpg";
 import avatar from "../../assets/images/avatar.jfif";
+import mrMicheal from "../../assets/images/teamImg/mrMicheal.jpeg";
+
+
 
 import ImageWithOverlay from "../ImageWithOverlay";
 import TeamData from "./TeamData";
@@ -132,7 +135,7 @@ const Team = () => {
                     Founder & CEO
                   </div>
 
-                  <div className="text-white">
+                  <div className="text-white bg-private">
                     Oladayo Olawoore spearheads African Group with over 1
                     billion naira in executed deals across surveying,
                     construction, and real estate over his career. His expertise
@@ -145,11 +148,9 @@ const Team = () => {
               <div
                 className="item"
                 onClick={handleNext}
-                style={{
-                  backgroundImage: "url(https://i.ibb.co/jrRb11q/img2.jpg)",
-                }}
+                style={{ backgroundImage: `url(${mrMicheal})` }}
               >
-                <div className="content">
+                <div className="content bg-private bg-opacity-20">
                   <div className="text-[26px] font-lora  text-white font-semibold mb-2">
                     Fatoki Micheal
                   </div>
@@ -157,7 +158,7 @@ const Team = () => {
                     Executive Director
                   </div>
 
-                  <div className="text-white">
+                  <div className="text-white ">
                     A young and dynamic entrepreneur, with a blend of experience
                     in entrepreneur, information and communication technology,
                     project management, and business development. Mr. Fatoki

@@ -1,4 +1,4 @@
-import Image1 from "../../assets/images/FirstSectionImage1.jpg"
+
 import landImg from "../../assets/images/landImg.jpeg"
 import landImg1 from "../../assets/images/landImg1.jpg"
 import landImg3 from "../../assets/images/landImg3.jpeg"
@@ -18,10 +18,10 @@ const slides = [{
     },
     {
         img: [
-            landImg3,
+            landImg,
         ],
         title: "Our Team",
-        header: "We Are Africa's Finest",
+        header: "We Are Africa's Best",
         vip: "",
         link: "about/team",
         content: "The company is driven by a group of highly trained, experienced, self-motivated, and very dynamic Professionals equipped to handle various categories of projects."

@@ -1,4 +1,15 @@
 import firstImg from "../../assets/images/FirstSectionImage1.jpg";
+import agro from "../../assets/images/blogImg/agro.jpeg"
+import sell from "../../assets/images/blogImg/sell.jpeg"
+import surveyLand from "../../assets/images/blogImg/surveyland.jpg"
+import invest from "../../assets/images/blogImg/invest.jpg"
+import landImg3 from "../../assets/images/landImg3.jpeg"
+
+
+
+
+
+
 const blogData = [
   {
     id: 1,
@@ -14,7 +25,7 @@ const blogData = [
     p5: " The reasons why the wealthy invest in real estate are clear: consistent income, long-term appreciation, inflation protection, security, and diversification. While real estate isn't a get-rich-quick scheme, it offers a solid foundation for building long-term wealth and achieving financial freedom.",
     p6: " Remember, the path to financial freedom starts with a solid foundation. Let real estate be the cornerstone of your wealth-building journey. At African Group, we understand the power of real estate and are dedicated to helping you achieve your financial goals. Contact us today to explore how our expertise in surveying, construction, and real estate can empower you to conquer your land with confidence. ",
     list: " A Steady Stream of Income ; A Path to Financial Freedom; Tangible Assets, Tangible Security: Peace of Mind You Can Hold",
-    img: firstImg,
+    img: invest,
     type: "BLOG",
     author: "Antonia Olawoore",
     readTime: 3,
@@ -34,7 +45,7 @@ const blogData = [
     list: " Build with Confidence; Sell Like a Boss ; Future-proof Your Investment: Protect Your Nest Egg.",
 
     p6: " Remember, a small investment upfront can save you a lot of drama down the line. At African Group, we offer comprehensive surveying services to empower you to own your land with confidence. Contact us today to discuss your specific needs and let our expert surveyors help you navigate the world of property boundaries. Don't let land issues steal your shine – get a property survey today.",
-    img: firstImg,
+    img: surveyLand,
     type: "BLOG",
     author: "Antonia Olawoore",
     readTime: 3,
@@ -54,7 +65,7 @@ const blogData = [
     list: "  Objections are Opportunities; Build Trust and Credibility; Speak Their Language",
 
     p6: "Selling like crazy isn't about manipulation; it's about understanding, empathy, and creating genuine value for your customers.",
-    img: firstImg,
+    img: sell,
     type: "BLOG",
     author: "Antonia Olawoore",
     readTime: 2,
@@ -73,7 +84,7 @@ const blogData = [
     p5: "Whether you're a seasoned investor seeking prime land or a first-time homeowner embarking on your dream build, African Group offers unparalleled expertise throughout your real estate journey. We believe real estate is more than just bricks and mortar; it's a canvas for crafting your legacy. We offer:",
     list: "  Unparalleled Expertise: Our team boasts a wealth of knowledge and experience, ensuring every project is completed to the highest standards.; Unwavering Commitment: We are dedicated to exceeding your expectations at every turn, providing exceptional service throughout your journey. ;A Dedication to Excellence: Just like a Kabiesi, we hold ourselves to the highest standards, ensuring your property reflects not just luxury, but true regality.",
     p6: "Don't settle for the ordinary. Join African Group and experience the transformative power of real estate designed for discerning individuals. Contact us today and let us help you build your own piece of Africa's redefined luxury.",
-    img: firstImg,
+    img: landImg3,
     type: "BLOG",
     author: "Antonia Olawoore",
     readTime: 3,
@@ -93,7 +104,7 @@ const blogData = [
     p5: "The African Farm goes beyond simply growing food. It aims to create a sustainable agricultural ecosystem:",
     list: "  Empowering Local Farmers: The project will provide training and resources to local communities, fostering a spirit of self-sufficiency and creating long-term employment opportunities.; Modern Techniques, Maximum Yield: African Group will leverage cutting-edge agricultural practices to ensure optimal harvest and resource management.; Increased Food Production: The farm will significantly contribute to the local food supply, providing fresh and nutritious produce for communities in need.",
     p6: `We believe that access to safe and nutritious food is a fundamental human right," says Mr. Oladayo Olawoore, CEO at African Group. "The African Farm is our contribution to building a food-secure future for Africa, one crop at a time.`,
-    img: firstImg,
+    img: agro,
     type: "BLOG",
     author: "Antonia Olawoore",
     readTime: 3,
