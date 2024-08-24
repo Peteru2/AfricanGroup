@@ -1,8 +1,14 @@
 import Image1 from "../../assets/images/FirstSectionImage1.jpg"
+import landImg from "../../assets/images/landImg.jpeg"
+import landImg1 from "../../assets/images/landImg1.jpg"
+import landImg3 from "../../assets/images/landImg3.jpeg"
+import landImg4 from "../../assets/images/landImg4.jpeg"
+
+
 
 const slides = [{
         img: [
-            Image1,
+            landImg3,
         ],
         title: "About",
         header: "We are the Kabiesi of all Lands and Housing",
@@ -12,7 +18,7 @@ const slides = [{
     },
     {
         img: [
-            Image1,
+            landImg3,
         ],
         title: "Our Team",
         header: "We Are Africa's Finest",
@@ -22,7 +28,7 @@ const slides = [{
     },
     {
         img: [
-            Image1,
+            landImg4,
         ],
         title: "Featured Project",
         header: "At African Group, we blend innovation with artistry",
@@ -32,7 +38,7 @@ const slides = [{
     },
     {
         img: [
-            Image1,
+            landImg1,
         ],
         title: "Construction",
         header: "Luxury Duplex By African Group",

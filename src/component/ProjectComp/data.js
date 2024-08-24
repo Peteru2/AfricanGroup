@@ -48,6 +48,57 @@ import halis2 from "../../assets/images/surveyImg/shoprite/shoprite2.jpg";
 import halis3 from "../../assets/images/surveyImg/shoprite/shoprite3.jpg";
 import halis4 from "../../assets/images/surveyImg/shoprite/shoprite4.jpg";
 import halis5 from "../../assets/images/surveyImg/shoprite/shoprite5.jpg";
+import halis6 from "../../assets/images/surveyImg/shoprite/shoprite6.jpg";
+import enugu1 from "../../assets/images/surveyImg/enuguStateGov/enugusg1.jpg";
+import enugu2 from "../../assets/images/surveyImg/enuguStateGov/enugusg2.jpg";
+import enugu3 from "../../assets/images/surveyImg/enuguStateGov/enugusg3.jpg";
+import enugu4 from "../../assets/images/surveyImg/enuguStateGov/enugusg4.jpg";
+import enugu5 from "../../assets/images/surveyImg/enuguStateGov/enugusg5.jpg";
+import enugu6 from "../../assets/images/surveyImg/enuguStateGov/enugusg6.jpg";
+import atmos1 from "../../assets/images/surveyImg/atmos/atmos1.jpeg";
+import atmos2 from "../../assets/images/surveyImg/atmos/atmos2.jpeg";
+import atmos3 from "../../assets/images/surveyImg/atmos/atmos3.jpeg";
+import atmos4 from "../../assets/images/surveyImg/atmos/atmos4.jpeg";
+import atmos5 from "../../assets/images/surveyImg/atmos/atmos5.jpeg";
+import atmos6 from "../../assets/images/surveyImg/atmos/atmos6.jpeg";
+import foxconOndo1 from "../../assets/images/surveyImg/foxconOndo/foxconOndo1.jpeg";
+import foxconOndo2 from "../../assets/images/surveyImg/foxconOndo/foxconOndo2.jpeg";
+import foxconOndo3 from "../../assets/images/surveyImg/foxconOndo/foxconOndo3.jpeg";
+import foxconOndo4 from "../../assets/images/surveyImg/foxconOndo/foxconOndo4.jpeg";
+import foxconOndo5 from "../../assets/images/surveyImg/foxconOndo/foxconOndo5.jpeg";
+import foxconOsun1 from "../../assets/images/surveyImg/foxconOsun/foxconOsun1.jpeg";
+import foxconOsun2 from "../../assets/images/surveyImg/foxconOsun/foxconOsun2.jpeg";
+import foxconOsun3 from "../../assets/images/surveyImg/foxconOsun/foxconOsun3.jpeg";
+import foxconOsun4 from "../../assets/images/surveyImg/foxconOsun/foxconOsun4.jpeg";
+import foxconOsun5 from "../../assets/images/surveyImg/foxconOsun/foxconOsun5.jpeg";
+import greenGas1 from "../../assets/images/surveyImg/greenGas/ggas1.jpeg";
+import greenGas2 from "../../assets/images/surveyImg/greenGas/ggas2.jpeg";
+import greenGas3 from "../../assets/images/surveyImg/greenGas/ggas3.jpeg";
+import gateway1 from "../../assets/images/surveyImg/olaros/olaros1.jpeg";
+import gateway2 from "../../assets/images/surveyImg/olaros/olaros2.jpeg";
+import gateway3 from "../../assets/images/surveyImg/olaros/olaros3.jpeg";
+import gateway4 from "../../assets/images/surveyImg/olaros/olaros4.jpeg";
+import gateway5 from "../../assets/images/surveyImg/olaros/olaros5.jpeg";
+import gateway6 from "../../assets/images/surveyImg/olaros/olaros6.jpeg";
+import mcyou1 from "../../assets/images/surveyImg/mcyou/mcyou1.jpeg";
+import mcyou2 from "../../assets/images/surveyImg/mcyou/mcyou2.jpeg";
+import mcyou3 from "../../assets/images/surveyImg/mcyou/mcyou3.jpeg";
+import mcyou4 from "../../assets/images/surveyImg/mcyou/mcyou4.jpeg";
+import mcyou5 from "../../assets/images/surveyImg/mcyou/mcyou5.jpeg";
+import mcyou6 from "../../assets/images/surveyImg/mcyou/mcyou6.jpeg";
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -182,7 +233,7 @@ const projData = [
     date: "January 1, 2023",
     summary:
       "Comfort Abode Residence, epitomizes the essence of cozy welcoming living. This recidential offers thoughtfully designed spaces, modern comfort and worm atmosphere, creating a perfect santuary for families seeking a peaceful and comfortable lifestyle.",
-    img: firstImg,
+    img: atmos1,
     category: "Residential",
     client: "Undisclosed",
     location:
@@ -544,7 +595,8 @@ const projData = [
     title: "Green Gas Terminal",
     description:
       "The 20 Acres extent was established/set out by African Group with our sophisticated equipment such as differential Global Positioning System {ProMac 3 GPS} and Leica 307 total station for precise and accurate positioning for one of the best Gas Terminals in Lagos.",
-    img: firstImg,
+    img: greenGas1,
+    images:[greenGas1, greenGas2, greenGas3],
     totalArea: "20 Acres",
     duration: "1 week",
     serviceType: "Engineering Survey {Setting Out} ",
@@ -559,8 +611,8 @@ const projData = [
     title: "Atmos Integrated Services {Atmos Farms}",
     description:
       "Atmost Farm Project, off Moniya/Iseyin Road, Serafu, Iseyin Local Government Area. Is another feather on our cap, the real challenging experience for the African Group Team, to establish the boundary that has been achieved only on surveying from start to finish. It took 15 days to complete both field and office tasks of the project against the 10 days schedule due to natural instinct like rain and animal interventions. We are proud to Highlight that we bagged this project in tender bidding from Atmost Integrated Services as a result of credibility gained through previous assignments.",
-    img: firstImg,
-    images: [navy1, navy2, navy3, navy4],
+    img: atmos1,
+    images:[atmos1, atmos2, atmos3, atmos4, atmos5, atmos6],
     totalArea: "550 Acres",
     duration: "2 week",
     serviceType: "Cadastral/Boundary Survey ",
@@ -588,10 +640,11 @@ const projData = [
   {
     id: 19,
     titleParam: "macouniverse-group-survey",
-    title: "McYouniverse Group  ",
+    title: "McYouniverse Group",
     description:
-      "The boundary/layout survey of Hilltop Estate by African Group in Igbonla, Epe – Lagos in 2021 for mcyouniverse group ensured precise property boundaries, elimination of known disputes, and supported transparent land transactions, enhancing organized land ownership and development.",
-    img: firstImg,
+      "The boundary/layout survey of Hilltop Estate by African Group in Igbonla, Epe – Lagos in 2021 for McYouniverse Group ensured precise property boundaries, elimination of known disputes, and supported transparent land transactions, enhancing organized land ownership and development.",
+    img: mcyou1,
+    images:[mcyou1, mcyou2, mcyou3, mcyou4, mcyou5, mcyou6],
     totalArea: "7 Acres",
     duration: "3 weeks",
     serviceType: "Boundary/Layout Survey",
@@ -633,18 +686,18 @@ const projData = [
   },
   {
     id: 22,
-    titleParam: "chief-oladejo-family-survey",
-    title: "Chief Oladejo Family Land",
+    titleParam: "chief-oladejo-rcc",
+    title: "Chief Oladejo - RCC",
     description:
-      "African Group, renowned for its expertise in land surveying, resolved a significant boundary dispute in 2018. Covering 4402 hectares between the plaintiff Chief Oladejo Family and the Defendant Onidaogun Family in Oyo, this meticulous survey provided accurate data, ensuring a fair resolution and restoring harmony between the parties involved, With the use of Google Earth 2018 software and AutoCAD .",
+      "In 2016, RCC entrusted African Survey, a subsidiary of African Group Nigeria, with an Engineering Survey in Awka-Ibom, Nigeria. This project involved the establishment of first-order control, a critical aspect of precision surveying required for large-scale engineering works. African Survey's role in this project demonstrates our capability in providing high-accuracy surveying solutions, reinforcing our reputation as a leader in the industry across Nigeria.",
     img: rcc1,
     images: [rcc1, rcc2, rcc3, rcc4, rcc5, rcc6],
     totalArea: "4402 Hectares	",
     duration: "90 days",
-    serviceType: "Dispute Survey  ",
+    serviceType: "Engineering Survey  ",
     client:
       "Chief Oladejo Family {plaintiff} and Onidaogun Family {Defendant} in Oyo",
-    location: "Oyo State",
+    location: "Akwa Ibom State",
     status: "Completed",
     type: "Survey",
   },
@@ -671,7 +724,8 @@ const projData = [
     title: "Enugu State Government",
     description:
       " African Survey, a subsidiary of African Group Nigeria, played a pivotal role in the establishment of Statewide GPS Geodetic Control for the Enugu State Mapping Project between 2009 and 2012. This project involved deploying advanced GPS technology with the use of Leica 530 dual frequency GPS to create a comprehensive geodetic control network across Enugu State. The accurate positioning data obtained from this network formed the foundation for precise mapping and surveying activities, contributing significantly to the development and modernization of geographic information systems (GIS) in Enugu State.",
-    img: firstImg,
+    img: enugu1,
+    images:[enugu1, enugu2, enugu3, enugu4,enugu5, enugu6],
     totalArea: "Enugu State",
     duration: "6 months",
     serviceType: "Mapping & Control Establishment",
@@ -682,43 +736,45 @@ const projData = [
   },
   {
     id: 25,
-    titleParam: "gateway-hotel-survey",
-    title: "Gateway Hotel, Sango Ota",
+    titleParam: "gateway-olaros",
+    title: "Gateway -  Olaros & Sons Nig. Ltd",
     description:
-      "  In 2018, African Survey, a subsidiary of African Group, conducted a topographical survey of Gateway Hotel located at Sango Ota sharing boundary with Ota ShopRite Mall, Ogun State, Nigeria. This survey involved detailed mapping of the hotel's terrain, including elevation, natural features, detailing, and infrastructure with a 10m grid line. The data collected was crucial for the site planning (architectural design), infrastructure development, and environmental analysis, contributing to the efficient management and enhancement of Gateway Hotel's facilities and surroundings.",
-    img: firstImg,
+      "  Olaros & Sons Nig. Ltd. enlisted African Group Nigeria, for a Detailing & Topographical Survey in Lakonu Junction, Along Oyo / Iseyin Express Road, Oyo, Oyo State. in 2024. The survey meticulously captured the land's features, elevations, and contours, providing critical data for their development plans. African Survey’s dedication to precision continues to drive excellence in surveying across Oyo State and beyond.",
+    img: gateway1,
+    images:[gateway1, gateway2, gateway3, gateway4, gateway5, gateway6],
     totalArea: "",
     duration: "2 weeks",
-    serviceType: "Topographical Survey ",
+    serviceType: "Detailing & Topographical Survey ",
     client: "Gateway Hotel ",
-    location: "Sango Ota, Ogun State.",
+    location: "Lakonu Junction, Along Oyo / Iseyin Express Road, Oyo, Oyo State.",
     status: "Completed",
     type: "Survey",
   },
 
   {
     id: 26,
-    titleParam: "halis-matris-survey",
-    title: "Halis Matris Construction",
+    titleParam: "halis-matris-shoprite",
+    title: "Hallis Matris - Shoprite",
     description:
-      "  In 2019, Halis Matris Construction commissioned the African Survey, a subsidiary of African Group Nigeria. For the route survey of about 15 km along Ilorin-Offa, Ilorin. This survey was part of numerous projects across Africa undertaken by African Survey, showcasing our expertise in surveying and construction services. The route survey involved mapping the terrain, identifying key features, and assessing feasibility for infrastructure development. African survey contributions extend beyond Ilorin, demonstrating our commitment to delivering high-quality surveying solutions across Nigeria and Africa at large.",
+      "  Project summary: In 2016, Shoprite commissioned African Survey, a subsidiary of African Group Nigeria, for the As-Built and Space Partitioning Survey at their Sango-Ota location in Ogun State. This project is part of the extensive portfolio of African Survey, reflecting our expertise in precision surveying and space management. The survey involved detailed mapping of the existing structures and accurate partitioning of spaces to meet Shoprite's operational needs. African Survey's contributions to this project highlight our ongoing commitment to delivering top-notch surveying services across Nigeria and beyond.",
     img: halis1,
     images:[halis1, halis2, halis3, halis4, halis5],
     totalArea: "About 15 km",
     duration: "14 days",
-    serviceType: "Route Survey ",
+    serviceType: "AS-BUILT & Space Partitioning ",
     client: "Halis Matris Construction ",
-    location: "Ilorin-Offa, Ilorin.",
+    location: "Sango-Ota, Ogun State.",
     status: "Completed",
     type: "Survey",
   },
   {
     id: 27,
     titleParam: "foxcon-international-survey1",
-    title: "Foxon International Services",
+    title: "Foxcon International Services",
     description:
       "  African Group is currently engaged in an ongoing boundary re-establishment survey spanning 675 acres for Foxcon International Services Limited. at Odigbo local government, Ondo State. This meticulous survey employs advanced techniques to ensure precise boundary fixing, providing legal clarity and efficient land management for Foxcon International Services Limited's operations in the area. African group has a breathtaking opportunity to complete the survey without proper food and water with the first of its kind tough hilly terrain as one of the major challenges during the project. Foxcon team provided extended support for the successful completion of the project",
-    img: survey1,
+    img: foxconOndo1,
+    images:[foxconOndo1, foxconOndo2, foxconOndo3, foxconOndo4, foxconOndo5],
     totalArea: "675 Acres",
     duration: "",
     serviceType: "Boundary Re-establishment Survey   ",
@@ -733,7 +789,8 @@ const projData = [
     title: "Foxcon International Services",
     description:
       "  African Group is currently immersed in an ongoing boundary survey and meticulous mining survey, covering 109.606 acres with about 90% covered with rocks at  Foxcon International Services Limited at Ikoyi, Osun State. This specialized survey places significant emphasis on the mining areas, employing advanced techniques to assess and map out the mineral-rich zones with precision. The detailed mining survey ensures strategic planning and efficient utilization of resources, empowering Foxcon International Services Limited with valuable insights for their mining operations in the area.",
-    img: firstImg,
+    img: foxconOsun1,
+    images: [foxconOsun1, foxconOsun2, foxconOsun3, foxconOsun4, foxconOsun5],
     totalArea: "109.606 Acres",
     duration: "",
     serviceType: "Cadastral and Mining   ",
