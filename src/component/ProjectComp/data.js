@@ -19,6 +19,45 @@ import ideraP13 from "../../assets/images/realEstateImg/ideraP13.jpg";
 import ideraP14 from "../../assets/images/realEstateImg/ideraP14.jpg";
 import ideraP15 from "../../assets/images/realEstateImg/ideraP15.jpg";
 import survey1 from "../../assets/images/surveyImg/survey1.jpg";
+import crestAgro1 from "../../assets/images/surveyImg/crestAgro/crestAgro1.jpg";
+import crestAgro2 from "../../assets/images/surveyImg/crestAgro/crestAgro2.jpg";
+import crestAgro3 from "../../assets/images/surveyImg/crestAgro/crestAgro3.jpg";
+import crestAgro4 from "../../assets/images/surveyImg/crestAgro/crestAgro4.jpg";
+import crestAgro5 from "../../assets/images/surveyImg/crestAgro/crestAgro5.jpg";
+import crestAgro6 from "../../assets/images/surveyImg/crestAgro/crestAgro6.jpg";
+import mtn1 from "../../assets/images/surveyImg/mtn/mtn1.jpg";
+import mtn2 from "../../assets/images/surveyImg/mtn/mtn2.jpg";
+import mtn3 from "../../assets/images/surveyImg/mtn/mtn3.jpg";
+import mtn4 from "../../assets/images/surveyImg/mtn/mtn4.jpg";
+import mtn5 from "../../assets/images/surveyImg/mtn/mtn5.jpg";
+import mtn6 from "../../assets/images/surveyImg/mtn/mtn6.jpg";
+import rcc1 from "../../assets/images/surveyImg/rcc/rcc1.jpg";
+import rcc2 from "../../assets/images/surveyImg/rcc/rcc2.jpg";
+import rcc3 from "../../assets/images/surveyImg/rcc/rcc3.jpg";
+import rcc4 from "../../assets/images/surveyImg/rcc/rcc4.jpg";
+import rcc5 from "../../assets/images/surveyImg/rcc/rcc5.jpg";
+import rcc6 from "../../assets/images/surveyImg/rcc/rcc6.jpg";
+import fairways1 from "../../assets/images/surveyImg/ejirin/ejirin1.jpg";
+import fairways2 from "../../assets/images/surveyImg/ejirin/ejirin2.jpg";
+import fairways3 from "../../assets/images/surveyImg/ejirin/ejirin3.jpg";
+import fairways4 from "../../assets/images/surveyImg/ejirin/ejirin4.jpg";
+import fairways5 from "../../assets/images/surveyImg/ejirin/ejirin5.jpg";
+import fairways6 from "../../assets/images/surveyImg/ejirin/ejirin6.jpg";
+import halis1 from "../../assets/images/surveyImg/shoprite/shoprite1.jpg";
+import halis2 from "../../assets/images/surveyImg/shoprite/shoprite2.jpg";
+import halis3 from "../../assets/images/surveyImg/shoprite/shoprite3.jpg";
+import halis4 from "../../assets/images/surveyImg/shoprite/shoprite4.jpg";
+import halis5 from "../../assets/images/surveyImg/shoprite/shoprite5.jpg";
+
+
+
+
+
+
+
+
+
+
 const projData = [
   {
     id: 1,
@@ -521,6 +560,7 @@ const projData = [
     description:
       "Atmost Farm Project, off Moniya/Iseyin Road, Serafu, Iseyin Local Government Area. Is another feather on our cap, the real challenging experience for the African Group Team, to establish the boundary that has been achieved only on surveying from start to finish. It took 15 days to complete both field and office tasks of the project against the 10 days schedule due to natural instinct like rain and animal interventions. We are proud to Highlight that we bagged this project in tender bidding from Atmost Integrated Services as a result of credibility gained through previous assignments.",
     img: firstImg,
+    images: [navy1, navy2, navy3, navy4],
     totalArea: "550 Acres",
     duration: "2 week",
     serviceType: "Cadastral/Boundary Survey ",
@@ -532,10 +572,11 @@ const projData = [
   {
     id: 18,
     titleParam: "mtn-office-survey",
-    title: "MTN- Nigeria {Ikeja, Lagos}",
+    title: "MTN Nigeria {Ikeja, Lagos}",
     description:
       "The topographical survey for the MTN office at No.1 Opebi Road, Ikeja, Lagos, which was conducted by African Group has been successfully completed. This survey, covering 1 acre of land, provided essential data for the project such as terrain, elevation, and natural features (XYZ) contributing to efficient planning and development of the site.",
-    img: firstImg,
+    img: mtn1,
+    images: [mtn1, mtn2,mtn3, mtn4, mtn5, mtn6],
     totalArea: "1 Acre",
     duration: "3 days",
     serviceType: "Topographical Survey   ",
@@ -580,7 +621,8 @@ const projData = [
     title: "Fairways and Greens	Survey",
     description:
       "The setting out and control establishment of the golf course for Fairways & Greens conducted by African Survey and Realty a subsidiary of (African Group) at Lekki / Epe Expressway in 2019 was a meticulous endeavor that combined precision engineering and strategic planning. This project involved the careful boundary measurement and layout of tee boxes, fairways, bunkers, greens, and water hazards, creating a harmonious and challenging golfing experience. The result was a beautifully crafted golf course that was seamlessly integrated with the natural landscape while providing golfers with a challenging and enjoyable playing experience.",
-    img: firstImg,
+    img: fairways1,
+    images:[fairways1, fairways2, fairways3, fairways4, fairways5, fairways6],
     totalArea: "63.25 Hectares	",
     duration: "A month",
     serviceType: "Setting Out and Control Establishment    ",
@@ -595,7 +637,8 @@ const projData = [
     title: "Chief Oladejo Family Land",
     description:
       "African Group, renowned for its expertise in land surveying, resolved a significant boundary dispute in 2018. Covering 4402 hectares between the plaintiff Chief Oladejo Family and the Defendant Onidaogun Family in Oyo, this meticulous survey provided accurate data, ensuring a fair resolution and restoring harmony between the parties involved, With the use of Google Earth 2018 software and AutoCAD .",
-    img: firstImg,
+    img: rcc1,
+    images: [rcc1, rcc2, rcc3, rcc4, rcc5, rcc6],
     totalArea: "4402 Hectares	",
     duration: "90 days",
     serviceType: "Dispute Survey  ",
@@ -611,7 +654,8 @@ const projData = [
     title: "Crest Agro Nigeria Limited",
     description:
       " African Group's topographical survey in 2018 for Crest-Agro Nigeria Limited's proposed factory site involved detailed mapping of the terrain, elevation analysis, and identification of natural features such as water bodies, vegetation, and height difference. This comprehensive survey provided vital data for the site design, drainage planning, and infrastructure placement, ensuring optimal utilization of the 50-hectares area for the factory development project in Lokoja, Kogi State.",
-    img: firstImg,
+    img: crestAgro1,
+    images: [crestAgro1, crestAgro2, crestAgro3, crestAgro4, crestAgro5, crestAgro6],
     totalArea: "50 Hectares",
     duration: "3 weeks",
     serviceType: "Topographical Survey",
@@ -658,7 +702,8 @@ const projData = [
     title: "Halis Matris Construction",
     description:
       "  In 2019, Halis Matris Construction commissioned the African Survey, a subsidiary of African Group Nigeria. For the route survey of about 15 km along Ilorin-Offa, Ilorin. This survey was part of numerous projects across Africa undertaken by African Survey, showcasing our expertise in surveying and construction services. The route survey involved mapping the terrain, identifying key features, and assessing feasibility for infrastructure development. African survey contributions extend beyond Ilorin, demonstrating our commitment to delivering high-quality surveying solutions across Nigeria and Africa at large.",
-    img: firstImg,
+    img: halis1,
+    images:[halis1, halis2, halis3, halis4, halis5],
     totalArea: "About 15 km",
     duration: "14 days",
     serviceType: "Route Survey ",

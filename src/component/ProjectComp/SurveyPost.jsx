@@ -5,6 +5,7 @@ import projData from "./data";
 import image from "../../assets/images/about.jpg";
 import { Link } from "react-router-dom";
 import Helmett from "../Helmet";
+import SurveyImgSlide from "./SurveyImgSlide";
 
 const SurveyPost = () => {
   const { titleParam } = useParams();
@@ -72,14 +73,8 @@ const SurveyPost = () => {
               </div>
               
             </div> */}
-          <div className="grid md:grid-cols-2 my-8  grid-cols-1 gap-4">
-            <div>
-              <img src={post.img} alt={post.title} />
-            </div>
-            <div>
-              <img src={post.img} alt={post.title} />
-            </div>
-          </div>
+            
+            <SurveyImgSlide post={post}/>
 
           {/* <div className="md:flex mt-4"> 
               <h2 className="flex items-center mb-2 text-[14px]"><span className="flex bg-private justify-center text-white text-xs items-center w-5 h-5 mt-[2px] rounded-full"><i className="fa fa-check"></i></span> <span className="ml-6">Client</span> <span className="w-4 mx-2 mt-[2px] h-[1px] flex items-center bg-black"></span> <span>{post.client}</span></h2>
