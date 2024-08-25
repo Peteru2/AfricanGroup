@@ -46,7 +46,7 @@ const Survey = () => {
                 }}
               >
                 <img
-                  className="w-full h-full object-cover"
+                  className="w-full h-[300px] object-cover"
                   src={data.img}
                   alt="kasdka"
                 />

@@ -33,7 +33,7 @@ const BlogSection = () => {
               className="`"
             >
               <div className="">
-                <img src={post.img} alt={post.name} className="m-0" />
+                <img src={post.img} alt={post.name} className="m-0 w-full md:h-[300px]" />
               </div>
               <div className=" py-6 rounded-br-[15px] rounded-bl-[15px]">
                 <h2 className="text-[25px] text-vintage font-bold mb-2">

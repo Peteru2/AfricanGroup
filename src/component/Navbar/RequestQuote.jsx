@@ -4,7 +4,7 @@ import image from "../../assets/images/about.jpg";
 import Layout from "../Layout";
 import QuoteForm from "./QuoteForm";
 import ImageWithOverlay from "../ImageWithOverlay";
-import male from "../../assets/images/male.jpg";
+import getAQuote from "../../assets/images/getAQuote.png";
 import { Roll } from "react-awesome-reveal";
 
 const RequestQuote = () => {
@@ -29,7 +29,7 @@ const RequestQuote = () => {
           <div className="grid md:grid-cols-3 grid-cols-1 md:gap-10 font-roboto">
             <div className=" w-full bg-white bg-opacity-30 p-6 mb-4 md:mb-0 shadow-lg">
               <Roll cascade triggerOnce direction="left" className="">
-                <img src={male} alt="female" />
+                <img src={getAQuote} alt="female" />
               </Roll>
             </div>
             <div className="col-span-2">

@@ -2,7 +2,8 @@ import Helmett from "./Helmet";
 import ImageWithOverlay from "./ImageWithOverlay";
 import image from "../assets/images/about.jpg";
 import Layout from "./Layout";
-import female from "../assets/images/female.jpg";
+import priority from "../assets/images/priority.png";
+
 import { motion } from "framer-motion";
 import { Bounce, Roll } from "react-awesome-reveal";
 const POQ = () => {
@@ -27,7 +28,7 @@ const POQ = () => {
             <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
               <div>
                 <Roll cascade triggerOnce direction="left">
-                  <img src={female} alt="female" />
+                  <img src={priority} alt="female" />
                 </Roll>
               </div>
 

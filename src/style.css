@@ -469,19 +469,19 @@ tr:nth-child(even) {
 @media only screen and (max-width: 1400px) {
   .nav-btn2,
   .nav-btn1 {
-    bottom: -200px;
+    bottom: -100px;
   }
 }
 @media only screen and (max-width: 1000px) {
   .nav-btn2,
   .nav-btn1 {
-    bottom: -150px;
+    bottom: -120px;
   }
 }
 @media only screen and (max-width: 768px) {
   .nav-btn2,
   .nav-btn1 {
-    bottom: -110px;
+    bottom: -400px;
   }
   .slide .item:nth-child(3) {
     left: 100%;
@@ -537,16 +537,16 @@ tr:nth-child(even) {
 @media only screen and (max-width: 600px) {
   .nav-btn2,
   .nav-btn1 {
-    bottom: -90px;
+    bottom: -350px;
   }
 }
 @media only screen and (max-width: 480px) {
   .nav-btn1 {
-    bottom: -1px;
+    bottom: -300px;
     right: 340px;
   }
   .nav-btn2 {
-    right: 2px;
-    bottom: -1px;
+    right: 10px;
+    bottom: -300px;
   }
 }

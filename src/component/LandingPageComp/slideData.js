@@ -14,7 +14,7 @@ const slides = [{
         header: "We are the Kabiesi of all Lands and Housing",
         vip: "",
         link: "/about",
-        content: "African Group stands as beacon of excellence in the realms of Survey, Real Estate and Construction across Africa. Our mission is to redefine luxury living locally and elevate the industry with transformative experiences rooted in intricately designed architecture. "
+        content: "Our mission is to redefine luxury living locally in a global standard and elevate the industry with transformative experiences rooted in intricately designed architecture. Our mission is to redefine luxury living locally and elevate the industry with transformative experiences rooted in intricately designed architecture.Our mission is to redefine luxury living locally and elevate the industry with transformative experiences rooted in intricately designed architecture. "
     },
     {
         img: [

@@ -37,7 +37,7 @@ const Mission = () => {
                   <h2 className="my-3 tracking-[3px]">OUR MISSION</h2>
                 </div>
                 <h4 className="text-[15px]">
-                  Our mission is to redifing luxury living locally in a global
+                  Our mission is to redefine luxury living locally in a global
                   standard and deliver optimal solutions with top quality and
                   best services.
                 </h4>
