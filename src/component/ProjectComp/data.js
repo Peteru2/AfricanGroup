@@ -86,6 +86,16 @@ import mcyou3 from "../../assets/images/surveyImg/mcyou/mcyou3.jpeg";
 import mcyou4 from "../../assets/images/surveyImg/mcyou/mcyou4.jpeg";
 import mcyou5 from "../../assets/images/surveyImg/mcyou/mcyou5.jpeg";
 import mcyou6 from "../../assets/images/surveyImg/mcyou/mcyou6.jpeg";
+import adun1 from "../../assets/images/realEstateImg/adun1.jpg";
+import adun2 from "../../assets/images/realEstateImg/adun2.jpg";
+import adun3 from "../../assets/images/realEstateImg/adun3.jpg";
+import adun4 from "../../assets/images/realEstateImg/adun4.jpg";
+import westCity1 from "../../assets/images/realEstateImg/westCity1.jpg";
+import westCity2 from "../../assets/images/realEstateImg/westCity2.jpg";
+import westCity3 from "../../assets/images/realEstateImg/westCity3.jpg";
+import westCity4 from "../../assets/images/realEstateImg/westCity4.jpg";
+import hilltop1 from "../../assets/images/realEstateImg/hilltop1.jpg";
+import hilltop2 from "../../assets/images/realEstateImg/hilltop2.jpg";
 
 
 
@@ -452,7 +462,8 @@ const projData = [
     title: "HillTop View Estate",
     price: "4,000,000",
     sqm: "500",
-    img: firstImg,
+    img: hilltop1,
+    images: [hilltop1, hilltop2],
     location: "Igbonla, Epe, Lagos State.",
     status: "Available",
     description1:
@@ -490,7 +501,8 @@ const projData = [
     title: "Adun Estate",
     price: "600,000",
     sqm: "470",
-    img: firstImg,
+    img: adun1,
+    images: [adun1, adun2, adun3, adun4],
     location: "Mogaji, Oyo, Oyo State.",
     status: "Sold Out",
     description1:
@@ -519,7 +531,9 @@ const projData = [
     title: "West City Estate",
     price: "700,000",
     sqm: "500",
-    img: firstImg,
+    img: westCity1,
+    images: [westCity1, westCity2, westCity3, westCity4],
+
     location: "Ilora, Oyo State.",
     status: "Available",
     description1:

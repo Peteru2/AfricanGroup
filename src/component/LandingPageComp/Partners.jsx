@@ -7,58 +7,14 @@ import oyoStateGov from "../../assets/images/oyoStateGov.jpg";
 import raybashInt from "../../assets/images/raybashInt.jpg";
 import rcc from "../../assets/images/rcc.jpg";
 import realTime from "../../assets/images/realTime.jpg";
+import mtn from "../../assets/images/mtn.png";
+
 
 import { useEffect, useRef } from "react";
 const Partners = () => {
   return (
     <>
-      {/* <div className="imgContainer overflow-hidden">
-  <div className="wrapper">
-    <div className="text"></div>
-    <div className="marque">
-      <div className="marqueGroup">
-        {imgRow.map((img) => (
-          <div className="imageGroup" key={img}>
-            <img src={img} className="image" alt="image" />
-          </div>
-        ))}
-      </div>
-      <div className="marqueGroup">
-        {imgRow.map((img) => (
-          <div className="imageGroup" key={img}>
-            <img src={img} className="image" alt="image" />
-          </div>
-        ))}
-      </div>
       
-    </div>
-  </div>
-</div> */}
-
-      {/* <div className="logos">
-    <div className="logos-slide" >
-   
-    <img src={Image1}  alt="image" />
-    <img src={Image1}  alt="image" />
-    <img src={Image1}  alt="image" />
-    <img src={Image1}  alt="image" />
-    <img src={Image1}  alt="image" />
-    <img src={Image1}  alt="image" />
-    <img src={Image1}  alt="image" />
-    </div>
-    <div className="logos-slide" >
-   
-   <img src={Image1}  alt="image" />
-   <img src={Image1}  alt="image" />
-   <img src={Image1}  alt="image" />
-   <img src={Image1}  alt="image" />
-   <img src={Image1}  alt="image" />
-   <img src={Image1}  alt="image" />
-   <img src={Image1}  alt="image" />
-   </div>
-    
-  </div> */}
-
       <div class="wrapper">
         <div class="track">
           <div class="logo">
@@ -88,7 +44,9 @@ const Partners = () => {
           <div class="logo">
             <img src={raybashInt} alt="lll" />
           </div>
-
+          <div class="logo">
+            <img src={mtn} alt="lll" />
+          </div>
           <div class="logo">
             <img src={realTime} alt="lll" />
           </div>
@@ -115,6 +73,9 @@ const Partners = () => {
           </div>
           <div class="logo">
             <img src={raybashInt} alt="lll" />
+          </div>
+          <div class="logo">
+            <img src={mtn} alt="lll" />
           </div>
         </div>
         <div class="track">
@@ -145,6 +106,9 @@ const Partners = () => {
           <div class="logo">
             <img src={raybashInt} alt="lll" />
           </div>
+          <div class="logo">
+            <img src={mtn} alt="lll" />
+          </div>
 
           <div class="logo">
             <img src={realTime} alt="lll" />
@@ -172,6 +136,9 @@ const Partners = () => {
           </div>
           <div class="logo">
             <img src={raybashInt} alt="lll" />
+          </div>
+          <div class="logo">
+            <img src={mtn} alt="lll" />
           </div>
         </div>
       </div>

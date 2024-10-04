@@ -34,13 +34,13 @@ const Testimonials = () => {
             transition={{ delay: 0.25, duration: 0.5 }}
             className=" bg-gray px-6 py-4 flex justify-center items-center bg-opacity-20 mt-10 md:h-[250px] h-[500px] "
           >
-            <Carousel showThumbs={false} autoPlay={true} ax>
+            <Carousel showThumbs={false} autoPlay={true} >
               <div>
                 <h2 className="uppercase font-semibold font-lora">
                   General Managing Director (Atmos Integrated Services Limited)
                 </h2>
 
-                <p className=" text-center  py-2 font-roboto text-black text-[16px] pb-10 break-words">
+                <p className=" text-center  py-2 font-roboto text-black text-[16px]  pb-10 break-words">
                   <i>
                     Trust & Integrity comes first for me when doing business! At
                     first, I was a bit skeptical about doing business with
@@ -48,7 +48,6 @@ const Testimonials = () => {
                     glad I trusted my instincts. It turned out great. I have
                     gladly recommended them to many clients and was not let
                     down. Keep it up, African Group!
-                    <h2></h2>
                   </i>{" "}
                 </p>
               </div>
@@ -57,7 +56,7 @@ const Testimonials = () => {
                   Mr Ifayinka Alaajeifa Ajagunmale
                 </h2>
 
-                <p className=" text-center  py-2 font-roboto text-black text-[16px] pb-10 break-all">
+                <p className=" text-center  px-2 py-2 font-roboto text-black text-[16px] pb-10 break-words">
                   <i>
                     Grateful to have met African Real Estate Group Nigeria while
                     I was still a tenant in 2023, with their advice and
@@ -71,32 +70,32 @@ const Testimonials = () => {
                   </i>{" "}
                 </p>
               </div>
-              <div>
+               {/* <div>
                 <h2 className="uppercase font-semibold font-lora">
                 Dr. Micheal Egbekoya - Director McYouniverse Group
                 </h2>
 
-                <p className=" text-center  py-2 font-roboto text-black text-[16px] pb-10 break-all">
+                <p className=" text-center  py-2 font-roboto text-black text-[16px] pb-10 break-words">
                   <i>
                   I am truly impressed with the exceptional service i experienced with African Survey after my recent Land Survey, Their Professionalism, responsiveness and attention to details made the executio of my survey documentation seamless.
         I highly recommend them to anyone in need of survey Services, they truly deliver beyond my expectations and ensure my needs are met, and i appreciate their dedication towards excellence
 
                   </i>{" "}
                 </p>
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <h2 className="uppercase font-semibold font-lora">
                 Mrs. Adenike Akinola - Group Managing Director  Foxcon Intl.
                 </h2>
 
-                <p className=" text-center  py-2 font-roboto text-black text-[16px] pb-10 break-all">
+                <p className=" text-center  py-2 font-roboto text-black text-[16px] pb-10 break-word">
                   <i>
                   African Group a reputable real estate company that caters related services in real estate development from land acquisition to ownership of property. They have offered me remarkable services in land survey that is incomparable with the show of expertise, using the latest technology.
 I can appreciate this much when I compare how they work compared to that of older generations which I am conversant with. They are so accurate in re-establishment of pillars, articulate in survey works.
                   </i>{" "}
                 </p>
-              </div>
-              <div>
+              </div> */}
+              {/* <div>
                 <h2 className="uppercase font-semibold font-lora">
                 Engr. Jibola Ahmadu
                 </h2>
@@ -108,7 +107,7 @@ I have gladly recommended them to many of my clients and was not let down. Keep 
 
                   </i>{" "}
                 </p>
-              </div>
+              </div> */}
               <div>
                 <h2 className="uppercase font-semibold font-lora">
                 Mr. Ifayinka Ajagunmale Alaajeifa
@@ -122,7 +121,7 @@ If you are not ready to be serious about your landed property and building proje
 
                   </i>{" "}
                 </p>
-              </div>
+              </div> 
               
             </Carousel>
           </motion.div>
