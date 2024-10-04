@@ -124,7 +124,7 @@ const ProjList = () => {
           </motion.div>
         </div>
 
-        <div className="flex justify-center mb-5">
+        <div className="flex overflow-x-scroll md:overflow-x-hidden md:justify-center mb-5">
           <h2
             onClick={handleAll}
             className={`${
@@ -153,7 +153,7 @@ const ProjList = () => {
                 : " text-black text-opacity-60"
             } py-3 md:px-4 px-2  md:mx-2 mx-[2px] cursor-pointer   `}
           >
-            Real Estate
+            Real-Estate
           </h2>
           <h2
             onClick={handleSurvey}
