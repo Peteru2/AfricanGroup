@@ -68,7 +68,9 @@ const Navbar = () => {
 
           <div className={name ? "nav-menu   active" : "nav-menu "}>
             {NavMenu.map((item, index) => {
-              const isActive = location.pathname === item.url;
+              const isActive = item.url === "/" 
+              ? location.pathname === "/" 
+              : location.pathname.includes(item.url);
               return (
                 <li className="nav-list" key={index}>
                   <Link className={`flex w-full`} to={item.url}>

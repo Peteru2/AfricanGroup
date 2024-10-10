@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Testimonials = () => {
   return (
     <>
-      <section className="bg-white xl:px-[90px] md:px-5 px-6 w-full md:h-[500px] h-[75~0px] sm:h-[900px] font-roboto">
+      <section className="bg-white xl:px-[90px] md:px-5 px-6 w-full md:h-[500px] h-[750px] sm:h-[900px] font-roboto">
         <div className="py-16 ">
           <motion.div
             variants={{
@@ -40,7 +40,7 @@ const Testimonials = () => {
                   General Managing Director (Atmos Integrated Services Limited)
                 </h2>
 
-                <p className=" text-center  py-2 font-roboto text-black text-[16px]  pb-10 break-words">
+                <p className=" text-center  py-2 font-roboto text-black   pb-10 break-words">
                   <i>
                     Trust & Integrity comes first for me when doing business! At
                     first, I was a bit skeptical about doing business with
@@ -56,7 +56,7 @@ const Testimonials = () => {
                   Mr Ifayinka Alaajeifa Ajagunmale
                 </h2>
 
-                <p className=" text-center  px-2 py-2 font-roboto text-black text-[16px] pb-10 break-words">
+                <p className=" text-center  px-2 py-2 font-roboto text-black  pb-10 break-words">
                   <i>
                     Grateful to have met African Real Estate Group Nigeria while
                     I was still a tenant in 2023, with their advice and

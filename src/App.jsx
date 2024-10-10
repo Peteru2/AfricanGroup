@@ -42,7 +42,7 @@ function App() {
             <Route path={"/about/team"} element={<Team />} />
 
             <Route path="/blog/:titleParam" element={<Blog />} />
-            <Route path="/service/:titleParam" element={<ServicePost />} />
+            <Route path="/services/:titleParam" element={<ServicePost />} />
             <Route
               path="/project/construction/:titleParam"
               element={<ProjPost />}

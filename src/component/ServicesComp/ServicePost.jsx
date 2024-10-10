@@ -8,6 +8,8 @@ import image from "../../assets/images/about.jpg";
 import ImageWithOverlay from "../ImageWithOverlay";
 import Layout from "../Layout";
 import Helmett from "../Helmet";
+import { Link } from "react-router-dom";
+
 
 const ServicePost = () => {
   const { titleParam } = useParams();
@@ -44,6 +46,10 @@ const ServicePost = () => {
                   </li>
                 ))}
               </ol>
+              <Link to={"/request-quote"}>
+             
+              <div className="bg-private p-4 md:w-[200px] w-full text-center text-white"> Request a quote</div>
+            </Link> 
             </div>
           </div>
         </section>

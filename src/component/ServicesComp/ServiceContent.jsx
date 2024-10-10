@@ -63,7 +63,7 @@ const ServiceContent = () => {
                   transition={{ delay: index * 0.1 }}
                   key={service.id}
                 >
-                  <Link to={`/service/${service.titleParam}`}>
+                  <Link to={`/services/${service.titleParam}`}>
                     <div className="relative  md:mb-[200px] mb-[120px]">
                       <img
                         src={service.img}
@@ -73,7 +73,7 @@ const ServiceContent = () => {
                       <div className={service.class1}>
                         <div className="relative ">
                           <div className={service.class2}>
-                            <h3>J</h3>
+                            <h3>{service.title.charAt(0)}</h3>
                           </div>
                         </div>
                         <h2
