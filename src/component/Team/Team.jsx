@@ -123,18 +123,24 @@ const Team = () => {
           <div className="container">
             <div className="slide">
               <div
-                className="item"
+                className="item bg-primary"
                 onClick={handleNext}
-                style={{ backgroundImage: `url(${avatar})` }}
+
               >
                 <div className="content">
+                <div className="md:flex items-center">
+
+                  <div className="ml-auto mr-[30px]">
+                    <img src={mrMicheal} alt="" className="rounded-full w-[1600px] h-[500px]"/>
+                  </div>
+
+                  <div>
                   <div className="text-[26px] font-lora  text-white font-semibold mb-2">
                     Olawoore Oladayo
                   </div>
                   <div className="text-[20px] uppercase text-white font-semibold mb-2">
                     Founder & CEO
                   </div>
-
                   <div className="text-white bg-private">
                     Oladayo Olawoore spearheads African Group with over 1
                     billion naira in executed deals across surveying,
@@ -142,13 +148,15 @@ const Team = () => {
                     spans the entire project lifecycle, from concept to
                     completion, ensuring stakeholder alignment, procurement and
                     business development with a Law degree in pursuit.
+                  </div> 
+                  </div>
                   </div>
                 </div>
               </div>
               <div
                 className="item"
                 onClick={handleNext}
-                style={{ backgroundImage: `url(${mrMicheal})` }}
+               
               >
                 <div className="content bg-private bg-opacity-20">
                   <div className="text-[26px] font-lora  text-white font-semibold mb-2">

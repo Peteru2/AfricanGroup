@@ -310,10 +310,10 @@ const ProjList = () => {
           <h2 className="text-center">Coming soon...</h2>
         </div>
         <div className={`${tech ? "block" : " hidden"}`}>
-          <div className="bg-private flex w-full justify-center">
-             <h2 className="text-center w-[200px] bg-gradient-to-r  from-private via-private to-white  ">Coming soon... </h2>
+         
+             <h2 className="text-center ">Coming soon... </h2>
 
-          </div>
+         
         </div>
       </section>
     </>

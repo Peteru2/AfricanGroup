@@ -217,15 +217,16 @@ tr:nth-child(even) {
   position: relative;
   margin: 400px 0;
   margin-bottom: 700px;
+  background-color: #8ab863;
 }
 .container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 1000px;
+  width: cover;
   height: 600px;
-  background: #f5f5f5;
+  background: #8ab863;
   box-shadow: 0 30px 50px #dbdbdb;
   overflow-x: hidden;
 }
@@ -273,8 +274,8 @@ tr:nth-child(even) {
 .item .content {
   position: absolute;
   top: 50%;
-  left: 80px;
-  width: 400px;
+  left: 40px;right: 40px;
+  width: cover;
   text-align: left;
   color: #eee;
   transform: translate(0, -50%);
@@ -496,6 +497,8 @@ tr:nth-child(even) {
     position: relative;
     margin-top: 400px;
     margin-bottom: 700px;
+    background: #8ab863;
+
   }
   .item .content {
     position: absolute;
