@@ -12,7 +12,7 @@ const ServiceData = [
   {
     id: 1,
     titleParam: "land-surveying-and-engineering",
-    title: " Land Surveying And Engineering",
+    title: "Land Surveying And Engineering",
     header:
       "Our Land Surveying And Engineering   Services include (but not limited to);",
     content:
