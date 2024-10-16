@@ -66,9 +66,10 @@ const FirstSection = () => {
                 backgroundImage: `url(${slide.img}) `,
                 backgroundSize: "cover",
                 width: "100%",
+               
               }}
             >
-              <div className="md:pt-32 pt-[90px]   md:pb-72 pb-[100px] md:px-14 px-6  bg-public bg-opacity-60">
+              <div className="md:pt-32 pt-[90px]  h-[800px]  md:pb-72 pb-[100px] md:px-14 px-6  bg-public bg-opacity-60">
                 <motion.h2
                   initial={{ x: "100vw" }}
                   animate={{ x: 0 }}

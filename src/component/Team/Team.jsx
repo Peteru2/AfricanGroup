@@ -130,8 +130,8 @@ const Team = () => {
                 <div className="content">
                 <div className="md:flex items-center">
 
-                  <div className="ml-auto mr-[30px]">
-                    <img src={mrMicheal} alt="" className="rounded-full w-[1600px] h-[500px]"/>
+                  <div className="mr-[30px]">
+                    <img src={mrMicheal} alt="" className="rounded-full object-cover  w-[1600px] h-[500px]"/>
                   </div>
 
                   <div>
