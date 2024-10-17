@@ -493,36 +493,44 @@ tr:nth-child(even) {
   .slide .item:nth-child(5) {
     left: calc(100% + 440px);
   }
-  .slider-container {
+  /* .slider-container {
     position: relative;
     margin-top: 400px;
     margin-bottom: 700px;
     background: #8ab863;
 
-  }
+  } */
   .item .content {
     position: absolute;
-    top: 35%;
+    top: 10%;
     left: auto;
     transform: none;
     width: auto;
     display: block;
     opacity: 1;
     animation: none;
-    background: #8ab863;
+    background: red;
     padding: 0px 15px;
   }
+  .slider-container {
+    position: relative;
+    margin: 650px 0;
+    margin-bottom: 10px;
+    
+    background-color: blue;
+  }
   .container {
-    height: 700px;
+    position: relative;
+    height: 1200px;
     box-shadow: none;
     overflow-y: hidden;
-    background-color: #8ab863;
+    background-color: yellow
   }
   .container .slide .item {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 0% 0%;
-    height: 800px;
+    height: 100px;
     transform: translate(0%, 0%);
     top: 0;
     box-shadow: none;

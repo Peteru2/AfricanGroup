@@ -99,26 +99,6 @@ import hilltop2 from "../../assets/images/realEstateImg/hilltop2.jpg";
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 const projData = [
   {
     id: 1,

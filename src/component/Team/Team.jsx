@@ -131,7 +131,7 @@ const Team = () => {
                 <div className="md:flex items-center">
 
                   <div className="mr-[30px]">
-                    <img src={mrMicheal} alt="" className="rounded-full object-cover  w-[1600px] h-[500px]"/>
+                    <img src={mrMicheal} alt="" className="rounded-[14px] object-cover  w-[1600px] h-[500px]"/>
                   </div>
 
                   <div>
