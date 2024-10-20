@@ -128,7 +128,7 @@ const Team = () => {
 
               >
                 <div className="content">
-                <div className="md:flex items-center">
+                 <div className="md:flex items-center">
 
                   <div className="mr-[30px]">
                     <img src={mrMicheal} alt="" className="rounded-[14px] object-cover  w-[1600px] h-[500px]"/>
@@ -141,7 +141,7 @@ const Team = () => {
                   <div className="text-[20px] uppercase text-white font-semibold mb-2">
                     Founder & CEO
                   </div>
-                  <div className="text-white bg-private">
+                  <div className="text-white md:h-auto h-[250px] bg-private">
                     Oladayo Olawoore spearheads African Group with over 1
                     billion naira in executed deals across surveying,
                     construction, and real estate over his career. His expertise
@@ -158,7 +158,13 @@ const Team = () => {
                 onClick={handleNext}
                
               >
+                
                 <div className="content bg-private bg-opacity-20">
+                <div className="md:flex items-center">
+
+<div className="mr-[30px]">
+  <img src={mrMicheal} alt="" className="rounded-[14px] flex items-center object-cover  w-[1600px] h-[500px]"/>
+</div>
                   <div className="text-[26px] font-lora  text-white font-semibold mb-2">
                     Fatoki Micheal
                   </div>
@@ -166,7 +172,7 @@ const Team = () => {
                     Executive Director
                   </div>
 
-                  <div className="text-white ">
+                  <div className="text-white h-[250px]">
                     A young and dynamic entrepreneur, with a blend of experience
                     in entrepreneur, information and communication technology,
                     project management, and business development. Mr. Fatoki
@@ -174,6 +180,7 @@ const Team = () => {
                     packaging and leadership to African Group.
                   </div>
                 </div>
+              </div>
               </div>
             </div>
 
