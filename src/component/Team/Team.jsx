@@ -160,11 +160,13 @@ const Team = () => {
               >
                 
                 <div className="content bg-private bg-opacity-20">
-                <div className="md:flex items-center">
 
-<div className="mr-[30px]">
-  <img src={mrMicheal} alt="" className="rounded-[14px] flex items-center object-cover  w-[1600px] h-[500px]"/>
-</div>
+                <div className="md:flex items-center">
+                    
+                    <div className="mr-[30px]">
+                      <img src={mrMicheal} alt="" className="rounded-[14px] flex items-center object-cover  w-[1600px] h-[500px]"/>
+                    </div>
+              <div>
                   <div className="text-[26px] font-lora  text-white font-semibold mb-2">
                     Fatoki Micheal
                   </div>
@@ -179,6 +181,7 @@ const Team = () => {
                     brings a fresh perspective and proven skills in real estate
                     packaging and leadership to African Group.
                   </div>
+                </div>
                 </div>
               </div>
               </div>
