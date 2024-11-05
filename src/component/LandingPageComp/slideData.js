@@ -14,7 +14,7 @@ const slides = [{
         header: "We are the Kabiesi of all Lands and Housing",
         vip: "",
         link: "/about",
-        content: "Our mission is to redefine luxury living locally in a global standard and elevate the industry with transformative experiences rooted in intricately designed architecture. Our mission is to redefine luxury living locally and elevate the industry with transformative experiences rooted in intricately designed architecture.Our mission is to redefine luxury living locally and elevate the industry with transformative experiences rooted in intricately designed architecture. "
+        content: "Our mission is to redefine luxury living locally in a global standard and elevate the industry with transformative experiences rooted in intricately designed architecture. Our mission is to redefine luxury living locally and elevate the industry with transformative experiences rooted in intricately designed architecture.Our mission is to redefine luxury living locally and elevate the industry with transformative experiences rooted in intricately designed architecture."
     },
     {
         img: [
@@ -44,7 +44,7 @@ const slides = [{
         header: "Luxury Duplex By African Group",
         vip: "Only for the VIPs",
         link: "/project/construction-of-luxury-duplex-building",
-        content: "Built on a pedestal of D.I.E the luxury duplex embodies our dedication to Diligence, Innovation and Excellence, setting a global standard locally in a luxury real estate with transformative experiences through intricately designed architecture. "
+        content: "Built on a pedestal of D.I.E philosophy the luxury duplex embodies our dedication to Diligence, Innovation and Excellence, setting a global standard locally in a luxury real estate with transformative experiences through intricately designed architecture. "
     },
 ]
 

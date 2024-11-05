@@ -74,12 +74,12 @@ import foxconOsun5 from "../../assets/images/surveyImg/foxconOsun/foxconOsun5.jp
 import greenGas1 from "../../assets/images/surveyImg/greenGas/ggas1.jpeg";
 import greenGas2 from "../../assets/images/surveyImg/greenGas/ggas2.jpeg";
 import greenGas3 from "../../assets/images/surveyImg/greenGas/ggas3.jpeg";
-import gateway1 from "../../assets/images/surveyImg/olaros/olaros1.jpeg";
-import gateway2 from "../../assets/images/surveyImg/olaros/olaros2.jpeg";
-import gateway3 from "../../assets/images/surveyImg/olaros/olaros3.jpeg";
-import gateway4 from "../../assets/images/surveyImg/olaros/olaros4.jpeg";
-import gateway5 from "../../assets/images/surveyImg/olaros/olaros5.jpeg";
-import gateway6 from "../../assets/images/surveyImg/olaros/olaros6.jpeg";
+import olaros1 from "../../assets/images/surveyImg/olaros/olaros1.jpeg";
+import olaros2 from "../../assets/images/surveyImg/olaros/olaros2.jpeg";
+import olaros3 from "../../assets/images/surveyImg/olaros/olaros3.jpeg";
+import olaros4 from "../../assets/images/surveyImg/olaros/olaros4.jpeg";
+import olaros5 from "../../assets/images/surveyImg/olaros/olaros5.jpeg";
+import olaros6 from "../../assets/images/surveyImg/olaros/olaros6.jpeg";
 import mcyou1 from "../../assets/images/surveyImg/mcyou/mcyou1.jpeg";
 import mcyou2 from "../../assets/images/surveyImg/mcyou/mcyou2.jpeg";
 import mcyou3 from "../../assets/images/surveyImg/mcyou/mcyou3.jpeg";
@@ -676,7 +676,7 @@ const projData = [
     client: "Fairways and Greens",
     location: "Lekki, Epe, Expressway",
     status: "Completed",
-    type: "Survey",
+    type: " Topographical Survey, Setting Out and Control Establishment",
   },
   {
     id: 22,
@@ -730,12 +730,12 @@ const projData = [
   },
   {
     id: 25,
-    titleParam: "gateway-olaros",
-    title: "Gateway -  Olaros & Sons Nig. Ltd",
+    titleParam: "olaros",
+    title: "Olaros & Sons Nig. Ltd",
     description:
       "  Olaros & Sons Nig. Ltd. enlisted African Group Nigeria, for a Detailing & Topographical Survey in Lakonu Junction, Along Oyo / Iseyin Express Road, Oyo, Oyo State. in 2024. The survey meticulously captured the land's features, elevations, and contours, providing critical data for their development plans. African Survey’s dedication to precision continues to drive excellence in surveying across Oyo State and beyond.",
-    img: gateway1,
-    images:[gateway1, gateway2, gateway3, gateway4, gateway5, gateway6],
+    img: olaros1,
+    images:[olaros1, olaros2, olaros3, olaros4, olaros5, olaros6],
     totalArea: "",
     duration: "2 weeks",
     serviceType: "Detailing & Topographical Survey ",

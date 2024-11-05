@@ -122,69 +122,40 @@ const Team = () => {
         <div className="slider-container">
           <div className="container">
             <div className="slide">
-              <div
+             {TeamData.map((data, index)=>{
+                            return(
+                              <>
+                               <div
                 className="item bg-primary"
                 onClick={handleNext}
 
               >
-                <div className="content">
+                              <div className="content">
                  <div className="md:flex items-center">
 
-                  <div className="mr-[30px]">
-                    <img src={mrMicheal} alt="" className="rounded-[14px] object-cover  w-[1600px] h-[500px]"/>
+                  <div className="mr-[30px]  md:w-[1000px] w-cover">
+                    <img src={data.img} alt="" className="rounded-[14px] object-cover w-[1000px] h-[500px]"/>
                   </div>
 
-                  <div>
+                  <div> 
                   <div className="text-[26px] font-lora  text-white font-semibold mb-2">
-                    Olawoore Oladayo
+                    {data.name}
                   </div>
-                  <div className="text-[20px] uppercase text-white font-semibold mb-2">
-                    Founder & CEO
+                  <div className="text-[18px] uppercase text-white font-semibold mb-2">
+                    {data.office}
                   </div>
-                  <div className="text-white md:h-auto h-[250px] bg-private">
-                    Oladayo Olawoore spearheads African Group with over 1
-                    billion naira in executed deals across surveying,
-                    construction, and real estate over his career. His expertise
-                    spans the entire project lifecycle, from concept to
-                    completion, ensuring stakeholder alignment, procurement and
-                    business development with a Law degree in pursuit.
+                  <div className="text-white md:h-auto md:w-[500px] w-cover h-[550px] bg-private">
+                 {data.description}
+
                   </div> 
                   </div>
                   </div>
                 </div>
-              </div>
-              <div
-                className="item"
-                onClick={handleNext}
-               
-              >
-                
-                <div className="content bg-private bg-opacity-20">
-
-                <div className="md:flex items-center">
-                    
-                    <div className="mr-[30px]">
-                      <img src={mrMicheal} alt="" className="rounded-[14px] flex items-center object-cover  w-[1600px] h-[500px]"/>
-                    </div>
-              <div>
-                  <div className="text-[26px] font-lora  text-white font-semibold mb-2">
-                    Fatoki Micheal
-                  </div>
-                  <div className="text-[20px] uppercase text-white font-semibold mb-2">
-                    Executive Director
-                  </div>
-
-                  <div className="text-white h-[250px]">
-                    A young and dynamic entrepreneur, with a blend of experience
-                    in entrepreneur, information and communication technology,
-                    project management, and business development. Mr. Fatoki
-                    brings a fresh perspective and proven skills in real estate
-                    packaging and leadership to African Group.
-                  </div>
                 </div>
-                </div>
-              </div>
-              </div>
+            
+                              </>
+                            )})} 
+              
             </div>
 
             <div className="button">
