@@ -119,7 +119,7 @@ const Team = () => {
                     </div>          
             </section> */}
 
-        <div className="slider-container">
+        <div className="slider-container flex justify-center">
           <div className="container">
             <div className="slide">
              {TeamData.map((data, index)=>{
@@ -131,9 +131,9 @@ const Team = () => {
 
               >
                               <div className="content">
-                 <div className="md:flex items-center">
+                 <div className="md:flex items-center justify-center w-full">
 
-                  <div className="mr-[30px]  md:w-[500px] w-cover">
+                  <div className="mr-[30px]  md:w-[500px] w-cover w-full justify-center">
                     <img src={data.img} alt="" className="rounded-[14px] object-cover w-[500px] h-[500px]"/>
                   </div>
 
