@@ -216,7 +216,7 @@ tr:nth-child(even) {
 .slider-container {
   position: relative;
   margin: 400px 0;
-  margin-bottom: 700px;
+  margin-bottom: 300px;
   background-color: #8ab863;
 }
 .container {
