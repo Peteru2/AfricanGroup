@@ -66,7 +66,7 @@ const RealEstatePost = () => {
               </div>
             </div>
           </div>
-          {/* <RealEstateImgSlide post={post} /> */}
+          <RealEstateImgSlide post={post} />
 
           <div className="flex w-full mt-2">
             <div className="md:ml-auto md:my-0 my-4">
@@ -191,7 +191,7 @@ const RealEstatePost = () => {
             </div>
           </div>
         </div>
-        <RecommendedRealEstate />
+        <RecommendedRealEstate  />
       </Layout>
     </>
   );

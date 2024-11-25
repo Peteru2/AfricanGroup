@@ -12,23 +12,22 @@ const NavMenu = [
     icon: "fa fa-chevron-down",
   },
   {
-    title: "BLOG",
-    url: "/blog",
-    cName: "nav-links",
-    icon: "fa fa-chevron-down",
-  },
-  {
     title: "SERVICES",
     url: "/services",
     cName: "nav-links",
     icon: "",
   },
-
   {
     title: "PROJECT",
     url: "/project",
     cName: "nav-links",
     icon: "",
+  },
+  {
+    title: "BLOG",
+    url: "/blog",
+    cName: "nav-links",
+    icon: "fa fa-chevron-down",
   },
   {
     title: "CONTACT",

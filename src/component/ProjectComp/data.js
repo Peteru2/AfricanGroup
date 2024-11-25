@@ -9,6 +9,11 @@ import harmony1 from "../../assets/images/constructionImg/harmony1.jpg";
 import harmony2 from "../../assets/images/constructionImg/harmony2.jpg";
 import harmony3 from "../../assets/images/constructionImg/harmony3.jpg";
 import harmony4 from "../../assets/images/constructionImg/harmony4.jpg";
+import luxDup1 from "../../assets/images/constructionImg/luxDup1.jpg";
+import luxDup2 from "../../assets/images/constructionImg/luxDup2.jpg";
+import luxDup3 from "../../assets/images/constructionImg/luxDup3.jpg";
+import luxDup4 from "../../assets/images/constructionImg/luxDup4.jpg";
+import luxDup5 from "../../assets/images/constructionImg/luxDup5.jpg";
 import navy1 from "../../assets/images/realEstateImg/navy1.jpg";
 import navy2 from "../../assets/images/realEstateImg/navy2.jpg";
 import navy3 from "../../assets/images/realEstateImg/navy3.jpg";
@@ -18,6 +23,13 @@ import ideraP12 from "../../assets/images/realEstateImg/ideraP12.jpg";
 import ideraP13 from "../../assets/images/realEstateImg/ideraP13.jpg";
 import ideraP14 from "../../assets/images/realEstateImg/ideraP14.jpg";
 import ideraP15 from "../../assets/images/realEstateImg/ideraP15.jpg";
+import peace1 from "../../assets/images/realEstateImg/peace1.jpg";
+import peace2 from "../../assets/images/realEstateImg/peace2.jpg";
+import peace3 from "../../assets/images/realEstateImg/peace3.jpg";
+import ideraPhaseEx21 from "../../assets/images/realEstateImg/ideraPhase2-1.jpg";
+import ideraPhaseEx22 from "../../assets/images/realEstateImg/ideraPhase2-2.jpg";
+import ideraPhaseEx23 from "../../assets/images/realEstateImg/ideraPhase2-3.jpg";
+import ideraPhaseEx24 from "../../assets/images/realEstateImg/ideraPhase2-4.jpg";
 import survey1 from "../../assets/images/surveyImg/survey1.jpg";
 import crestAgro1 from "../../assets/images/surveyImg/crestAgro/crestAgro1.jpg";
 import crestAgro2 from "../../assets/images/surveyImg/crestAgro/crestAgro2.jpg";
@@ -107,7 +119,8 @@ const projData = [
     date: "January 1, 2023",
     summary:
       "We are building a stuning and high-end duplex with top notch amenities and exquisite finishes. The design will show case modern architecture and spacious living areas. Our goal is to create a luxurious and confortable home that exceeds the expectations. ",
-    img: firstImg,
+    img: luxDup5,
+    images: [luxDup1,luxDup2,luxDup3,luxDup4,luxDup5],
     category: "Residential",
     client: "Undisclosed",
     location:
@@ -307,7 +320,8 @@ const projData = [
     title: "Peace Court",
     sqm: "470",
     price: "800,000",
-    img: firstImg,
+    img: peace1,
+    images: [peace1, peace2, peace3],
     location: "Along Amuloke Road, Jobele, Oyo, Oyo State",
     status: "Available",
     description1:
@@ -406,7 +420,8 @@ const projData = [
     title: "Idera City Phase 2 Extention",
     price: "500,000",
     sqm: "470",
-    img: firstImg,
+    img: ideraPhaseEx21,
+    images: [ideraPhaseEx21, ideraPhaseEx22, ideraPhaseEx23, ideraPhaseEx24],
     location: "Ilora, Oyo State",
     status: "Available",
     description1:
@@ -792,6 +807,44 @@ const projData = [
     location: "Ikoyi, Osun State.",
     status: "Ongoing",
     type: "Survey",
+  },
+  {
+    id: 29,
+    titleParam: "ilu-aya",
+    title: "Ilu Ayo Estate (City of Joy)",
+    sqm: "500 ",
+    price: "₦900,000 per plot",
+    img: peace1,
+    images: [peace1, peace2, peace3],
+    location: "Km 35, Moniya-Iseyin Road, Moniya, Ibadan, Oyo State",
+    status: "Available",
+    description1:
+      "Discover the future of luxurious living at ILU AYO ESTATE (CITY OF JOY). Situated conveniently along Moniya-Iseyin Road, this exclusive estate offers a serene environment just 35 minutes from the Moniya Railway Station. Own a 500 sqm plot at ILU AYO ESTATE—a prime location designed to provide an elevated lifestyle and a unique sense of community. Whether you’re looking to build your dream home or make a wise investment, ILU AYO ESTATE brings elegance and comfort within reach.",
+    description2:
+      "At ILU AYO ESTATE, you're assured of exceptional value. The estate offers robust infrastructure and seamless accessibility, perfect for those who seek quality at an affordable price. You’ll enjoy a community with state-of-the-art amenities, well-planned layouts, and beautifully landscaped surroundings. ",
+    description3:
+      "Take the first step to elevate your lifestyle—invest in ILU AYO ESTATE and watch your future flourish.",
+    amenities:
+      "Standard Road Network; Concrete Electric Poles; 24 hours solar street light; Regular Maintenance and Cleaning Services; Reliable Electricity Supply; Accessible Location; Well-Planned Estate Layout",
+    landmarks:
+      "Moniya Railway Station; University of Ibadan Teaching and Research Farm; IITA (International Institute of Tropical Agriculture); Moniya Market",
+    documents:
+      "Provisional Survey (Registered in the client's name); Acknowledgment Letter; Payment Receipt; Contract of Sales; Allocation Letter",
+    paymentPlan: [
+      {
+        sqr: "500SQM",
+        paymentMethod: "Outright",
+        price: "900,000",
+        currentValue: "",
+      },
+      {
+        sqr: "500SQM",
+        paymentMethod: "(6-month payment plan with ₦300,000 initial deposit)",
+        price: "1000000",
+        currentValue: "",
+      },
+    ],
+    type: "Real Estate",
   },
 ];
 

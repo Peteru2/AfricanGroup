@@ -24,7 +24,7 @@ const PostContent = () => {
             transition={{ delay: 0.5, duration: 0.5 }}
             className="col-span-3"
           >
-            {/* <img src={post.img} alt={post.title} /> */}
+            <img src={post.img} alt={post.title} />
           </motion.div>
           <motion.div
             variants={{
@@ -156,11 +156,11 @@ const PostContent = () => {
         </div>
 
         <div className="grid md:grid-cols-3 gap-5  grid-cols-1 my-10">
-          {/* {post.images.map((img, index) => (
+          {post.images.map((img, index) => (
             <div key={index}>
               <img src={img} alt={post.title} className="h-[300px] w-full" />
             </div>
-          ))} */}
+          ))}
 
           {/* <div>
                 <img src={post.img} alt={post.name} />

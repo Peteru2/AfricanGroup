@@ -69,7 +69,7 @@ const RealEstate = () => {
                         ? "bg-yellow bg-opacity-80 text-black"
                         : data.status == "Sold Out"
                         ? "bg-red text-white"
-                        : data.status == "Completed"
+                        : data.status == "Completed" 
                         ? "bg-public text-white"
                         : ""
                     } text-sm absolute right-[17px] py-[6px] px-4  rounded-[2px]  `}

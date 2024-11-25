@@ -14,16 +14,16 @@ const SurveyPost = () => {
     return <div>Post not found</div>;
   }
 
-  function getShiftedLetter(number, direction) {
-    const alphabet = "abcdefghijklmnopqrstuvwxyz"; 
-    if (direction) {
-      return alphabet[number - 1];
-    } else {
-        return alphabet[alphabet.length - number];  
-    }
-}
+//   function getShiftedLetter(number, direction) {
+//     const alphabet = "abcdefghijklmnopqrstuvwxyz"; 
+//     if (direction) {
+//       return alphabet[number - 1];
+//     } else {
+//         return alphabet[alphabet.length - number];  
+//     }
+// }
 
-console.log(getShiftedLetter(7, true));   
+// console.log(getShiftedLetter(7, true));   
 
 
 
