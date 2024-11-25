@@ -133,8 +133,8 @@ const Team = () => {
                               <div className="content">
                  <div className="md:flex items-center">
 
-                  <div className="mr-[30px]  md:w-[1000px] w-cover">
-                    <img src={data.img} alt="" className="rounded-[14px] object-cover w-[1000px] h-[500px]"/>
+                  <div className="mr-[30px]  md:w-[500px] w-cover">
+                    <img src={data.img} alt="" className="rounded-[14px] object-cover w-[500px] h-[500px]"/>
                   </div>
 
                   <div> 
