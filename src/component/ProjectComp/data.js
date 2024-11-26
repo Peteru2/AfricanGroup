@@ -14,6 +14,7 @@ import luxDup2 from "../../assets/images/constructionImg/luxDup2.jpg";
 import luxDup3 from "../../assets/images/constructionImg/luxDup3.jpg";
 import luxDup4 from "../../assets/images/constructionImg/luxDup4.jpg";
 import luxDup5 from "../../assets/images/constructionImg/luxDup5.jpg";
+import luxDup6 from "../../assets/images/constructionImg/luxDup6.jpg";
 import navy1 from "../../assets/images/realEstateImg/navy1.jpg";
 import navy2 from "../../assets/images/realEstateImg/navy2.jpg";
 import navy3 from "../../assets/images/realEstateImg/navy3.jpg";
@@ -119,8 +120,8 @@ const projData = [
     date: "January 1, 2023",
     summary:
       "We are building a stuning and high-end duplex with top notch amenities and exquisite finishes. The design will show case modern architecture and spacious living areas. Our goal is to create a luxurious and confortable home that exceeds the expectations. ",
-    img: luxDup5,
-    images: [luxDup1,luxDup2,luxDup3,luxDup4,luxDup5],
+    img: luxDup6,
+    images: [luxDup1,luxDup2,luxDup3,luxDup4,luxDup5, luxDup6],
     category: "Residential",
     client: "Undisclosed",
     location:

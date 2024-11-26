@@ -1,6 +1,7 @@
 import TeamImg from "../../assets/images/Team1.jpg";
 import mrOladayo from "../../assets/images/teamImg/mrOladayo.jpg";
 import mrMicheal from "../../assets/images/teamImg/mrMicheal.jpeg";
+import blessing from "../../assets/images/teamImg/blessing.jpg";
 
 
 
@@ -25,7 +26,7 @@ const TeamData = [
     office: "Human Resources & Technology",
     description:
       "Anthonia Olawoore is a dedicated and forward-thinking professional who plays a vital role in ensuring adequate relationship and interactions within African Group Nigeria. With expertise in human resources management and a strong focus on technology, particularly in UI/UX, she adeptly balances strategic HR initiatives with the adoption of cutting-edge digital tools to foster a modern, efficient workplace. Her passion for people management, combined with her commitment to innovation, enables her to cultivate a supportive, high-performing environment that reflects African Group NG’s core values of excellence, integrity, and diligence. Anthonia’s efforts ensure that our team remains motivated and equipped with the best resources to drive success and growth across all areas of the business.",
-    img: TeamImg,
+    img: blessing,
   },
 ];
 
