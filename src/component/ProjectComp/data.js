@@ -811,7 +811,7 @@ const projData = [
   },
   {
     id: 29,
-    titleParam: "ilu-aya",
+    titleParam: "ilu-ayo",
     title: "Ilu Ayo Estate (City of Joy)",
     sqm: "500 ",
     price: "₦900,000 per plot",

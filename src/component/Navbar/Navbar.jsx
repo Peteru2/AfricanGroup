@@ -9,20 +9,20 @@ import { motion } from "framer-motion";
 const Navbar = () => {
   const location = useLocation();
   const [name, setName] = useState(false);
-  const [url, setUrl] = useState("/About");
+  const [url, setUrl] = useState("../project/real-estate/ilu-ayo");
   const [content, setContent] = useState(
-    "Cease your opportunity now at Evergreen Estate"
+    "Cease your opportunity now at  ILU AYO Estate (City of Joy)"
   );
 
   useEffect(() => {
     const interval = setInterval(() => {
       setUrl((prevUrl) =>
-        prevUrl === "/About" ? "../project/real-estate/peace-court" : "/About"
+        prevUrl === "../project/real-estate/ilu-ayo" ? "../project/real-estate/peace-court" : "../project/real-estate/ilu-ayo"
       );
       setContent((prevContent) =>
-        prevContent === "Cease your opportunity now at Evergreen Estate"
+        prevContent === "Cease your opportunity now at  ILU AYO Estate (City of Joy)"
           ? "Act now and secure your piece of Peace Court Jobele!"
-          : "Cease your opportunity now at Evergreen Estate"
+          : "Cease your opportunity now at  ILU AYO Estate (City of Joy)"
       );
     }, 5000); // 300000 milliseconds = 5 minutes
 
