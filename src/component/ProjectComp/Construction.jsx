@@ -51,7 +51,7 @@ const Construction = () => {
                   >
                     <img
                       className="w-full h-full object-cover"
-                      src={data.img}
+                      src={data.img}kl
                       alt="kasdka"
                     />
                     <Link

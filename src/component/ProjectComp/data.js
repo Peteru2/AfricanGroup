@@ -99,6 +99,11 @@ import mcyou3 from "../../assets/images/surveyImg/mcyou/mcyou3.jpeg";
 import mcyou4 from "../../assets/images/surveyImg/mcyou/mcyou4.jpeg";
 import mcyou5 from "../../assets/images/surveyImg/mcyou/mcyou5.jpeg";
 import mcyou6 from "../../assets/images/surveyImg/mcyou/mcyou6.jpeg";
+import brain1 from "../../assets/images/surveyImg/brainAndHammers/brain1.jpg";
+import brain2 from "../../assets/images/surveyImg/brainAndHammers/brain2.jpg";
+import brain3 from "../../assets/images/surveyImg/brainAndHammers/brain3.jpg";
+import brain4 from "../../assets/images/surveyImg/brainAndHammers/brain4.jpg";
+import brain5 from "../../assets/images/surveyImg/brainAndHammers/brain5.jpg";
 import adun1 from "../../assets/images/realEstateImg/adun1.jpg";
 import adun2 from "../../assets/images/realEstateImg/adun2.jpg";
 import adun3 from "../../assets/images/realEstateImg/adun3.jpg";
@@ -669,7 +674,8 @@ const projData = [
     title: "Brains & Hammers ",
     description:
       "The 30 Hectares extent was established/set out by African Group with our sophisticated equipment such as differential Global Positioning System {ProMac 3 GPS} and Leica 307 total station for precise and accurate positioning for one of the best Gas Terminals in Soka, Ibadan. ",
-    img: firstImg,
+      img: brain1,
+      images:[brain1, brain2, brain3, brain4, brain5],
     totalArea: "30 Hectares",
     duration: "14 days",
     serviceType: "Engineering Survey {Setting Out}  ",
