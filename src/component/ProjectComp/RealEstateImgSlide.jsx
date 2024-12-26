@@ -23,7 +23,7 @@ const RealEstateImgSlide = ({ post }) => {
           {post.images.map((image) => {
             return (
               <img
-                className="image md:h-[400px] md:w-[500px]"
+                className="image md:h-[250px] max-w-[300px] md:w-[500px] relative"
                 alt="sliderImage"
                 key={image?.id}
                 src={image}
