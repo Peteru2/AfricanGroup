@@ -1,4 +1,6 @@
 import firstImg from "../../assets/images/FirstSectionImage1.jpg";
+import AfricanG from "../../assets/images/AFLOG.jpg";
+import AfricanGG from "../../assets/images/about.jpg";
 import sereneVilla1 from "../../assets/images/constructionImg/sereneVilla1.jpg";
 import sereneVilla2 from "../../assets/images/constructionImg/sereneVilla2.jpg";
 import sereneVilla3 from "../../assets/images/constructionImg/sereneVilla3.jpg";
@@ -300,6 +302,7 @@ const projData = [
     summary:
       " 'The family villa' is a spacious and inviting residential haven, designed for modern family living. With ample living space comfortable bedroom, and family friendly amenities, this villa offers a harmonious blend of functionality and luxury creating an ideal environment for lasting memories and enjoying quality time together ",
     img: firstImg,
+    images: [AfricanG, AfricanGG, firstImg],
     category: "Residential",
     client: "Undisclosed",
     location:
