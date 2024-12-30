@@ -294,35 +294,35 @@ const projData = [
       "We work closely with regulatory authorities, understand and comply with all permitting requirement, and proactively address any issues or dealings in obtaining approvals. ",
     type: "Construction",
   },
-  {
-    id: 7,
-    titleParam: "family-villa",
-    title: "Family Villa ",
-    date: "January 1, 2023",
-    summary:
-      " 'The family villa' is a spacious and inviting residential haven, designed for modern family living. With ample living space comfortable bedroom, and family friendly amenities, this villa offers a harmonious blend of functionality and luxury creating an ideal environment for lasting memories and enjoying quality time together ",
-    img: firstImg,
-    images: [AfricanG, AfricanGG, firstImg],
-    category: "Residential",
-    client: "Undisclosed",
-    location:
-      "At Tobacco Area, Off Old Oyo / Ogbomoso Road, Aroromi Oyo. Oyo East LGA, Oyo State",
-    year: "2024",
-    status: "Ongoing",
-    planning:
-      "The client's preferences and vision, available resources, size of the layout and features based on the client's vision and budget. Collaboration with architects and designers to trnaslate the client's visions into detailed architectural plans and designs concept. Also, we identified and engaged reliable and the best contractors, suppliers whose quality and luxury construction project for high quality materials, skilled labour and necessary equipment. A comprehensive budget and costing was made available with implementation of rigorous quality control measures to maintain the highest standards of craftmanship and luxury.",
-    scheduling:
-      "We strive to complete the luxury construction project withing the agreed upon time and budget, while conducting a final inspection to ensure that all works meets the client's expectations and quality standards upon satisfactory completion and handover the project to our client.",
-    overview:
-      "Clent may request changes on modification to the original design during the construction phase. Managing these changes effectively is crucial to avoid cost over runs, schedule delays, and comflict with initial plans.",
-    overview2:
-      "Budget over-runs: These occur when the actual cost of construction exceeds the initial budget estimates. Factors contributing to this can include unexpected expences, prize fluantuations in materials, or changes in project scope.",
-    solution:
-      "Design changes: We clearly define project scope and requirement upfront, document all changes, access their impact on cost and schedule, and obtain client approval before proceeding with modifications.",
-    solution2:
-      "We conduct thorough cost estimations, implement effective cost control measures, and maintain clear communication with stake holders regarding budget constraint. ",
-    type: "Construction",
-  },
+  // {
+  //   id: 7,
+  //   titleParam: "family-villa",
+  //   title: "Family Villa ",
+  //   date: "January 1, 2023",
+  //   summary:
+  //     " 'The family villa' is a spacious and inviting residential haven, designed for modern family living. With ample living space comfortable bedroom, and family friendly amenities, this villa offers a harmonious blend of functionality and luxury creating an ideal environment for lasting memories and enjoying quality time together ",
+  //   img: firstImg,
+  //   images: [AfricanG, AfricanGG, firstImg],
+  //   category: "Residential",
+  //   client: "Undisclosed",
+  //   location:
+  //     "At Tobacco Area, Off Old Oyo / Ogbomoso Road, Aroromi Oyo. Oyo East LGA, Oyo State",
+  //   year: "2024",
+  //   status: "Ongoing",
+  //   planning:
+  //     "The client's preferences and vision, available resources, size of the layout and features based on the client's vision and budget. Collaboration with architects and designers to trnaslate the client's visions into detailed architectural plans and designs concept. Also, we identified and engaged reliable and the best contractors, suppliers whose quality and luxury construction project for high quality materials, skilled labour and necessary equipment. A comprehensive budget and costing was made available with implementation of rigorous quality control measures to maintain the highest standards of craftmanship and luxury.",
+  //   scheduling:
+  //     "We strive to complete the luxury construction project withing the agreed upon time and budget, while conducting a final inspection to ensure that all works meets the client's expectations and quality standards upon satisfactory completion and handover the project to our client.",
+  //   overview:
+  //     "Clent may request changes on modification to the original design during the construction phase. Managing these changes effectively is crucial to avoid cost over runs, schedule delays, and comflict with initial plans.",
+  //   overview2:
+  //     "Budget over-runs: These occur when the actual cost of construction exceeds the initial budget estimates. Factors contributing to this can include unexpected expences, prize fluantuations in materials, or changes in project scope.",
+  //   solution:
+  //     "Design changes: We clearly define project scope and requirement upfront, document all changes, access their impact on cost and schedule, and obtain client approval before proceeding with modifications.",
+  //   solution2:
+  //     "We conduct thorough cost estimations, implement effective cost control measures, and maintain clear communication with stake holders regarding budget constraint. ",
+  //   type: "Construction",
+  // },
   {
     id: 8,
     titleParam: "peace-court",
